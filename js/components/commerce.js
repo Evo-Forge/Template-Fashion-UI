@@ -3,7 +3,6 @@ import ClassNames from 'classnames';
 
 import { Block, Btn, Card, CardHeader, CardContent, CardFooter} from 'react-essence';
 
-
 class PatagoniaCommerce extends React.Component {
 
   render() {
