@@ -11,7 +11,7 @@ class PatagoniaCommerce extends React.Component {
         <Block classes={'patagoniaCommerce e-container'}>
           <Block classes={'e-row'}>
             <Block classes={'brick brick-6'}>
-              <Card classes={'e-background-white'}>
+              <Card classes={'e-background-white card-h-200'}>
                 <CardHeader classes={'card-align-row'}>
                   <Block>
                     <Image classes={'e-img-rsp'} src={'assets/img/shoe.jpg'} />
@@ -29,38 +29,38 @@ class PatagoniaCommerce extends React.Component {
               </Card>
             </Block>
             <Block classes={'brick brick-6'}>
-              <Card classes={'e-background-white'}>
-              <CardHeader classes={'card-align-row'}>
-                <Block>
-                <Image classes={'e-img-rsp'} src={'assets/img/glasses.jpg'} />
-                </Block>
-                <Block classes={'e-background-grey-100'}>
-                  <Text type={'p'} classes={'e-text-left e-title e-text-black'}>Hemingway</Text>
-                  <Text type={'p'} classes={'e-text-left e-caption e-text-grey-500'}>Scarlett of Soho</Text>
-                  <Block classes={'rating'}>
-                    <Block classes={'rating-stars e-headline'}>
-                      <Text type={'span'} classes={'e-text-center e-headline e-text-orange-400'}>&#9733;</Text>
-                      <Text type={'span'} classes={'e-text-center e-headline e-text-orange-400'}>&#9733;</Text>
-                      <Text type={'span'} classes={'e-text-center e-headline e-text-orange-400'}>&#9733;</Text>
-                      <Text type={'span'} classes={'e-text-center e-headline e-text-grey-300'}>&#9733;</Text>
-                      <Text type={'span'} classes={'e-text-center e-headline e-text-grey-300'}>&#9733;</Text>
-                      <Text type={'span'} classes={'e-text-left e-caption e-text-grey-500'}>&nbsp;&nbsp;&nbsp;439 reviews</Text>
-                    </Block>
+              <Card classes={'e-background-white card-h-200'}>
+                <CardHeader classes={'card-align-row'}>
+                  <Block>
+                  <Image classes={'e-img-rsp'} src={'assets/img/glasses.jpg'} />
                   </Block>
-                  <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-500'}>$360</Text>
-                  <Text type={'span'} classes={'e-text-left e-headline e-text-black'}>$230</Text>
-                  <Btn label={'Add to Cart'} ripple={true} type={'succes'} className={'flat e-background-blue-700'} />
-                </Block>
-              </CardHeader>
+                  <Block classes={'e-background-grey-200'}>
+                    <Text type={'p'} classes={'e-text-left e-title e-text-black'}>Hemingway</Text>
+                    <Text type={'p'} classes={'e-text-left e-caption e-text-grey-500'}>Scarlett of Soho</Text>
+                    <Block classes={'rating'}>
+                      <Block classes={'rating-stars e-headline'}>
+                        <Text type={'span'} classes={'e-text-center e-headline e-text-orange-400'}>&#9733;</Text>
+                        <Text type={'span'} classes={'e-text-center e-headline e-text-orange-400'}>&#9733;</Text>
+                        <Text type={'span'} classes={'e-text-center e-headline e-text-orange-400'}>&#9733;</Text>
+                        <Text type={'span'} classes={'e-text-center e-headline e-text-grey-300'}>&#9733;</Text>
+                        <Text type={'span'} classes={'e-text-center e-headline e-text-grey-300'}>&#9733;</Text>
+                        <Text type={'span'} classes={'e-text-left e-caption e-text-grey-500'}>&nbsp;&nbsp;&nbsp;439 reviews</Text>
+                      </Block>
+                    </Block>
+                    <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-500'}>$360</Text>
+                    <Text type={'span'} classes={'e-text-left e-headline e-text-black'}>$230</Text>
+                    <Btn label={'Add to Cart'} ripple={true} type={'succes'} className={'flat e-background-blue-700'} />
+                  </Block>
+                </CardHeader>
               </Card>
             </Block>
           </Block>
-          <Card classes={'e-background-white'}>
+          <Card classes={'e-background-white card-h-200'}>
             <CardHeader classes={'card-align-row'}>
               <Block>
                 <Image classes={'e-img-rsp'} src={'assets/img/handbags.jpg'} />
               </Block>
-              <Block classes={'e-background-grey-100'}>
+              <Block classes={'e-background-grey-200'}>
                 <Text type={'p'} classes={'e-text-left e-title e-text-black'}>Lapis O Lupo</Text>
                 <Text type={'p'} classes={'e-text-left e-body1 e-text-grey-500'}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -72,7 +72,7 @@ class PatagoniaCommerce extends React.Component {
           </Card>
           <Block classes={'e-row'}>
             <Block classes={'brick brick-3'}>
-              <Card classes={'e-background-white'}>
+              <Card classes={'e-background-white card-h-400'}>
                 <CardHeader classes={'card-align-column'}>
                   <Block>
                     <Image classes={'e-img-rsp'} src={'assets/img/beats.jpg'} />
@@ -86,30 +86,30 @@ class PatagoniaCommerce extends React.Component {
               </Card>
             </Block>
             <Block classes={'brick brick-3'}>
-              <Card classes={'e-background-white'}>
-              <CardHeader classes={'card-align-column'}>
-                <Block>
-                  <Image classes={'e-img-rsp'} src={'assets/img/glasses.jpg'} />
-                </Block>
-                <Block>
-                  <Text type={'p'} classes={'e-text-center e-title e-text-black'}>G-SHOCK</Text>
-                  <Text type={'p'} classes={'e-text-center e-title e-text-black'}>GD-X6900HT-3ER Greem</Text>
-                  <Text type={'p'} classes={'e-text-left e-caption e-text-grey-500'}>Denim Series Navy</Text>
-                  <Divider classes={'thinnest e-background-grey-100'} />
-                  <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-500'}>$360</Text>
-                  <Text type={'span'} classes={'e-text-left e-headline e-text-black'}>$230</Text>
-                  <Btn label={'Add to Cart'} ripple={true} type={'succes'} className={'flat e-background-blue-700'} />
-                </Block>
-              </CardHeader>
+              <Card classes={'e-background-white card-h-400'}>
+                <CardHeader classes={'card-align-column'}>
+                  <Block>
+                    <Image classes={'e-img-rsp'} src={'assets/img/glasses.jpg'} />
+                  </Block>
+                  <Block>
+                    <Text type={'p'} classes={'e-text-center e-title e-text-black'}>G-SHOCK</Text>
+                    <Text type={'p'} classes={'e-text-center e-title e-text-black'}>GD-X6900HT-3ER Greem</Text>
+                    <Text type={'p'} classes={'e-text-left e-caption e-text-grey-500'}>Denim Series Navy</Text>
+                    <Divider classes={'thinnest e-background-grey-200'} />
+                    <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-500'}>$360</Text>
+                    <Text type={'span'} classes={'e-text-left e-headline e-text-black'}>$230</Text>
+                    <Btn label={'Add to Cart'} ripple={true} type={'succes'} className={'flat e-background-blue-700'} />
+                  </Block>
+                </CardHeader>
               </Card>
             </Block>
             <Block classes={'brick brick-3'}>
-              <Card classes={'e-background-white'}>
+              <Card classes={'e-background-white card-h-400'}>
                 <CardHeader classes={'card-align-column'}>
                   <Block>
                     <Text type={'p'} classes={'e-text-left e-body2 e-text-black'}>Ragently viewed</Text>
                   </Block>
-                  <Divider classes={'thinnest e-background-grey-100'} />
+                  <Divider classes={'thinnest e-background-grey-200'} />
                   <Block classes={'card-align-row'}>
                     <Block>
                       <Image classes={'e-img-rsp'} src={'assets/img/scarf.png'} />
@@ -120,7 +120,7 @@ class PatagoniaCommerce extends React.Component {
                       <Text type={'a'} classes={'e-text-left e-caption e-text-blue-300'}>See item</Text>
                     </Block>
                   </Block>
-                  <Divider classes={'thinnest e-background-grey-100'} />
+                  <Divider classes={'thinnest e-background-grey-200'} />
                   <Block classes={'card-align-row'}>
                     <Block>
                       <Image classes={'e-img-rsp'} src={'assets/img/gloves.jpg'} />
@@ -135,7 +135,7 @@ class PatagoniaCommerce extends React.Component {
               </Card>
             </Block>
             <Block classes={'brick brick-3'}>
-              <Card classes={'e-background-white'}>
+              <Card classes={'e-background-white card-h-400'}>
                 <CardHeader>
                   <Text type={'span'} classes={'e-text-left e-body2 e-text-black'}>Colors</Text>
                   <Menu type={'cover'} icon={'hardware-keyboard-control'} className={'e-right e-headline e-text-grey-300'}>
@@ -143,7 +143,7 @@ class PatagoniaCommerce extends React.Component {
                     <Text className={'e-text-black'}>Settings</Text>
                     <Text className={'e-text-black'}>Logout</Text>
                   </Menu>
-                  <Divider classes={'thinnest e-background-grey-100'} />
+                  <Divider classes={'thinnest e-background-grey-200'} />
                   <List type={'navigation'} classes={'e-twolinelist'}>
                    <ListItem>
                     <Text type={'a'}>
@@ -182,21 +182,95 @@ class PatagoniaCommerce extends React.Component {
           </Block>
           <Block classes={'e-row'}>
             <Block classes={'brick brick-3'}>
-              <Card classes={'e-background-white'}>
+              <Card classes={'e-background-white card-h-400'}>
+                <CardHeader classes={'card-align-column e-text-center'}>
+                  <Block>
+                    <Image classes={'e-img-rsp'} src={'assets/img/shirt.jpg'} />
+                  </Block>
+                  <Block>
+                    <Block classes={'rating'}>
+                      <Block classes={'rating-stars e-headline'}>
+                        <Text type={'span'} classes={'e-text-center e-headline e-text-orange-400'}>&#9733;</Text>
+                        <Text type={'span'} classes={'e-text-center e-headline e-text-orange-400'}>&#9733;</Text>
+                        <Text type={'span'} classes={'e-text-center e-headline e-text-orange-400'}>&#9733;</Text>
+                        <Text type={'span'} classes={'e-text-center e-headline e-text-grey-300'}>&#9733;</Text>
+                        <Text type={'span'} classes={'e-text-center e-headline e-text-grey-300'}>&#9733;</Text>
+                      </Block>
+                    </Block>
+                    <Text type={'p'} classes={'e-text-center e-title e-text-black'}>Lacoste</Text>
+                    <Divider classes={'thinnest e-background-grey-200'} />
+                    <Text type={'span'} classes={'e-text-center e-subhead e-text-grey-500'}>$360</Text>
+                    <Text type={'span'} classes={'e-text-center e-headline e-text-black'}>$230</Text>
+                  </Block>
+                </CardHeader>
+              </Card>
+            </Block>
+            <Block classes={'brick brick-3'}>
+              <Card classes={'e-background-white card-h-400'}>
+                <CardHeader classes={'card-align-column'}>
+                  <Block>
+                    <Image classes={'e-img-rsp'} src={'assets/img/iphone.jpg'} />
+                  </Block>
+                  <Block>
+                    <Text type={'p'} classes={'e-text-left e-title e-text-black'}>iPhone 5S 16GB</Text>
+                    <Text type={'p'} classes={'e-text-left e-title e-text-black'}>Space Grey Unlocked</Text>
+                    <Text type={'p'} classes={'e-text-left e-caption e-text-grey-500'}>Hilton Cotton Light blue</Text>
+                    <Divider classes={'thinnest e-background-grey-200'} />
+                    <Text type={'span'} classes={'e-text-left e-headline e-text-black'}>$230</Text>
+                    <Btn label={'Add to Cart'} ripple={true} type={'succes'} className={'flat e-background-blue-700'} />
+                  </Block>
+                </CardHeader>
+              </Card>
+            </Block>
+            <Block classes={'brick brick-6'}>
+              <Card classes={'e-background-white card-h-400'}>
+                <CardHeader classes={'card-align-row'}>
+                  <Block>
+                    <Image classes={'e-img-rsp'} src={'assets/img/blouse.jpg'} />
+                  </Block>
+                  <Block>
+                    <Text type={'p'} classes={'e-text-left e-title e-text-black'}>Club C85 Vintage</Text>
+                    <Text type={'p'} classes={'e-text-left e-caption e-text-grey-500'}>Kitsune Buttoned Navy</Text>
+                    <Text type={'p'} classes={'e-text-left e-body2 e-text-black'}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    </Text>
+                    <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-500'}>$360</Text>
+                    <Text type={'span'} classes={'e-text-left e-headline e-text-black'}>$230</Text>
+                    <Btn label={'Add to Cart'} ripple={true} type={'succes'} className={'flat e-background-blue-700'} />
+                  </Block>
+                </CardHeader>
+              </Card>
+            </Block>
+          </Block>
+          <Block classes={'e-row'}>
+            <Block classes={'brick brick-6'}>
+              <Card classes={'e-background-white card-h-400'}>
+                <CardHeader classes={'card-align-row e-background-cyan-300'}>
+                  <Block>
+                    <Text type={'p'} classes={'e-text-left e-title e-text-black'}>Club C85 Vintage</Text>
+                    <Text type={'p'} classes={'e-text-left e-caption e-text-grey-500'}>Kitsune Buttoned Navy</Text>
+                    <Text type={'p'} classes={'e-text-left e-body2 e-text-black'}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    </Text>
+                    <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-500'}>$360</Text>
+                    <Text type={'span'} classes={'e-text-left e-headline e-text-black'}>$230</Text>
+                    <Btn label={'Add to Cart'} ripple={true} type={'succes'} className={'flat e-background-blue-700'} />
+                  </Block>
+                  <Block>
+                    <Image classes={'e-img-rsp'} src={'assets/img/asics-shirt.png'} />
+                  </Block>
+                </CardHeader>
+              </Card>
+            </Block>
+            <Block classes={'brick brick-3'}>
+              <Card classes={'e-background-white card-h-400'}>
                 <CardHeader>
                  Card content
                 </CardHeader>
               </Card>
             </Block>
             <Block classes={'brick brick-3'}>
-              <Card classes={'e-background-white'}>
-                <CardHeader>
-                 Card content
-                </CardHeader>
-              </Card>
-            </Block>
-            <Block classes={'brick brick-6'}>
-              <Card classes={'e-background-white'}>
+              <Card classes={'e-background-white card-h-400'}>
                 <CardHeader>
                  Card content
                 </CardHeader>
@@ -204,73 +278,50 @@ class PatagoniaCommerce extends React.Component {
             </Block>
           </Block>
           <Block classes={'e-row'}>
-            <Block classes={'brick brick-6'}>
-              <Card classes={'e-background-white'}>
-                <CardHeader>
-                  Card content
-                </CardHeader>
-              </Card>
-            </Block>
             <Block classes={'brick brick-3'}>
-              <Card classes={'e-background-white'}>
-                <CardHeader>
-                 Card content
-                </CardHeader>
-              </Card>
-            </Block>
-            <Block classes={'brick brick-3'}>
-              <Card classes={'e-background-white'}>
-                <CardHeader>
-                 Card content
-                </CardHeader>
-              </Card>
-            </Block>
-          </Block>
-          <Block classes={'e-row'}>
-            <Block classes={'brick brick-3'}>
-              <Card classes={'e-background-white'}>
+              <Card classes={'e-background-white card-h-400'}>
                 <CardHeader>
                  Card content
                 </CardHeader>
               </Card>
             </Block>
             <Block classes={'brick brick-6'}>
-              <Card classes={'e-background-white'}>
+              <Card classes={'e-background-white card-h-400'}>
                 <CardHeader>
                   Card content
                 </CardHeader>
               </Card>
             </Block>
             <Block classes={'brick brick-3'}>
-              <Card classes={'e-background-white'}>
+              <Card classes={'e-background-white card-h-400'}>
                 <CardHeader>
                  Card content
                 </CardHeader>
               </Card>
             </Block>
           </Block>
-          <Card classes={'e-background-white'}>
+          <Card classes={'e-background-white card-h-400'}>
             <CardHeader>
              Card content
             </CardHeader>
           </Card>
           <Block classes={'e-row'}>
             <Block classes={'brick brick-8'}>
-              <Card classes={'e-background-white'}>
+              <Card classes={'e-background-white card-h-400'}>
                 <CardHeader>
                  Card content
                 </CardHeader>
               </Card>
             </Block>
             <Block classes={'brick brick-4'}>
-              <Card classes={'e-background-white'}>
+              <Card classes={'e-background-white card-h-400'}>
                 <CardHeader>
                   Card content
                 </CardHeader>
               </Card>
             </Block>
           </Block>
-          <Card classes={'e-background-white'}>
+          <Card classes={'e-background-white card-h-400'}>
             <CardHeader>
              Card content
             </CardHeader>
