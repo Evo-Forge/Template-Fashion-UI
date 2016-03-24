@@ -1,3 +1,29 @@
 .patagoniaCommerce {
-
+  .card {
+    border-radius: 6px;
+    .card-align-row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      @media screen and (max-width: 1440px) {
+        height: 300px;
+      }
+    }
+    .card-align-column {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+    .rating {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      align-items: center;
+      .rating-stars {
+        display: flex;
+        flex-wrap: nowrap;
+      }
+    }
+  }
 }
