@@ -8,7 +8,7 @@ class PatagoniaMedia extends React.Component {
   render() {
     return (
       <Block>
-        razvan waz here
+      
       </Block>
     );
   }
