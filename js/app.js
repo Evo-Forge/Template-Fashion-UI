@@ -8,7 +8,7 @@ import ClassNames from 'classnames';
 import {Block} from 'react-essence';
 
 // Components
-import PatagoniaCommerce from './components/ecommerce';
+import PatagoniaCommerce from './components/commerce';
 import PatagoniaForms from './components/forms';
 import PatagoniaMedia from './components/media';
 import PatagoniaBlog from './components/blog';
