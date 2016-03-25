@@ -3,32 +3,6 @@ import ClassNames from 'classnames';
 
 import { Block, Btn, Card, CardHeader, CardContent, CardFooter, Image, Text, Divider, Menu, List, ListItem, Icon } from 'react-essence';
 
-var HoverButton = React.createClass({
-    getInitialState: function () {
-        return {hover: false};
-    },
-
-    mouseOver: function () {
-        this.setState({hover: true});
-    },
-
-    mouseOut: function () {
-        this.setState({hover: false});
-    },
-
-    render: function() {
-        var label = "foo";
-        if (this.state.hover) {
-            label = "bar";
-        }
-        return React.createElement(
-            "button",
-            {onMouseOver: this.mouseOver, onMouseOut: this.mouseOut},
-            label
-        );
-    }
-});
-
 class PatagoniaCommerce extends React.Component {
 
   render() {
@@ -353,7 +327,56 @@ class PatagoniaCommerce extends React.Component {
             <Block classes={'brick brick-3'}>
               <Card classes={'e-background-white card-h-400'}>
                 <CardHeader>
-                 Card content
+                  <List type={'navigation'}>
+                   <ListItem>
+                    <Text type={'a'}>
+                      <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>Man</Text>
+                      <Icon name={"hardware-keyboard-arrow-down"} className={"e-text-grey-300 e-right"} />
+                    </Text>
+                   </ListItem>
+                   <Divider classes={'thinnest e-background-grey-200'} />
+                   <ListItem>
+                    <Text type={'a'}>
+                      <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>Woman</Text>
+                      <Icon name={"hardware-keyboard-arrow-down"} className={"e-text-grey-300 e-right"} />
+                    </Text>
+                   </ListItem>
+                   <Divider classes={'thinnest e-background-grey-200'} />
+                   <ListItem>
+                    <Text type={'a'}>
+                      <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>Kids</Text>
+                      <Icon name={"navigation-close"} className={"e-text-black e-caption e-right"} />
+                    </Text>
+                   </ListItem>
+                   <List classes={'e-background-grey-200'}>
+                    <ListItem>
+                      <Text type={'a'}>
+                        <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-600'}>Jackets</Text>
+                      </Text>
+                    </ListItem>
+                    <ListItem>
+                      <Text type={'a'}>
+                        <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-600'}>Shirts</Text>
+                      </Text>
+                    </ListItem>
+                    <ListItem>
+                      <Text type={'a'}>
+                        <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-600'}>Pants & Shorts</Text>
+                      </Text>
+                    </ListItem>
+                    <ListItem>
+                      <Text type={'a'}>
+                        <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-600'}>Footwear</Text>
+                      </Text>
+                    </ListItem>
+                   </List>
+                   <ListItem>
+                    <Text type={'a'}>
+                      <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>Shirts</Text>
+                      <Icon name={"hardware-keyboard-arrow-down"} className={"e-text-grey-300 e-right"} />
+                    </Text>
+                   </ListItem>
+                  </List>
                 </CardHeader>
               </Card>
             </Block>
