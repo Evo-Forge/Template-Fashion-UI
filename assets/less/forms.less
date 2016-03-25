@@ -7,29 +7,107 @@
   .full-width {
     width: 100%;
   }
-
+  .card {
+    border-radius: 7px;
+    .card-suplimentary-actions {
+      border-top: 0;
+    }
+  }
+  .card-sign {
+    height: 335px;
+  }
   .input-look {
     .e-input {
       border-bottom: 0;
+    }
+    .e-input:not(textarea):not(select) {
+      height: 35px;
     }
     border-radius: 4px;
     border: 1px solid lightgray;
     // :focus {
     //   border: 1px solid #18ffff;
     // }
-  }
-  .no-padding-bottom {
-    .card-header {
-      padding-bottom: 0;
+    &.input-w {
+        width: 250px;
+        margin-right: 15px;
+    }
+    &.input-focus {
+      border: 2px solid #18ffff;
     }
   }
-  .smaller-text-list {
-    font-size: 12px;
+  button {
+    border-radius: 4px;
   }
-  .e-padding-top-20 {
-    padding-top: 20px;
+  .remember-display {
+    .e-check-valid {
+      left: 0;
+    }
+    .e-checkbox label {
+      padding-left: 35px;
+    }
   }
-  .background-city {
-    background: 
+  .flat {
+    margin:0;
+  }
+  .raised {
+    margin: 0;
+  }
+  .bg-city {
+    background: linear-gradient( rgba(7, 7, 220, 0.6), rgba(7, 7, 220, 0.6) ), url('../img/city.jpg') no-repeat;
+    background-size: cover;
+    opacity: .7;
+  }
+  i.e-display-1 {
+    line-height: normal;
+  }
+  .radio-check {
+    label {
+      color: red;
+    }
+  }
+  .border-header-card {
+    border-bottom: 1px solid lightgrey;
+  }
+  .btn-look {
+    width: 200px;
+  }
+  .margin-r-icon {
+    margin-right: 15px;
+  }
+  .para-inter::before,
+  .para-inter::after {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    content: "";
+    height: 1px;
+    width: 47%;
+    right: 15px;
+    background-color: lightgrey;
+  }
+  .para-inter::after {
+    left: 15px;
+  }
+  .card-login {
+    height: 450px;
+  }
+  .mg-top-attach {
+    margin-top: 20px;
+  }
+  .half-width {
+    width: 50%;
+  }
+  .card-h-contact {
+    height: 383px;
+  }
+  .no-padding-card {
+    .card-supporting-text{
+      padding: 0;
+    }
+  }
+  .padding-card {
+    padding: 16px;
+    box-sizing: border-box;
   }
 }

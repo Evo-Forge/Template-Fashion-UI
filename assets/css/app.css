@@ -6,6 +6,15 @@
 .patagoniaForms .full-width {
   width: 100%;
 }
+.patagoniaForms .card {
+  border-radius: 7px;
+}
+.patagoniaForms .card .card-suplimentary-actions {
+  border-top: 0;
+}
+.patagoniaForms .card-sign {
+  height: 335px;
+}
 .patagoniaForms .input-look {
   border-radius: 4px;
   border: 1px solid lightgray;
@@ -13,14 +22,83 @@
 .patagoniaForms .input-look .e-input {
   border-bottom: 0;
 }
-.patagoniaForms .no-padding-bottom .card-header {
-  padding-bottom: 0;
+.patagoniaForms .input-look .e-input:not(textarea):not(select) {
+  height: 35px;
 }
-.patagoniaForms .smaller-text-list {
-  font-size: 12px;
+.patagoniaForms .input-look.input-w {
+  width: 250px;
+  margin-right: 15px;
 }
-.patagoniaForms .e-padding-top-20 {
-  padding-top: 20px;
+.patagoniaForms .input-look.input-focus {
+  border: 2px solid #18ffff;
+}
+.patagoniaForms button {
+  border-radius: 4px;
+}
+.patagoniaForms .remember-display .e-check-valid {
+  left: 0;
+}
+.patagoniaForms .remember-display .e-checkbox label {
+  padding-left: 35px;
+}
+.patagoniaForms .flat {
+  margin: 0;
+}
+.patagoniaForms .raised {
+  margin: 0;
+}
+.patagoniaForms .bg-city {
+  background: linear-gradient(rgba(7, 7, 220, 0.6), rgba(7, 7, 220, 0.6)), url('../img/city.jpg') no-repeat;
+  background-size: cover;
+  opacity: .7;
+}
+.patagoniaForms i.e-display-1 {
+  line-height: normal;
+}
+.patagoniaForms .radio-check label {
+  color: red;
+}
+.patagoniaForms .border-header-card {
+  border-bottom: 1px solid lightgrey;
+}
+.patagoniaForms .btn-look {
+  width: 200px;
+}
+.patagoniaForms .margin-r-icon {
+  margin-right: 15px;
+}
+.patagoniaForms .para-inter::before,
+.patagoniaForms .para-inter::after {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  content: "";
+  height: 1px;
+  width: 47%;
+  right: 15px;
+  background-color: lightgrey;
+}
+.patagoniaForms .para-inter::after {
+  left: 15px;
+}
+.patagoniaForms .card-login {
+  height: 450px;
+}
+.patagoniaForms .mg-top-attach {
+  margin-top: 20px;
+}
+.patagoniaForms .half-width {
+  width: 50%;
+}
+.patagoniaForms .card-h-contact {
+  height: 383px;
+}
+.patagoniaForms .no-padding-card .card-supporting-text {
+  padding: 0;
+}
+.patagoniaForms .padding-card {
+  padding: 16px;
+  box-sizing: border-box;
 }
 footer {
   width: 100%;
