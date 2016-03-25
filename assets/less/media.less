@@ -1,0 +1,183 @@
+.e-row {
+  // .add-border(red);
+}
+.brick {
+  // .add-border(pink);
+}
+.patagoniaMedia {
+  img {
+    display: block;
+  }
+  .e-container {
+    border-radius: 10px;
+    padding: 5% 0;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .badge {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    .add-border(white);
+    display: flex;
+    margin-right: 15px!important;
+  }
+
+  .card-container {
+    border-radius: 8px;
+    width: 100%;
+  }
+  // end .card-container
+
+  .current-album {
+    height: 350px;
+  }
+  .text-container {
+    padding: 10px;
+    width: 25%;
+    flex-wrap: wrap;
+    h1, p {
+      width: 100%;
+    }
+    li {
+      cursor: pointer;
+    }
+  }
+  .btn-icon {
+    background-color: transparent;
+    border: 0;
+    &:focus, &:active {
+      outline: none;
+    }
+  }
+  .img-container {
+    display: flex;
+    width: 37.5%;
+    flex-flow: 1;
+  }
+  .playlist {
+    width: 37.5%;
+    padding: 10px;
+    .list-container {
+      overflow-y: scroll;
+      flex-grow: 1;
+      padding: 0 15px;
+      li {
+        padding: 5px 0;
+        cursor: pointer;
+        .song-icon {
+          display: none;
+        }
+        .song-number {
+          display: block;
+          width: 24px;
+          margin: 0;
+        }
+        &:hover, &.selected {
+          /* add .selected to a li element
+            to display a play icon. Also add the corect
+            text color class. Eg: e-text-cyan-A100
+          */
+          color: #84FFFF;
+          .song-number {
+            display: none;
+          }
+          .song-icon {
+            display: block;
+          }
+        }
+      }
+    }
+    .player {
+      box-sizing: border-box;
+      padding: 15px;
+      .controls {
+        min-width: 100px;
+      }
+      .song-defilation {
+        overflow: hidden;
+        flex-grow: 1;
+        height: 30px;
+        .name-container {
+          width: 500px;
+        }
+      }
+    }
+  }
+
+  .pos-relative {
+    position: relative;
+  }
+  .btn-absolute {
+    position: absolute;
+    top: 35%;
+    left: 21.4%;
+  }
+  .album-list {
+    .album {
+      width: 18%;
+      box-sizing: border-box;
+      img {
+        border-radius: 8px;
+      }
+    }
+  }// end second card
+  .small-player {
+    background: url('../img/sketch1.jpg') center center no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+  }
+
+  .best-tracks {
+    overflow-x: scroll;
+    .song-container {
+    }
+    .track {
+      box-sizing: border-box;
+      position: relative;
+      width: 180px;
+      min-width: 180px;
+      padding: 0 5px;
+      cursor: pointer;
+      img {
+        border-radius: 8px;
+      }
+    }
+  }//end 4th section
+
+
+// some helper classes
+  .flex-container {
+    display: flex;
+    &.e-strech-items {
+      align-items: stretch;
+    }
+    &.e-flex-col {
+      flex-direction: column;
+    }
+    &.e-justify-between {
+      justify-content: space-between;
+    }
+  }  // end flex-container
+
+  .custom-scrollbar {
+    &::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #EEEEEE;
+      border-radius: 8px;
+    }
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        background: #b5b5b5;
+        border-radius: 8px;
+      }
+    }
+  }// end .custom-scrollbar
+
+}
