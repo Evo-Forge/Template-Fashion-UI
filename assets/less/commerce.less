@@ -5,6 +5,12 @@
   .card-h-400 {
     height: 400px;
   }
+  .e-line-through {
+    text-decoration: line-through;
+  }
+  .e-img-rsp {
+    max-height: 100%!important;
+  }
   .card {
     border-radius: 6px;
     .card-align-row {
@@ -26,6 +32,65 @@
       .rating-stars {
         display: flex;
         flex-wrap: nowrap;
+      }
+    }
+    .card-header {
+      padding: 0;
+      height: 100%;
+      .img-container-200 {
+          width: 50%;
+          position: relative;
+          box-sizing:border-box;
+      }
+      .text-container-200 {
+        width: 50%;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        box-sizing: border-box;
+        position: relative;
+      }
+      .img-container-400 {
+        position: relative;
+        box-sizing: border-box;
+        height: 50%;
+      }
+      .text-container-400 {
+        height: 50%;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        position: relative;
+      }
+      .like-btn {
+        position: absolute;
+        right: -35px;
+        top: 33%;
+      }
+      .bookmark-btn {
+        position: absolute;
+        right: 10px;
+        bottom: -35px;
+      }
+      .slider-icons {
+        position: absolute;
+        top:10px;
+        left: 10px;
+      }
+      .new-btn {
+        border-radius: 15px;
+        text-transform: lowercase;
+        min-width: 56px;
+        min-height: 26px;
+        line-height: normal;
+      }
+      .card-padding {
+        padding: 20px 0 20px 30px;
       }
     }
   }
