@@ -51,6 +51,14 @@
     &:focus, &:active {
       outline: none;
     }
+    &.preview-btn {
+      position: absolute;
+      .add-border(white);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
   }
   .img-container {
     display: flex;
@@ -123,32 +131,129 @@
         border-radius: 8px;
       }
     }
-  }// end second card
+  }// end second section
   .small-player {
     background: url('../img/sketch1.jpg') center center no-repeat;
     background-size: cover;
     flex-grow: 1;
+    height: 350px;
+    .card-heading {
+      align-items: baseline;
+      h1 {
+        max-width: 70%;
+      }
+    }
+    .play-slider {
+      margin: 0 -16px;
+    }
+    .card-content {
+      flex-wrap: wrap;
+    }
+    .list-container {
+      height: 200px;
+      overflow-y: scroll;
+      padding: 0 10px;
+      li {
+        padding: 5px 0;
+        cursor: pointer;
+        .song-icon {
+          display: none;
+        }
+        .song-number {
+          display: block;
+          width: 24px;
+          margin: 0;
+        }
+        &:hover, &.selected {
+          /* add .selected to a li element
+            to display a play icon. Also add the corect
+            text color class. Eg: e-text-cyan-A100
+          */
+          color: #84FFFF;
+          .song-number {
+            display: none;
+          }
+          .song-icon {
+            display: block;
+          }
+        }
+      }
+    }
   }
-
+  .track-slider {
+    height: 350px;
+  }
   .best-tracks {
     overflow-x: scroll;
     .song-container {
     }
     .track {
       box-sizing: border-box;
-      position: relative;
       width: 180px;
       min-width: 180px;
       padding: 0 5px;
       cursor: pointer;
-      img {
-        border-radius: 8px;
+      .image-container {
+        position: relative;
+        img {
+          border-radius: 8px;
+        }
+      }
+      &:hover .btn-icon.preview-btn {
+        opacity: 1;
+        -moz-transition: opacity .4s ease-in-out;
+        -webkit-transition: opacity .4s ease-in-out;
+        transition: opacity .4s ease-in-out;
       }
     }
   }//end 4th section
 
+  .playlist-view {
+    .image-container {
+      width: 50%;
+      img {
+        flex-grow: 1;
+      }
+    }
+    .list-container {
+      box-sizing: border-box;
+      width: 50%;
+      overflow-y: scroll;
+      flex-grow: 1;
+      padding: 15px;
+      li {
+        padding: 5px 0;
+        cursor: pointer;
+        .song-icon {
+          display: none;
+        }
+        .song-number {
+          display: block;
+          width: 24px;
+          margin: 0;
+        }
+        &:hover, &.selected {
+          /* add .selected to a li element
+            to display a play icon. Also add the corect
+            text color class. Eg: e-text-cyan-A100
+          */
+          color: #84FFFF;
+          .song-number {
+            display: none;
+          }
+          .song-icon {
+            display: block;
+          }
+        }
+      }
+    }
+
+  }//end forth section
 
 // some helper classes
+  .add-padding(@value) {
+    padding: @value;
+  }
   .flex-container {
     display: flex;
     &.e-strech-items {
@@ -179,5 +284,7 @@
       }
     }
   }// end .custom-scrollbar
-
+  .set-height {
+    height: 350px;
+  }
 }

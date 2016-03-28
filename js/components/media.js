@@ -308,11 +308,181 @@ class PatagoniaMedia extends React.Component {
             <Block className={'e-row'}>
               <Block className={'brick brick-3 flex-container e-flex-col'}>
                 <Card className={'card-container e-background-white e-body1 small-player'}>
-                  asd
+                  <CardHeader className={'card-heading flex-container e-justify-between e-no-padding'}>
+                    <Text type={'h1'} classes={'e-text-left e-title e-text-white e-no-margin'}>The Gods of the Copybook</Text>
+                    <Btn ripple={true} type={'flat'} icon={'navigation-more-horiz'} className={'e-headline e-text-white btn-icon no-min-size e-no-padding e-no-margin'} />
+                  </CardHeader>
+                  <CardContent className={'flex-container e-flex-col'}>
+                    <Text type={'p'} className={'e-body1 e-text-grey-400'}>
+                      I'd go with you anywhere
+                    </Text>
+                    <Block className={'play-slider'}>
+                      <Slider start={0} step={1} fill={true} lowerColor={'e-background-cyan-A100'} />
+                    </Block>
+                    <Block className={'controls'}>
+                      <Block className={'e-left'}>
+                        <Btn ripple={true} type={'flat'} icon={'av-fast-rewind'} className={'btn-icon no-min-size e-text-white'} />
+                        <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'btn-icon no-min-size e-text-white'} />
+                        <Btn ripple={true} type={'flat'} icon={'av-fast-forward'} className={'btn-icon no-min-size e-text-white'} />
+                      </Block>
+                      <Block className={'e-right'}>
+                        <Btn ripple={true} type={'flat'} icon={'av-volume-down'} className={'btn-icon no-min-size e-text-white'} />
+                        <Btn ripple={true} type={'flat'} icon={'action-favorite-outline'} className={'btn-icon no-min-size e-text-white'} />
+                      </Block>
+                    </Block>
+                    <Block className={'list-container custom-scrollbar'}>
+                      <List className={'e-no-style e-text-white e-body1'}>
+                        <ListItem>
+                          <Text type={'strong'} className={'clearfix'}>
+                            <Block className={'e-left'}>
+                              <Text type={'p'} className={'song-number e-left e-text-white'}>1.</Text>
+                              <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                              <Text>Broken Bones</Text>
+                            </Block>
+                            <Block className={'e-right'}>
+                              <Text>3:19</Text>
+                            </Block>
+                          </Text>
+                        </ListItem>
+                        <ListItem className={'selected'}>
+                          <Text type={'strong'} className={'clearfix'}>
+                            <Block className={'e-left'}>
+                              <Text type={'p'} className={'song-number e-left e-text-white'}>2.</Text>
+                              <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                              <Text>Broken Bones</Text>
+                            </Block>
+                            <Block className={'e-right'}>
+                              <Text>3:19</Text>
+                            </Block>
+                          </Text>
+                        </ListItem>
+                        <ListItem>
+                          <Text type={'strong'} className={'clearfix'}>
+                            <Block className={'e-left'}>
+                              <Text type={'p'} className={'song-number e-left e-text-white'}>3.</Text>
+                              <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                              <Text>Broken Bones</Text>
+                            </Block>
+                            <Block className={'e-right'}>
+                              <Text>3:19</Text>
+                            </Block>
+                          </Text>
+                        </ListItem>
+                        <ListItem>
+                          <Text type={'strong'} className={'clearfix'}>
+                            <Block className={'e-left'}>
+                              <Text type={'p'} className={'song-number e-left e-text-white'}>4.</Text>
+                              <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                              <Text>Broken Bones</Text>
+                            </Block>
+                            <Block className={'e-right'}>
+                              <Text>3:19</Text>
+                            </Block>
+                          </Text>
+                        </ListItem>
+                        <ListItem>
+                          <Text type={'strong'} className={'clearfix'}>
+                            <Block className={'e-left'}>
+                              <Text type={'p'} className={'song-number e-left e-text-white'}>5.</Text>
+                              <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                              <Text>Broken Bones</Text>
+                            </Block>
+                            <Block className={'e-right'}>
+                              <Text>3:19</Text>
+                            </Block>
+                          </Text>
+                        </ListItem>
+                        <ListItem>
+                          <Text type={'strong'} className={'clearfix'}>
+                            <Block className={'e-left'}>
+                              <Text type={'p'} className={'song-number e-left e-text-white'}>6.</Text>
+                              <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                              <Text>Broken Bones</Text>
+                            </Block>
+                            <Block className={'e-right'}>
+                              <Text>3:19</Text>
+                            </Block>
+                          </Text>
+                        </ListItem>
+                        <ListItem>
+                          <Text type={'strong'} className={'clearfix'}>
+                            <Block className={'e-left'}>
+                              <Text type={'p'} className={'song-number e-left e-text-white'}>7.</Text>
+                              <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                              <Text>Broken Bones</Text>
+                            </Block>
+                            <Block className={'e-right'}>
+                              <Text>3:19</Text>
+                            </Block>
+                          </Text>
+                        </ListItem>
+                        <ListItem>
+                          <Text type={'strong'} className={'clearfix'}>
+                            <Block className={'e-left'}>
+                              <Text type={'p'} className={'song-number e-left e-text-white'}>8.</Text>
+                              <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                              <Text>Broken Bones</Text>
+                            </Block>
+                            <Block className={'e-right'}>
+                              <Text>3:19</Text>
+                            </Block>
+                          </Text>
+                        </ListItem>
+                        <ListItem>
+                          <Text type={'strong'} className={'clearfix'}>
+                            <Block className={'e-left'}>
+                              <Text type={'p'} className={'song-number e-left e-text-white'}>9.</Text>
+                              <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                              <Text>Broken Bones</Text>
+                            </Block>
+                            <Block className={'e-right'}>
+                              <Text>3:19</Text>
+                            </Block>
+                          </Text>
+                        </ListItem>
+                        <ListItem>
+                          <Text type={'strong'} className={'clearfix'}>
+                            <Block className={'e-left'}>
+                              <Text type={'p'} className={'song-number e-left e-text-white'}>10.</Text>
+                              <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                              <Text>Broken Bones</Text>
+                            </Block>
+                            <Block className={'e-right'}>
+                              <Text>3:19</Text>
+                            </Block>
+                          </Text>
+                        </ListItem>
+                        <ListItem>
+                          <Text type={'strong'} className={'clearfix'}>
+                            <Block className={'e-left'}>
+                              <Text type={'p'} className={'song-number e-left e-text-white'}>11.</Text>
+                              <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                              <Text>Broken Bones</Text>
+                            </Block>
+                            <Block className={'e-right'}>
+                              <Text>3:19</Text>
+                            </Block>
+                          </Text>
+                        </ListItem>
+                        <ListItem>
+                          <Text type={'strong'} className={'clearfix'}>
+                            <Block className={'e-left'}>
+                              <Text type={'p'} className={'song-number e-left e-text-white'}>12.</Text>
+                              <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                              <Text>Broken Bones</Text>
+                            </Block>
+                            <Block className={'e-right'}>
+                              <Text>3:19</Text>
+                            </Block>
+                          </Text>
+                        </ListItem>
+                      </List>
+                    </Block>
+                  </CardContent>
                 </Card>
               </Block>
               <Block className={'brick brick-9'}>
-                <Card className={'card-container e-background-white e-body1'}>
+                <Card className={'card-container e-background-white e-body1 track-slider'}>
                   <CardHeader>
                     <Text className={'e-body1 e-left'}>Best tracks</Text>
                     <Btn ripple={true} type={'flat'} icon={'navigation-more-horiz'} className={'btn-icon no-min-size e-right'} />
@@ -320,7 +490,10 @@ class PatagoniaMedia extends React.Component {
                   <CardContent className={'best-tracks custom-scrollbar'}>
                     <Block className={'song-container flex-container'}>
                       <Block className={'track'}>
-                        <Image src={'./assets/img/album2.jpg'} className={'e-img-rsp'} />
+                        <Block className={'image-container'}>
+                          <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'fab e-text-white btn-icon preview-btn no-min-size e-background-amber-400 e-no-margin e-no-padding'} />
+                          <Image src={'./assets/img/album2.jpg'} className={'e-img-rsp'} />
+                        </Block>
                         <Block className={'rating'}>
                           <Text className={'e-text-yellow-700'}>&#9733;</Text>
                           <Text className={'e-text-yellow-700'}>&#9733;</Text>
@@ -336,7 +509,10 @@ class PatagoniaMedia extends React.Component {
                         </Text>
                       </Block>
                       <Block className={'track'}>
-                        <Image src={'./assets/img/album2.jpg'} className={'e-img-rsp'} />
+                        <Block className={'image-container'}>
+                          <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'fab e-text-white btn-icon preview-btn no-min-size e-background-amber-400 e-no-margin e-no-padding'} />
+                          <Image src={'./assets/img/album2.jpg'} className={'e-img-rsp'} />
+                        </Block>
                         <Block className={'rating'}>
                           <Text className={'e-text-yellow-700'}>&#9733;</Text>
                           <Text className={'e-text-yellow-700'}>&#9733;</Text>
@@ -352,7 +528,10 @@ class PatagoniaMedia extends React.Component {
                         </Text>
                       </Block>
                       <Block className={'track'}>
-                        <Image src={'./assets/img/album2.jpg'} className={'e-img-rsp'} />
+                        <Block className={'image-container'}>
+                          <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'fab e-text-white btn-icon preview-btn no-min-size e-background-amber-400 e-no-margin e-no-padding'} />
+                          <Image src={'./assets/img/album2.jpg'} className={'e-img-rsp'} />
+                        </Block>
                         <Block className={'rating'}>
                           <Text className={'e-text-yellow-700'}>&#9733;</Text>
                           <Text className={'e-text-yellow-700'}>&#9733;</Text>
@@ -368,7 +547,10 @@ class PatagoniaMedia extends React.Component {
                         </Text>
                       </Block>
                       <Block className={'track'}>
-                        <Image src={'./assets/img/album2.jpg'} className={'e-img-rsp'} />
+                        <Block className={'image-container'}>
+                          <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'fab e-text-white btn-icon preview-btn no-min-size e-background-amber-400 e-no-margin e-no-padding'} />
+                          <Image src={'./assets/img/album2.jpg'} className={'e-img-rsp'} />
+                        </Block>
                         <Block className={'rating'}>
                           <Text className={'e-text-yellow-700'}>&#9733;</Text>
                           <Text className={'e-text-yellow-700'}>&#9733;</Text>
@@ -384,7 +566,10 @@ class PatagoniaMedia extends React.Component {
                         </Text>
                       </Block>
                       <Block className={'track'}>
-                        <Image src={'./assets/img/album2.jpg'} className={'e-img-rsp'} />
+                        <Block className={'image-container'}>
+                          <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'fab e-text-white btn-icon preview-btn no-min-size e-background-amber-400 e-no-margin e-no-padding'} />
+                          <Image src={'./assets/img/album2.jpg'} className={'e-img-rsp'} />
+                        </Block>
                         <Block className={'rating'}>
                           <Text className={'e-text-yellow-700'}>&#9733;</Text>
                           <Text className={'e-text-yellow-700'}>&#9733;</Text>
@@ -400,7 +585,10 @@ class PatagoniaMedia extends React.Component {
                         </Text>
                       </Block>
                       <Block className={'track'}>
-                        <Image src={'./assets/img/album2.jpg'} className={'e-img-rsp'} />
+                        <Block className={'image-container'}>
+                          <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'fab e-text-white btn-icon preview-btn no-min-size e-background-amber-400 e-no-margin e-no-padding'} />
+                          <Image src={'./assets/img/album2.jpg'} className={'e-img-rsp'} />
+                        </Block>
                         <Block className={'rating'}>
                           <Text className={'e-text-yellow-700'}>&#9733;</Text>
                           <Text className={'e-text-yellow-700'}>&#9733;</Text>
@@ -416,7 +604,10 @@ class PatagoniaMedia extends React.Component {
                         </Text>
                       </Block>
                       <Block className={'track'}>
-                        <Image src={'./assets/img/album2.jpg'} className={'e-img-rsp'} />
+                        <Block className={'image-container'}>
+                          <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'fab e-text-white btn-icon preview-btn no-min-size e-background-amber-400 e-no-margin e-no-padding'} />
+                          <Image src={'./assets/img/album2.jpg'} className={'e-img-rsp'} />
+                        </Block>
                         <Block className={'rating'}>
                           <Text className={'e-text-yellow-700'}>&#9733;</Text>
                           <Text className={'e-text-yellow-700'}>&#9733;</Text>
@@ -432,7 +623,47 @@ class PatagoniaMedia extends React.Component {
                         </Text>
                       </Block>
                       <Block className={'track'}>
-                        <Image src={'./assets/img/album2.jpg'} className={'e-img-rsp'} />
+                        <Block className={'image-container'}>
+                          <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'fab e-text-white btn-icon preview-btn no-min-size e-background-amber-400 e-no-margin e-no-padding'} />
+                          <Image src={'./assets/img/album2.jpg'} className={'e-img-rsp'} />
+                        </Block>
+                        <Block className={'rating'}>
+                          <Text className={'e-text-yellow-700'}>&#9733;</Text>
+                          <Text className={'e-text-yellow-700'}>&#9733;</Text>
+                          <Text className={'e-text-yellow-700'}>&#9733;</Text>
+                          <Text className={'e-text-grey-400'}>&#9734;</Text>
+                          <Text className={'e-text-grey-400'}>&#9734;</Text>
+                        </Block>
+                        <Text type={'strong'}>
+                          <Text type={'p'} className={'e-text-capitalize'}>one more time</Text>
+                        </Text>
+                        <Text type={'p'} className={'e-text-grey-500'}>
+                          Daft Punk
+                        </Text>
+                      </Block>
+                      <Block className={'track'}>
+                        <Block className={'image-container'}>
+                          <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'fab e-text-white btn-icon preview-btn no-min-size e-background-amber-400 e-no-margin e-no-padding'} />
+                          <Image src={'./assets/img/album2.jpg'} className={'e-img-rsp'} />
+                        </Block>
+                        <Block className={'rating'}>
+                          <Text className={'e-text-yellow-700'}>&#9733;</Text>
+                          <Text className={'e-text-yellow-700'}>&#9733;</Text>
+                          <Text className={'e-text-yellow-700'}>&#9733;</Text>
+                          <Text className={'e-text-grey-400'}>&#9734;</Text>
+                          <Text className={'e-text-grey-400'}>&#9734;</Text>
+                        </Block>
+                        <Text type={'strong'}>
+                          <Text type={'p'} className={'e-text-capitalize'}>one more time</Text>
+                        </Text>
+                        <Text type={'p'} className={'e-text-grey-500'}>
+                          Daft Punk
+                        </Text>
+                      </Block><Block className={'track'}>
+                        <Block className={'image-container'}>
+                          <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'fab e-text-white btn-icon preview-btn no-min-size e-background-amber-400 e-no-margin e-no-padding'} />
+                          <Image src={'./assets/img/album2.jpg'} className={'e-img-rsp'} />
+                        </Block>
                         <Block className={'rating'}>
                           <Text className={'e-text-yellow-700'}>&#9733;</Text>
                           <Text className={'e-text-yellow-700'}>&#9733;</Text>
@@ -455,17 +686,202 @@ class PatagoniaMedia extends React.Component {
 
             <Block className={'e-row'}>
               <Block className={'brick brick-8'}>
-                <Card className={'card-container e-background-white'}>
-                  asd
+                <Card className={'card-container e-background-white playlist-view set-height flex-container'}>
+                  <Block className={'image-container flex-container e-flex-col'}>
+                    <Image src={'./assets/img/album0.jpg'} className={'e-img-rsp'} />
+                  </Block>
+                  <Block className={'list-container custom-scrollbar e-background-indigo-A200'}>
+                    <List className={'e-no-style e-text-white e-body1'}>
+                      <ListItem>
+                        <Text type={'strong'} className={'clearfix'}>
+                          <Block className={'e-left'}>
+                            <Text type={'p'} className={'song-number e-left e-text-white'}>1.</Text>
+                            <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                            <Text>Broken Bones</Text>
+                          </Block>
+                          <Block className={'e-right'}>
+                            <Text>3:19</Text>
+                          </Block>
+                        </Text>
+                      </ListItem>
+                      <ListItem className={'selected'}>
+                        <Text type={'strong'} className={'clearfix'}>
+                          <Block className={'e-left'}>
+                            <Text type={'p'} className={'song-number e-left e-text-white'}>2.</Text>
+                            <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                            <Text>Broken Bones</Text>
+                          </Block>
+                          <Block className={'e-right'}>
+                            <Text>3:19</Text>
+                          </Block>
+                        </Text>
+                      </ListItem>
+                      <ListItem>
+                        <Text type={'strong'} className={'clearfix'}>
+                          <Block className={'e-left'}>
+                            <Text type={'p'} className={'song-number e-left e-text-white'}>3.</Text>
+                            <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                            <Text>Broken Bones</Text>
+                          </Block>
+                          <Block className={'e-right'}>
+                            <Text>3:19</Text>
+                          </Block>
+                        </Text>
+                      </ListItem>
+                      <ListItem>
+                        <Text type={'strong'} className={'clearfix'}>
+                          <Block className={'e-left'}>
+                            <Text type={'p'} className={'song-number e-left e-text-white'}>4.</Text>
+                            <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                            <Text>Broken Bones</Text>
+                          </Block>
+                          <Block className={'e-right'}>
+                            <Text>3:19</Text>
+                          </Block>
+                        </Text>
+                      </ListItem>
+                      <ListItem>
+                        <Text type={'strong'} className={'clearfix'}>
+                          <Block className={'e-left'}>
+                            <Text type={'p'} className={'song-number e-left e-text-white'}>5.</Text>
+                            <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                            <Text>Broken Bones</Text>
+                          </Block>
+                          <Block className={'e-right'}>
+                            <Text>3:19</Text>
+                          </Block>
+                        </Text>
+                      </ListItem>
+                      <ListItem>
+                        <Text type={'strong'} className={'clearfix'}>
+                          <Block className={'e-left'}>
+                            <Text type={'p'} className={'song-number e-left e-text-white'}>6.</Text>
+                            <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                            <Text>Broken Bones</Text>
+                          </Block>
+                          <Block className={'e-right'}>
+                            <Text>3:19</Text>
+                          </Block>
+                        </Text>
+                      </ListItem>
+                      <ListItem>
+                        <Text type={'strong'} className={'clearfix'}>
+                          <Block className={'e-left'}>
+                            <Text type={'p'} className={'song-number e-left e-text-white'}>7.</Text>
+                            <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                            <Text>Broken Bones</Text>
+                          </Block>
+                          <Block className={'e-right'}>
+                            <Text>3:19</Text>
+                          </Block>
+                        </Text>
+                      </ListItem>
+                      <ListItem>
+                        <Text type={'strong'} className={'clearfix'}>
+                          <Block className={'e-left'}>
+                            <Text type={'p'} className={'song-number e-left e-text-white'}>8.</Text>
+                            <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                            <Text>Broken Bones</Text>
+                          </Block>
+                          <Block className={'e-right'}>
+                            <Text>3:19</Text>
+                          </Block>
+                        </Text>
+                      </ListItem>
+                      <ListItem>
+                        <Text type={'strong'} className={'clearfix'}>
+                          <Block className={'e-left'}>
+                            <Text type={'p'} className={'song-number e-left e-text-white'}>9.</Text>
+                            <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                            <Text>Broken Bones</Text>
+                          </Block>
+                          <Block className={'e-right'}>
+                            <Text>3:19</Text>
+                          </Block>
+                        </Text>
+                      </ListItem>
+                      <ListItem>
+                        <Text type={'strong'} className={'clearfix'}>
+                          <Block className={'e-left'}>
+                            <Text type={'p'} className={'song-number e-left e-text-white'}>10.</Text>
+                            <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                            <Text>Broken Bones</Text>
+                          </Block>
+                          <Block className={'e-right'}>
+                            <Text>3:19</Text>
+                          </Block>
+                        </Text>
+                      </ListItem>
+                      <ListItem>
+                        <Text type={'strong'} className={'clearfix'}>
+                          <Block className={'e-left'}>
+                            <Text type={'p'} className={'song-number e-left e-text-white'}>11.</Text>
+                            <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                            <Text>Broken Bones</Text>
+                          </Block>
+                          <Block className={'e-right'}>
+                            <Text>3:19</Text>
+                          </Block>
+                        </Text>
+                      </ListItem>
+                      <ListItem>
+                        <Text type={'strong'} className={'clearfix'}>
+                          <Block className={'e-left'}>
+                            <Text type={'p'} className={'song-number e-left e-text-white'}>12.</Text>
+                            <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                            <Text>Broken Bones</Text>
+                          </Block>
+                          <Block className={'e-right'}>
+                            <Text>3:19</Text>
+                          </Block>
+                        </Text>
+                      </ListItem>
+                    </List>
+                  </Block>
                 </Card>
               </Block>
               <Block className={'brick brick-4'}>
-                <Card className={'card-container e-background-white'}>
-                  <CardHeader>
-                    header
+                <Card className={'card-container e-background-white set-height'}>
+                  <CardHeader className={'clearfix'}>
+                    <Text type={'p'} className={'e-left e-text-grey-700 e-body1 e-no-margin e-no-padding'}>
+                      Top 5 best sounds
+                    </Text>
+                    <Btn ripple={true} type={'flat'} icon={'navigation-more-horiz'} className={'e-text-grey-400 btn-icon no-min-size e-right'} />
+
                   </CardHeader>
                   <CardContent>
-                    content
+                    <List type={'navigation'} classes={'e-twolinelist'}>
+                      <ListItem>
+                        <Text type={'a'}>
+                          <Image src={'http://i.imgur.com/5bteaK6.jpg'} alt={'Star Wars'} classes={'e-avatar e-left'}/>
+                          <Block classes={'content e-left'}>
+                           <Text classes={'primary'}>Johnny Bravo</Text>
+                            <Text classes={'secondary'}>Jan 9, 2016</Text>
+                          </Block>
+                          <Icon name={'action-info'} classes={'e-right e-text-grey-500'} />
+                        </Text>
+                      </ListItem>
+                      <ListItem>
+                        <Text type={'a'}>
+                          <Image src={'http://i.imgur.com/xrDnt12.png'} alt={'Star Wars'} classes={'e-avatar e-left'}/>
+                          <Block classes={'content e-left'}>
+                            <Text classes={'primary'}>Uncle Bear</Text>
+                            <Text classes={'secondary'}>Jan 10, 2016</Text>
+                          </Block>
+                          <Icon name={'action-info'} classes={'e-right e-text-grey-500'} />
+                        </Text>
+                      </ListItem>
+                      <ListItem>
+                        <Text type={'a'}>
+                          <Image src={'http://i.imgur.com/DhsdGIs.jpg'} alt={'Star Wars'} classes={'e-avatar e-left'}/>
+                          <Block classes={'content e-left'}>
+                            <Text classes={'primary'}>Mutant Ninja</Text>
+                            <Text classes={'secondary'}>Jan 11, 2016</Text>
+                          </Block>
+                          <Icon name={'action-info'} classes={'e-right e-text-grey-500'} />
+                        </Text>
+                      </ListItem>
+                    </List>
                   </CardContent>
                 </Card>
               </Block>

@@ -47,6 +47,14 @@ body {
 .patagoniaMedia .btn-icon:active {
   outline: none;
 }
+.patagoniaMedia .btn-icon.preview-btn {
+  position: absolute;
+  border: 1px solid #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
 .patagoniaMedia .img-container {
   display: flex;
   width: 37.5%;
@@ -123,20 +131,118 @@ body {
   background: url('../img/sketch1.jpg') center center no-repeat;
   background-size: cover;
   flex-grow: 1;
+  height: 350px;
+}
+.patagoniaMedia .small-player .card-heading {
+  align-items: baseline;
+}
+.patagoniaMedia .small-player .card-heading h1 {
+  max-width: 70%;
+}
+.patagoniaMedia .small-player .play-slider {
+  margin: 0 -16px;
+}
+.patagoniaMedia .small-player .card-content {
+  flex-wrap: wrap;
+}
+.patagoniaMedia .small-player .list-container {
+  height: 200px;
+  overflow-y: scroll;
+  padding: 0 10px;
+}
+.patagoniaMedia .small-player .list-container li {
+  padding: 5px 0;
+  cursor: pointer;
+}
+.patagoniaMedia .small-player .list-container li .song-icon {
+  display: none;
+}
+.patagoniaMedia .small-player .list-container li .song-number {
+  display: block;
+  width: 24px;
+  margin: 0;
+}
+.patagoniaMedia .small-player .list-container li:hover,
+.patagoniaMedia .small-player .list-container li.selected {
+  /* add .selected to a li element
+            to display a play icon. Also add the corect
+            text color class. Eg: e-text-cyan-A100
+          */
+  color: #84FFFF;
+}
+.patagoniaMedia .small-player .list-container li:hover .song-number,
+.patagoniaMedia .small-player .list-container li.selected .song-number {
+  display: none;
+}
+.patagoniaMedia .small-player .list-container li:hover .song-icon,
+.patagoniaMedia .small-player .list-container li.selected .song-icon {
+  display: block;
+}
+.patagoniaMedia .track-slider {
+  height: 350px;
 }
 .patagoniaMedia .best-tracks {
   overflow-x: scroll;
 }
 .patagoniaMedia .best-tracks .track {
   box-sizing: border-box;
-  position: relative;
   width: 180px;
   min-width: 180px;
   padding: 0 5px;
   cursor: pointer;
 }
-.patagoniaMedia .best-tracks .track img {
+.patagoniaMedia .best-tracks .track .image-container {
+  position: relative;
+}
+.patagoniaMedia .best-tracks .track .image-container img {
   border-radius: 8px;
+}
+.patagoniaMedia .best-tracks .track:hover .btn-icon.preview-btn {
+  opacity: 1;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+.patagoniaMedia .playlist-view .image-container {
+  width: 50%;
+}
+.patagoniaMedia .playlist-view .image-container img {
+  flex-grow: 1;
+}
+.patagoniaMedia .playlist-view .list-container {
+  box-sizing: border-box;
+  width: 50%;
+  overflow-y: scroll;
+  flex-grow: 1;
+  padding: 15px;
+}
+.patagoniaMedia .playlist-view .list-container li {
+  padding: 5px 0;
+  cursor: pointer;
+}
+.patagoniaMedia .playlist-view .list-container li .song-icon {
+  display: none;
+}
+.patagoniaMedia .playlist-view .list-container li .song-number {
+  display: block;
+  width: 24px;
+  margin: 0;
+}
+.patagoniaMedia .playlist-view .list-container li:hover,
+.patagoniaMedia .playlist-view .list-container li.selected {
+  /* add .selected to a li element
+            to display a play icon. Also add the corect
+            text color class. Eg: e-text-cyan-A100
+          */
+  color: #84FFFF;
+}
+.patagoniaMedia .playlist-view .list-container li:hover .song-number,
+.patagoniaMedia .playlist-view .list-container li.selected .song-number {
+  display: none;
+}
+.patagoniaMedia .playlist-view .list-container li:hover .song-icon,
+.patagoniaMedia .playlist-view .list-container li.selected .song-icon {
+  display: block;
 }
 .patagoniaMedia .flex-container {
   display: flex;
@@ -162,6 +268,9 @@ body {
 .patagoniaMedia .custom-scrollbar:hover::-webkit-scrollbar-thumb {
   background: #b5b5b5;
   border-radius: 8px;
+}
+.patagoniaMedia .set-height {
+  height: 350px;
 }
 footer {
   width: 100%;
