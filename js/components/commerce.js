@@ -126,7 +126,7 @@ class PatagoniaCommerce extends React.Component {
               <Card classes={'e-background-white card-h-400'}>
                 <CardHeader classes={'card-align-column'}>
                   <Block>
-                    <Text type={'p'} classes={'e-body2 e-text-black'}>Ragently viewed</Text>
+                    <Text type={'span'} classes={' e-text-left e-body2 e-text-black'}>Ragently viewed</Text>
                   </Block>
                   <Divider classes={'thinnest e-background-grey-200'} />
                   <Block classes={'card-align-row'}>
@@ -286,7 +286,7 @@ class PatagoniaCommerce extends React.Component {
             <Block classes={'brick brick-6'}>
               <Card classes={'e-background-white card-h-400'}>
                 <CardHeader classes={'card-align-row e-background-cyan-100'}>
-                  <Block>
+                  <Block classes={'text-container-200'}>
                     <Block classes={'card-padding'}>
                       <Text type={'p'} classes={'e-text-left e-text-black e-display-2 e-text-uppercase'}>asics x reigning</Text>
                       <Text type={'p'} classes={'e-text-left e-title e-text-black'}>Kitsune Buttoned Navy</Text>
@@ -299,7 +299,7 @@ class PatagoniaCommerce extends React.Component {
                       </Block>
                     </Block>
                   </Block>
-                  <Block>
+                  <Block classes={'img-container-200'}>
                     <Image classes={'e-img-rsp'} src={'assets/img/asics-shirt.png'} />
                   </Block>
                 </CardHeader>
@@ -317,7 +317,7 @@ class PatagoniaCommerce extends React.Component {
                     <Text type={'p'} classes={'e-text-left e-title e-text-black'}>Pink</Text>
                     <Text type={'p'} classes={'e-text-left e-caption e-text-grey-500'}>Hilton Cotton Light Blue</Text>
                     <Divider classes={'thinnest e-background-grey-200'} />
-                    <Block>
+                    <Block classes={'card-align-row'}>
                       <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-500 e-line-through'}>$360</Text>
                       <Text type={'span'} classes={'e-text-left e-headline e-text-black'}>$230</Text>
                       <Btn label={'Add to Cart'} ripple={true} type={'succes'} className={'flat e-background-blue-700'} />
@@ -440,7 +440,7 @@ class PatagoniaCommerce extends React.Component {
             <Block classes={'brick brick-6'}>
               <Card classes={'e-background-white card-h-400'}>
                 <CardHeader classes={'card-align-row e-background-blue-400'}>
-                  <Block>
+                  <Block classes={'text-container-200'}>
                     <Block classes={'card-padding'}>
                       <Text type={'p'} classes={'e-text-left e-display-2 e-text-white e-text-uppercase'}>jenni high rise busted knee jeans</Text>
                       <Text type={'p'} classes={'e-text-left e-body2 e-text-white'}>
@@ -452,7 +452,7 @@ class PatagoniaCommerce extends React.Component {
                       </Block>
                     </Block>
                   </Block>
-                  <Block>
+                  <Block classes={'img-container-200'}>
                     <Image classes={'e-img-rsp'} src={'assets/img/girl.png'} />
                   </Block>
                 </CardHeader>
@@ -522,7 +522,7 @@ class PatagoniaCommerce extends React.Component {
             <Block classes={'brick brick-8'}>
               <Card classes={'e-background-white card-h-400'}>
                 <CardHeader classes={'card-align-row'}>
-                  <Block>
+                  <Block classes={'text-container-200'}>
                     <Block classes={'card-padding'}>
                       <Text type={'p'} classes={'e-text-left e-text-black e-display-1'}>Asics X Reigning Champ</Text>
                       <Text type={'span'} classes={'e-text-left e-headline e-text-black'}>$178</Text>
