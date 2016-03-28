@@ -89,6 +89,7 @@
 }
 .patagoniaForms .half-width {
   width: 50%;
+  box-sizing: border-box;
 }
 .patagoniaForms .card-h-contact {
   height: 383px;
@@ -98,7 +99,100 @@
 }
 .patagoniaForms .padding-card {
   padding: 16px;
+}
+.patagoniaForms .padding-card-contact {
+  padding: 16px;
   box-sizing: border-box;
+}
+.patagoniaForms .avatar-card {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+.patagoniaForms .round-icon {
+  position: relative;
+  margin-top: 50px;
+  margin-left: -20px;
+  font-size: 22px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-sizing: border-box;
+}
+.patagoniaForms .padding-left-para {
+  padding-left: 15px;
+}
+.patagoniaForms .card-content-header {
+  height: 80px;
+  padding: 16px;
+  border-bottom: 1px solid lightgray;
+}
+.patagoniaForms .card-content-account {
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.patagoniaForms .half-w-input {
+  width: 48%;
+}
+.patagoniaForms .btn-save-w {
+  width: 150px;
+}
+.patagoniaForms .btn-inter::before,
+.patagoniaForms .btn-inter::after {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  content: "";
+  height: 1px;
+  width: 30%;
+  right: 42px;
+  background-color: lightgrey;
+}
+.patagoniaForms .btn-inter::after {
+  left: 42px;
+}
+.patagoniaForms .padding-t-para {
+  padding-top: 17px;
+}
+.patagoniaForms .display-card-subscribe {
+  display: flex;
+  justify-content: space-between;
+}
+.patagoniaForms .submit-h {
+  height: 35px;
+  margin-top: 17px;
+}
+.patagoniaForms .card-h-account {
+  height: 551px;
+}
+.patagoniaForms .border-btn-nr {
+  display: inline-block;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+}
+.patagoniaForms .border-btn-nr.margin-nr {
+  margin: 20px;
+}
+.patagoniaForms .border-btn-nr button {
+  border: 0;
+}
+.patagoniaForms .btn-margin-nr {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.patagoniaForms .btn-no-border {
+  border: 0;
+}
+.patagoniaForms .e-steppers-container .e-stepper-content.active {
+  padding: 0;
+}
+.patagoniaForms .e-twolinelist {
+  width: 80%;
+  margin: 0 auto;
+}
+.patagoniaForms .e-twolinelist .content {
+  width: 15%;
 }
 footer {
   width: 100%;
