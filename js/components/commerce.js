@@ -16,8 +16,12 @@ class PatagoniaCommerce extends React.Component {
                   <Block classes={'img-container-200'}>
                     <Image classes={'e-img-rsp'} src={'assets/img/shoe.jpg'} />
                     <Block classes={'slider-icons'}>
-                      <Icon name={"hardware-keyboard-arrow-left"} className={"e-text-black"} />
-                      <Icon name={"hardware-keyboard-arrow-right"} className={"e-text-black"} />
+                      <Text type={'a'}>
+                        <Icon name={"hardware-keyboard-arrow-left"} className={"e-text-black"} />
+                      </Text>
+                      <Text type={'a'}>
+                        <Icon name={"hardware-keyboard-arrow-right"} className={"e-text-black"} />
+                      </Text>
                     </Block>
                     <Btn icon={'action-star-rate'} ripple={true} type={'fab-mini'} className={'fab-mini like-btn e-background-white e-text-blue-200'} />
                   </Block>
@@ -54,10 +58,10 @@ class PatagoniaCommerce extends React.Component {
                         <Text type={'span'} classes={'e-text-left e-caption e-text-grey-500'}>&nbsp;&nbsp;&nbsp;439 reviews</Text>
                       </Block>
                     </Block>
-                    <Block>
+                    <Block classes={'card-align-row'}>
                       <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-500 e-line-through'}>$360</Text>
                       <Text type={'span'} classes={'e-text-left e-headline e-text-black'}>$230</Text>
-                      <Btn label={'Add to Cart'} ripple={true} type={'succes'} className={'flat e-background-blue-700'} />
+                      <Btn label={'Add to Cart'} ripple={true} type={'succes'} className={'flat e-right e-background-blue-700'} />
                     </Block>
                   </Block>
                 </CardHeader>
@@ -76,7 +80,7 @@ class PatagoniaCommerce extends React.Component {
                 </Text>
                 <Block>
                   <Text type={'span'} classes={'e-text-left e-display-1 e-text-black'}>$459</Text>
-                  <Btn label={'Visit Store'} ripple={true} type={'succes'} className={'flat e-background-blue-200'} />
+                  <Btn label={'Visit Store >'} ripple={true} type={'succes'} className={'flat e-right e-background-blue-200'} />
                 </Block>
               </Block>
             </CardHeader>
@@ -109,7 +113,7 @@ class PatagoniaCommerce extends React.Component {
                     <Text type={'p'} classes={'e-text-center e-title e-text-black'}>GD-X6900HT-3ER Greem</Text>
                     <Text type={'p'} classes={'e-text-center e-caption e-text-grey-500'}>Denim Series Navy</Text>
                     <Divider classes={'thinnest e-background-grey-200'} />
-                    <Block>
+                    <Block classes={'card-align-row'}>
                       <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-500 e-line-through'}>$360</Text>
                       <Text type={'span'} classes={'e-text-left e-headline e-text-black'}>$230</Text>
                       <Btn label={'Add to Cart'} ripple={true} type={'succes'} className={'flat e-background-blue-700'} />
@@ -153,11 +157,9 @@ class PatagoniaCommerce extends React.Component {
               <Card classes={'e-background-white card-h-400'}>
                 <CardHeader>
                   <Text type={'span'} classes={'e-text-left e-body2 e-text-black'}>Colors</Text>
-                  <Menu type={'cover'} icon={'hardware-keyboard-control'} className={'e-right e-headline e-text-grey-300'}>
-                    <Text className={'e-text-black'}>Profile</Text>
-                    <Text className={'e-text-black'}>Settings</Text>
-                    <Text className={'e-text-black'}>Logout</Text>
-                  </Menu>
+                  <Text type={'a'} classes={' e-display-1'}>
+                    <Icon name={"hardware-keyboard-control"} className={"e-right e-text-grey-300"} />
+                  </Text>
                   <Divider classes={'thinnest e-background-grey-200'} />
                   <List type={'navigation'}>
                    <ListItem>
@@ -240,7 +242,7 @@ class PatagoniaCommerce extends React.Component {
                     <Text type={'p'} classes={'e-text-left e-title e-text-black'}>Space Grey Unlocked</Text>
                     <Text type={'p'} classes={'e-text-left e-caption e-text-grey-500'}>Hilton Cotton Light blue</Text>
                     <Divider classes={'thinnest e-background-grey-200'} />
-                    <Block>
+                    <Block classes={'card-align-row'}>
                       <Text type={'span'} classes={'e-text-left e-headline e-text-black'}>$115</Text>
                       <Text type={'span'} classes={'e-text-left e-caption e-text-grey-500'}>Available colors</Text>
                       <Icon name={"image-brightness-1"} className={"e-text-yellow-800"} />
@@ -265,10 +267,10 @@ class PatagoniaCommerce extends React.Component {
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                     </Text>
                     <Block>
-                      <Btn label={'s'} ripple={true} type={'succes'} className={'flat e-background-grey-100 e-text-black'} />
-                      <Btn label={'m'} ripple={true} type={'succes'} className={'flat e-background-grey-100 e-text-black'} />
-                      <Btn label={'m'} ripple={true} type={'succes'} className={'flat e-background-grey-100 e-text-black'} />
-                      <Btn label={'xl'} ripple={true} type={'succes'} className={'flat e-background-grey-100 e-text-black'} />
+                      <Btn label={'s'} ripple={true} type={'succes'} className={'flat size-btn e-background-grey-100 e-text-black'} />
+                      <Btn label={'m'} ripple={true} type={'succes'} className={'flat size-btn e-background-grey-100 e-text-black'} />
+                      <Btn label={'m'} ripple={true} type={'succes'} className={'flat size-btn e-background-grey-100 e-text-black'} />
+                      <Btn label={'xl'} ripple={true} type={'succes'} className={'flat size-btn e-background-grey-100 e-text-black'} />
                     </Block>
                     <Block>
                       <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-500 e-line-through'}>$360</Text>
@@ -386,12 +388,52 @@ class PatagoniaCommerce extends React.Component {
               <Card classes={'e-background-white card-h-400'}>
                 <CardHeader>
                   <Text type={'span'} classes={'e-text-left e-body2 e-text-black'}>Brands</Text>
-                  <Menu type={'cover'} icon={'hardware-keyboard-control'} className={'e-right e-headline e-text-grey-300'}>
-                    <Text className={'e-text-black'}>Profile</Text>
-                    <Text className={'e-text-black'}>Settings</Text>
-                    <Text className={'e-text-black'}>Logout</Text>
-                  </Menu>
+                  <Text type={'a'} classes={' e-display-1'}>
+                    <Icon name={"hardware-keyboard-control"} className={"e-right e-text-grey-300"} />
+                  </Text>
                   <Divider classes={'thinnest e-background-grey-200'} />
+                  <List type={'navigation'}>
+                   <ListItem>
+                    <Text type={'a'}>
+                      <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-500'}>Onitsuka Tiger</Text>
+                    </Text>
+                   </ListItem>
+                   <ListItem>
+                    <Text type={'a'}>
+                      <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-500'}>Patagonia Peaciful</Text>
+                    </Text>
+                   </ListItem>
+                   <ListItem>
+                    <Text type={'a'}>
+                      <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-500'}>Hooligan Pelfield</Text>
+                    </Text>
+                   </ListItem>
+                   <ListItem classes={'e-background-grey-100'}>
+                    <Text type={'a'}>
+                      <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-500'}>Porter-Yoshida</Text>
+                    </Text>
+                   </ListItem>
+                   <ListItem>
+                    <Text type={'a'}>
+                      <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-500'}>Pringle of Scotland</Text>
+                    </Text>
+                   </ListItem>
+                   <ListItem>
+                    <Text type={'a'}>
+                      <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-500'}>Puma</Text>
+                    </Text>
+                   </ListItem>
+                   <ListItem>
+                    <Text type={'a'}>
+                      <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-500'}>Puma x Bape</Text>
+                    </Text>
+                   </ListItem>
+                   <ListItem>
+                    <Text type={'a'}>
+                      <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-500'}>Reebok</Text>
+                    </Text>
+                   </ListItem>
+                  </List>
                 </CardHeader>
               </Card>
             </Block>
@@ -404,8 +446,10 @@ class PatagoniaCommerce extends React.Component {
                       <Text type={'p'} classes={'e-text-left e-body2 e-text-white'}>
                         Boohoo Blue
                       </Text>
-                      <Text type={'span'} classes={'e-text-left e-headline e-text-white'}>$230</Text>
-                      <Btn label={'Add to Cart'} ripple={true} type={'succes'} className={'flat e-background-blue-700'} />
+                      <Block classes={'price-btn e-h-center e-v-center'}>
+                        <Text type={'span'} classes={'e-text-left e-subhead e-text-white'}>$178</Text>
+                        <Text type={'a'} classes={'e-text-left e-subhead left-border e-text-white e-text-uppercase'}>buy now</Text>
+                      </Block>
                     </Block>
                   </Block>
                   <Block>
@@ -416,16 +460,18 @@ class PatagoniaCommerce extends React.Component {
             </Block>
             <Block classes={'brick brick-3'}>
               <Card classes={'e-background-white card-h-400'}>
-                <CardHeader classes={'card-align-column'}>
-                  <Block>
+                <CardHeader classes={'card-align-column e-text-center'}>
+                  <Block classes={'img-container-400'}>
                     <Btn label={'hot'} ripple={true} type={'succes'} className={'flat new-btn e-background-red-500 e-right'} />
-                    <Image classes={'e-img-rsp'} src={'assets/img/blouse.jpg'} />
+                    <Image classes={'e-img-rsp'} src={'assets/img/hoodie.jpg'} />
                   </Block>
-                  <Block>
+                  <Block classes={'text-container-400'}>
                     <Text type={'p'} classes={'e-text-center e-title e-text-black'}>Aqua Scutum</Text>
                     <Text type={'p'} classes={'e-text-center e-caption e-text-grey-500'}>Luther Grey</Text>
-                    <Text type={'span'} classes={'e-text-center e-subhead e-text-grey-500 e-line-through'}>$160</Text>
-                    <Text type={'span'} classes={'e-text-center e-headline e-text-black'}>$130</Text>
+                    <Block>
+                      <Text type={'span'} classes={'e-text-center e-subhead e-text-grey-500 e-line-through'}>$160</Text>
+                      <Text type={'span'} classes={'e-text-center e-headline e-text-black'}>$130</Text>
+                    </Block>
                   </Block>
                 </CardHeader>
               </Card>
@@ -433,21 +479,87 @@ class PatagoniaCommerce extends React.Component {
           </Block>
           <Card classes={'e-background-white card-h-400'}>
             <CardHeader>
-             Card content
+              <Text type={'span'} classes={'e-text-left e-body2 e-text-black'}>Best Sellers</Text>
+              <Block classes={'e-right'}>
+                <Text type={'a'}>
+                  <Icon name={"hardware-keyboard-arrow-left"} className={"e-text-grey-300"} />
+                </Text>
+                <Text type={'a'}>
+                  <Icon name={"hardware-keyboard-arrow-right"} className={"e-text-grey-300"} />
+                </Text>
+              </Block>
+              <Divider classes={'thinnest e-background-grey-200'} />
+              <Block classes={'card-align-row'}>
+                <Block classes={'card-align-column border-right'}>
+                  <Block classes={'img-container-400'}>
+                    <Btn label={'hot'} ripple={true} type={'succes'} className={'flat new-btn e-background-red-500 e-right'} />
+                    <Image classes={'e-img-rsp'} src={'assets/img/hoodie.jpg'} />
+                  </Block>
+
+                </Block>
+                <Block classes={'card-align-column border-right'}>
+                  <Block classes={'img-container-400'}>
+                    <Btn label={'hot'} ripple={true} type={'succes'} className={'flat new-btn e-background-red-500 e-right'} />
+                    <Image classes={'e-img-rsp'} src={'assets/img/hoodie.jpg'} />
+                  </Block>
+                </Block>
+                <Block classes={'card-align-column border-right'}>
+                  <Block classes={'img-container-400'}>
+                    <Btn label={'hot'} ripple={true} type={'succes'} className={'flat new-btn e-background-red-500 e-right'} />
+                    <Image classes={'e-img-rsp'} src={'assets/img/hoodie.jpg'} />
+                  </Block>
+                </Block>
+                <Block classes={'card-align-column'}>
+                  <Block classes={'img-container-400'}>
+                    <Btn label={'hot'} ripple={true} type={'succes'} className={'flat new-btn e-background-red-500 e-right'} />
+                    <Image classes={'e-img-rsp'} src={'assets/img/hoodie.jpg'} />
+                  </Block>
+                </Block>
+              </Block>
             </CardHeader>
           </Card>
           <Block classes={'e-row'}>
             <Block classes={'brick brick-8'}>
               <Card classes={'e-background-white card-h-400'}>
-                <CardHeader>
-                 Card content
+                <CardHeader classes={'card-align-row'}>
+                  <Block>
+                    <Block classes={'card-padding'}>
+                      <Text type={'p'} classes={'e-text-left e-text-black e-display-1'}>Asics X Reigning Champ</Text>
+                      <Text type={'span'} classes={'e-text-left e-headline e-text-black'}>$178</Text>
+                      <Text type={'p'} classes={'e-text-left e-body2 e-text-black'}>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                      </Text>
+                      <Block>
+                        <Btn label={'s'} ripple={true} type={'succes'} className={'flat size-btn e-background-grey-100 e-text-black'} />
+                        <Btn label={'m'} ripple={true} type={'succes'} className={'flat size-btn e-background-grey-100 e-text-black'} />
+                        <Btn label={'m'} ripple={true} type={'succes'} className={'flat size-btn e-background-grey-100 e-text-black'} />
+                        <Btn label={'xl'} ripple={true} type={'succes'} className={'flat size-btn e-background-grey-100 e-text-black'} />
+                      </Block>
+                      <Block>
+                        <Btn label={'Add to Cart'} ripple={true} type={'succes'} className={'flat e-background-blue-700'} />
+                      </Block>
+                    </Block>
+                  </Block>
+                  <Block classes={'e-background-yellow-500 img-container-200'}>
+                    <Btn label={'new'} ripple={true} type={'succes'} className={'flat new-btn e-background-blue-200 e-right'} />
+                    <Image classes={'e-img-rsp'} src={'assets/img/asics-shirt.png'} />
+                  </Block>
                 </CardHeader>
               </Card>
             </Block>
             <Block classes={'brick brick-4'}>
               <Card classes={'e-background-white card-h-400'}>
                 <CardHeader>
-                  Card content
+                  <Block classes={'img-overlay'}>
+                    <Image classes={'e-img-rsp'} src={'assets/img/side-shoe.jpg'} />
+                    <Block classes={'text-overlay e-text-center'}>
+                      <Text type={'h2'} classes={'e-text-center e-display-2 e-text-uppercase e-text-white'}>common projects</Text>
+                      <Block classes={'price-btn e-h-center'}>
+                        <Text type={'span'} classes={'e-text-left e-subhead e-text-white'}>$178</Text>
+                        <Text type={'a'} classes={'e-text-left e-subhead left-border e-text-white e-text-uppercase'}>buy now</Text>
+                      </Block>
+                    </Block>
+                  </Block>
                 </CardHeader>
               </Card>
             </Block>
