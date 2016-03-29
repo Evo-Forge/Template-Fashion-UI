@@ -14,9 +14,286 @@ import {
   ListItem,
   Menu,
   Slider,
+  Tab,
   Text,
   Utils
  } from 'react-essence';
+
+ var tabs = {
+  'header': [
+    { 'context': (<Text className={'e-text-grey-700'}>Day</Text>) },
+    { 'context': (<Text className={'e-text-grey-700'}>Week</Text>) },
+    { 'context': (<Text className={'e-text-grey-700'}>Month</Text>) }
+   ],
+   'rows': [
+    (
+      <List type={'navigation'} className={'e-no-padding'}>
+        <ListItem>
+          <Block className={'slider-container'}>
+            <Slider start={0} step={1} fill={true} lowerColor={'e-background-cyan-A100'} />
+          </Block>
+          <Text type={'a'} className={'flex-container e-justify-between e-v-center item-container'}>
+            <Image src={'./assets/img/album1.jpg'} classes={'album-thumb e-img-rsp'}/>
+            <Block className={'flex-container e-flex-col e-h-start title-container'}>
+              <Text type={'strong'} className={'e-body1 e-text-grey-700 e-text-capitalize'}>Johnny Bravo</Text>
+              <Text type={'span'} className={'e-body2 e-text-grey-400 e-text-capitalize'}>SASAC</Text>
+            </Block>
+            <Block className={'flex-container list-btn-container'}>
+              <Btn ripple={true} type={'flat'} icon={'av-pause'} className={'pause-btn e-text-white e-background-cyan-A100'} />
+              <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'play-btn e-text-grey-400 btn-icon no-min-size'} />
+              <Btn ripple={true} type={'flat'} icon={'action-favorite-outline'} className={'e-text-grey-400 btn-icon no-min-size'} />
+            </Block>
+          </Text>
+        </ListItem>
+        <ListItem className={'playing-song'}>
+          <Block className={'slider-container'}>
+            <Slider start={0} step={1} fill={true} lowerColor={'e-background-cyan-A100'} />
+          </Block>
+          <Text type={'a'} className={'flex-container e-justify-between e-v-center item-container'}>
+            <Image src={'./assets/img/album2.jpg'} classes={'album-thumb e-img-rsp'}/>
+            <Block className={'flex-container e-flex-col e-h-start title-container'}>
+              <Text type={'strong'} className={'e-body1 e-text-grey-700 e-text-capitalize'}>Johnny Bravo</Text>
+              <Text type={'span'} className={'e-body2 e-text-grey-400 e-text-capitalize'}>SASAC</Text>
+            </Block>
+            <Block className={'flex-container list-btn-container'}>
+              <Btn ripple={true} type={'flat'} icon={'av-pause'} className={'pause-btn e-text-white e-background-cyan-A100'} />
+              <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'play-btn e-text-grey-400 btn-icon no-min-size'} />
+              <Btn ripple={true} type={'flat'} icon={'action-favorite-outline'} className={'e-text-grey-400 btn-icon no-min-size'} />
+            </Block>
+          </Text>
+        </ListItem>
+        <ListItem>
+          <Block className={'slider-container'}>
+            <Slider start={0} step={1} fill={true} lowerColor={'e-background-cyan-A100'} />
+          </Block>
+          <Text type={'a'} className={'flex-container e-justify-between e-v-center item-container'}>
+            <Image src={'./assets/img/album3.jpg'} classes={'album-thumb e-img-rsp'}/>
+            <Block className={'flex-container e-flex-col e-h-start title-container'}>
+              <Text type={'strong'} className={'e-body1 e-text-grey-700 e-text-capitalize'}>Johnny Bravo</Text>
+              <Text type={'span'} className={'e-body2 e-text-grey-400 e-text-capitalize'}>SASAC</Text>
+            </Block>
+            <Block className={'flex-container list-btn-container'}>
+              <Btn ripple={true} type={'flat'} icon={'av-pause'} className={'pause-btn e-text-white e-background-cyan-A100'} />
+              <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'play-btn e-text-grey-400 btn-icon no-min-size'} />
+              <Btn ripple={true} type={'flat'} icon={'action-favorite-outline'} className={'e-text-grey-400 btn-icon no-min-size'} />
+            </Block>
+          </Text>
+        </ListItem>
+        <ListItem>
+          <Block className={'slider-container'}>
+            <Slider start={0} step={1} fill={true} lowerColor={'e-background-cyan-A100'} />
+          </Block>
+          <Text type={'a'} className={'flex-container e-justify-between e-v-center item-container'}>
+            <Image src={'./assets/img/album5.jpg'} classes={'album-thumb e-img-rsp'}/>
+            <Block className={'flex-container e-flex-col e-h-start title-container'}>
+              <Text type={'strong'} className={'e-body1 e-text-grey-700 e-text-capitalize'}>Johnny Bravo</Text>
+              <Text type={'span'} className={'e-body2 e-text-grey-400 e-text-capitalize'}>SASAC</Text>
+            </Block>
+            <Block className={'flex-container list-btn-container'}>
+              <Btn ripple={true} type={'flat'} icon={'av-pause'} className={'pause-btn e-text-white e-background-cyan-A100'} />
+              <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'play-btn e-text-grey-400 btn-icon no-min-size'} />
+              <Btn ripple={true} type={'flat'} icon={'action-favorite-outline'} className={'e-text-grey-400 btn-icon no-min-size'} />
+            </Block>
+          </Text>
+        </ListItem>
+        <ListItem>
+          <Block className={'slider-container'}>
+            <Slider start={0} step={1} fill={true} lowerColor={'e-background-cyan-A100'} />
+          </Block>
+          <Text type={'a'} className={'flex-container e-justify-between e-v-center item-container'}>
+            <Image src={'./assets/img/album0.jpg'} classes={'album-thumb e-img-rsp'}/>
+            <Block className={'flex-container e-flex-col e-h-start title-container'}>
+              <Text type={'strong'} className={'e-body1 e-text-grey-700 e-text-capitalize'}>Johnny Bravo</Text>
+              <Text type={'span'} className={'e-body2 e-text-grey-400 e-text-capitalize'}>SASAC</Text>
+            </Block>
+            <Block className={'flex-container list-btn-container'}>
+              <Btn ripple={true} type={'flat'} icon={'av-pause'} className={'pause-btn e-text-white e-background-cyan-A100'} />
+              <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'play-btn e-text-grey-400 btn-icon no-min-size'} />
+              <Btn ripple={true} type={'flat'} icon={'action-favorite-outline'} className={'e-text-grey-400 btn-icon no-min-size'} />
+            </Block>
+          </Text>
+        </ListItem>
+      </List>
+    ),
+    (<List type={'navigation'} className={'e-no-padding'}>
+      <ListItem>
+        <Block className={'slider-container'}>
+          <Slider start={0} step={1} fill={true} lowerColor={'e-background-cyan-A100'} />
+        </Block>
+        <Text type={'a'} className={'flex-container e-justify-between e-v-center item-container'}>
+          <Image src={'./assets/img/album1.jpg'} classes={'album-thumb e-img-rsp'}/>
+          <Block className={'flex-container e-flex-col e-h-start title-container'}>
+            <Text type={'strong'} className={'e-body1 e-text-grey-700 e-text-capitalize'}>week Johnny Bravo</Text>
+            <Text type={'span'} className={'e-body2 e-text-grey-400 e-text-capitalize'}>SASAC</Text>
+          </Block>
+          <Block className={'flex-container list-btn-container'}>
+            <Btn ripple={true} type={'flat'} icon={'av-pause'} className={'pause-btn e-text-white e-background-cyan-A100'} />
+            <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'play-btn e-text-grey-400 btn-icon no-min-size'} />
+            <Btn ripple={true} type={'flat'} icon={'action-favorite-outline'} className={'e-text-grey-400 btn-icon no-min-size'} />
+          </Block>
+        </Text>
+      </ListItem>
+      <ListItem className={'playing-song'}>
+        <Block className={'slider-container'}>
+          <Slider start={0} step={1} fill={true} lowerColor={'e-background-cyan-A100'} />
+        </Block>
+        <Text type={'a'} className={'flex-container e-justify-between e-v-center item-container'}>
+          <Image src={'./assets/img/album2.jpg'} classes={'album-thumb e-img-rsp'}/>
+          <Block className={'flex-container e-flex-col e-h-start title-container'}>
+            <Text type={'strong'} className={'e-body1 e-text-grey-700 e-text-capitalize'}>week Johnny Bravo</Text>
+            <Text type={'span'} className={'e-body2 e-text-grey-400 e-text-capitalize'}>SASAC</Text>
+          </Block>
+          <Block className={'flex-container list-btn-container'}>
+            <Btn ripple={true} type={'flat'} icon={'av-pause'} className={'pause-btn e-text-white e-background-cyan-A100'} />
+            <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'play-btn e-text-grey-400 btn-icon no-min-size'} />
+            <Btn ripple={true} type={'flat'} icon={'action-favorite-outline'} className={'e-text-grey-400 btn-icon no-min-size'} />
+          </Block>
+        </Text>
+      </ListItem>
+      <ListItem>
+        <Block className={'slider-container'}>
+          <Slider start={0} step={1} fill={true} lowerColor={'e-background-cyan-A100'} />
+        </Block>
+        <Text type={'a'} className={'flex-container e-justify-between e-v-center item-container'}>
+          <Image src={'./assets/img/album3.jpg'} classes={'album-thumb e-img-rsp'}/>
+          <Block className={'flex-container e-flex-col e-h-start title-container'}>
+            <Text type={'strong'} className={'e-body1 e-text-grey-700 e-text-capitalize'}>week Johnny Bravo</Text>
+            <Text type={'span'} className={'e-body2 e-text-grey-400 e-text-capitalize'}>SASAC</Text>
+          </Block>
+          <Block className={'flex-container list-btn-container'}>
+            <Btn ripple={true} type={'flat'} icon={'av-pause'} className={'pause-btn e-text-white e-background-cyan-A100'} />
+            <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'play-btn e-text-grey-400 btn-icon no-min-size'} />
+            <Btn ripple={true} type={'flat'} icon={'action-favorite-outline'} className={'e-text-grey-400 btn-icon no-min-size'} />
+          </Block>
+        </Text>
+      </ListItem>
+      <ListItem>
+        <Block className={'slider-container'}>
+          <Slider start={0} step={1} fill={true} lowerColor={'e-background-cyan-A100'} />
+        </Block>
+        <Text type={'a'} className={'flex-container e-justify-between e-v-center item-container'}>
+          <Image src={'./assets/img/album5.jpg'} classes={'album-thumb e-img-rsp'}/>
+          <Block className={'flex-container e-flex-col e-h-start title-container'}>
+            <Text type={'strong'} className={'e-body1 e-text-grey-700 e-text-capitalize'}>week Johnny Bravo</Text>
+            <Text type={'span'} className={'e-body2 e-text-grey-400 e-text-capitalize'}>SASAC</Text>
+          </Block>
+          <Block className={'flex-container list-btn-container'}>
+            <Btn ripple={true} type={'flat'} icon={'av-pause'} className={'pause-btn e-text-white e-background-cyan-A100'} />
+            <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'play-btn e-text-grey-400 btn-icon no-min-size'} />
+            <Btn ripple={true} type={'flat'} icon={'action-favorite-outline'} className={'e-text-grey-400 btn-icon no-min-size'} />
+          </Block>
+        </Text>
+      </ListItem>
+      <ListItem>
+        <Block className={'slider-container'}>
+          <Slider start={0} step={1} fill={true} lowerColor={'e-background-cyan-A100'} />
+        </Block>
+        <Text type={'a'} className={'flex-container e-justify-between e-v-center item-container'}>
+          <Image src={'./assets/img/album0.jpg'} classes={'album-thumb e-img-rsp'}/>
+          <Block className={'flex-container e-flex-col e-h-start title-container'}>
+            <Text type={'strong'} className={'e-body1 e-text-grey-700 e-text-capitalize'}>week Johnny Bravo</Text>
+            <Text type={'span'} className={'e-body2 e-text-grey-400 e-text-capitalize'}>SASAC</Text>
+          </Block>
+          <Block className={'flex-container list-btn-container'}>
+            <Btn ripple={true} type={'flat'} icon={'av-pause'} className={'pause-btn e-text-white e-background-cyan-A100'} />
+            <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'play-btn e-text-grey-400 btn-icon no-min-size'} />
+            <Btn ripple={true} type={'flat'} icon={'action-favorite-outline'} className={'e-text-grey-400 btn-icon no-min-size'} />
+          </Block>
+        </Text>
+      </ListItem>
+    </List>
+  ),
+    (<List type={'navigation'} className={'e-no-padding'}>
+      <ListItem>
+        <Block className={'slider-container'}>
+          <Slider start={0} step={1} fill={true} lowerColor={'e-background-cyan-A100'} />
+        </Block>
+        <Text type={'a'} className={'flex-container e-justify-between e-v-center item-container'}>
+          <Image src={'./assets/img/album1.jpg'} classes={'album-thumb e-img-rsp'}/>
+          <Block className={'flex-container e-flex-col e-h-start title-container'}>
+            <Text type={'strong'} className={'e-body1 e-text-grey-700 e-text-capitalize'}>month Johnny Bravo</Text>
+            <Text type={'span'} className={'e-body2 e-text-grey-400 e-text-capitalize'}>SASAC</Text>
+          </Block>
+          <Block className={'flex-container list-btn-container'}>
+            <Btn ripple={true} type={'flat'} icon={'av-pause'} className={'pause-btn e-text-white e-background-cyan-A100'} />
+            <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'play-btn e-text-grey-400 btn-icon no-min-size'} />
+            <Btn ripple={true} type={'flat'} icon={'action-favorite-outline'} className={'e-text-grey-400 btn-icon no-min-size'} />
+          </Block>
+        </Text>
+      </ListItem>
+      <ListItem className={'playing-song'}>
+        <Block className={'slider-container'}>
+          <Slider start={0} step={1} fill={true} lowerColor={'e-background-cyan-A100'} />
+        </Block>
+        <Text type={'a'} className={'flex-container e-justify-between e-v-center item-container'}>
+          <Image src={'./assets/img/album2.jpg'} classes={'album-thumb e-img-rsp'}/>
+          <Block className={'flex-container e-flex-col e-h-start title-container'}>
+            <Text type={'strong'} className={'e-body1 e-text-grey-700 e-text-capitalize'}>month Johnny Bravo</Text>
+            <Text type={'span'} className={'e-body2 e-text-grey-400 e-text-capitalize'}>SASAC</Text>
+          </Block>
+          <Block className={'flex-container list-btn-container'}>
+            <Btn ripple={true} type={'flat'} icon={'av-pause'} className={'pause-btn e-text-white e-background-cyan-A100'} />
+            <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'play-btn e-text-grey-400 btn-icon no-min-size'} />
+            <Btn ripple={true} type={'flat'} icon={'action-favorite-outline'} className={'e-text-grey-400 btn-icon no-min-size'} />
+          </Block>
+        </Text>
+      </ListItem>
+      <ListItem>
+        <Block className={'slider-container'}>
+          <Slider start={0} step={1} fill={true} lowerColor={'e-background-cyan-A100'} />
+        </Block>
+        <Text type={'a'} className={'flex-container e-justify-between e-v-center item-container'}>
+          <Image src={'./assets/img/album3.jpg'} classes={'album-thumb e-img-rsp'}/>
+          <Block className={'flex-container e-flex-col e-h-start title-container'}>
+            <Text type={'strong'} className={'e-body1 e-text-grey-700 e-text-capitalize'}>month Johnny Bravo</Text>
+            <Text type={'span'} className={'e-body2 e-text-grey-400 e-text-capitalize'}>SASAC</Text>
+          </Block>
+          <Block className={'flex-container list-btn-container'}>
+            <Btn ripple={true} type={'flat'} icon={'av-pause'} className={'pause-btn e-text-white e-background-cyan-A100'} />
+            <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'play-btn e-text-grey-400 btn-icon no-min-size'} />
+            <Btn ripple={true} type={'flat'} icon={'action-favorite-outline'} className={'e-text-grey-400 btn-icon no-min-size'} />
+          </Block>
+        </Text>
+      </ListItem>
+      <ListItem>
+        <Block className={'slider-container'}>
+          <Slider start={0} step={1} fill={true} lowerColor={'e-background-cyan-A100'} />
+        </Block>
+        <Text type={'a'} className={'flex-container e-justify-between e-v-center item-container'}>
+          <Image src={'./assets/img/album5.jpg'} classes={'album-thumb e-img-rsp'}/>
+          <Block className={'flex-container e-flex-col e-h-start title-container'}>
+            <Text type={'strong'} className={'e-body1 e-text-grey-700 e-text-capitalize'}>month Johnny Bravo</Text>
+            <Text type={'span'} className={'e-body2 e-text-grey-400 e-text-capitalize'}>SASAC</Text>
+          </Block>
+          <Block className={'flex-container list-btn-container'}>
+            <Btn ripple={true} type={'flat'} icon={'av-pause'} className={'pause-btn e-text-white e-background-cyan-A100'} />
+            <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'play-btn e-text-grey-400 btn-icon no-min-size'} />
+            <Btn ripple={true} type={'flat'} icon={'action-favorite-outline'} className={'e-text-grey-400 btn-icon no-min-size'} />
+          </Block>
+        </Text>
+      </ListItem>
+      <ListItem>
+        <Block className={'slider-container'}>
+          <Slider start={0} step={1} fill={true} lowerColor={'e-background-cyan-A100'} />
+        </Block>
+        <Text type={'a'} className={'flex-container e-justify-between e-v-center item-container'}>
+          <Image src={'./assets/img/album0.jpg'} classes={'album-thumb e-img-rsp'}/>
+          <Block className={'flex-container e-flex-col e-h-start title-container'}>
+            <Text type={'strong'} className={'e-body1 e-text-grey-700 e-text-capitalize'}>month Johnny Bravo</Text>
+            <Text type={'span'} className={'e-body2 e-text-grey-400 e-text-capitalize'}>SASAC</Text>
+          </Block>
+          <Block className={'flex-container list-btn-container'}>
+            <Btn ripple={true} type={'flat'} icon={'av-pause'} className={'pause-btn e-text-white e-background-cyan-A100'} />
+            <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'play-btn e-text-grey-400 btn-icon no-min-size'} />
+            <Btn ripple={true} type={'flat'} icon={'action-favorite-outline'} className={'e-text-grey-400 btn-icon no-min-size'} />
+          </Block>
+        </Text>
+      </ListItem>
+    </List>
+  )
+  ]
+ };
+
 
 class PatagoniaMedia extends React.Component {
 
@@ -25,7 +302,6 @@ class PatagoniaMedia extends React.Component {
       <Block className={'patagoniaMedia'}>
         <Block className={'e-container e-background-blue-700 e-margin-top-25'}>
           <Block className={'container'}>
-
 
 
             <Block className={'e-row e-h-center e-v-center'}>
@@ -686,11 +962,11 @@ class PatagoniaMedia extends React.Component {
 
             <Block className={'e-row'}>
               <Block className={'brick brick-8'}>
-                <Card className={'card-container e-background-white playlist-view set-height flex-container'}>
+                <Card className={'card-container e-background-indigo-A200 playlist-view set-height flex-container'}>
                   <Block className={'image-container flex-container e-flex-col'}>
                     <Image src={'./assets/img/album0.jpg'} className={'e-img-rsp'} />
                   </Block>
-                  <Block className={'list-container custom-scrollbar e-background-indigo-A200'}>
+                  <Block className={'list-container custom-scrollbar'}>
                     <List className={'e-no-style e-text-white e-body1'}>
                       <ListItem>
                         <Text type={'strong'} className={'clearfix'}>
@@ -842,46 +1118,17 @@ class PatagoniaMedia extends React.Component {
               </Block>
               <Block className={'brick brick-4'}>
                 <Card className={'card-container e-background-white set-height'}>
-                  <CardHeader className={'clearfix'}>
+                  <CardHeader className={'clearfix header-menu'}>
                     <Text type={'p'} className={'e-left e-text-grey-700 e-body1 e-no-margin e-no-padding'}>
                       Top 5 best sounds
                     </Text>
                     <Btn ripple={true} type={'flat'} icon={'navigation-more-horiz'} className={'e-text-grey-400 btn-icon no-min-size e-right'} />
-
                   </CardHeader>
-                  <CardContent>
-                    <List type={'navigation'} classes={'e-twolinelist'}>
-                      <ListItem>
-                        <Text type={'a'}>
-                          <Image src={'http://i.imgur.com/5bteaK6.jpg'} alt={'Star Wars'} classes={'e-avatar e-left'}/>
-                          <Block classes={'content e-left'}>
-                           <Text classes={'primary'}>Johnny Bravo</Text>
-                            <Text classes={'secondary'}>Jan 9, 2016</Text>
-                          </Block>
-                          <Icon name={'action-info'} classes={'e-right e-text-grey-500'} />
-                        </Text>
-                      </ListItem>
-                      <ListItem>
-                        <Text type={'a'}>
-                          <Image src={'http://i.imgur.com/xrDnt12.png'} alt={'Star Wars'} classes={'e-avatar e-left'}/>
-                          <Block classes={'content e-left'}>
-                            <Text classes={'primary'}>Uncle Bear</Text>
-                            <Text classes={'secondary'}>Jan 10, 2016</Text>
-                          </Block>
-                          <Icon name={'action-info'} classes={'e-right e-text-grey-500'} />
-                        </Text>
-                      </ListItem>
-                      <ListItem>
-                        <Text type={'a'}>
-                          <Image src={'http://i.imgur.com/DhsdGIs.jpg'} alt={'Star Wars'} classes={'e-avatar e-left'}/>
-                          <Block classes={'content e-left'}>
-                            <Text classes={'primary'}>Mutant Ninja</Text>
-                            <Text classes={'secondary'}>Jan 11, 2016</Text>
-                          </Block>
-                          <Icon name={'action-info'} classes={'e-right e-text-grey-500'} />
-                        </Text>
-                      </ListItem>
-                    </List>
+                  <CardContent className={'tabs-container e-no-padding'}>
+                    <Tab
+                      data={tabs}
+                      classes={'e-background-white e-body1'}
+                      indicator={'e-background-cyan-500'} />
                   </CardContent>
                 </Card>
               </Block>
@@ -891,10 +1138,176 @@ class PatagoniaMedia extends React.Component {
               <Block className={'brick brick-3'}>
                 <Card className={'card-container e-background-white'}>
                   <CardHeader>
-                    card header
+                    <Text type={'strong'} className={'e-left e-body1'}>Recent tracks</Text>
+                    <Btn ripple={true} type={'flat'} icon={'navigation-more-horiz'} className={'e-text-grey-400 btn-icon no-min-size e-right'} />
                   </CardHeader>
-                  <CardContent>
-                    card content
+                  <CardContent className={'recent-tracks e-no-padding'}>
+                    <Block className={'title-container'}>
+                      <Text type={'h1'} className={'e-headline e-text-grey-700 e-no-margin'}>Bullet Boy (Vox)</Text>
+                      <Text className={'e-text-grey-400 e-body1'}>2016 Digital Remaster</Text>
+                    </Block>
+                      <Block className={'play-slider'}>
+                        <Slider start={0} step={1} fill={true} lowerColor={'e-background-cyan-A100'} />
+                      </Block>
+                      <Block className={'controls'}>
+                        <Block className={'e-left'}>
+                          <Btn ripple={true} type={'flat'} icon={'av-fast-rewind'} className={'btn-icon no-min-size e-text-grey-700'} />
+                          <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'btn-icon no-min-size e-text-grey-700'} />
+                          <Btn ripple={true} type={'flat'} icon={'av-fast-forward'} className={'btn-icon no-min-size e-text-grey-700'} />
+                        </Block>
+                        <Block className={'e-right'}>
+                          <Btn ripple={true} type={'flat'} icon={'av-volume-down'} className={'btn-icon no-min-size e-text-grey-700'} />
+                          <Btn ripple={true} type={'flat'} icon={'action-favorite-outline'} className={'btn-icon no-min-size e-text-grey-700'} />
+                        </Block>
+                      </Block>
+                      <Block className={'list-container custom-scrollbar clearfix'}>
+                        <List className={'e-no-style e-text-grey-500 e-body1'}>
+                          <ListItem>
+                            <Text type={'strong'} className={'clearfix'}>
+                              <Block className={'e-left'}>
+                                <Text type={'p'} className={'song-number e-left e-text-white'}>1.</Text>
+                                <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                                <Text>Broken Bones</Text>
+                              </Block>
+                              <Block className={'e-right'}>
+                                <Text>3:19</Text>
+                              </Block>
+                            </Text>
+                          </ListItem>
+                          <ListItem className={'selected'}>
+                            <Text type={'strong'} className={'clearfix'}>
+                              <Block className={'e-left'}>
+                                <Text type={'p'} className={'song-number e-left e-text-white'}>2.</Text>
+                                <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                                <Text>Broken Bones</Text>
+                              </Block>
+                              <Block className={'e-right'}>
+                                <Text>3:19</Text>
+                              </Block>
+                            </Text>
+                          </ListItem>
+                          <ListItem>
+                            <Text type={'strong'} className={'clearfix'}>
+                              <Block className={'e-left'}>
+                                <Text type={'p'} className={'song-number e-left e-text-white'}>3.</Text>
+                                <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                                <Text>Broken Bones</Text>
+                              </Block>
+                              <Block className={'e-right'}>
+                                <Text>3:19</Text>
+                              </Block>
+                            </Text>
+                          </ListItem>
+                          <ListItem>
+                            <Text type={'strong'} className={'clearfix'}>
+                              <Block className={'e-left'}>
+                                <Text type={'p'} className={'song-number e-left e-text-white'}>4.</Text>
+                                <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                                <Text>Broken Bones</Text>
+                              </Block>
+                              <Block className={'e-right'}>
+                                <Text>3:19</Text>
+                              </Block>
+                            </Text>
+                          </ListItem>
+                          <ListItem>
+                            <Text type={'strong'} className={'clearfix'}>
+                              <Block className={'e-left'}>
+                                <Text type={'p'} className={'song-number e-left e-text-white'}>5.</Text>
+                                <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                                <Text>Broken Bones</Text>
+                              </Block>
+                              <Block className={'e-right'}>
+                                <Text>3:19</Text>
+                              </Block>
+                            </Text>
+                          </ListItem>
+                          <ListItem>
+                            <Text type={'strong'} className={'clearfix'}>
+                              <Block className={'e-left'}>
+                                <Text type={'p'} className={'song-number e-left e-text-white'}>6.</Text>
+                                <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                                <Text>Broken Bones</Text>
+                              </Block>
+                              <Block className={'e-right'}>
+                                <Text>3:19</Text>
+                              </Block>
+                            </Text>
+                          </ListItem>
+                          <ListItem>
+                            <Text type={'strong'} className={'clearfix'}>
+                              <Block className={'e-left'}>
+                                <Text type={'p'} className={'song-number e-left e-text-white'}>7.</Text>
+                                <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                                <Text>Broken Bones</Text>
+                              </Block>
+                              <Block className={'e-right'}>
+                                <Text>3:19</Text>
+                              </Block>
+                            </Text>
+                          </ListItem>
+                          <ListItem>
+                            <Text type={'strong'} className={'clearfix'}>
+                              <Block className={'e-left'}>
+                                <Text type={'p'} className={'song-number e-left e-text-white'}>8.</Text>
+                                <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                                <Text>Broken Bones</Text>
+                              </Block>
+                              <Block className={'e-right'}>
+                                <Text>3:19</Text>
+                              </Block>
+                            </Text>
+                          </ListItem>
+                          <ListItem>
+                            <Text type={'strong'} className={'clearfix'}>
+                              <Block className={'e-left'}>
+                                <Text type={'p'} className={'song-number e-left e-text-white'}>9.</Text>
+                                <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                                <Text>Broken Bones</Text>
+                              </Block>
+                              <Block className={'e-right'}>
+                                <Text>3:19</Text>
+                              </Block>
+                            </Text>
+                          </ListItem>
+                          <ListItem>
+                            <Text type={'strong'} className={'clearfix'}>
+                              <Block className={'e-left'}>
+                                <Text type={'p'} className={'song-number e-left e-text-white'}>10.</Text>
+                                <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                                <Text>Broken Bones</Text>
+                              </Block>
+                              <Block className={'e-right'}>
+                                <Text>3:19</Text>
+                              </Block>
+                            </Text>
+                          </ListItem>
+                          <ListItem>
+                            <Text type={'strong'} className={'clearfix'}>
+                              <Block className={'e-left'}>
+                                <Text type={'p'} className={'song-number e-left e-text-white'}>11.</Text>
+                                <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                                <Text>Broken Bones</Text>
+                              </Block>
+                              <Block className={'e-right'}>
+                                <Text>3:19</Text>
+                              </Block>
+                            </Text>
+                          </ListItem>
+                          <ListItem>
+                            <Text type={'strong'} className={'clearfix'}>
+                              <Block className={'e-left'}>
+                                <Text type={'p'} className={'song-number e-left e-text-white'}>12.</Text>
+                                <Icon name={"av-play-arrow"} className={"song-icon e-left"} />
+                                <Text>Broken Bones</Text>
+                              </Block>
+                              <Block className={'e-right'}>
+                                <Text>3:19</Text>
+                              </Block>
+                            </Text>
+                          </ListItem>
+                        </List>
+                      </Block>
                   </CardContent>
                 </Card>
               </Block>
@@ -902,33 +1315,79 @@ class PatagoniaMedia extends React.Component {
               <Block className={'brick brick-9'}>
                 <Block className={'e-row'}>
                   <Block className={'brick brick-4'}>
-                    <Card className={'card-container e-background-white'}>
-                      <CardContent>
-                        card content
-                      </CardContent>
-                      <CardFooter>
-                        butoanele
-                      </CardFooter>
+                    <Card className={'card-container e-background-white large-thumb e-no-padding flex-container e-flex-col'}>
+                      <Image src={'./assets/img/album5.jpg'} className={'e-img-rsp'}/>
+                        <Block className={'title-container flex-container e-justify-between e-v-start'}>
+                          <Block>
+                            <Text type={'p'} className={'e-body2 e-text-grey-700 e-no-margin'}>The Inevitable End</Text>
+                            <Text type={'p'} className={'e-text-grey-400 e-body1 e-no-margin'}>Royksopp</Text>
+                          </Block>
+                          <Btn ripple={true} type={'flat'} icon={'action-favorite-outline'} className={'btn-icon no-min-size e-text-grey-700'} />
+                        </Block>
+                        <Block className={'play-slider'}>
+                          <Slider start={0} step={1} fill={true} lowerColor={'e-background-indigo-400'} />
+                        </Block>
+                        <Block className={'controls'}>
+                          <Block className={'e-left'}>
+                            <Btn ripple={true} type={'flat'} icon={'av-fast-rewind'} className={'btn-icon no-min-size e-text-grey-700'} />
+                            <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'btn-icon no-min-size e-text-grey-700'} />
+                            <Btn ripple={true} type={'flat'} icon={'av-fast-forward'} className={'btn-icon no-min-size e-text-grey-700'} />
+                          </Block>
+                          <Block className={'e-right'}>
+                            <Btn ripple={true} type={'flat'} icon={'av-repeat'} className={'btn-icon no-min-size e-text-grey-700'} />
+                            <Btn ripple={true} type={'flat'} icon={'av-volume-down'} className={'btn-icon no-min-size e-text-grey-700'} />
+                          </Block>
+                        </Block>
                     </Card>
                   </Block>
                   <Block className={'brick brick-4'}>
-                    <Card className={'card-container e-background-white'}>
-                      <CardContent>
-                        card content
-                      </CardContent>
-                      <CardFooter>
-                        butoanele
-                      </CardFooter>
+                    <Card className={'card-container e-background-white large-thumb e-no-padding flex-container e-flex-col'}>
+                      <Image src={'./assets/img/album4.jpeg'} className={'e-img-rsp'}/>
+                        <Block className={'title-container flex-container e-justify-between e-v-start'}>
+                          <Block>
+                            <Text type={'p'} className={'e-body2 e-text-grey-700 e-no-margin'}>The Inevitable End</Text>
+                            <Text type={'p'} className={'e-text-grey-400 e-body1 e-no-margin'}>Royksopp</Text>
+                          </Block>
+                          <Btn ripple={true} type={'flat'} icon={'action-favorite-outline'} className={'btn-icon no-min-size e-text-grey-700'} />
+                        </Block>
+                        <Block className={'play-slider'}>
+                          <Block className={'flex-container e-justify-between'}>
+                            <Text type={'strong'} className={'e-text-red-500 e-body2'}>0:23</Text>
+                            <Text type={'strong'} className={'e-text-grey-500 e-body2'}>2:54</Text>
+                          </Block>
+                          <Slider start={0} step={1} fill={true} lowerColor={'e-background-red-500'} />
+                        </Block>
+                        <Block className={'controls flex-container e-justify-between'}>
+                          <Btn ripple={true} type={'flat'} icon={'av-repeat'} className={'btn-icon no-min-size e-text-grey-700'} />
+                          <Block>
+                            <Btn ripple={true} type={'flat'} icon={'av-fast-rewind'} className={'btn-icon no-min-size e-text-grey-700'} />
+                            <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'btn-icon no-min-size e-text-grey-700'} />
+                            <Btn ripple={true} type={'flat'} icon={'av-fast-forward'} className={'btn-icon no-min-size e-text-grey-700'} />
+                          </Block>
+                          <Btn ripple={true} type={'flat'} icon={'av-volume-down'} className={'btn-icon no-min-size e-text-grey-700'} />
+                        </Block>
                     </Card>
                   </Block>
                   <Block className={'brick brick-4'}>
-                    <Card className={'card-container e-background-white'}>
-                      <CardContent>
-                        card content
-                      </CardContent>
-                      <CardFooter>
-                        butoanele
-                      </CardFooter>
+                    <Card className={'card-container e-background-white large-thumb with-bg flex-container e-justify-between e-flex-col e-v-start'}>
+                      <Block>
+                        chips
+                      </Block>
+                      <Text>
+                        <Text type={'h1'} className={'e-headline e-text-white'}>
+                          Saturday Come Slow
+                        </Text>
+                        <Text type={'p'} className={'e-body1 e-text-white'}>
+                          Dead Winter Carpenters
+                        </Text>
+                      </Text>
+                      <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'btn-icon no-min-size e-text-grey-700'} />
+                      <Block>
+                        <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'btn-icon no-min-size e-text-grey-700'} />
+                        <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'btn-icon no-min-size e-text-grey-700'} />
+                      </Block>
+
+
                     </Card>
                   </Block>
                 </Block>

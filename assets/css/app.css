@@ -215,6 +215,7 @@ body {
   overflow-y: scroll;
   flex-grow: 1;
   padding: 15px;
+  margin: 15px;
 }
 .patagoniaMedia .playlist-view .list-container li {
   padding: 5px 0;
@@ -244,6 +245,104 @@ body {
 .patagoniaMedia .playlist-view .list-container li.selected .song-icon {
   display: block;
 }
+.patagoniaMedia .header-menu {
+  padding: 0 10px!important;
+}
+.patagoniaMedia .tabs-container .slider-container {
+  display: none;
+}
+.patagoniaMedia .tabs-container .item-container {
+  padding: 4px 10px;
+}
+.patagoniaMedia .tabs-container .title-container {
+  flex-grow: 1;
+  padding: 0 10px;
+}
+.patagoniaMedia .tabs-container .album-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+}
+.patagoniaMedia .tabs-container .list-btn-container .pause-btn {
+  display: none;
+  border-radius: 50%;
+  border: 0;
+  width: 35px;
+  height: 35px;
+}
+.patagoniaMedia .tabs-container .list-btn-container .pause-btn:focus {
+  outline: none;
+}
+.patagoniaMedia .tabs-container li.playing-song .slider-container {
+  display: block;
+}
+.patagoniaMedia .tabs-container li.playing-song .item-container {
+  padding: 0 10px;
+}
+.patagoniaMedia .tabs-container li.playing-song .item-container .list-btn-container .play-btn {
+  display: none;
+}
+.patagoniaMedia .tabs-container li.playing-song .item-container .list-btn-container .pause-btn {
+  display: block;
+}
+.patagoniaMedia .recent-tracks {
+  box-sizing: border-box;
+}
+.patagoniaMedia .recent-tracks .title-container {
+  padding: 0 10px;
+}
+.patagoniaMedia .recent-tracks .controls {
+  padding: 0 10px;
+}
+.patagoniaMedia .recent-tracks .list-container {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  padding: 0 10px;
+  height: 250px;
+  width: 100%;
+}
+.patagoniaMedia .recent-tracks .list-container li {
+  padding: 5px 0;
+  cursor: pointer;
+}
+.patagoniaMedia .recent-tracks .list-container li .song-icon {
+  display: none;
+}
+.patagoniaMedia .recent-tracks .list-container li .song-number {
+  display: block;
+  width: 24px;
+  margin: 0;
+}
+.patagoniaMedia .recent-tracks .list-container li:hover,
+.patagoniaMedia .recent-tracks .list-container li.selected {
+  /* add .selected to a li element
+          to display a play icon. Also add the corect
+          text color class. Eg: e-text-cyan-A100
+        */
+  color: #84FFFF;
+}
+.patagoniaMedia .recent-tracks .list-container li:hover .song-number,
+.patagoniaMedia .recent-tracks .list-container li.selected .song-number {
+  display: none;
+}
+.patagoniaMedia .recent-tracks .list-container li:hover .song-icon,
+.patagoniaMedia .recent-tracks .list-container li.selected .song-icon {
+  display: block;
+}
+.patagoniaMedia .large-thumb .title-container {
+  box-sizing: border-box;
+  padding: 10px;
+}
+.patagoniaMedia .large-thumb .play-slider {
+  padding: 10px;
+}
+.patagoniaMedia .large-thumb .controls {
+  padding: 10px;
+}
+.patagoniaMedia .large-thumb.with-bg {
+  background: url('../img/sketch1.jpg') center center no-repeat;
+  background-size: cover;
+}
 .patagoniaMedia .flex-container {
   display: flex;
 }
@@ -263,14 +362,13 @@ body {
 }
 .patagoniaMedia .custom-scrollbar::-webkit-scrollbar-thumb {
   background: #EEEEEE;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 .patagoniaMedia .custom-scrollbar:hover::-webkit-scrollbar-thumb {
   background: #b5b5b5;
-  border-radius: 8px;
 }
 .patagoniaMedia .set-height {
-  height: 350px;
+  height: 380px;
 }
 footer {
   width: 100%;

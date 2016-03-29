@@ -221,6 +221,7 @@
       overflow-y: scroll;
       flex-grow: 1;
       padding: 15px;
+      margin: 15px;
       li {
         padding: 5px 0;
         cursor: pointer;
@@ -247,8 +248,116 @@
         }
       }
     }
+  }
+  .header-menu {
+    padding: 0 10px!important;
+  }
+  .tabs-container {
+    .slider-container {
+      display: none;
+    }
+    .item-container {
+      padding: 4px 10px;
+    }
+    .title-container {
+      flex-grow: 1;
+      padding: 0 10px;
+    }
+    .album-thumb {
+      width: 40px;
+      height: 40px;
+      border-radius: 6px;
+    }
+    .list-btn-container {
+      .pause-btn {
+        display: none;
+        border-radius: 50%;
+        border: 0;
+        width: 35px;
+        height: 35px;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
 
-  }//end forth section
+    li.playing-song {
+      .slider-container {
+        display: block;
+      }
+      .item-container {
+        padding: 0 10px;
+        .list-btn-container {
+          .play-btn {
+            display: none;
+          }
+          .pause-btn {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  //end 5th section
+
+.recent-tracks {
+  box-sizing: border-box;
+  .title-container {
+    padding: 0 10px;
+  }
+  .controls {
+    padding: 0 10px;
+  }
+  .list-container {
+    box-sizing: border-box;
+    overflow-y: scroll;
+    padding: 0 10px;
+    height: 250px;
+    width: 100%;
+    li {
+      padding: 5px 0;
+      cursor: pointer;
+      .song-icon {
+        display: none;
+      }
+      .song-number {
+        display: block;
+        width: 24px;
+        margin: 0;
+      }
+      &:hover, &.selected {
+        /* add .selected to a li element
+          to display a play icon. Also add the corect
+          text color class. Eg: e-text-cyan-A100
+        */
+        color: #84FFFF;
+        .song-number {
+          display: none;
+        }
+        .song-icon {
+          display: block;
+        }
+      }
+    }
+  }
+}
+.large-thumb {
+  .title-container {
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  .play-slider {
+    padding: 10px;
+  }
+  .controls {
+    padding: 10px;
+  }
+  &.with-bg {
+    background: url('../img/sketch1.jpg') center center no-repeat;
+    background-size: cover;
+  }
+}
+//end 6th section
 
 // some helper classes
   .add-padding(@value) {
@@ -275,16 +384,15 @@
     }
     &::-webkit-scrollbar-thumb {
       background: #EEEEEE;
-      border-radius: 8px;
+      border-radius: 6px;
     }
     &:hover {
       &::-webkit-scrollbar-thumb {
         background: #b5b5b5;
-        border-radius: 8px;
       }
     }
   }// end .custom-scrollbar
   .set-height {
-    height: 350px;
+    height: 380px;
   }
 }
