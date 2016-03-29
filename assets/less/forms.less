@@ -14,15 +14,22 @@
     }
   }
   .card-sign {
-    height: 335px;
+    height: 352px;
   }
 
   .input-look {
     .e-input {
       border-bottom: 0;
+      &, &:focus, &.focus {
+        &:not(textarea):not(select) {
+          height: 35px;
+        }
+      }
     }
-    .e-input:not(textarea):not(select) {
-      height: 35px;
+    .floating-label {
+      color: #e0e0e0;
+      left: 5px;
+      top: 6px;
     }
     border-radius: 4px;
     border: 1px solid lightgray;
@@ -32,6 +39,9 @@
     }
     &.input-focus {
       border: 2px solid #18ffff;
+      .floating-label {
+        color: black;
+      }
     }
   }
 
@@ -52,12 +62,14 @@
   .raised {
     margin: 0;
   }
+
   .bg-city {
     background: linear-gradient( rgba(7, 7, 220, 0.6), rgba(7, 7, 220, 0.6) ), url('../img/city.jpg') no-repeat;
     background-size: cover;
     opacity: .7;
   }
-  i.e-display-1 {
+  i.e-headline {
+    height: 24px;
     line-height: normal;
   }
   .radio-check {
@@ -73,6 +85,9 @@
   }
   .margin-r-icon {
     margin-right: 15px;
+  }
+  .para-inter {
+    margin-bottom: 0;
   }
   .para-inter::before,
   .para-inter::after {
@@ -179,9 +194,6 @@
     display: inline-block;
     border: 1px solid lightgray;
     border-radius: 15px;
-    &.margin-nr {
-      margin: 20px;
-    }
     button {
       border:0;
     }
@@ -189,6 +201,12 @@
   .btn-margin-nr {
     margin-left: 10px;
     margin-right: 10px;
+    &.content {
+      width: 30%;
+    }
+  }
+  .margin-nr {
+    margin: 30px;
   }
   .btn-no-border {
     border: 0;
@@ -196,11 +214,71 @@
   .e-steppers-container .e-stepper-content.active {
     padding: 0;
   }
-  .e-twolinelist {
-    width: 80%;
+  .padding-list-stepper {
+    padding: 25px 100px;
+    &.border-t-discount {
+      border-top: 1px solid lightgray;
+    }
+    i {
+      float: right;
+    }
+    .align-btn-continue {
+      float: right;
+      margin-right: 16px;
+    }
+    .align-discount {
+      line-height: 37px;
+    }
+  }
+  .article-image {
+    width: 75px;
+    height: 75px;
+  }
+  .padding-r-para {
+    padding-right: 16px;
+  }
+  .checkout-w {
+    width: 60%;
     margin: 0 auto;
-    .content {
-      width: 15%;
+  }
+  .a-inter::before,
+  .a-inter::after {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    content: "";
+    height: 1px;
+    width: 45%;
+    right: 15px;
+    background-color: lightgrey;
+  }
+  .a-inter::after {
+    left: 15px;
+  }
+  .margin-t-paypal {
+    margin-top: 17px;
+  }
+  .footer-checkout-w {
+    width: 83%;
+    margin:0 auto;
+  }
+  .third-w-input {
+    width: 32%;
+  }
+  .two-third-w-input {
+    width: 64%;
+  }
+  .bl-done {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto;
+    border: 1px solid #18ffff;
+    border-radius: 50%;
+    .done-icon {
+      width: 64px;
+      height: 64px;
+      margin: 5px;
+      border-radius: 50%;
     }
   }
 }
