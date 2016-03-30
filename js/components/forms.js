@@ -28,10 +28,9 @@ const Steps = {
                 <Text classes={'secondary e-text-left'}>Hooligan</Text>
               </Block>
               <Block className={'e-left border-btn-nr margin-nr'}>
-                <Btn label={'-'} ripple={false} type={'default'} className={'btn-margin-nr e-background-white'} />
-                <Btn label={'3'} ripple={false} type={'default'} className={'btn-margin-nr e-background-white'} />
-                <Btn label={'+'} ripple={false} type={'default'} className={'btn-margin-nr e-background-white'} />
-              </Block>
+                <Btn onClick={this.removeItem.bind(this)} label={'-'} ripple={false} type={'default'} className={'btn-margin-nr e-background-white'} />
+                <Text type={'span'} classes={'e-text-center e-text-black span-number'}>{this.state.pieceNumber}</Text>
+                <Btn onClick={this.addItem.bind(this)} label={'+'} ripple={false} type={'default'} className={'btn-margin-nr e-background-white'} />              </Block>
               <Btn label={'M'} ripple={false} type={'default'} className={'e-left e-background-grey-200 btn-no-border margin-nr'} />
               <Text type={'span'} classes={'e-text-center e-left e-text-uppercase margin-nr'}>$250</Text>
               <Icon name={"navigation-close"} className={"e-text-cyan-A200"} />
@@ -93,14 +92,30 @@ const Steps = {
    'content': (
      <Block className={'e-background-white'}>
       <Block className={'checkout-w'}>
-        <Block className={'card-content-account'}>
-          <Input type={'text'} name={'label'} label={'1234 1234 1234 1234'} classes={'e-text-grey-300 input-look input-focus full-width'}/>
-          <Input type={'text'} name={'label'} label={'Month'} classes={'e-text-grey-300 input-look half-w-input'}/>
-          <Input type={'text'} name={'label'} label={'Year'} classes={'e-text-grey-300 input-look half-w-input'}/>
-          <Input type={'text'} name={'label'} label={'CVV'} classes={'e-text-grey-300 input-look half-w-input'}/>
-          <Block classes={'half-w-input padding-t-para'}>
-            <Text type={'p'} classes={'e-text-left e-caption e-no-margin e-text-black'}>3 or 4 digits usually found</Text>
-            <Text type={'p'} classes={'e-text-left e-caption e-no-margin e-text-black'}>on the signature strip</Text>
+        <Block className={'padding-card e-text-center'}>
+          <Block classes={'e-row'}>
+            <Block classes={'brick brick-12 e-h-center e-v-center'}>
+              <Input type={'textarea'} name={'label'} label={'1234 1234 1234 1234'} rows={1} classes={'e-text-black input-look input-focus full-width visa-bg'}/>
+            </Block>
+          </Block>
+          <Block classes={'e-row'}>
+            <Block classes={'brick brick-6 e-h-end e-v-end'}>
+              <Input type={'text'} name={'label'} label={'Month'} classes={'e-text-grey-300 input-look full-width'}/>
+            </Block>
+            <Block classes={'brick brick-6 e-h-start e-v-end'}>
+              <Input type={'text'} name={'label'} label={'Year'} classes={'e-text-grey-300 input-look full-width'}/>
+            </Block>
+          </Block>
+          <Block classes={'e-row'}>
+          <Block classes={'brick brick-6 e-h-end e-v-end'}>
+            <Input type={'text'} name={'label'} label={'CVV'} classes={'e-text-grey-300 input-look full-width'}/>
+          </Block>
+          <Block classes={'brick brick-6 e-h-start e-v-end'}>
+            <Block classes={'full-width mg-b-caption'}>
+              <Text type={'p'} classes={'e-text-left e-caption e-no-margin'}>3 or 4 digits usually found</Text>
+              <Text type={'p'} classes={'e-text-left e-caption e-no-margin'}>on the signature strip</Text>
+            </Block>
+          </Block>
           </Block>
         </Block>
       </Block>
@@ -108,10 +123,16 @@ const Steps = {
         <Text type={'a'} classes={'e-text-center e-body1 e-text-cyan-A200 e-margin-top-15 a-inter'}>Or pay with PayPal</Text>
       </Block>
         <Block className={'checkout-w'}>
-        <Block className={'card-content-account'}>
-          <Input type={'email'} name={'label'} label={'Email Address'} classes={'e-text-grey-300 input-look half-w-input'}/>
-          <Block classes={'half-w-input'}>
-            <Btn label={'PayPal'} ripple={true} type={'default'} classes={'flat e-background-indigo-900 e-text-white full-width margin-t-paypal'} />
+        <Block className={'padding-card'}>
+          <Block classes={'e-row'}>
+            <Block classes={'brick brick-6 e-h-end e-v-end'}>
+              <Input type={'email'} name={'label'} label={'Email Address'} classes={'e-text-grey-300 input-look full-width'}/>
+            </Block>
+            <Block classes={'brick brick-6 e-h-start e-v-end'}>
+              <Block classes={'full-width mg-b-btn'}>
+                <Btn label={'PayPal'} ripple={true} type={'default'} classes={'flat e-background-indigo-900 e-text-white full-width'} />
+              </Block>
+            </Block>
           </Block>
         </Block>
       </Block>
@@ -129,18 +150,44 @@ const Steps = {
    'content': (
       <Block className={'e-background-white'}>
         <Block className={'checkout-w'}>
-          <Block className={'card-content-account e-text-center'}>
-            <Input type={'text'} name={'label'} label={'First Name'} classes={'e-text-grey-300 input-look half-w-input'}/>
-            <Input type={'text'} name={'label'} label={'Last Name'} classes={'e-text-grey-300 input-look half-w-input'}/>
-            <Input type={'email'} name={'label'} label={'Email'} classes={'e-text-grey-300 input-look half-w-input'}/>
-            <Input type={'text'} name={'label'} label={'Phone'} classes={'e-text-grey-300 input-look half-w-input'}/>
-            <Input type={'text'} name={'label'} label={'Country'} classes={'e-text-grey-300 input-look third-w-input'}/>
-            <Input type={'text'} name={'label'} label={'City'} classes={'e-text-grey-300 input-look third-w-inputt'}/>
-            <Input type={'email'} name={'label'} label={'Zip Code'} classes={'e-text-grey-300 input-look third-w-input'}/>
-            <Input type={'text'} name={'label'} label={'State'} classes={'e-text-grey-300 input-look third-w-input'}/>
-            <Input type={'text'} name={'label'} label={'Address'} classes={'e-text-grey-300 input-look two-third-w-input'}/>
-          </Block>
+
+            <Block classes={'e-row'}>
+              <Block classes={'brick brick-6 e-h-end e-v-end'}>
+                <Input type={'text'} name={'label'} label={'First Name'} classes={'e-text-grey-300 input-look full-width'}/>
+              </Block>
+              <Block classes={'brick brick-6 e-h-start e-v-end'}>
+                <Input type={'text'} name={'label'} label={'Last Name'} classes={'e-text-grey-300 input-look full-width'}/>
+              </Block>
+            </Block>
+            <Block classes={'e-row'}>
+              <Block classes={'brick brick-6 e-h-end e-v-end'}>
+                <Input type={'email'} name={'label'} label={'Email'} classes={'e-text-grey-300 input-look full-width'}/>
+              </Block>
+              <Block classes={'brick brick-6 e-h-start e-v-end'}>
+                <Input type={'text'} name={'label'} label={'Phone'} classes={'e-text-grey-300 input-look full-width'}/>
+              </Block>
+            </Block>
+            <Block classes={'e-row'}>
+              <Block classes={'brick brick-4 e-h-start e-v-center'}>
+                <Input type={'text'} name={'label'} label={'Country'} classes={'e-text-grey-300 input-look full-width'}/>
+              </Block>
+              <Block classes={'brick brick-4 e-h-center e-v-center'}>
+                <Input type={'text'} name={'label'} label={'City'} classes={'e-text-grey-300 input-look full-width'}/>
+              </Block>
+              <Block classes={'brick brick-4 e-h-end e-v-center'}>
+                <Input type={'email'} name={'label'} label={'Zip Code'} classes={'e-text-grey-300 input-look full-width'}/>
+              </Block>
+            </Block>
+            <Block classes={'e-row'}>
+              <Block classes={'brick brick-4 e-h-end e-v-end'}>
+                <Input type={'text'} name={'label'} label={'State'} classes={'e-text-grey-300 input-look full-width'}/>
+              </Block>
+              <Block classes={'brick brick-8 e-h-start e-v-end'}>
+                <Input type={'text'} name={'label'} label={'Address'} classes={'e-text-grey-300 input-look full-width'}/>
+              </Block>
+            </Block>
         </Block>
+
         <Block classes={'e-background-grey-100 e-padding-top-15'}>
           <Block className={'footer-checkout-w'}>
             <Btn label={'Back to shop'} ripple={false} type={'default'} className={'flat e-button e-left e-background-grey-300 e-margin-bottom-15'} />
@@ -174,12 +221,38 @@ const Steps = {
 
 class PatagoniaForms extends React.Component {
 
+constructor(props) {
+  super(props);
+  this.state = {
+    pieceNumber : 0
+  }
+}
+removeItem() {
+  this.setState (
+    {
+      pieceNumber : this.state.pieceNumber - 1,
+    }
+  );
+}
+addItem() {
+  this.setState (
+    {
+      pieceNumber : this.state.pieceNumber + 1,
+    }
+  );
+}
+
   render() {
     return (
       <Block className={'e-background-grey-100'}>
         <Block className={'patagoniaForms e-container e-padding-bottom-150'}>
+          <Block classes={'e-row'}>
+            <Block classes={'brick brick-12 e-h-center e-v-center'}>
+              <Text type={'p'} classes={'e-text-center e-headline e-text-indigo-400 badge-header'}>4</Text>
+              <Text type={'h1'} classes={'e-text-center e-display-3 e-padding-top-50 e-padding-bottom-50 background-rainbow e-no-margin'}><b>FORMS</b> </Text>
+            </Block>
+          </Block>
 
-          <Text type={'h1'} classes={'e-text-center e-display-2 e-padding-top-50 e-padding-bottom-50 background-rainbow e-no-margin'}> FORMS </Text>
           <Block classes={'e-row'}>
             <Block classes={'brick brick-4 e-h-start e-v-center'}>
               <Card className={'e-background-white full-width card-sign'}>
@@ -393,10 +466,10 @@ class PatagoniaForms extends React.Component {
                   </Block>
 
                   <Block classes={'e-right half-width e-background-white'}>
-                    <Block classes={'full-width border-header-card padding-card-contact'}>
+                    <Block classes={'full-width border-header-card padding-card'}>
                       <Text type={'p'} classes={'e-text-left e-body1'}>Contact Us</Text>
                     </Block>
-                    <Block classes={'padding-card-contact'}>
+                    <Block classes={'padding-card'}>
                       <Input type={'text'} name={'label'} label={'Your Name'} classes={'e-text-grey-300 input-look'}/>
                       <Input type={'email'} name={'label'} label={'Your Email'} classes={'e-text-grey-300 input-look'}/>
                       <Input type={'textarea'} name={'label'} rows={5} label={'Your Message'} classes={'input-look'}/>
@@ -425,52 +498,90 @@ class PatagoniaForms extends React.Component {
                   <Text type={'span'} classes={'e-text-left e-body1'}>Account Settings</Text>
                   <Icon name={"navigation-close"} className={"e-text-black e-right"} />
                 </CardHeader>
-               <CardContent>
-                <Block className={'card-content-header'}>
-                  <Image src={'assets/img/poza-profil.jpg'} alt={'John Smith'} classes={'e-left avatar-card'}/>
-                  <Icon name={"navigation-expand-more"} className={'e-left e-text-white e-background-cyan-A200 round-icon'} />
-                  <Block classes={'e-left padding-left-para'}>
-                    <Text type={'h2'} classes={'e-text-left e-headline'}>John Smith</Text>
-                    <Text type={'p'} classes={'e-text-center e-body1 e-text-grey-600'}>Senior Product Designer (UI/UX)</Text>
+                <CardContent>
+                  <Block className={'card-content-header'}>
+                    <Image src={'assets/img/poza-profil.jpg'} alt={'John Smith'} classes={'e-left avatar-card'}/>
+                    <Icon name={"navigation-expand-more"} className={'e-left e-text-white e-background-cyan-A200 round-icon'} />
+                    <Block classes={'e-left padding-left-para'}>
+                      <Text type={'h2'} classes={'e-text-left e-headline'}>John Smith</Text>
+                      <Text type={'p'} classes={'e-text-center e-body1 e-text-grey-600'}>Senior Product Designer (UI/UX)</Text>
+                    </Block>
                   </Block>
-                </Block>
-                <Block className={'card-content-account e-text-center'}>
-                  <Input type={'text'} name={'label'} label={'First Name'} classes={'e-text-grey-300 input-look half-w-input'}/>
-                  <Input type={'text'} name={'label'} label={'Last Name'} classes={'e-text-grey-300 input-look half-w-input'}/>
-                  <Input type={'text'} name={'label'} label={'USA'} classes={'e-text-grey-300 input-look half-w-input'}/>
-                  <Input type={'text'} name={'label'} label={'Position'} classes={'e-text-grey-300 input-look half-w-input'}/>
-                  <Input type={'text'} name={'label'} label={'Address'} classes={'e-text-grey-300 input-look half-w-input'}/>
-                  <Input type={'text'} name={'label'} label={'Phone'} classes={'e-text-grey-300 input-look half-w-input'}/>
-                  <Input type={'email'} name={'label'} label={'Email'} classes={'e-text-grey-300 input-look full-width'}/>
-                </Block>
-                <Block className={'e-text-center btn-inter'}>
-                  <Btn label={'Save'} ripple={true} type={'submit'} className={'flat e-margin-top-15 e-margin-bottom-25 e-button e-text-white e-background-cyan-A200 btn-save-w'} />
-                </Block>
-               </CardContent>
+                  <Block className={'padding-card e-text-center'}>
+                    <Block classes={'e-row'}>
+                      <Block classes={'brick brick-6 e-h-end e-v-end'}>
+                        <Input type={'text'} name={'label'} label={'First Name'} classes={'e-text-grey-300 input-look full-width'}/>
+                      </Block>
+                      <Block classes={'brick brick-6 e-h-start e-v-end'}>
+                        <Input type={'text'} name={'label'} label={'Last Name'} classes={'e-text-grey-300 input-look full-width'}/>
+                      </Block>
+                    </Block>
+                    <Block classes={'e-row'}>
+                      <Block classes={'brick brick-6 e-h-end e-v-end'}>
+                        <Input type={'text'} name={'label'} label={'USA'} classes={'e-text-grey-300 input-look full-width'}/>
+                      </Block>
+                      <Block classes={'brick brick-6 e-h-start e-v-end'}>
+                        <Input type={'text'} name={'label'} label={'Position'} classes={'e-text-grey-300 input-look full-width'}/>
+                      </Block>
+                    </Block>
+                    <Block classes={'e-row'}>
+                      <Block classes={'brick brick-6 e-h-end e-v-end'}>
+                        <Input type={'text'} name={'label'} label={'Address'} classes={'e-text-grey-300 input-look full-width'}/>
+                      </Block>
+                      <Block classes={'brick brick-6 e-h-start e-v-end'}>
+                        <Input type={'text'} name={'label'} label={'Phone'} classes={'e-text-grey-300 input-look full-width'}/>
+                      </Block>
+                    </Block>
+                    <Block classes={'e-row'}>
+                      <Block classes={'brick brick-12 e-h-center e-v-center'}>
+                        <Input type={'email'} name={'label'} label={'Email'} classes={'e-text-grey-300 input-look full-width'}/>
+                      </Block>
+                    </Block>
+                  </Block>
+                  <Block className={'e-text-center btn-inter'}>
+                    <Btn label={'Save'} ripple={true} type={'submit'} className={'flat e-margin-top-15 e-margin-bottom-25 e-button e-text-white e-background-cyan-A200 btn-save-w'} />
+                  </Block>
+                </CardContent>
               </Card>
             </Block>
 
             <Block classes={'brick brick-6 e-h-start e-v-end'}>
               <Block classes={'e-row'}>
                 <Block classes={'brick brick-12 e-h-center e-v-center'}>
-                  <Card classes={'e-background-white no-padding-card'}>
+                  <Card classes={'e-background-white no-padding-card full-width'}>
                     <CardHeader classes={'e-text-left border-header-card'}>
                       <Text type={'span'} classes={'e-text-left e-body1'}>Credit Card Detail</Text>
                       <Icon name={"navigation-close"} className={"e-text-black e-right"} />
                     </CardHeader>
                     <CardContent>
-                      <Block className={'card-content-account'}>
-                        <Input type={'text'} name={'label'} label={'1234 1234 1234 1234'} classes={'e-text-grey-300 input-look input-focus full-width'}/>
-                        <Input type={'text'} name={'label'} label={'Month'} classes={'e-text-grey-300 input-look half-w-input'}/>
-                        <Input type={'text'} name={'label'} label={'Year'} classes={'e-text-grey-300 input-look half-w-input'}/>
-                        <Input type={'text'} name={'label'} label={'CVV'} classes={'e-text-grey-300 input-look half-w-input'}/>
-                        <Block classes={'half-w-input padding-t-para'}>
-                          <Text type={'p'} classes={'e-text-left e-body1'}>3 or 4 digits usually found</Text>
-                          <Text type={'p'} classes={'e-text-left e-body1'}>on the signature strip</Text>
+                      <Block className={'padding-card e-text-center'}>
+                        <Block classes={'e-row'}>
+                          <Block classes={'brick brick-12 e-h-center e-v-center'}>
+                            <Input type={'textarea'} name={'label'} label={'1234 1234 1234 1234'} rows={1} classes={'e-text-black input-look input-focus full-width visa-bg'}/>
+                          </Block>
+                        </Block>
+                        <Block classes={'e-row'}>
+                          <Block classes={'brick brick-6 e-h-end e-v-end'}>
+                            <Input type={'text'} name={'label'} label={'Month'} classes={'e-text-grey-300 input-look full-width'}/>
+                          </Block>
+                          <Block classes={'brick brick-6 e-h-start e-v-end'}>
+                            <Input type={'text'} name={'label'} label={'Year'} classes={'e-text-grey-300 input-look full-width'}/>
+                          </Block>
+                        </Block>
+                        <Block classes={'e-row'}>
+                        <Block classes={'brick brick-6 e-h-end e-v-end'}>
+                          <Input type={'text'} name={'label'} label={'CVV'} classes={'e-text-grey-300 input-look full-width'}/>
+                        </Block>
+                        <Block classes={'brick brick-6 e-h-start e-v-end'}>
+                          <Block classes={'full-width mg-b-para'}>
+                            <Text type={'p'} classes={'e-text-left e-body1'}>3 or 4 digits usually found</Text>
+                            <Text type={'p'} classes={'e-text-left e-body1'}>on the signature strip</Text>
+                          </Block>
+                        </Block>
                         </Block>
                       </Block>
                       <Block className={'e-text-center btn-inter'}>
-                        <Btn label={'Save'} ripple={true} type={'submit'} className={'raised e-margin-top-15 e-margin-bottom-25 e-button e-text-white e-background-indigo-400 btn-save-w'} />
+                        <Btn label={'Save'} ripple={true} type={'submit'} classes={'raised e-margin-top-15 e-margin-bottom-25 e-button e-text-white e-background-indigo-400 btn-save-w'} />
                       </Block>
                     </CardContent>
                   </Card>
@@ -481,9 +592,15 @@ class PatagoniaForms extends React.Component {
                     <CardHeader classes={'e-background-indigo-500 e-text-center'}>
                       <Text type={'span'} classes={'e-text-white e-body1'}>Subscribe to our newsletter </Text>
                     </CardHeader>
-                    <CardContent className={'display-card-subscribe'}>
-                      <Input type={'text'} name={'label'} label={'home@gmail.com'} classes={'e-text-grey-300 input-look half-w-input'}/>
-                      <Btn label={'Submit'} ripple={true} type={'submit'} className={'flat e-button e-text-white e-background-cyan-A200 half-w-input submit-h'} />
+                    <CardContent className={''}>
+                      <Block classes={'e-row'}>
+                        <Block classes={'brick brick-6 e-h-end e-v-end'}>
+                          <Input type={'text'} name={'label'} label={'home@gmail.com'} classes={'e-text-grey-300 input-look full-width'}/>
+                        </Block>
+                        <Block classes={'brick brick-6 e-h-start e-v-end'}>
+                          <Btn label={'Submit'} ripple={true} type={'submit'} className={'flat e-button e-text-white e-background-cyan-A200 full-width mg-b-btn'} />
+                        </Block>
+                      </Block>
                     </CardContent>
                   </Card>
                 </Block>

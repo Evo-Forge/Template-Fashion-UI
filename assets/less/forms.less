@@ -1,20 +1,48 @@
 .patagoniaForms {
+  a:hover {
+    cursor: pointer;
+  }
   .background-rainbow {
-    background: -webkit-linear-gradient(#00ffff, #6600ff);
+    background: -webkit-linear-gradient(left, #66ffff, #3F51B5);
+    background: -o-linear-gradient(right, #66ffff, #3F51B5);
+    background: -moz-linear-gradient(right, #66ffff, #3F51B5);
+    background: linear-gradient(to right, #66ffff, #3F51B5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .full-width {
     width: 100%;
   }
+  .badge-header {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 0;
+    margin-right: 25px;
+    border: 1px solid #5c6bc0;
+    border-radius: 50%;
+  }
   .card {
     border-radius: 7px;
+    .border-header-card {
+      border-bottom: 1px solid lightgrey;
+    }
     .card-suplimentary-actions {
       border-top: 0;
     }
-  }
-  .card-sign {
-    height: 352px;
+    &.card-sign {
+      height: 352px;
+      .remember-display {
+        .e-check-valid {
+          left: 0;
+        }
+        .e-checkbox label {
+          padding-left: 35px;
+        }
+      }
+    }
+    &.card-login {
+      height: 450px;
+    }
   }
 
   .input-look {
@@ -48,19 +76,10 @@
   button {
     border-radius: 4px;
   }
-  .remember-display {
-    .e-check-valid {
-      left: 0;
-    }
-    .e-checkbox label {
-      padding-left: 35px;
-    }
-  }
-  .flat {
-    margin:0;
-  }
+
+  .flat,
   .raised {
-    margin: 0;
+    margin:0;
   }
 
   .bg-city {
@@ -68,24 +87,20 @@
     background-size: cover;
     opacity: .7;
   }
+
   i.e-headline {
     height: 24px;
     line-height: normal;
   }
-  .radio-check {
-    label {
-      color: red;
-    }
-  }
-  .border-header-card {
-    border-bottom: 1px solid lightgrey;
-  }
+
   .btn-look {
     width: 200px;
   }
+
   .margin-r-icon {
     margin-right: 15px;
   }
+
   .para-inter {
     margin-bottom: 0;
   }
@@ -103,18 +118,18 @@
   .para-inter::after {
     left: 15px;
   }
-  .card-login {
-    height: 450px;
-  }
-  .mg-top-attach {
-    margin-top: 20px;
-  }
+
+
   .half-width {
     width: 50%;
     box-sizing: border-box;
   }
+
   .card-h-contact {
     height: 383px;
+  }
+  .mg-top-attach {
+    margin-top: 20px;
   }
   .no-padding-card {
     .card-supporting-text{
@@ -123,10 +138,6 @@
   }
   .padding-card {
     padding: 16px;
-  }
-  .padding-card-contact {
-    padding: 16px;
-    box-sizing: border-box;
   }
   .avatar-card {
     width: 75px;
@@ -150,15 +161,6 @@
     padding: 16px;
     border-bottom: 1px solid lightgray;
   }
-  .card-content-account {
-    padding: 16px;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .half-w-input {
-    width: 48%;
-  }
   .btn-save-w {
     width: 150px;
   }
@@ -176,19 +178,15 @@
   .btn-inter::after {
     left: 42px;
   }
-  .padding-t-para {
-    padding-top: 17px;
+  .mg-b-para {
+    margin-bottom: 5px;
   }
-  .display-card-subscribe {
-    display: flex;
-    justify-content: space-between;
+  .mg-b-btn {
+    margin-bottom: 8px;
   }
-  .submit-h {
-    height: 35px;
-    margin-top: 17px;
-  }
+
   .card-h-account {
-    height: 551px;
+    height: 594px;
   }
   .border-btn-nr {
     display: inline-block;
@@ -255,18 +253,12 @@
   .a-inter::after {
     left: 15px;
   }
-  .margin-t-paypal {
-    margin-top: 17px;
+  .mg-b-caption {
+    margin-bottom: 10px;
   }
   .footer-checkout-w {
     width: 83%;
     margin:0 auto;
-  }
-  .third-w-input {
-    width: 32%;
-  }
-  .two-third-w-input {
-    width: 64%;
   }
   .bl-done {
     width: 75px;
@@ -280,5 +272,20 @@
       margin: 5px;
       border-radius: 50%;
     }
+  }
+ .visa-bg {
+    background-image: url('../img/visa-small.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    height: 35px;
+    .e-input:focus {
+      border-bottom: 0;
+    }
+  }
+  .span-number {
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }
