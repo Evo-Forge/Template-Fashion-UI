@@ -3,7 +3,72 @@ import ClassNames from 'classnames';
 
 import { Block, Btn, Card, CardHeader, CardContent, CardFooter, Image, Text, Divider, Menu, List, ListItem, Icon } from 'react-essence';
 
+var cx = React.ClassNames;
+
+class ArbitraryWidget extends React.Component {
+  // ...
+
+  constructor (props) {
+    super(props)
+    this.state = {
+      isHovering: false,
+      isActive: false
+    };
+  }
+
+  handleMouseOver () {
+    this.setState({ isHovering: true });
+  }
+
+  handleMouseOut () {
+    this.setState({ isHovering: false });
+  }
+
+  handleClick () {
+    var active = !this.state.isActive;
+    this.setState({ isActive: active });
+  }
+
+  render () {
+    var classes = cx([
+      this.state.isHovering && 'hover',
+      this.state.isActive && 'active'
+    ]);
+
+    return (
+      <div
+        className={cx(classes)}
+        onClick={this.handleClick.bind(this)}
+        onMouseOver={this.handleMouseOver.bind(this)}
+        onMouseOut={this.handleMouseOut.bind(this)} />
+    );
+  }
+}
+
 class PatagoniaCommerce extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      pieceNumber : 0
+    };
+  }
+
+  addItem() {
+    this.setState(
+      {
+      pieceNumber : this.state.pieceNumber + 1,
+      }
+  );
+  }
+
+  removeItem() {
+    this.setState(
+      {
+        pieceNumber : this.state.pieceNumber - 1,
+      }
+    );
+  }
 
   render() {
     return (
@@ -146,8 +211,8 @@ class PatagoniaCommerce extends React.Component {
                     </Block>
                     <Block classes={'text-container-200'}>
                       <Text type={'p'} classes={'e-text-left e-title e-text-black'}>Bay Sic Style</Text>
-                      <Text type={'p'} classes={'e-text-left e-body1 e-text-black'}>$12.20</Text>
-                      <Text type={'a'} classes={'e-text-left e-caption e-text-blue-300'}>See item</Text>
+                      <Text type={'p'} classes={'e-text-left e-subhead e-text-black'}>$12.20</Text>
+                      <Text type={'a'} classes={'e-text-left e-subhead e-text-blue-300'}>See item</Text>
                     </Block>
                   </Block>
                 </CardHeader>
@@ -157,7 +222,7 @@ class PatagoniaCommerce extends React.Component {
               <Card classes={'e-background-white card-h-400'}>
                 <CardHeader>
                   <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>Colors</Text>
-                  <Menu type={'cover'} icon={'hardware-keyboard-control'} className={'e-right e-display-1'}>
+                  <Menu type={'cover'} icon={'hardware-keyboard-control'} className={'e-right e-display-1 e-text-grey-300'}>
                     <Text className={'e-text-black'}>
                      <Text>Option 1 </Text>
                     </Text>
@@ -169,7 +234,7 @@ class PatagoniaCommerce extends React.Component {
                     </Text>
                    </Menu>
                   <Divider classes={'thinnest e-background-grey-200'} />
-                  <List type={'navigation colors'}>
+                  <List type={'navigation'}>
                    <ListItem>
                     <Text type={'a'}>
                       <Icon name={"image-brightness-1"} className={"e-text-indigo-400 e-title show"} />
@@ -258,7 +323,7 @@ class PatagoniaCommerce extends React.Component {
                     <Divider classes={'thinnest e-background-grey-200'} />
                     <Block classes={'card-align-row'}>
                       <Text type={'span'} classes={'e-text-left e-headline e-text-black'}>$115</Text>
-                      <Text type={'span'} classes={'e-text-left e-caption e-text-grey-500'}>Available colors</Text>
+                      <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-500'}>Available colors</Text>
                       <Icon name={"image-brightness-1"} className={"e-text-yellow-800 e-headline"} />
                       <Icon name={"image-brightness-1"} className={"e-text-blue-400 e-headline"} />
                       <Icon name={"image-brightness-1"} className={"e-text-red-800 e-headline"} />
@@ -403,7 +468,7 @@ class PatagoniaCommerce extends React.Component {
               <Card classes={'e-background-white card-h-400'}>
                 <CardHeader>
                   <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>Brands</Text>
-                  <Menu type={'cover'} icon={'hardware-keyboard-control'} className={'e-right e-display-1'}>
+                  <Menu type={'cover'} icon={'hardware-keyboard-control'} className={'e-right e-display-1 e-text-grey-300'}>
                     <Text className={'e-text-black'}>
                      <Text>Option 1 </Text>
                     </Text>
@@ -589,7 +654,7 @@ class PatagoniaCommerce extends React.Component {
                 <Icon name={"hardware-keyboard-arrow-left"} className={"e-text-grey-300 e-subhead"} />
                 <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>Back to catalog</Text>
               </Text>
-              <Menu type={'cover'} icon={'hardware-keyboard-control'} className={'e-right e-display-1'}>
+              <Menu type={'cover'} icon={'hardware-keyboard-control'} className={'e-right e-display-1 e-text-grey-300'}>
                 <Text className={'e-text-black'}>
                  <Text>Option 1 </Text>
                 </Text>
@@ -604,7 +669,7 @@ class PatagoniaCommerce extends React.Component {
               <Block classes={'card-align-row'}>
                 <Block classes={'img-container-200 card-align-row'}>
                   <Block classes={'thumb-col'}>
-                    <Image classes={'e-img-rsp thumb e-shadow-2'} src={'assets/img/thumb1.jpg'} />
+                    <Image classes={'e-img-rsp thumb active e-shadow-2'} src={'assets/img/thumb1.jpg'} />
                     <Image classes={'e-img-rsp thumb '} src={'assets/img/thumb2.jpg'} />
                     <Image classes={'e-img-rsp thumb'} src={'assets/img/thumb3.jpg'} />
                     <Image classes={'e-img-rsp thumb '} src={'assets/img/thumb4.jpg'} />
@@ -632,26 +697,28 @@ class PatagoniaCommerce extends React.Component {
                   </Text>
                   <Block classes={'card-align-row'}>
                     <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-600'}> Select color </Text>
-                    <List type={'navigation colors'}>
-                     <ListItem>
-                      <Text type={'a'}>
-                        <Icon name={"image-brightness-1"} className={"e-text-indigo-400 e-title show"} />
-                        <Icon name={"action-done"} className={"e-text-black hidden"} />
-                      </Text>
-                     </ListItem>
-                     <ListItem>
-                      <Text type={'a'}>
-                        <Icon name={"image-brightness-1"} className={"e-text-grey-600 show"} />
-                        <Icon name={"action-done"} className={"e-text-black hidden"} />
-                      </Text>
-                     </ListItem>
-                     <ListItem>
-                      <Text type={'a'}>
-                        <Icon name={"image-brightness-1"} className={"e-text-pink-100 show"} />
-                        <Icon name={"action-done"} className={"e-text-black hidden"} />
-                      </Text>
-                     </ListItem>
-                    </List>
+                    <Block classes={'colors'}>
+                      <List type={'navigation'} >
+                       <ListItem>
+                        <Text type={'a'}>
+                          <Icon name={"image-brightness-1"} className={"e-text-indigo-400 e-title show"} />
+                          <Icon name={"action-done"} className={"e-text-black hidden"} />
+                        </Text>
+                       </ListItem>
+                       <ListItem>
+                        <Text type={'a'}>
+                          <Icon name={"image-brightness-1"} className={"e-text-grey-600 show"} />
+                          <Icon name={"action-done"} className={"e-text-black hidden"} />
+                        </Text>
+                       </ListItem>
+                       <ListItem>
+                        <Text type={'a'}>
+                          <Icon name={"image-brightness-1"} className={"e-text-pink-100 show"} />
+                          <Icon name={"action-done"} className={"e-text-black hidden"} />
+                        </Text>
+                       </ListItem>
+                      </List>
+                    </Block>
                   </Block>
                   <Block classes={'card-align-row'}>
                     <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-600'}> Select size </Text>
@@ -662,6 +729,11 @@ class PatagoniaCommerce extends React.Component {
                       <Btn label={'xl'} ripple={true} type={'succes'} className={'flat size-btn e-background-grey-100 e-text-black'} />
                     </Block>
                     <Text type={'a'} classes={'e-text-left e-subhead e-text-blue-300'}>View size chart</Text>
+                  </Block>
+                  <Block classes={'quantity'}>
+                    <Btn onClick={this.removeItem.bind(this)} label={'-'} ripple={true} className={'e-background-white e-left quantity-btn e-text-black'} />
+                    <Text type={'span'} classes={'e-text-center e-title e-text-black item-number'}>{this.state.pieceNumber}</Text>
+                    <Btn onClick={this.addItem.bind(this)} label={'+'} ripple={true} className={'e-background-white e-right quantity-btn e-text-black'} />
                   </Block>
                   <Block classes={'card-align-row e-v-center'}>
                     <Btn label={'Add to Cart'} ripple={true} type={'succes'} className={'flat e-background-blue-700'} />

@@ -77,6 +77,13 @@
       }
     }
   }
+  .colors {
+    ul {
+      li {
+        display: inline;
+      }
+    }
+  }
   .e-icon-hardware-keyboard-control {
     padding: 15px;
     margin-top: -15px;
@@ -182,7 +189,7 @@
         padding: 20px 0 20px 30px;
       }
       .price-btn {
-        max-width: 162px;
+        max-width: 162px!important;
         border: 2px solid white;
         border-radius: 5px;
         .left-border:before {
@@ -271,12 +278,41 @@
         .thumb {
           max-width: 100%;
           margin: 10px;
+          &:hover {
+            .e-shadow-2();
+            margin: 10px;
+            max-width: 100%;
+          }
         }
       }
       .large-img-col {
         max-width: 80%;
         .large-img {
-          margin: 10px;
+          max-width: 100%;
+          box-sizing: border-box;
+          margin: 20px;
+        }
+      }
+      .quantity {
+        position: relative;
+        max-width: 160px;
+        max-height: 30px;
+        border-radius: 15px;
+        border: 1px solid #f8bbd0;
+        .quantity-btn {
+          border: 0;
+          margin: 0!important;
+          padding: 0!important;
+          min-height: 30px!important;
+          min-width: 60px!important;
+          line-height: 20px;
+          font-size: 20px;
+          border-radius: 15px;
+        }
+        .item-number {
+          position: absolute;
+          top: -5%;
+          right: 45%;
         }
       }
     }
