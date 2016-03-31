@@ -119,7 +119,6 @@
     left: 15px;
   }
 
-
   .half-width {
     width: 50%;
     box-sizing: border-box;
@@ -200,15 +199,13 @@
     margin-left: 10px;
     margin-right: 10px;
     &.content {
-      width: 30%;
+      width: 20%;
     }
   }
   .margin-nr {
     margin: 30px;
   }
-  .btn-no-border {
-    border: 0;
-  }
+
   .e-steppers-container .e-stepper-content.active {
     padding: 0;
   }
@@ -287,5 +284,33 @@
     padding-right: 6px;
     margin-right: 10px;
     margin-left: 10px;
+  }
+  .size {
+    width: 80px;
+  }
+  .span-size {
+    padding: 5px 8px;
+    border-radius: 4px;
+  }
+  .align-title {
+    line-height: 40px;
+  }
+  .icon-close {
+    border-radius: 50%;
+    &.fab-mini {
+      box-shadow: none;
+      i {
+      font-size: inherit;
+      }
+      :hover:not(.flat) {
+        box-shadow: none;
+      }
+    }
+    &.e-btn-fab-mini {
+      margin: 0;
+    }
+    &:focus {
+      outline: none;
+    }
   }
 }

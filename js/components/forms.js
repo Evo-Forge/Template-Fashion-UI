@@ -13,236 +13,253 @@ import {Block,
 
 import Stepper from 'essence-stepper';
 
-const Steps = {
- 'editable': [
-  {
-   'title': (<Text>Cart</Text>),
-   'content': (
-      <Block classes={'e-background-white'}>
-        <List type={'navigation'} classes={'e-twolinelist e-no-padding'}>
-          <ListItem classes={'padding-list-stepper'}>
-            <Text type={'a'}>
-              <Image src={'assets/img/blue-tshirt.jpg'} alt={'TShirt'} classes={'article-image e-left'}/>
-              <Block classes={'content e-left btn-margin-nr'}>
-                <Text classes={'primary e-text-left'}>Blue TShirt</Text>
-                <Text classes={'secondary e-text-left'}>Hooligan</Text>
-              </Block>
-              <Block className={'e-left border-btn-nr margin-nr'}>
-                <Btn onClick={this.removeItem.bind(this)} label={'-'} ripple={false} type={'default'} className={'btn-margin-nr e-background-white'} />
-                <Text type={'span'} classes={'e-text-center e-text-black span-number'}>{this.state.pieceNumber}</Text>
-                <Btn onClick={this.addItem.bind(this)} label={'+'} ripple={false} type={'default'} className={'btn-margin-nr e-background-white'} />              </Block>
-              <Btn label={'M'} ripple={false} type={'default'} className={'e-left e-background-grey-200 btn-no-border margin-nr'} />
-              <Text type={'span'} classes={'e-text-center e-left e-text-uppercase margin-nr'}>$250</Text>
-              <Icon name={"navigation-close"} className={"e-text-cyan-A200"} />
-            </Text>
-          </ListItem>
-          <ListItem classes={'padding-list-stepper e-background-grey-100'}>
-            <Text type={'a'}>
-              <Image src={'assets/img/poza-pantalon.jpg'} alt={'trausers'} classes={'article-image e-left'}/>
-              <Block classes={'content e-left btn-margin-nr'}>
-                <Text classes={'primary e-text-left'}>Navy Trousers</Text>
-                <Text classes={'secondary e-text-left e-text-uppercase'}>Navy god</Text>
-              </Block>
-              <Block className={'e-left border-btn-nr margin-nr e-background-grey-400'}>
-                <Btn label={'-'} ripple={false} type={'default'} className={'btn-margin-nr e-text-white e-background-grey-400'} />
-                <Btn label={'6'} ripple={false} type={'default'} className={'btn-margin-nr e-text-white e-background-grey-400'} />
-                <Btn label={'+'} ripple={false} type={'default'} className={'btn-margin-nr e-text-white e-background-grey-400'} />
-              </Block>
-              <Btn label={'XS'} ripple={false} type={'default'} className={'e-left e-background-white btn-no-border margin-nr'} />
-              <Text type={'span'} classes={'e-text-center e-left e-text-uppercase margin-nr'}>$145</Text>
-              <Icon name={"navigation-close"} className={"e-text-cyan-A200"} />
-            </Text>
-          </ListItem>
-          <ListItem classes={'padding-list-stepper'}>
-            <Text type={'a'}>
-              <Image src={'assets/img/watch.jpg'} alt={'TShirt'} classes={'article-image e-left'}/>
-              <Block classes={'content e-left btn-margin-nr'}>
-                <Text classes={'primary e-text-left'}>Peaceful Hooligan</Text>
-                <Text classes={'secondary e-text-left e-text-uppercase'}>Sold by Kgr</Text>
-              </Block>
-              <Block className={'e-left border-btn-nr margin-nr'}>
-                <Btn label={'-'} ripple={false} type={'default'} className={'btn-margin-nr e-background-white'} />
-                <Btn label={'3'} ripple={false} type={'default'} className={'btn-margin-nr e-background-white'} />
-                <Btn label={'+'} ripple={false} type={'default'} className={'btn-margin-nr e-background-white'} />
-              </Block>
-              <Btn label={'XL'} ripple={false} type={'default'} className={'e-left e-background-grey-200 btn-no-border margin-nr'} />
-              <Text type={'span'} classes={'e-text-center e-left e-text-uppercase margin-nr'}>$370</Text>
-              <Icon name={"navigation-close"} className={"e-text-cyan-A200"} />
-            </Text>
-          </ListItem>
-          <ListItem classes={'padding-list-stepper border-t-discount e-padding-top-15 e-padding-15'}>
-            <Text type={'a'}>
-              <Text type={'span'} classes={'e-button e-left align-discount'}>Discount: <b> -120$</b></Text>
-              <Text type={'p'} classes={'e-text-grey-400 e-text-right e-body1 e-text-uppercase'}>Total:
-              <Text type={'span'} classes={'e-text-right e-text-uppercase e-text-black e-subhead padding-r-para'}> &645</Text></Text>
-            </Text>
-          </ListItem>
-          <ListItem classes={'padding-list-stepper e-background-grey-100 e-padding-top-15 e-padding-bottom-15'}>
-            <Text type={'a'}>
-              <Btn label={'Back to shop'} ripple={false} type={'default'} className={'flat e-button e-left e-background-grey-300'} />
-              <Btn label={'Proceed to checkout'} ripple={true} type={'default'} classes={'flat e-background-indigo-400 e-text-white align-btn-continue'} />
-            </Text>
-          </ListItem>
-        </List>
-      </Block>
-   )
-  },
-  {
-   'title': (<Text>Checkout</Text>),
-   'content': (
-     <Block className={'e-background-white'}>
-      <Block className={'checkout-w'}>
-        <Block className={'padding-card e-text-center'}>
-          <Block classes={'e-row'}>
-            <Block classes={'brick brick-12 e-h-center e-v-center'}>
-              <Input type={'textarea'} name={'label'} label={'1234 1234 1234 1234'} rows={1} classes={'e-text-black input-look input-focus full-width visa-bg'}/>
-            </Block>
-          </Block>
-          <Block classes={'e-row'}>
-            <Block classes={'brick brick-6 e-h-end e-v-end'}>
-              <Input type={'text'} name={'label'} label={'Month'} classes={'e-text-grey-300 input-look full-width'}/>
-            </Block>
-            <Block classes={'brick brick-6 e-h-start e-v-end'}>
-              <Input type={'text'} name={'label'} label={'Year'} classes={'e-text-grey-300 input-look full-width'}/>
-            </Block>
-          </Block>
-          <Block classes={'e-row'}>
-          <Block classes={'brick brick-6 e-h-end e-v-end'}>
-            <Input type={'text'} name={'label'} label={'CVV'} classes={'e-text-grey-300 input-look full-width'}/>
-          </Block>
-          <Block classes={'brick brick-6 e-h-start e-v-end'}>
-            <Block classes={'full-width mg-b-caption'}>
-              <Text type={'p'} classes={'e-text-left e-caption e-no-margin'}>3 or 4 digits usually found</Text>
-              <Text type={'p'} classes={'e-text-left e-caption e-no-margin'}>on the signature strip</Text>
-            </Block>
-          </Block>
-          </Block>
-        </Block>
-      </Block>
-      <Block>
-        <Text type={'a'} classes={'e-text-center e-body1 e-text-cyan-A200 e-margin-top-15 a-inter'}>Or pay with PayPal</Text>
-      </Block>
-        <Block className={'checkout-w'}>
-        <Block className={'padding-card'}>
-          <Block classes={'e-row'}>
-            <Block classes={'brick brick-6 e-h-end e-v-end'}>
-              <Input type={'email'} name={'label'} label={'Email Address'} classes={'e-text-grey-300 input-look full-width'}/>
-            </Block>
-            <Block classes={'brick brick-6 e-h-start e-v-end'}>
-              <Block classes={'full-width mg-b-btn'}>
-                <Btn label={'PayPal'} ripple={true} type={'default'} classes={'flat e-background-indigo-900 e-text-white full-width'} />
-              </Block>
-            </Block>
-          </Block>
-        </Block>
-      </Block>
-      <Block classes={'e-background-grey-100 e-padding-top-15'}>
-        <Block className={'footer-checkout-w'}>
-          <Btn label={'Back to shop'} ripple={false} type={'default'} className={'flat e-button e-left e-background-grey-300 e-margin-bottom-15'} />
-          <Btn label={'Pay $645'} ripple={true} type={'default'} classes={'flat e-background-indigo-400 e-text-white align-btn-continue e-right btn-look'} />
-        </Block>
-      </Block>
-    </Block>
-   )
-  },
-  {
-   'title': (<Text>Shipping</Text>),
-   'content': (
-      <Block className={'e-background-white'}>
-        <Block className={'checkout-w'}>
-
-            <Block classes={'e-row'}>
-              <Block classes={'brick brick-6 e-h-end e-v-end'}>
-                <Input type={'text'} name={'label'} label={'First Name'} classes={'e-text-grey-300 input-look full-width'}/>
-              </Block>
-              <Block classes={'brick brick-6 e-h-start e-v-end'}>
-                <Input type={'text'} name={'label'} label={'Last Name'} classes={'e-text-grey-300 input-look full-width'}/>
-              </Block>
-            </Block>
-            <Block classes={'e-row'}>
-              <Block classes={'brick brick-6 e-h-end e-v-end'}>
-                <Input type={'email'} name={'label'} label={'Email'} classes={'e-text-grey-300 input-look full-width'}/>
-              </Block>
-              <Block classes={'brick brick-6 e-h-start e-v-end'}>
-                <Input type={'text'} name={'label'} label={'Phone'} classes={'e-text-grey-300 input-look full-width'}/>
-              </Block>
-            </Block>
-            <Block classes={'e-row'}>
-              <Block classes={'brick brick-4 e-h-start e-v-center'}>
-                <Input type={'text'} name={'label'} label={'Country'} classes={'e-text-grey-300 input-look full-width'}/>
-              </Block>
-              <Block classes={'brick brick-4 e-h-center e-v-center'}>
-                <Input type={'text'} name={'label'} label={'City'} classes={'e-text-grey-300 input-look full-width'}/>
-              </Block>
-              <Block classes={'brick brick-4 e-h-end e-v-center'}>
-                <Input type={'email'} name={'label'} label={'Zip Code'} classes={'e-text-grey-300 input-look full-width'}/>
-              </Block>
-            </Block>
-            <Block classes={'e-row'}>
-              <Block classes={'brick brick-4 e-h-end e-v-end'}>
-                <Input type={'text'} name={'label'} label={'State'} classes={'e-text-grey-300 input-look full-width'}/>
-              </Block>
-              <Block classes={'brick brick-8 e-h-start e-v-end'}>
-                <Input type={'text'} name={'label'} label={'Address'} classes={'e-text-grey-300 input-look full-width'}/>
-              </Block>
-            </Block>
-        </Block>
-
-        <Block classes={'e-background-grey-100 e-padding-top-15'}>
-          <Block className={'footer-checkout-w'}>
-            <Btn label={'Back to shop'} ripple={false} type={'default'} className={'flat e-button e-left e-background-grey-300 e-margin-bottom-15'} />
-            <Btn label={'Pay $645'} ripple={true} type={'default'} classes={'flat e-background-indigo-400 e-text-white align-btn-continue e-right btn-look'} />
-          </Block>
-        </Block>
-     </Block>
-   )
- },
- {
-  'title': (<Text>Done</Text>),
-  'content': (
-    <Block className={'e-background-white'}>
-      <Block className={'checkout-w e-padding-top-50 e-padding-bottom-25'}>
-        <Block className={'bl-done'}>
-          <Icon name={"action-done"} className={"e-background-cyan-A200 e-text-white e-display-2 done-icon"} />
-        </Block>
-        <Text type={'p'} classes={'e-text-center e-text-grey-800 e-display-2 e-padding-top-25'}>Congratulations! Your Order is Complete!</Text>
-        <Text type={'p'} classes={'e-text-center e-text-grey-800 padding-list-stepper'}>
-          Lorem ipsum dolor sit amet, sed eu prima consectetuer:<br/> Duis habeo mediocrem an sed, qui id utamur complectitur, te ignota constituam vituperatoribus est. No errem luptatum pri.
-        </Text>
-      </Block>
-      <Block classes={'e-background-grey-100 e-padding-top-15 e-padding-bottom-15'}>
-          <Btn label={'Back to Shop'} ripple={true} type={'default'} classes={'flat e-background-indigo-400 e-text-white btn-look'} />
-      </Block>
-    </Block>
-  )
- }
- ]
- };
-
 class PatagoniaForms extends React.Component {
 
-constructor(props) {
-  super(props);
-  this.state = {
-    pieceNumber : 0
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      articleNumber : 1
+    }
   }
-}
-removeItem() {
-  this.setState (
-    {
-      pieceNumber : this.state.pieceNumber - 1,
-    }
-  );
-}
-addItem() {
-  this.setState (
-    {
-      pieceNumber : this.state.pieceNumber + 1,
-    }
-  );
-}
+  removeItem() {
+    console.log("merge remove");
+    this.setState (
+      {
+        articleNumber : this.state.articleNumber - 1
+      }
+    );
+  }
+  addItem() {
+    console.log("merge add");
+    this.setState (
+      {
+        articleNumber : this.state.articleNumber + 1
+      }
+    );
+  }
 
   render() {
+
+    const Steps = {
+     'editable': [
+      {
+       'title': (<Text>Cart</Text>),
+       'content': (
+          <Block classes={'e-background-white'}>
+            <List type={'navigation'} classes={'e-twolinelist e-no-padding'}>
+              <ListItem classes={'padding-list-stepper'}>
+                <Text type={'a'}>
+                  <Image src={'assets/img/blue-tshirt.jpg'} alt={'TShirt'} classes={'article-image e-left'}/>
+                  <Block classes={'content e-left btn-margin-nr'}>
+                    <Text classes={'primary e-text-left'}>Blue TShirt</Text>
+                    <Text classes={'secondary e-text-left'}>Hooligan</Text>
+                  </Block>
+                  <Block className={'e-left border-btn-nr margin-nr'}>
+                    <Btn onClick={this.removeItem.bind(this)} label={'-'} ripple={false} type={'default'}  classes={'btn-margin-nr e-background-white'} />
+                    <Text type={'span'} classes={'e-text-center e-text-black span-number'}>{this.state.articleNumber}</Text>
+                    <Btn onClick={this.addItem.bind(this)} label={'+'} ripple={false} type={'default'} classes={'btn-margin-nr e-background-white'} />
+                  </Block>
+                  <Block classes={'e-left e-text-center margin-nr size'}>
+                    <Text type={'span'} classes={'e-background-grey-200 span-size'}>M</Text>
+                  </Block>
+                  <Block classes={'e-left e-text-center margin-nr size'}>
+                    <Text type={'span'} classes={'e-text-uppercase'}>$25</Text>
+                  </Block>
+                  <Icon name={"navigation-close"} className={"e-text-cyan-A200"} />
+                </Text>
+              </ListItem>
+              <ListItem classes={'padding-list-stepper e-background-grey-100'}>
+                <Text type={'a'}>
+                  <Image src={'assets/img/poza-pantalon.jpg'} alt={'trausers'} classes={'article-image e-left'}/>
+                  <Block classes={'content e-left btn-margin-nr'}>
+                    <Text classes={'primary e-text-left'}>Navy Trousers</Text>
+                    <Text classes={'secondary e-text-left e-text-uppercase'}>Navy god</Text>
+                  </Block>
+                  <Block className={'e-left border-btn-nr margin-nr e-background-grey-400'}>
+                    <Btn onClick={this.removeItem.bind(this)} label={'-'} ripple={false} type={'default'} classes={'btn-margin-nr e-text-white e-background-grey-400'} />
+                    <Text type={'span'} classes={'e-text-center e-text-white e-background-grey-400 span-number'}>{this.state.articleNumber}</Text>
+                    <Btn onClick={this.addItem.bind(this)} label={'+'} ripple={false} type={'default'} classes={'btn-margin-nr e-text-white e-background-grey-400'} />
+                  </Block>
+                  <Block classes={'e-left e-text-center margin-nr size'}>
+                    <Text type={'span'} classes={'e-background-white span-size'}>XS</Text>
+                  </Block>
+                  <Block classes={'e-left e-text-center margin-nr size'}>
+                    <Text type={'span'} classes={'e-text-uppercase'}>$35</Text>
+                  </Block>
+                  <Icon name={"navigation-close"} className={"e-text-cyan-A200"} />
+                </Text>
+              </ListItem>
+              <ListItem classes={'padding-list-stepper'}>
+                <Text type={'a'}>
+                  <Image src={'assets/img/watch.jpg'} alt={'TShirt'} classes={'article-image e-left'}/>
+                  <Block classes={'content e-left btn-margin-nr'}>
+                    <Text classes={'primary e-text-left'}>Peaceful Hooligan</Text>
+                    <Text classes={'secondary e-text-left e-text-uppercase'}>Sold by Kgr</Text>
+                  </Block>
+                  <Block className={'e-left border-btn-nr margin-nr'}>
+                    <Btn onClick={this.removeItem.bind(this)} label={'-'} ripple={false} type={'default'} classes={'btn-margin-nr e-background-white'} />
+                    <Text type={'span'} classes={'e-text-center e-text-black span-number'}>{this.state.articleNumber}</Text>
+                    <Btn onClick={this.addItem.bind(this)} label={'+'} ripple={false} type={'default'} classes={'btn-margin-nr e-background-white'} />
+                  </Block>
+                  <Block classes={'e-left e-text-center margin-nr size'}>
+                    <Text type={'span'} classes={'e-background-grey-200 span-size'}>XXL</Text>
+                  </Block>
+                  <Block classes={'e-left e-text-center margin-nr size'}>
+                    <Text type={'span'} classes={'e-text-uppercase'}>$117</Text>
+                  </Block>
+                  <Icon name={"navigation-close"} className={"e-text-cyan-A200"} />
+                </Text>
+              </ListItem>
+              <ListItem classes={'padding-list-stepper border-t-discount e-padding-top-15 e-padding-15'}>
+                <Text type={'a'}>
+                  <Text type={'span'} classes={'e-button e-left align-discount'}>Discount: <b> -20$</b></Text>
+                  <Text type={'p'} classes={'e-text-grey-400 e-text-right e-body1 e-text-uppercase'}>Total:
+                  <Text type={'span'} classes={'e-text-right e-text-uppercase e-text-black e-subhead padding-r-para'}> &645</Text></Text>
+                </Text>
+              </ListItem>
+              <ListItem classes={'padding-list-stepper e-background-grey-100 e-padding-top-15 e-padding-bottom-15'}>
+                <Text type={'a'}>
+                  <Btn label={'Back to shop'} ripple={true} type={'default'} className={'flat e-button e-left e-background-grey-300'} />
+                  <Btn label={'Proceed to checkout'} ripple={true} type={'default'} classes={'flat e-background-indigo-400 e-text-white align-btn-continue'} />
+                </Text>
+              </ListItem>
+            </List>
+          </Block>
+       )
+      },
+      {
+       'title': (<Text>Checkout</Text>),
+       'content': (
+         <Block className={'e-background-white'}>
+          <Block className={'checkout-w'}>
+            <Block className={'padding-card e-text-center'}>
+              <Block classes={'e-row'}>
+                <Block classes={'brick brick-12 e-h-center e-v-center'}>
+                  <Input type={'textarea'} name={'label'} label={'1234 1234 1234 1234'} rows={1} classes={'e-text-black input-look input-focus full-width visa-bg'}/>
+                </Block>
+              </Block>
+              <Block classes={'e-row'}>
+                <Block classes={'brick brick-6 e-h-end e-v-end'}>
+                  <Input type={'text'} name={'label'} label={'Month'} classes={'e-text-grey-300 input-look full-width'}/>
+                </Block>
+                <Block classes={'brick brick-6 e-h-start e-v-end'}>
+                  <Input type={'text'} name={'label'} label={'Year'} classes={'e-text-grey-300 input-look full-width'}/>
+                </Block>
+              </Block>
+              <Block classes={'e-row'}>
+              <Block classes={'brick brick-6 e-h-end e-v-end'}>
+                <Input type={'text'} name={'label'} label={'CVV'} classes={'e-text-grey-300 input-look full-width'}/>
+              </Block>
+              <Block classes={'brick brick-6 e-h-start e-v-end'}>
+                <Block classes={'full-width mg-b-caption'}>
+                  <Text type={'p'} classes={'e-text-left e-caption e-no-margin'}>3 or 4 digits usually found</Text>
+                  <Text type={'p'} classes={'e-text-left e-caption e-no-margin'}>on the signature strip</Text>
+                </Block>
+              </Block>
+              </Block>
+            </Block>
+          </Block>
+          <Block>
+            <Text type={'a'} classes={'e-text-center e-body1 e-text-cyan-A200 e-margin-top-15 a-inter'}>Or pay with PayPal</Text>
+          </Block>
+            <Block className={'checkout-w'}>
+            <Block className={'padding-card'}>
+              <Block classes={'e-row'}>
+                <Block classes={'brick brick-6 e-h-end e-v-end'}>
+                  <Input type={'email'} name={'label'} label={'Email Address'} classes={'e-text-grey-300 input-look full-width'}/>
+                </Block>
+                <Block classes={'brick brick-6 e-h-start e-v-end'}>
+                  <Block classes={'full-width mg-b-btn'}>
+                    <Btn label={'PayPal'} ripple={true} type={'default'} classes={'flat e-background-indigo-900 e-text-white full-width'} />
+                  </Block>
+                </Block>
+              </Block>
+            </Block>
+          </Block>
+          <Block classes={'e-background-grey-100 e-padding-top-15'}>
+            <Block className={'footer-checkout-w'}>
+              <Btn label={'Back to shop'} ripple={true} type={'default'} className={'flat e-button e-left e-background-grey-300 e-margin-bottom-15'} />
+              <Btn label={'Pay $645'} ripple={true} type={'default'} classes={'flat e-background-indigo-400 e-text-white align-btn-continue e-right btn-look'} />
+            </Block>
+          </Block>
+        </Block>
+       )
+      },
+      {
+       'title': (<Text>Shipping</Text>),
+       'content': (
+          <Block className={'e-background-white'}>
+            <Block className={'checkout-w'}>
+
+                <Block classes={'e-row'}>
+                  <Block classes={'brick brick-6 e-h-end e-v-end'}>
+                    <Input type={'text'} name={'label'} label={'First Name'} classes={'e-text-grey-300 input-look full-width'}/>
+                  </Block>
+                  <Block classes={'brick brick-6 e-h-start e-v-end'}>
+                    <Input type={'text'} name={'label'} label={'Last Name'} classes={'e-text-grey-300 input-look full-width'}/>
+                  </Block>
+                </Block>
+                <Block classes={'e-row'}>
+                  <Block classes={'brick brick-6 e-h-end e-v-end'}>
+                    <Input type={'email'} name={'label'} label={'Email'} classes={'e-text-grey-300 input-look full-width'}/>
+                  </Block>
+                  <Block classes={'brick brick-6 e-h-start e-v-end'}>
+                    <Input type={'text'} name={'label'} label={'Phone'} classes={'e-text-grey-300 input-look full-width'}/>
+                  </Block>
+                </Block>
+                <Block classes={'e-row'}>
+                  <Block classes={'brick brick-4 e-h-start e-v-center'}>
+                    <Input type={'text'} name={'label'} label={'Country'} classes={'e-text-grey-300 input-look full-width'}/>
+                  </Block>
+                  <Block classes={'brick brick-4 e-h-center e-v-center'}>
+                    <Input type={'text'} name={'label'} label={'City'} classes={'e-text-grey-300 input-look full-width'}/>
+                  </Block>
+                  <Block classes={'brick brick-4 e-h-end e-v-center'}>
+                    <Input type={'email'} name={'label'} label={'Zip Code'} classes={'e-text-grey-300 input-look full-width'}/>
+                  </Block>
+                </Block>
+                <Block classes={'e-row'}>
+                  <Block classes={'brick brick-4 e-h-end e-v-end'}>
+                    <Input type={'text'} name={'label'} label={'State'} classes={'e-text-grey-300 input-look full-width'}/>
+                  </Block>
+                  <Block classes={'brick brick-8 e-h-start e-v-end'}>
+                    <Input type={'text'} name={'label'} label={'Address'} classes={'e-text-grey-300 input-look full-width'}/>
+                  </Block>
+                </Block>
+            </Block>
+
+            <Block classes={'e-background-grey-100 e-padding-top-15'}>
+              <Block className={'footer-checkout-w'}>
+                <Btn label={'Back to shop'} ripple={true} type={'default'} className={'flat e-button e-left e-background-grey-300 e-margin-bottom-15'} />
+                <Btn label={'Pay $645'} ripple={true} type={'default'} classes={'flat e-background-indigo-400 e-text-white align-btn-continue e-right btn-look'} />
+              </Block>
+            </Block>
+         </Block>
+       )
+     },
+     {
+      'title': (<Text>Done</Text>),
+      'content': (
+        <Block className={'e-background-white'}>
+          <Block className={'checkout-w e-padding-top-50 e-padding-bottom-25'}>
+            <Block className={'bl-done'}>
+              <Icon name={"action-done"} className={"e-background-cyan-A200 e-text-white e-display-2 done-icon"} />
+            </Block>
+            <Text type={'p'} classes={'e-text-center e-text-grey-800 e-display-2 e-padding-top-25'}>Congratulations! Your Order is Complete!</Text>
+            <Text type={'p'} classes={'e-text-center e-text-grey-800 padding-list-stepper'}>
+              Lorem ipsum dolor sit amet, sed eu prima consectetuer:<br/> Duis habeo mediocrem an sed, qui id utamur complectitur, te ignota constituam vituperatoribus est. No errem luptatum pri.
+            </Text>
+          </Block>
+          <Block classes={'e-background-grey-100 e-padding-top-15 e-padding-bottom-15'}>
+              <Btn label={'Back to Shop'} ripple={true} type={'default'} classes={'flat e-background-indigo-400 e-text-white btn-look'} />
+          </Block>
+        </Block>
+      )
+     }
+     ]
+     };
+
     return (
       <Block className={'e-background-grey-100'}>
         <Block className={'patagoniaForms e-container e-padding-bottom-150'}>
@@ -257,8 +274,8 @@ addItem() {
             <Block classes={'brick brick-4 e-h-start e-v-center'}>
               <Card className={'e-background-white full-width card-sign'}>
                 <CardHeader className={'border-header-card'}>
-                  <Text type={'span'} classes={'e-text-left e-body1'}>Sign In</Text>
-                  <Icon name={"navigation-close"} className={"e-text-black e-right"} />
+                  <Text type={'span'} classes={'e-text-left e-body1 align-title'}>Sign In</Text>
+                  <Btn icon={'navigation-close'} ripple={true} type={'fab-mini'} classes={'fab-mini e-background-white e-right icon-close'} />
                 </CardHeader>
                 <CardContent>
                   <Text type={'p'} classes={'e-text-left e-text-grey-300 e-body1'}>Or create

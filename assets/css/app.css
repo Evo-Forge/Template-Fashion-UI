@@ -184,13 +184,10 @@
   margin-right: 10px;
 }
 .patagoniaForms .btn-margin-nr.content {
-  width: 30%;
+  width: 20%;
 }
 .patagoniaForms .margin-nr {
   margin: 30px;
-}
-.patagoniaForms .btn-no-border {
-  border: 0;
 }
 .patagoniaForms .e-steppers-container .e-stepper-content.active {
   padding: 0;
@@ -270,6 +267,34 @@
   padding-right: 6px;
   margin-right: 10px;
   margin-left: 10px;
+}
+.patagoniaForms .size {
+  width: 80px;
+}
+.patagoniaForms .span-size {
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+.patagoniaForms .align-title {
+  line-height: 40px;
+}
+.patagoniaForms .icon-close {
+  border-radius: 50%;
+}
+.patagoniaForms .icon-close.fab-mini {
+  box-shadow: none;
+}
+.patagoniaForms .icon-close.fab-mini i {
+  font-size: inherit;
+}
+.patagoniaForms .icon-close.fab-mini :hover:not(.flat) {
+  box-shadow: none;
+}
+.patagoniaForms .icon-close.e-btn-fab-mini {
+  margin: 0;
+}
+.patagoniaForms .icon-close:focus {
+  outline: none;
 }
 footer {
   width: 100%;
