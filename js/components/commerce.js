@@ -1,7 +1,7 @@
 import React from 'react';
 import ClassNames from 'classnames';
 
-import { Block, Btn, Card, CardHeader, CardContent, CardFooter, Image, Text, Divider, Menu, List, ListItem, Icon } from 'react-essence';
+import { Block, Btn, Card, CardHeader, CardContent, CardFooter, Image, Text, Divider, Menu, List, ListItem, Icon, Input, Slider } from 'react-essence';
 
 var cx = React.ClassNames;
 
@@ -348,7 +348,7 @@ class PatagoniaCommerce extends React.Component {
                     <Block>
                       <Btn label={'s'} ripple={true} type={'succes'} className={'flat size-btn e-background-grey-100 e-text-black'} />
                       <Btn label={'m'} ripple={true} type={'succes'} className={'flat size-btn e-background-grey-100 e-text-black'} />
-                      <Btn label={'m'} ripple={true} type={'succes'} className={'flat size-btn active e-background-grey-100 e-text-black'} />
+                      <Btn label={'l'} ripple={true} type={'succes'} className={'flat size-btn active e-background-grey-100 e-text-black'} />
                       <Btn label={'xl'} ripple={true} type={'succes'} className={'flat size-btn e-background-grey-100 e-text-black'} />
                     </Block>
                     <Text type={'a'} classes={'e-text-left e-subhead e-text-blue-300'}>View size chart</Text>
@@ -533,7 +533,7 @@ class PatagoniaCommerce extends React.Component {
                       <Text type={'p'} classes={'e-text-left e-body2 e-text-white'}>
                         Boohoo Blue
                       </Text>
-                      <Block classes={'price-btn e-h-center e-v-center'}>
+                      <Block classes={'price-btn e-h-center'}>
                         <Text type={'span'} classes={'e-text-left e-subhead e-text-white'}>$178</Text>
                         <Text type={'a'} classes={'e-text-left e-subhead left-border e-text-white e-text-uppercase'}>buy now</Text>
                       </Block>
@@ -616,7 +616,7 @@ class PatagoniaCommerce extends React.Component {
                       <Block>
                         <Btn label={'s'} ripple={true} type={'succes'} className={'flat size-btn e-background-grey-100 e-text-black'} />
                         <Btn label={'m'} ripple={true} type={'succes'} className={'flat size-btn e-background-grey-100 e-text-black'} />
-                        <Btn label={'m'} ripple={true} type={'succes'} className={'flat size-btn e-background-grey-100 e-text-black'} />
+                        <Btn label={'l'} ripple={true} type={'succes'} className={'flat size-btn e-background-grey-100 e-text-black'} />
                         <Btn label={'xl'} ripple={true} type={'succes'} className={'flat size-btn e-background-grey-100 e-text-black'} />
                       </Block>
                       <Block>
@@ -725,7 +725,7 @@ class PatagoniaCommerce extends React.Component {
                     <Block>
                       <Btn label={'s'} ripple={true} type={'succes'} className={'flat size-btn e-background-grey-100 e-text-black'} />
                       <Btn label={'m'} ripple={true} type={'succes'} className={'flat size-btn e-background-grey-100 e-text-black'} />
-                      <Btn label={'m'} ripple={true} type={'succes'} className={'flat size-btn e-background-grey-100 e-text-black'} />
+                      <Btn label={'l'} ripple={true} type={'succes'} className={'flat size-btn e-background-grey-100 e-text-black'} />
                       <Btn label={'xl'} ripple={true} type={'succes'} className={'flat size-btn e-background-grey-100 e-text-black'} />
                     </Block>
                     <Text type={'a'} classes={'e-text-left e-subhead e-text-blue-300'}>View size chart</Text>
@@ -745,6 +745,146 @@ class PatagoniaCommerce extends React.Component {
                 </Block>
               </Block>
              </CardHeader>
+          </Card>
+          <Block classes={'e-row'}>
+            <Block classes={'brick brick-6'}>
+              <Card classes={'e-background-white cart card-h-700'}>
+                <CardHeader>
+                  <Block classes={'align-row'}>
+                    <Block>
+                      <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>3 items in your cart</Text>
+                    </Block>
+                    <Block>
+                      <Text type={'span'} classes={'e-text-right e-subhead e-text-black'}>Discount code: </Text>
+                      <Text type={'span'} classes={'e-text-right e-subhead e-text-blue-400'}>345R </Text>
+                    </Block>
+                  </Block>
+                  <Divider classes={'thinnest e-background-grey-200'} />
+                  <Block classes={'card-align-row cart-item'}>
+                    <Block>
+                      <Image classes={'e-img-rsp'} src={'assets/img/thumb1.jpg'} />
+                    </Block>
+                    <Text type={'span'} classes={'e-text-left e-title e-text-black'}>Maison Kitsune</Text>
+                    <Block classes={'quantity'}>
+                      <Btn onClick={this.removeItem.bind(this)} label={'-'} ripple={true} className={'e-background-white e-left quantity-btn e-text-black'} />
+                      <Text type={'span'} classes={'e-text-center e-title e-text-black item-number'}>{this.state.pieceNumber}</Text>
+                      <Btn onClick={this.addItem.bind(this)} label={'+'} ripple={true} className={'e-background-white e-right quantity-btn e-text-black'} />
+                    </Block>
+                    <Text type={'span'} classes={'e-text-left e-headline e-text-black'}>$350</Text>
+                    <Text type={'a'}>
+                      <Icon name={"navigation-close"} className={"e-text-blue-300 e-caption e-right"} />
+                    </Text>
+                  </Block>
+                  <Divider classes={'thinnest e-background-grey-200'} />
+                  <Block classes={'card-align-row cart-item'}>
+                    <Block>
+                      <Image classes={'e-img-rsp'} src={'assets/img/thumb2.jpg'} />
+                    </Block>
+                    <Text type={'span'} classes={'e-text-left e-title e-text-black'}>Napapijry</Text>
+                    <Block classes={'quantity'}>
+                      <Btn onClick={this.removeItem.bind(this)} label={'-'} ripple={true} className={'e-background-white e-left quantity-btn e-text-black'} />
+                      <Text type={'span'} classes={'e-text-center e-title e-text-black item-number'}>{this.state.pieceNumber}</Text>
+                      <Btn onClick={this.addItem.bind(this)} label={'+'} ripple={true} className={'e-background-white e-right quantity-btn e-text-black'} />
+                    </Block>
+                    <Text type={'span'} classes={'e-text-left e-headline e-text-black'}>$350</Text>
+                    <Text type={'a'}>
+                      <Icon name={"navigation-close"} className={"e-text-blue-300 e-caption e-right"} />
+                    </Text>
+                  </Block>
+                  <Divider classes={'thinnest e-background-grey-200'} />
+                  <Block classes={'card-align-row cart-item'}>
+                    <Block>
+                      <Image classes={'e-img-rsp'} src={'assets/img/thumb3.jpg'} />
+                    </Block>
+                    <Text type={'span'} classes={'e-text-left e-title e-text-black'}>Peaceful Hooligan</Text>
+                    <Block classes={'quantity'}>
+                      <Btn onClick={this.removeItem.bind(this)} label={'-'} ripple={true} className={'e-background-white e-left quantity-btn e-text-black'} />
+                      <Text type={'span'} classes={'e-text-center e-title e-text-black item-number'}>{this.state.pieceNumber}</Text>
+                      <Btn onClick={this.addItem.bind(this)} label={'+'} ripple={true} className={'e-background-white e-right quantity-btn e-text-black'} />
+                    </Block>
+                    <Text type={'span'} classes={'e-text-left e-headline e-text-black'}>$350</Text>
+                    <Text type={'a'}>
+                      <Icon name={"navigation-close"} className={"e-text-blue-300 e-caption e-right"} />
+                    </Text>
+                  </Block>
+                  <Divider classes={'thinnest e-background-grey-200'} />
+                  <Btn label={'Back to Shop'} ripple={true} type={'succes'} className={'flat e-text-black e-background-grey-100'} />
+                  <Block classes={'e-right card-align-row'}>
+                    <Block>
+                      <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-400'}>Total</Text>
+                      <Text type={'span'} classes={'e-text-left e-headline e-text-black'}>$350</Text>
+                    </Block>
+                    <Btn label={'Checkout'} ripple={true} type={'succes'} className={'flat e-text-white e-background-blue-200'} />
+                  </Block>
+                </CardHeader>
+              </Card>
+            </Block>
+            <Block classes={'brick brick-6'}>
+              <Block classes={"e-row"}>
+                <Block classes={'brick brick-6'}>
+                  <Card classes={'e-background-white'}>
+                    <CardHeader>
+                      <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>Size</Text>
+                      <Divider classes={'thinnest e-background-grey-200'} />
+                      <Block classes={'card-align-row'}>
+                        <Btn label={'xs'} ripple={true} type={'succes'} className={'flat size-btn e-background-grey-100 e-text-black'} />
+                        <Btn label={'s'} ripple={true} type={'succes'} className={'flat size-btn active e-background-grey-100 e-text-black'} />
+                        <Btn label={'m'} ripple={true} type={'succes'} className={'flat size-btn e-background-grey-100 e-text-black'} />
+                        <Btn label={'l'} ripple={true} type={'succes'} className={'flat size-btn e-background-grey-100 e-text-black'} />
+                        <Btn label={'xl'} ripple={true} type={'succes'} className={'flat size-btn e-background-grey-100 e-text-black'} />
+                      </Block>
+                    </CardHeader>
+                  </Card>
+                  <Card classes={'e-background-white'}>
+                    <CardHeader>
+                      <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-600'}>Price range</Text>
+                      <Divider classes={'thinnest e-background-grey-200'} />
+                      <Block>
+                        <Block classes={'align-row e-padding-20'}>
+                          <Input type={'number'} classes={'e-left'} name={'label'} placeholder={'From'} hint={'Number input'}/>
+                          <Input type={'number'} classes={'e-right'} name={'label'} placeholder={'To'} hint={'Number input'}/>
+                        </Block>
+                        <Slider discrete={true} step={1} start={20}/>
+                        <Block>
+                          <Text type={'span'} classes={'e-text-left e-left e-subhead e-text-black'}>$10</Text>
+                          <Text type={'span'} classes={'e-text-left e-right e-subhead e-text-black'}>$1000</Text>
+                        </Block>
+                      </Block>
+                    </CardHeader>
+                  </Card>
+                  <Card classes={'e-background-white'}>
+                    <CardHeader>
+                      <Text type={'span'} classes={'e-text-left e-title e-text-black'}>How To Buy</Text>
+                      <Text type={'a'}>
+                        <Icon name={"navigation-close"} className={"e-text-black e-subhead e-right"} />
+                      </Text>
+                      <Divider classes={'thinnest e-background-grey-200'} />
+                      <Text type={'p'} classes={'e-text-left e-subhead e-padding-20 e-text-black'}>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </Text>
+                    </CardHeader>
+                  </Card>
+                </Block>
+                <Block classes={'brick brick-6'}>
+                  <Card classes={'e-background-white'}>
+                    <CardHeader>
+                      <Text type={'span'} classes={'e-text-left e-title e-text-black'}>5</Text>
+                      <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>items in your cart</Text>
+                    </CardHeader>
+                  </Card>
+                  <Card classes={'e-background-white cart-items'}>
+                    <CardHeader>
+                      s
+                    </CardHeader>
+                  </Card>
+                </Block>
+              </Block>
+            </Block>
+          </Block>
+          <Card classes={'e-background-white'}>
+            <CardHeader>
+              s
+            </CardHeader>
           </Card>
         </Block>
       </Block>
