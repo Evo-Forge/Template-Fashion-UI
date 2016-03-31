@@ -23,6 +23,7 @@
     .add-border(white);
     display: flex;
     margin-right: 15px!important;
+    cursor: pointer;
   }
 
   .card-container {
@@ -58,6 +59,12 @@
       left: 50%;
       transform: translate(-50%, -50%);
       opacity: 0;
+    }
+    &.play-video-btn {
+      .add-border(white);
+    }
+    &.play-video-btn-black {
+      .add-border(black);
     }
   }
   .img-container {
@@ -312,8 +319,7 @@
     box-sizing: border-box;
     overflow-y: scroll;
     padding: 0 10px;
-    height: 250px;
-    width: 100%;
+    height: 500px;
     li {
       padding: 5px 0;
       cursor: pointer;
@@ -353,15 +359,72 @@
     padding: 10px;
   }
   &.with-bg {
-    background: url('../img/sketch1.jpg') center center no-repeat;
+    background: url('../img/blue.jpg') center center no-repeat;
     background-size: cover;
   }
 }
 //end 6th section
+.play-thumb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+.video-player {
+  height: 500px;
+}
+.layer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+.green-layer {
+  opacity: 0.8;
+  background: radial-gradient(#009688, #00796B, #37474F);
+}
+.yellow-layer {
+  opacity: 0.7;
+}
 // some helper classes
-  .add-padding(@value) {
-    padding: @value;
+  .add-padding {
+    padding: 10px;
+  }
+  .add-padding-left {
+    padding-left: 10px;
+  }
+  .add-padding-right {
+    padding-right: 10px;
+  }
+  .add-padding-bottom {
+    padding-bottom: 10px;
+  }
+  .add-pointer {
+    cursor: pointer;
+  }
+  .rounded-corners {
+    border-radius: 6px;
+  }
+  .elipsis-text {
+    display: block; /* Fallback for non-webkit */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .elipsis-description {
+    display: block; /* Fallback for non-webkit */
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .box-sizing {
+    box-sizing: border-box;
   }
   .flex-container {
     display: flex;
@@ -370,9 +433,15 @@
     }
     &.e-flex-col {
       flex-direction: column;
+      .self-align-right {
+        align-self: flex-end;
+      }
     }
     &.e-justify-between {
       justify-content: space-between;
+    }
+    .e-flex-grow {
+      flex-grow: 1;
     }
   }  // end flex-container
 
@@ -394,5 +463,11 @@
   }// end .custom-scrollbar
   .set-height {
     height: 380px;
+  }
+  .full-width {
+    width: 100%;
+  }
+  .round-img {
+    border-radius: 50%;
   }
 }
