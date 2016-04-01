@@ -29,7 +29,26 @@
   .card-container {
     border-radius: 8px;
     width: 100%;
+    &.sharp {
+      border-radius: 0 0 8px 8px;
+      .track-bar {
+        height: 4px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        bottom: auto;
+      }
+    }
+    ul {
+      margin-top: 4px;
+      margin-left: 10px;
+    }
+    li.play-control:hover {
+      background: #2196F3;
+    }
   }
+
   // end .card-container
 
   .current-album {
@@ -130,15 +149,33 @@
     top: 35%;
     left: 21.4%;
   }
-  .album-list {
-    .album {
-      width: 18%;
-      box-sizing: border-box;
-      img {
-        border-radius: 8px;
+
+  .album {
+    width: 18%;
+    box-sizing: border-box;
+    img {
+      border-radius: 8px;
+    }
+    .layer {
+      opacity: 0;
+      border-radius: 8px;
+    }
+    &:hover {
+      .preview-btn {
+        opacity: 1;
+        -moz-transition: opacity .4s ease-in-out;
+        -webkit-transition: opacity .4s ease-in-out;
+        transition: opacity .4s ease-in-out;
+      }
+      .layer {
+        opacity: 0.4;
+        -moz-transition: opacity .6s ease-in-out;
+        -webkit-transition: opacity .6s ease-in-out;
+        transition: opacity .6s ease-in-out;
       }
     }
-  }// end second section
+  }
+  // end second section
   .small-player {
     background: url('../img/sketch1.jpg') center center no-repeat;
     background-size: cover;
@@ -385,9 +422,20 @@
   opacity: 0.8;
   background: radial-gradient(#009688, #00796B, #37474F);
 }
-.yellow-layer {
+.transparent-layer {
   opacity: 0.7;
 }
+.time-layer {
+  opacity: 0.5;
+  position: absolute;
+  top: 4%;
+  left: 4%;
+  padding: 0 6px;
+  &.text-layer {
+    opacity: 1;
+  }
+}
+
 // some helper classes
   .add-padding {
     padding: 10px;
@@ -436,6 +484,9 @@
       .self-align-right {
         align-self: flex-end;
       }
+    }
+    &.e-flex-nowrap {
+      flex-wrap: nowrap;
     }
     &.e-justify-between {
       justify-content: space-between;

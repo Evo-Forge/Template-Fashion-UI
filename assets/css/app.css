@@ -25,6 +25,24 @@ body {
   border-radius: 8px;
   width: 100%;
 }
+.patagoniaMedia .card-container.sharp {
+  border-radius: 0 0 8px 8px;
+}
+.patagoniaMedia .card-container.sharp .track-bar {
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: auto;
+}
+.patagoniaMedia .card-container ul {
+  margin-top: 4px;
+  margin-left: 10px;
+}
+.patagoniaMedia .card-container li.play-control:hover {
+  background: #2196F3;
+}
 .patagoniaMedia .current-album {
   height: 350px;
 }
@@ -127,12 +145,28 @@ body {
   top: 35%;
   left: 21.4%;
 }
-.patagoniaMedia .album-list .album {
+.patagoniaMedia .album {
   width: 18%;
   box-sizing: border-box;
 }
-.patagoniaMedia .album-list .album img {
+.patagoniaMedia .album img {
   border-radius: 8px;
+}
+.patagoniaMedia .album .layer {
+  opacity: 0;
+  border-radius: 8px;
+}
+.patagoniaMedia .album:hover .preview-btn {
+  opacity: 1;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+.patagoniaMedia .album:hover .layer {
+  opacity: 0.4;
+  -moz-transition: opacity 0.6s ease-in-out;
+  -webkit-transition: opacity 0.6s ease-in-out;
+  transition: opacity 0.6s ease-in-out;
 }
 .patagoniaMedia .small-player {
   background: url('../img/sketch1.jpg') center center no-repeat;
@@ -369,8 +403,18 @@ body {
   opacity: 0.8;
   background: radial-gradient(#009688, #00796b, #37474f);
 }
-.patagoniaMedia .yellow-layer {
+.patagoniaMedia .transparent-layer {
   opacity: 0.7;
+}
+.patagoniaMedia .time-layer {
+  opacity: 0.5;
+  position: absolute;
+  top: 4%;
+  left: 4%;
+  padding: 0 6px;
+}
+.patagoniaMedia .time-layer.text-layer {
+  opacity: 1;
 }
 .patagoniaMedia .add-padding {
   padding: 10px;
@@ -422,6 +466,9 @@ body {
 }
 .patagoniaMedia .flex-container.e-flex-col .self-align-right {
   align-self: flex-end;
+}
+.patagoniaMedia .flex-container.e-flex-nowrap {
+  flex-wrap: nowrap;
 }
 .patagoniaMedia .flex-container.e-justify-between {
   justify-content: space-between;

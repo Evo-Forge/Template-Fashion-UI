@@ -601,10 +601,43 @@ class PatagoniaMedia extends React.Component {
 
             <Block className={'e-row'}>
               <Block className={'brick brick-12'}>
-                <Card className={'card-container e-background-white'}>
-                  <CardFooter>
-                   Card footer with action buttons
-                  </CardFooter>
+                <Card className={'card-container sharp e-background-white pos-relative'}>
+                  <Block className={'track-bar e-background-grey-300'}></Block>
+                  <Block className={'track-bar e-background-blue-500'} style={{width:'30%'}}></Block>
+                  <Block className={'flex-container e-justify-between e-v-center'}>
+                    <Block className={'flex-container e-v-center'}>
+                      <List type={'inline'}>
+                        <ListItem className={'play-control'}>
+                          <Btn ripple={true} type={'flat'} icon={'av-fast-rewind'} className={'e-headline e-text-grey-700 btn-icon'} />
+                        </ListItem>
+                        <ListItem className={'play-control'}>
+                          <Btn ripple={true} type={'flat'} icon={'av-play-arrow'} className={'e-headline e-text-grey-700 btn-icon'} />
+                        </ListItem>
+                        <ListItem className={'play-control'}>
+                          <Btn ripple={true} type={'flat'} icon={'av-fast-forward'} className={'e-headline e-text-grey-700 btn-icon'} />
+                        </ListItem>
+                        <ListItem>
+                          <Btn ripple={true} type={'flat'} icon={'av-volume-up'} className={'e-headline e-text-grey-700 btn-icon'} />
+                        </ListItem>
+                      </List>
+                      <Image src={'./assets/img/album4.jpeg'} width={'30px'} height={'30px'} className={'e-img-rsp rounded-corners'} />
+                      <Text className={'e-body1 add-padding-left'}>
+                        <Text type={'strong'} className={'e-text-grey-700'}>I live for Your Love - </Text>
+                        <Text className={'e-text-grey-400'}>Freestyle, Freestyle</Text>
+                      </Text>
+                    </Block>
+                    <Block className={'flex-container e-v-center'}>
+                      <Text type={'strong'} className={'e-body2 e-text-grey-700'}>1:34/3:28</Text>
+                      <List type={'inline'}>
+                        <ListItem>
+                          <Btn ripple={true} type={'flat'} icon={'av-shuffle'} className={'e-headline e-text-grey-700 btn-icon'} />
+                        </ListItem>
+                        <ListItem>
+                          <Btn ripple={true} type={'flat'} icon={'av-repeat'} className={'e-headline e-text-grey-700 btn-icon'} />
+                        </ListItem>
+                      </List>
+                    </Block>
+                  </Block>
                 </Card>
               </Block>
             </Block>
@@ -1776,7 +1809,96 @@ class PatagoniaMedia extends React.Component {
             <Block className={'e-row'}>
               <Block className={'brick brick-12'}>
                 <Card className={'card-container e-background-white'}>
-                  videos
+                  <Block className={'flex-container e-justify-between e-v-center add-padding'}>
+                    <Text className={'e-text-grey-700 e-body1'}>Recent video</Text>
+                    <Block className={'flex-container e-flex-nowrap'}>
+                      <Switch type={'switches'} afterText={'Autoplay'} name={'switch-video'} className={'e-body1 e-text-grey-700'}/>
+                      <Btn ripple={true} type={'flat'} icon={'hardware-keyboard-arrow-left'} className={'btn-icon no-min-size e-text-grey-700'} />
+                      <Btn ripple={true} type={'flat'} icon={'hardware-keyboard-arrow-right'} className={'btn-icon no-min-size e-text-grey-700'} />
+                    </Block>
+                  </Block>
+                  <Block className={'flex-container e-justify-between'}>
+                    <Block className={'album add-padding'}>
+                      <Block className={'pos-relative'}>
+                        <Image src={'./assets/img/album1.jpg'} className={'e-img-rsp'} />
+                        <Btn icon={'av-play-arrow'} ripple={true} type={'fab'} className={'preview-btn fab e-text-white btn-icon e-no-margin'} />
+                        <Block className={'layer e-background-brown-900'}></Block>
+                        <Block className={'time-layer e-background-black e-text-black rounded-corners e-body1'}>10:34</Block>
+                        <Block className={'time-layer text-layer e-text-white e-body1'}>10:34</Block>
+                      </Block>
+                      <Text type={'strong'}>
+                        <Text type={'p'} className={'elipsis-description e-text-grey-900 e-body2 e-no-margin'}>Home: Nature podcast</Text>
+                      </Text>
+                      <Text type={'p'} className={'e-text-grey-500 e-body1'}>
+                        The Wildern
+                      </Text>
+                    </Block>
+
+                    <Block className={'album add-padding'}>
+                      <Block className={'pos-relative'}>
+                        <Image src={'./assets/img/album2.jpg'} className={'e-img-rsp'} />
+                        <Btn icon={'av-play-arrow'} ripple={true} type={'fab'} className={'preview-btn fab e-text-white btn-icon e-no-margin'} />
+                        <Block className={'layer e-background-brown-900'}></Block>
+                        <Block className={'time-layer e-background-black e-text-black rounded-corners e-body1'}>10:34</Block>
+                        <Block className={'time-layer text-layer e-text-white e-body1'}>10:34</Block>
+                      </Block>
+                      <Text type={'strong'}>
+                        <Text type={'p'} className={'elipsis-description e-text-grey-900 e-body2 e-no-margin'}>Home: Nature podcast</Text>
+                      </Text>
+                      <Text type={'p'} className={'e-text-grey-500 e-body1'}>
+                        The Wildern
+                      </Text>
+                    </Block>
+
+                    <Block className={'album add-padding'}>
+                      <Block className={'pos-relative'}>
+                        <Image src={'./assets/img/album3.jpg'} className={'e-img-rsp'} />
+                        <Btn icon={'av-play-arrow'} ripple={true} type={'fab'} className={'preview-btn fab e-text-white btn-icon e-no-margin'} />
+                        <Block className={'layer e-background-brown-900'}></Block>
+                        <Block className={'time-layer e-background-black e-text-black rounded-corners e-body1'}>10:34</Block>
+                        <Block className={'time-layer text-layer e-text-white e-body1'}>10:34</Block>
+                      </Block>
+                      <Text type={'strong'}>
+                        <Text type={'p'} className={'elipsis-description e-text-grey-900 e-body2 e-no-margin'}>Home: Nature podcast</Text>
+                      </Text>
+                      <Text type={'p'} className={'e-text-grey-500 e-body1'}>
+                        The Wildern
+                      </Text>
+                    </Block>
+
+                    <Block className={'album add-padding'}>
+                      <Block className={'pos-relative'}>
+                        <Image src={'./assets/img/album4.jpeg'} className={'e-img-rsp'} />
+                        <Btn icon={'av-play-arrow'} ripple={true} type={'fab'} className={'preview-btn fab e-text-white btn-icon e-no-margin'} />
+                        <Block className={'layer e-background-brown-900'}></Block>
+                        <Block className={'time-layer e-background-black e-text-black rounded-corners e-body1'}>10:34</Block>
+                        <Block className={'time-layer text-layer e-text-white e-body1'}>10:34</Block>
+                      </Block>
+                      <Text type={'strong'}>
+                        <Text type={'p'} className={'elipsis-description e-text-grey-900 e-body2 e-no-margin'}>Home: Nature podcast</Text>
+                      </Text>
+                      <Text type={'p'} className={'e-text-grey-500 e-body1'}>
+                        The Wildern
+                      </Text>
+                    </Block>
+
+                    <Block className={'album add-padding'}>
+                      <Block className={'pos-relative'}>
+                        <Image src={'./assets/img/album5.jpg'} className={'e-img-rsp'} />
+                        <Btn icon={'av-play-arrow'} ripple={true} type={'fab'} className={'preview-btn fab e-text-white btn-icon e-no-margin'} />
+                        <Block className={'layer e-background-brown-900'}></Block>
+                        <Block className={'time-layer e-background-black e-text-black rounded-corners e-body1'}>10:34</Block>
+                        <Block className={'time-layer text-layer e-text-white e-body1'}>10:34</Block>
+                      </Block>
+                      <Text type={'strong'}>
+                        <Text type={'p'} className={'elipsis-description e-text-grey-900 e-body2 e-no-margin'}>Home: Nature podcast</Text>
+                      </Text>
+                      <Text type={'p'} className={'e-text-grey-500 e-body1'}>
+                        The Wildern
+                      </Text>
+                    </Block>
+
+                  </Block>
                 </Card>
               </Block>
             </Block>
@@ -1928,7 +2050,7 @@ class PatagoniaMedia extends React.Component {
               <Block className={'brick brick-3 flex-container'}>
                 <Card className={'card-container video-preview pos-relative e-no-padding'}>
                   <Image src={'./assets/img/inmaculada0.jpg'} height={'100%'} />
-                  <Block className={'layer yellow-layer e-background-amber-400'}></Block>
+                  <Block className={'layer transparent-layer e-background-amber-400'}></Block>
                   <Block className={'layer flex-container e-flex-col e-justify-between e-strech-items'}>
                     <Block className={'flex-container e-flex-col e-h-center e-v-center'}>
                       <Text type={'h1'} className={'e-text-black e-display-2'}>
