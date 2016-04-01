@@ -90,7 +90,6 @@
   }
   .card {
     border-radius: 6px;
-    position: relative;
     &:hover {
       .e-shadow-5();
     }
@@ -333,17 +332,30 @@
           max-height: 100px!important;
         }
       }
-      .align-row {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-      }
       .e-padding-20 {
         padding: 20px;
       }
     }
+    .filters {
+      span {
+        padding: 5px;
+        a:hover {
+          color: #1A94F7!important;
+        }
+      }
+    }
+    .sort-by {
+      border: 1px solid #f8bbd0;
+      display: block;
+      border-radius: 5px;
+    }
+    .display-btn {
+      min-width: 35px;
+      min-height: 35px;
+    }
   }
   .cart-items {
+    position: relative;
     &:before {
       content: '';
       display: block;
@@ -356,5 +368,18 @@
       border-style: solid;
       border-width: 10px;
     }
+  }
+  .align-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sale-btn {
+    border-radius: 15px;
+    text-transform: lowercase;
+    min-width: 56px!important;
+    min-height: 26px!important;
+    line-height: normal;
   }
 }

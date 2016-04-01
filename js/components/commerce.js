@@ -877,13 +877,374 @@ class PatagoniaCommerce extends React.Component {
                       s
                     </CardHeader>
                   </Card>
+                  <Block classes={'brick brick-12 align-row'}>
+                    <Btn label={'new'} ripple={true} type={'succes'} className={'flat sale-btn e-background-yellow-700'} />
+                    <Btn label={'hot'} ripple={true} type={'succes'} className={'flat sale-btn e-background-red-500'} />
+                    <Btn label={'sale'} ripple={true} type={'succes'} className={'flat sale-btn e-background-blue-200'} />
+                  </Block>
+                  <Card classes={'e-background-white'}>
+                    <CardHeader>
+                      <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>Colors</Text>
+                      <Divider classes={'thinnest e-background-grey-200'} />
+                      <Block classes={'colors'}>
+                        <List type={'navigation'} >
+                         <ListItem>
+                          <Text type={'a'}>
+                            <Icon name={"image-brightness-1"} className={"e-text-indigo-400 e-title show"} />
+                            <Icon name={"action-done"} className={"e-text-black hidden"} />
+                          </Text>
+                         </ListItem>
+                         <ListItem>
+                          <Text type={'a'}>
+                            <Icon name={"image-brightness-1"} className={"e-text-grey-600 show"} />
+                            <Icon name={"action-done"} className={"e-text-black hidden"} />
+                          </Text>
+                         </ListItem>
+                         <ListItem>
+                          <Text type={'a'}>
+                            <Icon name={"image-brightness-1"} className={"e-text-pink-100 show"} />
+                            <Icon name={"action-done"} className={"e-text-black hidden"} />
+                          </Text>
+                         </ListItem>
+                         <ListItem>
+                          <Text type={'a'}>
+                            <Icon name={"image-brightness-1"} className={"e-text-indigo-400 e-title show"} />
+                            <Icon name={"action-done"} className={"e-text-black hidden"} />
+                          </Text>
+                         </ListItem>
+                         <ListItem>
+                          <Text type={'a'}>
+                            <Icon name={"image-brightness-1"} className={"e-text-grey-600 show"} />
+                            <Icon name={"action-done"} className={"e-text-black hidden"} />
+                          </Text>
+                         </ListItem>
+                         <ListItem>
+                          <Text type={'a'}>
+                            <Icon name={"image-brightness-1"} className={"e-text-pink-100 show"} />
+                            <Icon name={"action-done"} className={"e-text-black hidden"} />
+                          </Text>
+                         </ListItem>
+                         <ListItem>
+                          <Text type={'a'}>
+                            <Icon name={"image-brightness-1"} className={"e-text-indigo-400 e-title show"} />
+                            <Icon name={"action-done"} className={"e-text-black hidden"} />
+                          </Text>
+                         </ListItem>
+                         <ListItem>
+                          <Text type={'a'}>
+                            <Icon name={"image-brightness-1"} className={"e-text-grey-600 show"} />
+                            <Icon name={"action-done"} className={"e-text-black hidden"} />
+                          </Text>
+                         </ListItem>
+                         <ListItem>
+                          <Text type={'a'}>
+                            <Icon name={"image-brightness-1"} className={"e-text-pink-100 show"} />
+                            <Icon name={"action-done"} className={"e-text-black hidden"} />
+                          </Text>
+                         </ListItem>
+                        </List>
+                      </Block>
+                    </CardHeader>
+                  </Card>
                 </Block>
               </Block>
             </Block>
           </Block>
           <Card classes={'e-background-white'}>
+            <CardHeader classes={'e-padding-20'}>
+              <Block classes={'filters e-left align-row'}>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-subhead e-text-black'}>Shoes</Text>
+                </Text>
+                <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>/</Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-subhead e-text-black'}>Clothing</Text>
+                </Text>
+                <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>/</Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-subhead e-text-black'}>Bags</Text>
+                </Text>
+                <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>/</Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-subhead e-text-black'}>Accessories</Text>
+                </Text>
+                <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>/</Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-subhead e-text-black'}>Clearence</Text>
+                </Text>
+                <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>/</Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-subhead e-text-black'}>Women`s </Text>
+                </Text>
+                <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>/</Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-subhead e-text-black'}>Men`s</Text>
+                </Text>
+                <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>/</Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-subhead e-text-black'}>Kid`s</Text>
+                </Text>
+                <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>/</Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-subhead e-text-black'}>Brands</Text>
+                </Text>
+              </Block>
+              <Block classes={'e-right align-row'}>
+                <Text type={'span'} classes={'e-text-left e-title e-text-black'}>Sort by</Text>
+                <Menu type={'cover'} placeholder={'Brand'} classes={'e-right sort-by'}>
+                 <Text className={'e-text-black'}>Profile</Text>
+                 <Text className={'e-text-black'}>Settings</Text>
+                 <Text className={'e-text-black'}>Logout</Text>
+                </Menu>
+              </Block>
+            </CardHeader>
+          </Card>
+          <Card classes={'e-background-white'}>
             <CardHeader>
-              s
+              <Block classes={'filters e-left align-row'}>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-subhead e-text-black'}>Shoes</Text>
+                </Text>
+                <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>/</Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-subhead e-text-black'}>Clothing</Text>
+                </Text>
+                <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>/</Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-subhead e-text-black'}>Bags</Text>
+                </Text>
+                <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>/</Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-subhead e-text-black'}>Accessories</Text>
+                </Text>
+                <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>/</Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-subhead e-text-black'}>Clearence</Text>
+                </Text>
+                <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>/</Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-subhead e-text-black'}>Women`s </Text>
+                </Text>
+                <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>/</Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-subhead e-text-black'}>Men`s</Text>
+                </Text>
+                <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>/</Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-subhead e-text-black'}>Kid`s</Text>
+                </Text>
+                <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>/</Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-subhead e-text-black'}>Brands</Text>
+                </Text>
+              </Block>
+              <Block classes={'e-right align-row'}>
+                <Text type={'span'} classes={'e-text-left e-title e-text-black'}>Sort by</Text>
+                <Menu type={'cover'} placeholder={'Type'} classes={'e-right sort-by'}>
+                 <Text className={'e-text-black'}>Profile</Text>
+                 <Text className={'e-text-black'}>Settings</Text>
+                 <Text className={'e-text-black'}>Logout</Text>
+                </Menu>
+                <Btn icon={'navigation-apps'} ripple={true} className={'display-btn e-display-1 e-text-grey-600 e-background-white'} />
+                <Btn icon={'navigation-menu'} ripple={true} className={'display-btn e-display-1 e-text-grey-600 e-background-white'} />
+              </Block>
+            </CardHeader>
+          </Card>
+          <Card classes={'e-background-white'}>
+            <CardHeader>
+              <Block classes={'e-left align-row'}>
+                <Text type={'span'} classes={'e-text-left e-title e-text-black'}>Filter</Text>
+                <Menu type={'cover'} placeholder={'Type'} classes={'e-right sort-by'}>
+                 <Text className={'e-text-black'}>Profile</Text>
+                 <Text className={'e-text-black'}>Settings</Text>
+                 <Text className={'e-text-black'}>Logout</Text>
+                </Menu>
+                <Menu type={'cover'} placeholder={'Modern'} classes={'e-right sort-by'}>
+                 <Text className={'e-text-black'}>Profile</Text>
+                 <Text className={'e-text-black'}>Settings</Text>
+                 <Text className={'e-text-black'}>Logout</Text>
+                </Menu>
+                <Menu type={'cover'} placeholder={'Colors'} classes={'e-right sort-by'}>
+                 <Text className={'e-text-black'}>Profile</Text>
+                 <Text className={'e-text-black'}>Settings</Text>
+                 <Text className={'e-text-black'}>Logout</Text>
+                </Menu>
+                <Menu type={'cover'} placeholder={'Gender'} classes={'e-right sort-by'}>
+                 <Text className={'e-text-black'}>Profile</Text>
+                 <Text className={'e-text-black'}>Settings</Text>
+                 <Text className={'e-text-black'}>Logout</Text>
+                </Menu>
+              </Block>
+              <Block classes={'e-right align-row'}>
+                <Text type={'span'} classes={'e-text-left e-title e-text-black'}>Sort by</Text>
+                <Menu type={'cover'} placeholder={'Most Relevant'} classes={'e-right sort-by'}>
+                 <Text className={'e-text-black'}>Profile</Text>
+                 <Text className={'e-text-black'}>Settings</Text>
+                 <Text className={'e-text-black'}>Logout</Text>
+                </Menu>
+              </Block>
+            </CardHeader>
+          </Card>
+          <Card classes={'e-background-white'}>
+            <CardHeader>
+              <Block classes={'e-left align-row'}>
+                <Text type={'span'} classes={'e-text-left e-title e-text-black'}>Filter</Text>
+                <Menu type={'cover'} placeholder={'Type'} classes={'e-right sort-by'}>
+                 <Text className={'e-text-black'}>Profile</Text>
+                 <Text className={'e-text-black'}>Settings</Text>
+                 <Text className={'e-text-black'}>Logout</Text>
+                </Menu>
+                <Menu type={'cover'} placeholder={'Modern'} classes={'e-right sort-by'}>
+                 <Text className={'e-text-black'}>Profile</Text>
+                 <Text className={'e-text-black'}>Settings</Text>
+                 <Text className={'e-text-black'}>Logout</Text>
+                </Menu>
+                <Menu type={'cover'} placeholder={'Colors'} classes={'e-right sort-by'}>
+                 <Text className={'e-text-black'}>Profile</Text>
+                 <Text className={'e-text-black'}>Settings</Text>
+                 <Text className={'e-text-black'}>Logout</Text>
+                </Menu>
+                <Menu type={'cover'} placeholder={'Gender'} classes={'e-right sort-by'}>
+                 <Text className={'e-text-black'}>Profile</Text>
+                 <Text className={'e-text-black'}>Settings</Text>
+                 <Text className={'e-text-black'}>Logout</Text>
+                </Menu>
+              </Block>
+              <Block classes={'e-right align-row'}>
+                <Btn icon={'navigation-apps'} ripple={true} className={'display-btn e-display-1 e-text-grey-600 e-background-white'} />
+                <Btn icon={'navigation-menu'} ripple={true} className={'display-btn e-display-1 e-text-grey-600 e-background-white'} />
+              </Block>
+            </CardHeader>
+          </Card>
+          <Card classes={'e-background-white'}>
+            <CardHeader classes={'e-padding-20'}>
+              <Block classes={'filters e-left align-row'}>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-title e-text-black'}>A</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-title e-text-black'}>B</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-title e-text-black'}>C</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-title e-text-black'}>D</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-title e-text-black'}>E</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-title e-text-black'}>F</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-title e-text-black'}>G</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-title e-text-black'}>H</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-title e-text-black'}>I</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-title e-text-black'}>J</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-title e-text-black'}>K</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-title e-text-black'}>L</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-title e-text-black'}>M</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-title e-text-black'}>N</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-title e-text-black'}>O</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-title e-text-black'}>P</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-title e-text-black'}>Q</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-title e-text-black'}>R</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-title e-text-black'}>S</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-title e-text-black'}>T</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-title e-text-black'}>U</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-title e-text-black'}>V</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-title e-text-black'}>W</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-title e-text-black'}>X</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-title e-text-black'}>Y</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-title e-text-black'}>Z</Text>
+                </Text>
+              </Block>
+              <Block classes={'e-right align-row'}>
+                <Text type={'span'} classes={'e-text-left e-title e-text-black'}>Sort by</Text>
+                <Menu type={'cover'} placeholder={'Alphabet'} classes={'e-right sort-by'}>
+                 <Text className={'e-text-black'}>Profile</Text>
+                 <Text className={'e-text-black'}>Settings</Text>
+                 <Text className={'e-text-black'}>Logout</Text>
+                </Menu>
+              </Block>
+            </CardHeader>
+          </Card>
+          <Card classes={'e-background-white'}>
+            <CardHeader classes={'e-padding-20 align-row'}>
+              <Block>
+                <Btn icon={'hardware-keyboard-arrow-left'} ripple={true} className={'display-btn e-headline e-text-grey-600 e-background-white'} />
+              </Block>
+              <Block classes={'filters'}>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-subhead e-text-black'}>1</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-subhead e-text-black'}>2</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-subhead e-text-black'}>3</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-subhead e-text-black'}>4</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-subhead e-text-black'}>5</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-subhead e-text-black'}>6</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-subhead e-text-black'}>7</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-subhead e-text-black'}>8</Text>
+                </Text>
+                <Text type={'span'}>
+                  <Text type={'a'} classes={'e-text-left e-subhead e-text-black'}>9</Text>
+                </Text>
+              </Block>
+              <Block>
+                <Btn icon={'hardware-keyboard-arrow-right'} ripple={true} className={'display-btn e-headline e-text-grey-600 e-background-white'} />
+              </Block>
             </CardHeader>
           </Card>
         </Block>
