@@ -9,6 +9,7 @@ import {Block,
   Image,
   Input,
   List, ListItem, Switch,
+  Menu,
   Text } from 'react-essence';
 
 import Stepper from 'essence-stepper';
@@ -66,7 +67,9 @@ class PatagoniaForms extends React.Component {
                   <Block classes={'e-left e-text-center margin-nr size'}>
                     <Text type={'span'} classes={'e-text-uppercase'}>$25</Text>
                   </Block>
-                  <Icon name={"navigation-close"} className={"e-text-cyan-A200"} />
+                  <Block>
+                    <Btn icon={'navigation-close'} ripple={true} type={'fab-mini'} classes={'fab-mini e-right e-text-cyan-A200 e-background-white icon-close close-btn-align'} />
+                  </Block>
                 </Text>
               </ListItem>
               <ListItem classes={'padding-list-stepper e-background-grey-100'}>
@@ -87,7 +90,9 @@ class PatagoniaForms extends React.Component {
                   <Block classes={'e-left e-text-center margin-nr size'}>
                     <Text type={'span'} classes={'e-text-uppercase'}>$35</Text>
                   </Block>
-                  <Icon name={"navigation-close"} className={"e-text-cyan-A200"} />
+                  <Block>
+                    <Btn icon={'navigation-close'} ripple={true} type={'fab-mini'} classes={'fab-mini e-right e-text-cyan-A200 e-background-grey-100 icon-close close-btn-align'} />
+                  </Block>
                 </Text>
               </ListItem>
               <ListItem classes={'padding-list-stepper'}>
@@ -108,7 +113,9 @@ class PatagoniaForms extends React.Component {
                   <Block classes={'e-left e-text-center margin-nr size'}>
                     <Text type={'span'} classes={'e-text-uppercase'}>$117</Text>
                   </Block>
-                  <Icon name={"navigation-close"} className={"e-text-cyan-A200"} />
+                  <Block>
+                    <Btn icon={'navigation-close'} ripple={true} type={'fab-mini'} classes={'fab-mini e-right e-text-cyan-A200 e-background-white icon-close close-btn-align'} />
+                  </Block>
                 </Text>
               </ListItem>
               <ListItem classes={'padding-list-stepper border-t-discount e-padding-top-15 e-padding-15'}>
@@ -273,7 +280,7 @@ class PatagoniaForms extends React.Component {
           <Block classes={'e-row'}>
             <Block classes={'brick brick-4 e-h-start e-v-center'}>
               <Card className={'e-background-white full-width card-sign'}>
-                <CardHeader className={'border-header-card'}>
+                <CardHeader className={'border-header-card e-no-padding'}>
                   <Text type={'span'} classes={'e-text-left e-body1 align-title'}>Sign In</Text>
                   <Btn icon={'navigation-close'} ripple={true} type={'fab-mini'} classes={'fab-mini e-background-white e-right icon-close'} />
                 </CardHeader>
@@ -302,12 +309,15 @@ class PatagoniaForms extends React.Component {
 
             <Block classes={'brick brick-4 e-h-center e-v-center'}>
               <Card className={'e-background-white full-width card-sign'}>
-                <CardHeader className={'e-text-left border-header-card'}>
-                  <Text type={'span'} classes={'e-text-left e-body1'}>Sign Up</Text>
-                  <Icon name={"navigation-close"} className={"e-text-black e-right"} />
+                <CardHeader className={'e-text-left border-header-card e-no-padding'}>
+                  <Text type={'span'} classes={'e-text-left e-body1 align-title'}>Sign Up</Text>
+                  <Btn icon={'navigation-close'} ripple={true} type={'fab-mini'} classes={'fab-mini e-background-white e-right icon-close'} />
                 </CardHeader>
                 <CardContent>
-                  <Input type={'email'} name={'label'} label={'weerdlook@gmail.com'} classes={'input-look input-focus'}/>
+                  <Block classes={'border-input-icon'}>
+                    <Input type={'email'} name={'label'} placeholder={'weerd@gmail.com'} classes={'with-icon'}/>
+                    <Icon name={"action-done"} className={"e-text-cyan-A200 e-right icon-in-input"} />
+                  </Block>
                   <Input type={'text'} name={'label'} label={'Password'} classes={'e-text-grey-300 input-look'}/>
                   <Input type={'text'} name={'label'} label={'Confirm password'} classes={'e-text-grey-300 input-look'}/>
 
@@ -334,9 +344,13 @@ class PatagoniaForms extends React.Component {
 
             <Block classes={'brick brick-4 e-h-end e-v-end'}>
               <Card classes={'full-width bg-city e-text-white card-sign'}>
-                <CardHeader className={'e-text-left border-header-card'}>
-                  <Text type={'span'} classes={'e-text-left e-body1 e-text-white'}>Sign In</Text>
-                  <Icon name={"hardware-keyboard-control"} className={"e-text-white e-headline e-right"} />
+                <CardHeader className={'e-text-left border-header-card e-no-padding'}>
+                  <Text type={'span'} classes={'e-text-left e-body1 e-text-white align-title'}>Sign In</Text>
+                  <Menu type={'cover'} icon={'hardware-keyboard-control'} classes={'e-right e-headline e-text-left e-text-white margin-r-icon'}>
+                    <Text className={'e-text-black'}>Login</Text>
+                    <Text className={'e-text-black'}>Account Settings</Text>
+                    <Text className={'e-text-black'}>Cart</Text>
+                  </Menu>
                 </CardHeader>
                 <CardContent>
                   <Text type={'h1'} classes={'e-text-left e-text-white e-headline'}>Kohalo&Co</Text>
@@ -375,9 +389,9 @@ class PatagoniaForms extends React.Component {
           <Block classes={'e-row'}>
             <Block classes={'brick brick-4 e-h-start e-v-center'}>
               <Card className={'e-background-white full-width card-login'}>
-                <CardHeader className={'border-header-card'}>
-                  <Text type={'span'} classes={'e-text-left e-body1'}>Login</Text>
-                  <Icon name={"navigation-close"} className={"e-text-black e-right"} />
+                <CardHeader className={'border-header-card e-no-padding'}>
+                  <Text type={'span'} classes={'e-text-left e-body1 align-title'}>Login</Text>
+                  <Btn icon={'navigation-close'} ripple={true} type={'fab-mini'} classes={'fab-mini e-background-white e-right icon-close'} />
                 </CardHeader>
                 <CardContent className={'e-text-center'}>
                   <Input type={'email'} name={'label'} label={'Email'} classes={'e-text-grey-300 input-look'}/>
@@ -413,9 +427,9 @@ class PatagoniaForms extends React.Component {
               <Block classes={'e-row full-width'}>
                 <Block classes={'brick brick-12 e-h-center e-v-center'}>
                   <Card classes={'e-background-white full-width'}>
-                    <CardHeader className={'border-header-card'}>
-                      <Text type={'span'} classes={'e-left e-body1'}>Restore Password</Text>
-                      <Icon name={"navigation-close"} className={"e-text-black e-right"} />
+                    <CardHeader className={'border-header-card e-no-padding'}>
+                      <Text type={'span'} classes={'e-left e-body1 align-title'}>Restore Password</Text>
+                      <Btn icon={'navigation-close'} ripple={true} type={'fab-mini'} classes={'fab-mini e-background-white e-right icon-close'} />
                     </CardHeader>
                     <CardContent className={'e-text-center'}>
                       <Input type={'email'} name={'label'} label={'Email'} classes={'e-text-grey-300 input-look'}/>
@@ -428,12 +442,12 @@ class PatagoniaForms extends React.Component {
 
                 <Block classes={'brick brick-12 e-h-center e-v-center'}>
                   <Card className={'e-background-white full-width'}>
-                    <CardHeader className={'border-header-card'}>
-                      <Text type={'span'} classes={'e-left e-body1'}>Change your email</Text>
-                      <Icon name={"navigation-close"} className={"e-text-black e-right"} />
+                    <CardHeader className={'border-header-card e-no-padding'}>
+                      <Text type={'span'} classes={'e-left e-body1 align-title'}>Change your email</Text>
+                      <Btn icon={'navigation-close'} ripple={true} type={'fab-mini'} classes={'fab-mini e-background-white e-right icon-close'} />
                     </CardHeader>
                     <CardContent className={'e-text-center'}>
-                      <Input type={'email'} name={'label'} label={'weerdlook@gmail.com'} classes={'e-text-grey-300 input-look input-focus'}/>
+                      <Input type={'email'} name={'label'} label={'weerd@gmail.com'} classes={'e-text-grey-300 input-look input-focus'}/>
                       <Block>
                         <Btn label={'Change email'} ripple={true} type={'submit'} classes={'raised e-button e-background-indigo-400 e-text-white e-margin-top-15 full-width'} />                      </Block>
                     </CardContent>
@@ -447,9 +461,9 @@ class PatagoniaForms extends React.Component {
           <Block classes={'e-row'}>
             <Block classes={'brick brick-4 e-h-start e-v-end'}>
               <Card className={'e-background-white full-width'}>
-                <CardHeader className={'e-text-left border-header-card'}>
-                  <Text type={'span'} classes={'e-text-left e-body1'}>Contact Us</Text>
-                  <Icon name={"navigation-close"} className={"e-text-black e-right"} />
+                <CardHeader className={'e-text-left border-header-card e-no-padding'}>
+                  <Text type={'span'} classes={'e-text-left e-body1 align-title'}>Contact Us</Text>
+                  <Btn icon={'navigation-close'} ripple={true} type={'fab-mini'} classes={'fab-mini e-background-white e-right icon-close'} />
                 </CardHeader>
                 <CardContent>
                   <Input type={'text'} name={'label'} label={'Your Name'} classes={'e-text-grey-300 input-look'}/>
@@ -483,8 +497,8 @@ class PatagoniaForms extends React.Component {
                   </Block>
 
                   <Block classes={'e-right half-width e-background-white'}>
-                    <Block classes={'full-width border-header-card padding-card'}>
-                      <Text type={'p'} classes={'e-text-left e-body1'}>Contact Us</Text>
+                    <Block classes={'full-width border-header-card'}>
+                      <Text type={'p'} classes={'e-text-left e-body1 align-title'}>Contact Us</Text>
                     </Block>
                     <Block classes={'padding-card'}>
                       <Input type={'text'} name={'label'} label={'Your Name'} classes={'e-text-grey-300 input-look'}/>
@@ -511,9 +525,9 @@ class PatagoniaForms extends React.Component {
           <Block classes={'e-row'}>
             <Block classes={'brick brick-6 e-h-end e-v-end'}>
               <Card classes={'full-width e-background-white no-padding-card card-h-account'}>
-                <CardHeader classes={'e-text-left border-header-card'}>
-                  <Text type={'span'} classes={'e-text-left e-body1'}>Account Settings</Text>
-                  <Icon name={"navigation-close"} className={"e-text-black e-right"} />
+                <CardHeader classes={'e-text-left border-header-card e-no-padding'}>
+                  <Text type={'span'} classes={'e-text-left e-body1 align-title'}>Account Settings</Text>
+                  <Btn icon={'navigation-close'} ripple={true} type={'fab-mini'} classes={'fab-mini e-background-white e-right icon-close'} />
                 </CardHeader>
                 <CardContent>
                   <Block className={'card-content-header'}>
@@ -566,30 +580,46 @@ class PatagoniaForms extends React.Component {
               <Block classes={'e-row'}>
                 <Block classes={'brick brick-12 e-h-center e-v-center'}>
                   <Card classes={'e-background-white no-padding-card full-width'}>
-                    <CardHeader classes={'e-text-left border-header-card'}>
-                      <Text type={'span'} classes={'e-text-left e-body1'}>Credit Card Detail</Text>
-                      <Icon name={"navigation-close"} className={"e-text-black e-right"} />
+                    <CardHeader classes={'e-text-left border-header-card e-no-padding'}>
+                      <Text type={'span'} classes={'e-text-left e-body1 align-title'}>Credit Card Detail</Text>
+                      <Btn icon={'navigation-close'} ripple={true} type={'fab-mini'} classes={'fab-mini e-background-white e-right icon-close'} />
                     </CardHeader>
                     <CardContent>
                       <Block className={'padding-card e-text-center'}>
                         <Block classes={'e-row'}>
                           <Block classes={'brick brick-12 e-h-center e-v-center'}>
-                            <Input type={'textarea'} name={'label'} label={'1234 1234 1234 1234'} rows={1} classes={'e-text-black input-look input-focus full-width visa-bg'}/>
+                            <Block classes={'border-input-icon full-width'}>
+                              <Input type={'text'} name={'label'} placeholder={'weerd@gmail.com'} classes={' with-icon with-bg'}/>
+                              <Block classes={'visa-bg bg-in-input'}>
+                              </Block>
+                            </Block>
                           </Block>
                         </Block>
                         <Block classes={'e-row'}>
+                          <Block classes={'brick brick-6 e-h-start e-v-start'}>
+                            <Menu type={'cover'} placeholder={'Month'} classes={'full-width month e-margin-top-15'}>
+                              <Text className={'e-text-black'}>January</Text>
+                              <Text className={'e-text-black'}>February</Text>
+                              <Text className={'e-text-black'}>March</Text>
+                              <Text className={'e-text-black'}>April</Text>
+                              <Text className={'e-text-black'}>May</Text>
+                              <Text className={'e-text-black'}>June</Text>
+                              <Text className={'e-text-black'}>July</Text>
+                              <Text className={'e-text-black'}>August</Text>
+                              <Text className={'e-text-black'}>September</Text>
+                              <Text className={'e-text-black'}>October</Text>
+                              <Text className={'e-text-black'}>November</Text>
+                              <Text className={'e-text-black'}>December</Text>
+                            </Menu>
+                          </Block>
                           <Block classes={'brick brick-6 e-h-end e-v-end'}>
-                            <Input type={'text'} name={'label'} label={'Month'} classes={'e-text-grey-300 input-look full-width'}/>
-                          </Block>
-                          <Block classes={'brick brick-6 e-h-start e-v-end'}>
-                            <Input type={'text'} name={'label'} label={'Year'} classes={'e-text-grey-300 input-look full-width'}/>
-                          </Block>
+                            <Input type={'number'} name={'label'} placeholder={'Year'} hint={'1980'} min="1920" max="2016" classes={'full-width input-look e-no-padding year'}/>                          </Block>
                         </Block>
                         <Block classes={'e-row'}>
-                        <Block classes={'brick brick-6 e-h-end e-v-end'}>
+                        <Block classes={'brick brick-6 e-h-start e-v-end'}>
                           <Input type={'text'} name={'label'} label={'CVV'} classes={'e-text-grey-300 input-look full-width'}/>
                         </Block>
-                        <Block classes={'brick brick-6 e-h-start e-v-end'}>
+                        <Block classes={'brick brick-6 e-h-end e-v-end'}>
                           <Block classes={'full-width mg-b-para'}>
                             <Text type={'p'} classes={'e-text-left e-body1'}>3 or 4 digits usually found</Text>
                             <Text type={'p'} classes={'e-text-left e-body1'}>on the signature strip</Text>

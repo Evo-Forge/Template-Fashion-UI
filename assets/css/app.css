@@ -41,6 +41,31 @@
 .patagoniaForms .card.card-login {
   height: 450px;
 }
+.patagoniaForms .align-title {
+  line-height: 40px;
+  padding-left: 16px;
+}
+.patagoniaForms .icon-close {
+  border-radius: 50%;
+}
+.patagoniaForms .icon-close.fab-mini {
+  box-shadow: none;
+}
+.patagoniaForms .icon-close.fab-mini:hover:not(.flat) {
+  box-shadow: none;
+}
+.patagoniaForms .icon-close.fab-mini i {
+  font-size: inherit;
+}
+.patagoniaForms .icon-close.e-btn-fab-mini {
+  margin: 0;
+}
+.patagoniaForms .icon-close.e-btn-fab-mini.close-btn-align {
+  margin-top: 20px;
+}
+.patagoniaForms .icon-close:focus {
+  outline: none;
+}
 .patagoniaForms .input-look {
   border-radius: 4px;
   border: 1px solid lightgray;
@@ -58,6 +83,13 @@
   left: 5px;
   top: 6px;
 }
+.patagoniaForms .input-look.e-input-group .e-input-efects:before {
+  display: none;
+}
+.patagoniaForms .input-look .e-input:focus ~ .e-input-efects:after,
+.patagoniaForms .input-look .e-input.focus ~ .e-input-efects:after {
+  display: none;
+}
 .patagoniaForms .input-look.input-w {
   width: 250px;
   margin-right: 15px;
@@ -67,6 +99,48 @@
 }
 .patagoniaForms .input-look.input-focus .floating-label {
   color: black;
+}
+.patagoniaForms .border-input-icon {
+  border: 2px solid #18ffff;
+  border-radius: 4px;
+  display: flex;
+  height: 36px;
+}
+.patagoniaForms .border-input-icon:focus {
+  border-bottom: 1px solid #757575;
+}
+.patagoniaForms .border-input-icon:focus {
+  border-bottom: 1px solid #757575;
+}
+.patagoniaForms .with-icon {
+  width: 90%;
+  display: inline-block;
+  font-size: 14px;
+}
+.patagoniaForms .with-icon .e-input {
+  border: 0;
+}
+.patagoniaForms .with-icon .e-input:not(textarea):not(select) {
+  padding-bottom: 16px;
+  padding-left: 6px;
+}
+.patagoniaForms .with-icon.e-input-group .e-input:focus {
+  border-bottom: 0;
+  margin-top: -4px;
+}
+.patagoniaForms .with-icon.e-input-group .e-input-efects:before {
+  display: none;
+}
+.patagoniaForms .with-icon .e-input:focus ~ .e-input-efects:after,
+.patagoniaForms .with-icon .e-input.focus ~ .e-input-efects:after {
+  display: none;
+}
+.patagoniaForms .icon-in-input {
+  width: 10%;
+  display: inline-block;
+  text-align: right;
+  padding-top: 8px;
+  padding-right: 16px;
 }
 .patagoniaForms button {
   border-radius: 4px;
@@ -80,15 +154,14 @@
   background-size: cover;
   opacity: .7;
 }
-.patagoniaForms i.e-headline {
-  height: 24px;
-  line-height: normal;
-}
 .patagoniaForms .btn-look {
   width: 200px;
 }
 .patagoniaForms .margin-r-icon {
-  margin-right: 15px;
+  margin-right: 16px;
+}
+.patagoniaForms .e-nav-menu.cover ul.e-nav {
+  top: 16px;
 }
 .patagoniaForms .para-inter {
   margin-bottom: 0;
@@ -119,6 +192,9 @@
 }
 .patagoniaForms .no-padding-card .card-supporting-text {
   padding: 0;
+}
+.patagoniaForms .no-padding-card .card-supporting-text p.align-title {
+  line-height: 40px;
 }
 .patagoniaForms .padding-card {
   padding: 16px;
@@ -172,6 +248,7 @@
   height: 594px;
 }
 .patagoniaForms .border-btn-nr {
+  width: 150px;
   display: inline-block;
   border: 1px solid lightgray;
   border-radius: 15px;
@@ -253,10 +330,19 @@
   margin: 5px;
   border-radius: 50%;
 }
+.patagoniaForms .with-bg {
+  width: 85%;
+}
+.patagoniaForms .bg-in-input {
+  width: 15%;
+  display: inline-block;
+  text-align: right;
+  margin-right: 16px;
+}
 .patagoniaForms .visa-bg {
-  background-image: url('../img/visa-small.png');
+  background-image: url('../img/visa.gif');
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: right;
   height: 35px;
 }
 .patagoniaForms .visa-bg .e-input:focus {
@@ -275,26 +361,23 @@
   padding: 5px 8px;
   border-radius: 4px;
 }
-.patagoniaForms .align-title {
-  line-height: 40px;
+.patagoniaForms .month {
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  height: 36px;
+  padding-left: 6px;
 }
-.patagoniaForms .icon-close {
-  border-radius: 50%;
+.patagoniaForms .month span {
+  display: inline-block;
+  width: 89%;
+  line-height: 36px;
+  color: lightgray;
 }
-.patagoniaForms .icon-close.fab-mini {
-  box-shadow: none;
+.patagoniaForms .year .e-input {
+  padding-bottom: 0;
 }
-.patagoniaForms .icon-close.fab-mini i {
-  font-size: inherit;
-}
-.patagoniaForms .icon-close.fab-mini :hover:not(.flat) {
-  box-shadow: none;
-}
-.patagoniaForms .icon-close.e-btn-fab-mini {
-  margin: 0;
-}
-.patagoniaForms .icon-close:focus {
-  outline: none;
+.patagoniaForms .year .e-input:focus {
+  padding-bottom: 0;
 }
 footer {
   width: 100%;
