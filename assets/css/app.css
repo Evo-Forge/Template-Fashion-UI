@@ -1,7 +1,9 @@
-.patagoniaForms a:hover {
+.patagoniaForms a:hover,
+.patagoniaHeadersFooters a:hover {
   cursor: pointer;
 }
-.patagoniaForms .background-rainbow {
+.patagoniaForms .background-rainbow,
+.patagoniaHeadersFooters .background-rainbow {
   background: -webkit-linear-gradient(left, #66ffff, #3f51b5);
   background: -o-linear-gradient(right, #66ffff, #3f51b5);
   background: -moz-linear-gradient(right, #66ffff, #3f51b5);
@@ -9,10 +11,12 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.patagoniaForms .full-width {
+.patagoniaForms .full-width,
+.patagoniaHeadersFooters .full-width {
   width: 100%;
 }
-.patagoniaForms .badge-header {
+.patagoniaForms .badge-header,
+.patagoniaHeadersFooters .badge-header {
   width: 45px;
   height: 45px;
   margin-bottom: 0;
@@ -20,172 +24,226 @@
   border: 1px solid #5c6bc0;
   border-radius: 50%;
 }
-.patagoniaForms .card {
+.patagoniaForms .card,
+.patagoniaHeadersFooters .card {
   border-radius: 7px;
   overflow: visible;
 }
-.patagoniaForms .card .border-header-card {
+.patagoniaForms .card .border-header-card,
+.patagoniaHeadersFooters .card .border-header-card {
   border-bottom: 1px solid lightgrey;
 }
-.patagoniaForms .card .card-suplimentary-actions {
+.patagoniaForms .card .card-suplimentary-actions,
+.patagoniaHeadersFooters .card .card-suplimentary-actions {
   border-top: 0;
 }
-.patagoniaForms .card.card-sign {
+.patagoniaForms .card.card-sign,
+.patagoniaHeadersFooters .card.card-sign {
   height: 352px;
 }
-.patagoniaForms .card.card-sign .remember-display .e-check-valid {
+.patagoniaForms .card.card-sign .remember-display .e-check-valid,
+.patagoniaHeadersFooters .card.card-sign .remember-display .e-check-valid {
   left: 0;
 }
-.patagoniaForms .card.card-sign .remember-display .e-checkbox label {
+.patagoniaForms .card.card-sign .remember-display .e-checkbox label,
+.patagoniaHeadersFooters .card.card-sign .remember-display .e-checkbox label {
   padding-left: 35px;
 }
-.patagoniaForms .card.card-sign .remember-display .e-checkbox label .e-wave {
+.patagoniaForms .card.card-sign .remember-display .e-checkbox label .e-wave,
+.patagoniaHeadersFooters .card.card-sign .remember-display .e-checkbox label .e-wave {
   left: -15px;
 }
-.patagoniaForms .card.card-login {
+.patagoniaForms .card.card-login,
+.patagoniaHeadersFooters .card.card-login {
   height: 415px;
 }
-.patagoniaForms .card.card-login .card-suplimentary-actions {
+.patagoniaForms .card.card-login .card-suplimentary-actions,
+.patagoniaHeadersFooters .card.card-login .card-suplimentary-actions {
   padding-bottom: 15px;
 }
-.patagoniaForms .align-title {
+.patagoniaForms .align-title,
+.patagoniaHeadersFooters .align-title {
   line-height: 40px;
   padding-left: 16px;
 }
-.patagoniaForms .icon-close {
+.patagoniaForms .icon-close,
+.patagoniaHeadersFooters .icon-close {
   border-radius: 50%;
 }
-.patagoniaForms .icon-close.fab-mini {
+.patagoniaForms .icon-close.fab-mini,
+.patagoniaHeadersFooters .icon-close.fab-mini {
   box-shadow: none;
 }
-.patagoniaForms .icon-close.fab-mini:hover:not(.flat) {
+.patagoniaForms .icon-close.fab-mini:hover:not(.flat),
+.patagoniaHeadersFooters .icon-close.fab-mini:hover:not(.flat) {
   box-shadow: none;
 }
-.patagoniaForms .icon-close.fab-mini i {
+.patagoniaForms .icon-close.fab-mini i,
+.patagoniaHeadersFooters .icon-close.fab-mini i {
   font-size: inherit;
 }
-.patagoniaForms .icon-close.e-btn-fab-mini {
+.patagoniaForms .icon-close.e-btn-fab-mini,
+.patagoniaHeadersFooters .icon-close.e-btn-fab-mini {
   margin: 0;
 }
-.patagoniaForms .icon-close.e-btn-fab-mini.close-btn-align {
+.patagoniaForms .icon-close.e-btn-fab-mini.close-btn-align,
+.patagoniaHeadersFooters .icon-close.e-btn-fab-mini.close-btn-align {
   margin-top: 20px;
 }
-.patagoniaForms .icon-close:focus {
+.patagoniaForms .icon-close:focus,
+.patagoniaHeadersFooters .icon-close:focus {
   outline: none;
 }
-.patagoniaForms .input-look {
+.patagoniaForms .input-look,
+.patagoniaHeadersFooters .input-look {
   border-radius: 4px;
   border: 1px solid lightgray;
 }
-.patagoniaForms .input-look .e-input {
+.patagoniaForms .input-look .e-input,
+.patagoniaHeadersFooters .input-look .e-input {
   border-bottom: 0;
 }
 .patagoniaForms .input-look .e-input:not(textarea):not(select),
+.patagoniaHeadersFooters .input-look .e-input:not(textarea):not(select),
 .patagoniaForms .input-look .e-input:focus:not(textarea):not(select),
-.patagoniaForms .input-look .e-input.focus:not(textarea):not(select) {
+.patagoniaHeadersFooters .input-look .e-input:focus:not(textarea):not(select),
+.patagoniaForms .input-look .e-input.focus:not(textarea):not(select),
+.patagoniaHeadersFooters .input-look .e-input.focus:not(textarea):not(select) {
   height: 35px;
   color: black;
 }
-.patagoniaForms .input-look .floating-label {
+.patagoniaForms .input-look .floating-label,
+.patagoniaHeadersFooters .input-look .floating-label {
   color: #e0e0e0;
   left: 5px;
   top: 6px;
 }
-.patagoniaForms .input-look.e-input-group .e-input-efects:before {
+.patagoniaForms .input-look.e-input-group .e-input-efects:before,
+.patagoniaHeadersFooters .input-look.e-input-group .e-input-efects:before {
   display: none;
 }
 .patagoniaForms .input-look .e-input:focus ~ .e-input-efects:after,
-.patagoniaForms .input-look .e-input.focus ~ .e-input-efects:after {
+.patagoniaHeadersFooters .input-look .e-input:focus ~ .e-input-efects:after,
+.patagoniaForms .input-look .e-input.focus ~ .e-input-efects:after,
+.patagoniaHeadersFooters .input-look .e-input.focus ~ .e-input-efects:after {
   display: none;
 }
-.patagoniaForms .input-look.input-w {
+.patagoniaForms .input-look.input-w,
+.patagoniaHeadersFooters .input-look.input-w {
   width: 250px;
   margin-right: 15px;
 }
-.patagoniaForms .input-look.input-focus {
+.patagoniaForms .input-look.input-focus,
+.patagoniaHeadersFooters .input-look.input-focus {
   border: 2px solid #18ffff;
 }
-.patagoniaForms .input-look.input-focus .floating-label {
+.patagoniaForms .input-look.input-focus .floating-label,
+.patagoniaHeadersFooters .input-look.input-focus .floating-label {
   color: black;
 }
 .patagoniaForms .text-focus-white .e-input:not(textarea):not(select),
+.patagoniaHeadersFooters .text-focus-white .e-input:not(textarea):not(select),
 .patagoniaForms .text-focus-white .e-input:focus:not(textarea):not(select),
-.patagoniaForms .text-focus-white .e-input.focus:not(textarea):not(select) {
+.patagoniaHeadersFooters .text-focus-white .e-input:focus:not(textarea):not(select),
+.patagoniaForms .text-focus-white .e-input.focus:not(textarea):not(select),
+.patagoniaHeadersFooters .text-focus-white .e-input.focus:not(textarea):not(select) {
   color: white;
 }
-.patagoniaForms .border-input-icon {
+.patagoniaForms .border-input-icon,
+.patagoniaHeadersFooters .border-input-icon {
   border: 2px solid #18ffff;
   border-radius: 4px;
   display: flex;
   height: 36px;
 }
-.patagoniaForms .with-icon {
+.patagoniaForms .with-icon,
+.patagoniaHeadersFooters .with-icon {
   width: 90%;
   display: inline-block;
   font-size: 14px;
 }
-.patagoniaForms .with-icon .e-input {
+.patagoniaForms .with-icon .e-input,
+.patagoniaHeadersFooters .with-icon .e-input {
   border: 0;
 }
-.patagoniaForms .with-icon .e-input:not(textarea):not(select) {
+.patagoniaForms .with-icon .e-input:not(textarea):not(select),
+.patagoniaHeadersFooters .with-icon .e-input:not(textarea):not(select) {
   padding-bottom: 16px;
   padding-left: 6px;
 }
-.patagoniaForms .with-icon.e-input-group .e-input:focus {
+.patagoniaForms .with-icon.e-input-group .e-input:focus,
+.patagoniaHeadersFooters .with-icon.e-input-group .e-input:focus {
   border-bottom: 0;
   margin-top: -4px;
 }
-.patagoniaForms .with-icon.e-input-group .e-input-efects:before {
+.patagoniaForms .with-icon.e-input-group .e-input-efects:before,
+.patagoniaHeadersFooters .with-icon.e-input-group .e-input-efects:before {
   display: none;
 }
 .patagoniaForms .with-icon .e-input:focus ~ .e-input-efects:after,
-.patagoniaForms .with-icon .e-input.focus ~ .e-input-efects:after {
+.patagoniaHeadersFooters .with-icon .e-input:focus ~ .e-input-efects:after,
+.patagoniaForms .with-icon .e-input.focus ~ .e-input-efects:after,
+.patagoniaHeadersFooters .with-icon .e-input.focus ~ .e-input-efects:after {
   display: none;
 }
-.patagoniaForms .icon-in-input {
+.patagoniaForms .icon-in-input,
+.patagoniaHeadersFooters .icon-in-input {
   width: 10%;
   display: inline-block;
   text-align: right;
   padding-top: 8px;
   padding-right: 16px;
 }
-.patagoniaForms button {
+.patagoniaForms button,
+.patagoniaHeadersFooters button {
   border-radius: 4px;
 }
 .patagoniaForms .flat,
-.patagoniaForms .raised {
+.patagoniaHeadersFooters .flat,
+.patagoniaForms .raised,
+.patagoniaHeadersFooters .raised {
   margin: 0;
 }
-.patagoniaForms .bg-city {
+.patagoniaForms .bg-city,
+.patagoniaHeadersFooters .bg-city {
   background: linear-gradient(rgba(7, 7, 220, 0.6), rgba(7, 7, 220, 0.6)), url('../img/city.jpg') no-repeat;
   background-size: cover;
   opacity: .7;
 }
-.patagoniaForms .margin-r-icon {
+.patagoniaForms .margin-r-icon,
+.patagoniaHeadersFooters .margin-r-icon {
   margin-right: 16px;
 }
-.patagoniaForms .btn-look {
+.patagoniaForms .btn-look,
+.patagoniaHeadersFooters .btn-look {
   width: 200px;
 }
-.patagoniaForms .fa-look {
+.patagoniaForms .fa-look,
+.patagoniaHeadersFooters .fa-look {
   padding: 8px;
   border-radius: 50%;
   margin-right: 16px;
 }
-.patagoniaForms .fa-look.facebook {
+.patagoniaForms .fa-look.facebook,
+.patagoniaHeadersFooters .fa-look.facebook {
   padding: 8px 11px;
 }
-.patagoniaForms .fa-look.google {
+.patagoniaForms .fa-look.google,
+.patagoniaHeadersFooters .fa-look.google {
   padding: 8px 9px;
 }
-.patagoniaForms .e-nav-menu.cover ul.e-nav {
+.patagoniaForms .e-nav-menu.cover ul.e-nav,
+.patagoniaHeadersFooters .e-nav-menu.cover ul.e-nav {
   top: 16px;
 }
-.patagoniaForms .para-inter {
+.patagoniaForms .para-inter,
+.patagoniaHeadersFooters .para-inter {
   margin-bottom: 0;
 }
 .patagoniaForms .para-inter::before,
-.patagoniaForms .para-inter::after {
+.patagoniaHeadersFooters .para-inter::before,
+.patagoniaForms .para-inter::after,
+.patagoniaHeadersFooters .para-inter::after {
   position: relative;
   vertical-align: middle;
   display: inline-block;
@@ -195,34 +253,43 @@
   right: 15px;
   background-color: lightgrey;
 }
-.patagoniaForms .para-inter::after {
+.patagoniaForms .para-inter::after,
+.patagoniaHeadersFooters .para-inter::after {
   left: 15px;
 }
-.patagoniaForms .half-width {
+.patagoniaForms .half-width,
+.patagoniaHeadersFooters .half-width {
   width: 50%;
   box-sizing: border-box;
 }
-.patagoniaForms .card-h-contact {
+.patagoniaForms .card-h-contact,
+.patagoniaHeadersFooters .card-h-contact {
   height: 365px;
 }
-.patagoniaForms .mg-top-attach {
+.patagoniaForms .mg-top-attach,
+.patagoniaHeadersFooters .mg-top-attach {
   margin-top: 20px;
 }
-.patagoniaForms .no-padding-card .card-supporting-text {
+.patagoniaForms .no-padding-card .card-supporting-text,
+.patagoniaHeadersFooters .no-padding-card .card-supporting-text {
   padding: 0;
 }
-.patagoniaForms .no-padding-card .card-supporting-text p.align-title {
+.patagoniaForms .no-padding-card .card-supporting-text p.align-title,
+.patagoniaHeadersFooters .no-padding-card .card-supporting-text p.align-title {
   line-height: 40px;
 }
-.patagoniaForms .padding-card {
+.patagoniaForms .padding-card,
+.patagoniaHeadersFooters .padding-card {
   padding: 16px;
 }
-.patagoniaForms .avatar-card {
+.patagoniaForms .avatar-card,
+.patagoniaHeadersFooters .avatar-card {
   width: 75px;
   height: 75px;
   border-radius: 50%;
 }
-.patagoniaForms .round-icon {
+.patagoniaForms .round-icon,
+.patagoniaHeadersFooters .round-icon {
   position: relative;
   margin-top: 50px;
   margin-left: -20px;
@@ -231,19 +298,24 @@
   border: 3px solid white;
   box-sizing: border-box;
 }
-.patagoniaForms .padding-left-para {
+.patagoniaForms .padding-left-para,
+.patagoniaHeadersFooters .padding-left-para {
   padding-left: 15px;
 }
-.patagoniaForms .card-content-header {
+.patagoniaForms .card-content-header,
+.patagoniaHeadersFooters .card-content-header {
   height: 80px;
   padding: 16px;
   border-bottom: 1px solid lightgray;
 }
-.patagoniaForms .btn-save-w {
+.patagoniaForms .btn-save-w,
+.patagoniaHeadersFooters .btn-save-w {
   width: 150px;
 }
 .patagoniaForms .btn-inter::before,
-.patagoniaForms .btn-inter::after {
+.patagoniaHeadersFooters .btn-inter::before,
+.patagoniaForms .btn-inter::after,
+.patagoniaHeadersFooters .btn-inter::after {
   position: relative;
   vertical-align: middle;
   display: inline-block;
@@ -253,69 +325,89 @@
   right: 42px;
   background-color: lightgrey;
 }
-.patagoniaForms .btn-inter::after {
+.patagoniaForms .btn-inter::after,
+.patagoniaHeadersFooters .btn-inter::after {
   left: 42px;
 }
-.patagoniaForms .mg-b-para {
+.patagoniaForms .mg-b-para,
+.patagoniaHeadersFooters .mg-b-para {
   margin-bottom: 5px;
 }
-.patagoniaForms .mg-b-btn {
+.patagoniaForms .mg-b-btn,
+.patagoniaHeadersFooters .mg-b-btn {
   margin-bottom: 8px;
 }
-.patagoniaForms .card-h-account {
+.patagoniaForms .card-h-account,
+.patagoniaHeadersFooters .card-h-account {
   height: 553px;
 }
-.patagoniaForms .border-btn-nr {
+.patagoniaForms .border-btn-nr,
+.patagoniaHeadersFooters .border-btn-nr {
   width: 150px;
   display: inline-block;
   border: 1px solid lightgray;
   border-radius: 15px;
 }
-.patagoniaForms .border-btn-nr button {
+.patagoniaForms .border-btn-nr button,
+.patagoniaHeadersFooters .border-btn-nr button {
   border: 0;
 }
-.patagoniaForms .btn-margin-nr {
+.patagoniaForms .btn-margin-nr,
+.patagoniaHeadersFooters .btn-margin-nr {
   margin-left: 10px;
   margin-right: 10px;
 }
-.patagoniaForms .btn-margin-nr.content {
+.patagoniaForms .btn-margin-nr.content,
+.patagoniaHeadersFooters .btn-margin-nr.content {
   width: 20%;
 }
-.patagoniaForms .margin-nr {
+.patagoniaForms .margin-nr,
+.patagoniaHeadersFooters .margin-nr {
   margin: 30px;
 }
-.patagoniaForms .e-steppers-container .e-stepper-content.active {
+.patagoniaForms .e-steppers-container .e-stepper-content.active,
+.patagoniaHeadersFooters .e-steppers-container .e-stepper-content.active {
   padding: 0;
 }
-.patagoniaForms .padding-list-stepper {
+.patagoniaForms .padding-list-stepper,
+.patagoniaHeadersFooters .padding-list-stepper {
   padding: 25px 100px;
 }
-.patagoniaForms .padding-list-stepper.border-t-discount {
+.patagoniaForms .padding-list-stepper.border-t-discount,
+.patagoniaHeadersFooters .padding-list-stepper.border-t-discount {
   border-top: 1px solid lightgray;
 }
-.patagoniaForms .padding-list-stepper i {
+.patagoniaForms .padding-list-stepper i,
+.patagoniaHeadersFooters .padding-list-stepper i {
   float: right;
 }
-.patagoniaForms .padding-list-stepper .align-btn-continue {
+.patagoniaForms .padding-list-stepper .align-btn-continue,
+.patagoniaHeadersFooters .padding-list-stepper .align-btn-continue {
   float: right;
   margin-right: 16px;
 }
-.patagoniaForms .padding-list-stepper .align-discount {
+.patagoniaForms .padding-list-stepper .align-discount,
+.patagoniaHeadersFooters .padding-list-stepper .align-discount {
   line-height: 37px;
 }
-.patagoniaForms .article-image {
+.patagoniaForms .article-image,
+.patagoniaHeadersFooters .article-image {
   width: 75px;
   height: 75px;
 }
-.patagoniaForms .padding-r-para {
+.patagoniaForms .padding-r-para,
+.patagoniaHeadersFooters .padding-r-para {
   padding-right: 16px;
 }
-.patagoniaForms .checkout-w {
+.patagoniaForms .checkout-w,
+.patagoniaHeadersFooters .checkout-w {
   width: 60%;
   margin: 0 auto;
 }
 .patagoniaForms .a-inter::before,
-.patagoniaForms .a-inter::after {
+.patagoniaHeadersFooters .a-inter::before,
+.patagoniaForms .a-inter::after,
+.patagoniaHeadersFooters .a-inter::after {
   position: relative;
   vertical-align: middle;
   display: inline-block;
@@ -325,86 +417,155 @@
   right: 15px;
   background-color: lightgrey;
 }
-.patagoniaForms .a-inter::after {
+.patagoniaForms .a-inter::after,
+.patagoniaHeadersFooters .a-inter::after {
   left: 15px;
 }
-.patagoniaForms .mg-b-caption {
+.patagoniaForms .mg-b-caption,
+.patagoniaHeadersFooters .mg-b-caption {
   margin-bottom: 10px;
 }
-.patagoniaForms .footer-checkout-w {
+.patagoniaForms .footer-checkout-w,
+.patagoniaHeadersFooters .footer-checkout-w {
   width: 83%;
   margin: 0 auto;
 }
-.patagoniaForms .bl-done {
+.patagoniaForms .bl-done,
+.patagoniaHeadersFooters .bl-done {
   width: 75px;
   height: 75px;
   margin: 0 auto;
   border: 1px solid #18ffff;
   border-radius: 50%;
 }
-.patagoniaForms .bl-done .done-icon {
+.patagoniaForms .bl-done .done-icon,
+.patagoniaHeadersFooters .bl-done .done-icon {
   width: 64px;
   height: 64px;
   margin: 5px;
   border-radius: 50%;
 }
-.patagoniaForms .with-bg {
+.patagoniaForms .with-bg,
+.patagoniaHeadersFooters .with-bg {
   width: 85%;
 }
-.patagoniaForms .bg-in-input {
+.patagoniaForms .bg-in-input,
+.patagoniaHeadersFooters .bg-in-input {
   width: 15%;
   display: inline-block;
   text-align: right;
   margin-right: 16px;
 }
-.patagoniaForms .visa-bg {
+.patagoniaForms .visa-bg,
+.patagoniaHeadersFooters .visa-bg {
   background-image: url('../img/visa.gif');
   background-repeat: no-repeat;
   background-position: right;
   height: 35px;
 }
-.patagoniaForms .visa-bg .e-input:focus {
+.patagoniaForms .visa-bg .e-input:focus,
+.patagoniaHeadersFooters .visa-bg .e-input:focus {
   border-bottom: 0;
 }
-.patagoniaForms .span-number {
+.patagoniaForms .span-number,
+.patagoniaHeadersFooters .span-number {
   padding-left: 6px;
   padding-right: 6px;
   margin-right: 10px;
   margin-left: 10px;
 }
-.patagoniaForms .size {
+.patagoniaForms .size,
+.patagoniaHeadersFooters .size {
   width: 80px;
 }
-.patagoniaForms .span-size {
+.patagoniaForms .span-size,
+.patagoniaHeadersFooters .span-size {
   padding: 5px 8px;
   border-radius: 4px;
 }
-.patagoniaForms .month {
+.patagoniaForms .month,
+.patagoniaHeadersFooters .month {
   border: 1px solid lightgray;
   border-radius: 4px;
   height: 36px;
   padding-left: 6px;
 }
-.patagoniaForms .month span {
+.patagoniaForms .month span,
+.patagoniaHeadersFooters .month span {
   display: inline-block;
   width: 89%;
   line-height: 36px;
   color: lightgray;
 }
-.patagoniaForms .year .e-input {
+.patagoniaForms .year .e-input,
+.patagoniaHeadersFooters .year .e-input {
   padding-bottom: 0;
   padding-top: 0;
   padding-left: 6px;
 }
-.patagoniaForms .year .e-input:focus {
+.patagoniaForms .year .e-input:focus,
+.patagoniaHeadersFooters .year .e-input:focus {
   padding-left: 6px;
   padding-bottom: 0;
 }
-.patagoniaForms .e-steppers-container {
+.patagoniaForms .e-steppers-container,
+.patagoniaHeadersFooters .e-steppers-container {
   min-height: 568px;
 }
-.patagoniaForms .e-steppers-container .e-stepper-content.active {
+.patagoniaForms .e-steppers-container .e-stepper-content.active,
+.patagoniaHeadersFooters .e-steppers-container .e-stepper-content.active {
   overflow: visible;
+}
+.patagoniaHeadersFooters .margin-logo {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.patagoniaHeadersFooters .margin-list-item {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.patagoniaHeadersFooters .last-item {
+  margin-right: 0;
+}
+.patagoniaHeadersFooters .align-list-item {
+  line-height: 42px;
+}
+.patagoniaHeadersFooters .header-h {
+  height: 42px;
+}
+.patagoniaHeadersFooters li a:hover {
+  text-decoration: underline;
+}
+.patagoniaHeadersFooters .border-logo {
+  border-right: 1px solid lightgrey;
+}
+.patagoniaHeadersFooters .search-btn {
+  background-color: #40c4ff;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 0;
+}
+.patagoniaHeadersFooters .logo-shadow {
+  box-shadow: 4px 0 7px lightgrey;
+}
+.patagoniaHeadersFooters .badge-nr {
+  margin: 0;
+  padding-left: 3px;
+  padding-right: 3px;
+  border: 1px solid transparent;
+}
+.patagoniaHeadersFooters .margin-badges {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.patagoniaHeadersFooters .no-mg-bottom {
+  margin-bottom: 0;
+}
+.patagoniaHeadersFooters .avatar-profil {
+  margin-right: -15px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
 }
 footer {
   width: 100%;
