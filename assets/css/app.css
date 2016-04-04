@@ -22,6 +22,7 @@
 }
 .patagoniaForms .card {
   border-radius: 7px;
+  overflow: visible;
 }
 .patagoniaForms .card .border-header-card {
   border-bottom: 1px solid lightgrey;
@@ -38,8 +39,14 @@
 .patagoniaForms .card.card-sign .remember-display .e-checkbox label {
   padding-left: 35px;
 }
+.patagoniaForms .card.card-sign .remember-display .e-checkbox label .e-wave {
+  left: -15px;
+}
 .patagoniaForms .card.card-login {
-  height: 450px;
+  height: 415px;
+}
+.patagoniaForms .card.card-login .card-suplimentary-actions {
+  padding-bottom: 15px;
 }
 .patagoniaForms .align-title {
   line-height: 40px;
@@ -77,6 +84,7 @@
 .patagoniaForms .input-look .e-input:focus:not(textarea):not(select),
 .patagoniaForms .input-look .e-input.focus:not(textarea):not(select) {
   height: 35px;
+  color: black;
 }
 .patagoniaForms .input-look .floating-label {
   color: #e0e0e0;
@@ -100,17 +108,16 @@
 .patagoniaForms .input-look.input-focus .floating-label {
   color: black;
 }
+.patagoniaForms .text-focus-white .e-input:not(textarea):not(select),
+.patagoniaForms .text-focus-white .e-input:focus:not(textarea):not(select),
+.patagoniaForms .text-focus-white .e-input.focus:not(textarea):not(select) {
+  color: white;
+}
 .patagoniaForms .border-input-icon {
   border: 2px solid #18ffff;
   border-radius: 4px;
   display: flex;
   height: 36px;
-}
-.patagoniaForms .border-input-icon:focus {
-  border-bottom: 1px solid #757575;
-}
-.patagoniaForms .border-input-icon:focus {
-  border-bottom: 1px solid #757575;
 }
 .patagoniaForms .with-icon {
   width: 90%;
@@ -154,11 +161,22 @@
   background-size: cover;
   opacity: .7;
 }
+.patagoniaForms .margin-r-icon {
+  margin-right: 16px;
+}
 .patagoniaForms .btn-look {
   width: 200px;
 }
-.patagoniaForms .margin-r-icon {
+.patagoniaForms .fa-look {
+  padding: 8px;
+  border-radius: 50%;
   margin-right: 16px;
+}
+.patagoniaForms .fa-look.facebook {
+  padding: 8px 11px;
+}
+.patagoniaForms .fa-look.google {
+  padding: 8px 9px;
 }
 .patagoniaForms .e-nav-menu.cover ul.e-nav {
   top: 16px;
@@ -185,7 +203,7 @@
   box-sizing: border-box;
 }
 .patagoniaForms .card-h-contact {
-  height: 383px;
+  height: 365px;
 }
 .patagoniaForms .mg-top-attach {
   margin-top: 20px;
@@ -245,7 +263,7 @@
   margin-bottom: 8px;
 }
 .patagoniaForms .card-h-account {
-  height: 594px;
+  height: 553px;
 }
 .patagoniaForms .border-btn-nr {
   width: 150px;
@@ -375,9 +393,18 @@
 }
 .patagoniaForms .year .e-input {
   padding-bottom: 0;
+  padding-top: 0;
+  padding-left: 6px;
 }
 .patagoniaForms .year .e-input:focus {
+  padding-left: 6px;
   padding-bottom: 0;
+}
+.patagoniaForms .e-steppers-container {
+  min-height: 568px;
+}
+.patagoniaForms .e-steppers-container .e-stepper-content.active {
+  overflow: visible;
 }
 footer {
   width: 100%;

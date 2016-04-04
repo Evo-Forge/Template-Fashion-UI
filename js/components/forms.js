@@ -143,15 +143,32 @@ class PatagoniaForms extends React.Component {
             <Block className={'padding-card e-text-center'}>
               <Block classes={'e-row'}>
                 <Block classes={'brick brick-12 e-h-center e-v-center'}>
-                  <Input type={'textarea'} name={'label'} label={'1234 1234 1234 1234'} rows={1} classes={'e-text-black input-look input-focus full-width visa-bg'}/>
+                  <Block classes={'border-input-icon full-width'}>
+                    <Input type={'text'} name={'label'} placeholder={'weerd@gmail.com'} classes={'with-icon with-bg'}/>
+                    <Block classes={'visa-bg bg-in-input'}>
+                    </Block>
+                  </Block>
                 </Block>
               </Block>
               <Block classes={'e-row'}>
-                <Block classes={'brick brick-6 e-h-end e-v-end'}>
-                  <Input type={'text'} name={'label'} label={'Month'} classes={'e-text-grey-300 input-look full-width'}/>
+                <Block classes={'brick brick-6 e-h-start e-v-start'}>
+                  <Menu type={'cover'} placeholder={'Month'} classes={'full-width month e-margin-top-15'}>
+                    <Text className={'e-text-black'}>January</Text>
+                    <Text className={'e-text-black'}>February</Text>
+                    <Text className={'e-text-black'}>March</Text>
+                    <Text className={'e-text-black'}>April</Text>
+                    <Text className={'e-text-black'}>May</Text>
+                    <Text className={'e-text-black'}>June</Text>
+                    <Text className={'e-text-black'}>July</Text>
+                    <Text className={'e-text-black'}>August</Text>
+                    <Text className={'e-text-black'}>September</Text>
+                    <Text className={'e-text-black'}>October</Text>
+                    <Text className={'e-text-black'}>November</Text>
+                    <Text className={'e-text-black'}>December</Text>
+                  </Menu>
                 </Block>
-                <Block classes={'brick brick-6 e-h-start e-v-end'}>
-                  <Input type={'text'} name={'label'} label={'Year'} classes={'e-text-grey-300 input-look full-width'}/>
+                <Block classes={'brick brick-6 e-h-end e-v-end'}>
+                  <Input type={'number'} name={'label'} placeholder={'Year'} hint={'1980'} min="1920" max="2016" classes={'full-width input-look e-no-padding year'}/>
                 </Block>
               </Block>
               <Block classes={'e-row'}>
@@ -369,13 +386,13 @@ class PatagoniaForms extends React.Component {
                 <CardContent>
                   <List type={'inline'} className={'full-width'}>
                     <ListItem>
-                      <Input type={'text'} name={'label'} label={'Name'} classes={'e-text-white input-look input-w'}/>
+                      <Input type={'text'} name={'label'} label={'Name'} classes={'input-look input-w text-focus-white'}/>
                     </ListItem>
                     <ListItem>
-                      <Input type={'email'} name={'label'} label={'Email'} classes={'input-look input-w'}/>
+                      <Input type={'email'} name={'label'} label={'Email'} classes={'input-look input-w text-focus-white'}/>
                     </ListItem>
                     <ListItem>
-                       <Input type={'email'} name={'label'} label={'Password'} classes={'input-look input-w'}/>
+                       <Input type={'email'} name={'label'} label={'Password'} classes={'input-look input-w text-focus-white'}/>
                     </ListItem>
                     <ListItem>
                       <Btn label={'Sign up'} ripple={true} type={'submit'} className={'flat e-margin-top-15 e-button e-text-indigo-400 e-background-cyan-A200 btn-look'} />
@@ -388,8 +405,8 @@ class PatagoniaForms extends React.Component {
 
           <Block classes={'e-row'}>
             <Block classes={'brick brick-4 e-h-start e-v-center'}>
-              <Card className={'e-background-white full-width card-login'}>
-                <CardHeader className={'border-header-card e-no-padding'}>
+              <Card classes={'e-background-white full-width card-login'}>
+                <CardHeader classes={'border-header-card e-no-padding'}>
                   <Text type={'span'} classes={'e-text-left e-body1 align-title'}>Login</Text>
                   <Btn icon={'navigation-close'} ripple={true} type={'fab-mini'} classes={'fab-mini e-background-white e-right icon-close'} />
                 </CardHeader>
@@ -398,16 +415,22 @@ class PatagoniaForms extends React.Component {
                   <Input type={'text'} name={'label'} label={'Password'} classes={'e-text-grey-300 input-look'}/>
                   <Text type={'a'} classes={'e-text-center e-body1 e-text-cyan-A200 '}>Forgot password?</Text>
                   <Block>
-                    <Btn label={'SIGN IN'} ripple={true} type={'submit'} classes={'flat e-margin-top-25 e-background-cyan-A200 e-text-white full-width'} />
+                    <Btn label={'SIGN IN'} ripple={true} type={'submit'} classes={'flat e-margin-top-15 e-background-cyan-A200 e-text-white full-width'} />
                   </Block>
                 </CardContent>
-                <CardFooter className={'e-text-center e-background-grey-200 e-margin-top-50'}>
+                <CardFooter className={'e-text-center e-background-grey-200 e-margin-top-25'}>
                   <Block>
                     <Text type={'p'} classes={'e-text-center e-body1 e-text-grey-500 e-margin-top-15 para-inter'}>or</Text>
                   </Block>
-                    <Icon name={"action-account-circle"} className={"e-text-grey-500 e-display-1 margin-r-icon"} />
-                    <Icon name={"action-face-unlock"} className={"e-text-grey-500 e-display-1 margin-r-icon"} />
-                    <Icon name={"action-stars"} className={"e-text-grey-500 e-display-1"} />
+                  <Text type={'a'} classes={'e-text-center'}>
+                    <i className={'fa fa-twitter fa-look e-margin-top-15 e-text-white e-background-grey-500 e-margin-bottom-15'}></i>
+                  </Text>
+                  <Text type={'a'} classes={'e-text-center'}>
+                    <i className={'fa fa-facebook e-text-white e-background-grey-500 fa-look facebook'}></i>
+                  </Text>
+                  <Text type={'a'} classes={'e-text-center'}>
+                    <i className={'fa fa-google e-text-white e-background-grey-500 fa-look google'}></i>
+                  </Text>
                 </CardFooter>
               </Card>
             </Block>
@@ -417,7 +440,7 @@ class PatagoniaForms extends React.Component {
                 <CardContent>
                   <Text type={'h1'} classes={'e-text-center e-text-white e-display-1'}>Get designers products every day</Text>
                   <Image src={'http://getessence.io/assets/img/essence_icon.png'} width={'100px'} height={'100px'} alt={'Essence Image'} />
-                  <Input type={'email'} name={'label'} label={'Your email'} classes={'e-text-grey-300 input-look'}/>
+                  <Input type={'email'} name={'label'} label={'Your email'} classes={'input-look text-focus-white'}/>
                   <Btn label={'Subscribe'} ripple={true} type={'submit'} className={'flat e-margin-top-15 e-button e-text-indigo-400 e-background-cyan-A200 full-width'} />
                 </CardContent>
               </Card>
@@ -486,9 +509,9 @@ class PatagoniaForms extends React.Component {
             </Block>
 
             <Block classes={'brick brick-8 e-h-start e-v-end'}>
-              <Card classes={'full-width no-padding-card card-h-contact'}>
+              <Card classes={'full-width no-padding-card'}>
                 <CardContent>
-                  <Block classes={'e-left half-width bg-city card-h-contact padding-card'}>
+                  <Block classes={'e-left half-width bg-city padding-card card-h-contact'}>
                     <Text type={'h1'} classes={'e-text-left e-text-white e-headline'}>Kohalo&Co</Text>
                     <Text type={'p'} classes={'e-text-left e-text-white e-body1'}>Lorem ipsum 5,dolor sit amet</Text>
                     <Text type={'p'} classes={'e-text-left e-text-white e-body1'}>Lorem ipsum, dolor</Text>
@@ -523,7 +546,7 @@ class PatagoniaForms extends React.Component {
           </Block>
 
           <Block classes={'e-row'}>
-            <Block classes={'brick brick-6 e-h-end e-v-end'}>
+            <Block classes={'brick brick-6 e-h-start e-v-end'}>
               <Card classes={'full-width e-background-white no-padding-card card-h-account'}>
                 <CardHeader classes={'e-text-left border-header-card e-no-padding'}>
                   <Text type={'span'} classes={'e-text-left e-body1 align-title'}>Account Settings</Text>
@@ -576,7 +599,7 @@ class PatagoniaForms extends React.Component {
               </Card>
             </Block>
 
-            <Block classes={'brick brick-6 e-h-start e-v-end'}>
+            <Block classes={'brick brick-6 e-h-end e-v-end'}>
               <Block classes={'e-row'}>
                 <Block classes={'brick brick-12 e-h-center e-v-center'}>
                   <Card classes={'e-background-white no-padding-card full-width'}>
@@ -589,7 +612,7 @@ class PatagoniaForms extends React.Component {
                         <Block classes={'e-row'}>
                           <Block classes={'brick brick-12 e-h-center e-v-center'}>
                             <Block classes={'border-input-icon full-width'}>
-                              <Input type={'text'} name={'label'} placeholder={'weerd@gmail.com'} classes={' with-icon with-bg'}/>
+                              <Input type={'text'} name={'label'} placeholder={'weerd@gmail.com'} classes={'with-icon with-bg'}/>
                               <Block classes={'visa-bg bg-in-input'}>
                               </Block>
                             </Block>
@@ -613,7 +636,8 @@ class PatagoniaForms extends React.Component {
                             </Menu>
                           </Block>
                           <Block classes={'brick brick-6 e-h-end e-v-end'}>
-                            <Input type={'number'} name={'label'} placeholder={'Year'} hint={'1980'} min="1920" max="2016" classes={'full-width input-look e-no-padding year'}/>                          </Block>
+                            <Input type={'number'} name={'label'} placeholder={'Year'} hint={'1980'} min="1920" max="2016" classes={'full-width input-look e-no-padding year'}/>
+                          </Block>
                         </Block>
                         <Block classes={'e-row'}>
                         <Block classes={'brick brick-6 e-h-start e-v-end'}>
@@ -642,7 +666,7 @@ class PatagoniaForms extends React.Component {
                     <CardContent className={''}>
                       <Block classes={'e-row'}>
                         <Block classes={'brick brick-6 e-h-end e-v-end'}>
-                          <Input type={'text'} name={'label'} label={'home@gmail.com'} classes={'e-text-grey-300 input-look full-width'}/>
+                          <Input type={'text'} name={'label'} label={'home@gmail.com'} classes={'input-look full-width text-focus-white'}/>
                         </Block>
                         <Block classes={'brick brick-6 e-h-start e-v-end'}>
                           <Btn label={'Submit'} ripple={true} type={'submit'} className={'flat e-button e-text-white e-background-cyan-A200 full-width mg-b-btn'} />

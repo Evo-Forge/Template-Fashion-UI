@@ -23,6 +23,7 @@
   }
   .card {
     border-radius: 7px;
+    overflow: visible;
     .border-header-card {
       border-bottom: 1px solid lightgrey;
     }
@@ -37,11 +38,17 @@
         }
         .e-checkbox label {
           padding-left: 35px;
+          .e-wave {
+            left: -15px;
+          }
         }
       }
     }
     &.card-login {
-      height: 450px;
+      height: 415px;
+      .card-suplimentary-actions {
+        padding-bottom: 15px;
+      }
     }
   }
   // card-header
@@ -77,6 +84,7 @@
       &, &:focus, &.focus {
         &:not(textarea):not(select) {
           height: 35px;
+          color: black;
         }
       }
     }
@@ -104,17 +112,20 @@
       }
     }
   }
+  .text-focus-white {
+    .e-input {
+      &, &:focus, &.focus {
+        &:not(textarea):not(select) {
+          color: white;
+        }
+      }
+    }
+  }
   .border-input-icon {
     border: 2px solid #18ffff;
     border-radius: 4px;
     display: flex;
     height: 36px;
-    &:focus {
-      border-bottom: 1px solid #757575;
-    }
-  }
-  .border-input-icon:focus {
-    border-bottom: 1px solid #757575;
   }
   .with-icon {
     width: 90%;
@@ -160,13 +171,23 @@
     background-size: cover;
     opacity: .7;
   }
-
+  .margin-r-icon {
+    margin-right: 16px;
+  }
   .btn-look {
     width: 200px;
   }
 
-  .margin-r-icon {
+  .fa-look {
+    padding: 8px;
+    border-radius: 50%;
     margin-right: 16px;
+    &.facebook {
+      padding: 8px 11px;
+    }
+    &.google {
+      padding: 8px 9px;
+    }
   }
   .e-nav-menu.cover ul.e-nav{
     top: 16px;
@@ -195,7 +216,7 @@
   }
 
   .card-h-contact {
-    height: 383px;
+    height: 365px;
   }
   .mg-top-attach {
     margin-top: 20px;
@@ -258,7 +279,7 @@
   }
 
   .card-h-account {
-    height: 594px;
+    height: 553px;
   }
   .border-btn-nr {
     width: 150px;
@@ -390,9 +411,22 @@
   .year {
     .e-input {
       padding-bottom: 0;
+      padding-top: 0;
+      padding-left: 6px;
     }
     .e-input:focus {
+      padding-left: 6px;
       padding-bottom: 0;
     }
   }
+
+  .e-steppers-container {
+    min-height: 568px;
+    .e-stepper-content {
+      &.active {
+        overflow: visible;
+      }
+    }
+  }
+
 }
