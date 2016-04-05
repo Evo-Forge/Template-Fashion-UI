@@ -427,7 +427,7 @@ class PatagoniaCommerce extends React.Component {
           </Block>
           <Block classes={'e-row'}>
             <Block classes={'brick brick-3'}>
-              <Card classes={'e-background-white card-h-400'}>
+              <Card classes={'e-background-white card-h-400 ovflw'}>
                 <CardHeader>
                   <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>Brands</Text>
                   <Menu type={'cover'} icon={'hardware-keyboard-control'} className={'e-right e-display-1 e-text-grey-300'}>
