@@ -32,7 +32,7 @@ class PatagoniaCommerce extends React.Component {
     return (
       <Block classes={'e-background-blue-700'}>
         <Block classes={'patagoniaCommerce e-container'}>
-          <Block classes={'e-text-center'}>
+          <Block classes={'e-text-center e-v-center e-h-center'}>
             <Text type={'span'} classes={'e-text-center e-title e-text-white title-number'}>1</Text>
             <Text type={'span'} classes={'e-text-center e-display-2 e-text-uppercase background-rainbow'}>ecommerce</Text>
           </Block>
@@ -539,26 +539,53 @@ class PatagoniaCommerce extends React.Component {
                 <Block classes={'card-align-column border-right'}>
                   <Block classes={'img-container-400'}>
                     <Btn label={'hot'} ripple={true} type={'succes'} className={'flat new-btn e-background-red-500 e-right'} />
-                    <Image classes={'e-img-rsp'} src={'assets/img/hoodie.jpg'} />
+                    <Image classes={'e-img-rsp'} src={'assets/img/glasses.jpg'} />
                   </Block>
-
+                  <Block classes={'e-text-center'}>
+                    <Text type={'p'} classes={'e-text-center e-title e-text-black'}>Patagonia</Text>
+                    <Block>
+                      <Text type={'span'} classes={'e-text-center e-subhead e-text-grey-500 e-line-through'}>$960</Text>
+                      <Text type={'span'} classes={'e-text-center e-headline e-text-black'}>$810</Text>
+                    </Block>
+                  </Block>
                 </Block>
                 <Block classes={'card-align-column border-right'}>
                   <Block classes={'img-container-400'}>
                     <Btn label={'hot'} ripple={true} type={'succes'} className={'flat new-btn e-background-red-500 e-right'} />
-                    <Image classes={'e-img-rsp'} src={'assets/img/hoodie.jpg'} />
+                    <Image classes={'e-img-rsp'} src={'assets/img/glasses.jpg'} />
+                  </Block>
+                  <Block classes={'e-text-center'}>
+                    <Text type={'p'} classes={'e-text-center e-title e-text-black'}>Patagonia</Text>
+                    <Block>
+                      <Text type={'span'} classes={'e-text-center e-subhead e-text-grey-500 e-line-through'}>$960</Text>
+                      <Text type={'span'} classes={'e-text-center e-headline e-text-black'}>$810</Text>
+                    </Block>
                   </Block>
                 </Block>
                 <Block classes={'card-align-column border-right'}>
                   <Block classes={'img-container-400'}>
                     <Btn label={'hot'} ripple={true} type={'succes'} className={'flat new-btn e-background-red-500 e-right'} />
-                    <Image classes={'e-img-rsp'} src={'assets/img/hoodie.jpg'} />
+                    <Image classes={'e-img-rsp'} src={'assets/img/glasses.jpg'} />
+                  </Block>
+                  <Block classes={'e-text-center'}>
+                    <Text type={'p'} classes={'e-text-center e-title e-text-black'}>Patagonia</Text>
+                    <Block>
+                      <Text type={'span'} classes={'e-text-center e-subhead e-text-grey-500 e-line-through'}>$960</Text>
+                      <Text type={'span'} classes={'e-text-center e-headline e-text-black'}>$810</Text>
+                    </Block>
                   </Block>
                 </Block>
                 <Block classes={'card-align-column'}>
                   <Block classes={'img-container-400'}>
                     <Btn label={'hot'} ripple={true} type={'succes'} className={'flat new-btn e-background-red-500 e-right'} />
-                    <Image classes={'e-img-rsp'} src={'assets/img/hoodie.jpg'} />
+                    <Image classes={'e-img-rsp'} src={'assets/img/glasses.jpg'} />
+                  </Block>
+                  <Block classes={'e-text-center'}>
+                    <Text type={'p'} classes={'e-text-center e-title e-text-black'}>Patagonia</Text>
+                    <Block>
+                      <Text type={'span'} classes={'e-text-center e-subhead e-text-grey-500 e-line-through'}>$960</Text>
+                      <Text type={'span'} classes={'e-text-center e-headline e-text-black'}>$810</Text>
+                    </Block>
                   </Block>
                 </Block>
               </Block>
@@ -800,7 +827,7 @@ class PatagoniaCommerce extends React.Component {
                           <Input type={'number'} classes={'e-left'} name={'label'} placeholder={'From'} hint={'Number input'}/>
                           <Input type={'number'} classes={'e-right'} name={'label'} placeholder={'To'} hint={'Number input'}/>
                         </Block>
-                        <Slider discrete={true} step={1} start={20}/>
+                        <Slider discrete={true} step={1} start={10}/>
                         <Block>
                           <Text type={'span'} classes={'e-text-left e-left e-subhead e-text-black'}>$10</Text>
                           <Text type={'span'} classes={'e-text-left e-right e-subhead e-text-black'}>$1000</Text>
@@ -1352,15 +1379,15 @@ class PatagoniaCommerce extends React.Component {
             <Block classes={'brick brick-3'}>
               <Block classes={'e-row'}>
                 <Block classes={'brick brick-12'}>
-                  <Card classes={'e-background-white'}>
+                  <Card classes={'e-background-white delivery-options'}>
                     <CardHeader>
                       <Text type={'span'} classes={'e-text-left e-subhead e-text-black'}>Delivery options</Text>
                       <Divider classes={'thinnest e-background-grey-200'} />
                       <Block classes={'align-row'}>
-                        <Block>
+                        <Block classes={'e-padding-bottom-15 e-padding-top-15'}>
                           <Switch type={'radio'} text={'Free'} name={'switch-radio'} />
                         </Block>
-                        <Block>
+                        <Block classes={'e-padding-bottom-15 e-padding-top-15'}>
                           <Switch type={'radio'} text={'$20.00'} name={'switch-radio'} />
                         </Block>
                       </Block>
@@ -1370,7 +1397,13 @@ class PatagoniaCommerce extends React.Component {
                 <Block classes={'brick brick-12'}>
                   <Card classes={'e-background-white'}>
                     <CardHeader>
-                      s
+                      <Block classes={'filter-card'}>
+                        <Menu type={'cover'} placeholder={'Filters'} classes={'e-right'}>
+                         <Text className={'e-text-black'}>Profile</Text>
+                         <Text className={'e-text-black'}>Settings</Text>
+                         <Text className={'e-text-black'}>Logout</Text>
+                        </Menu>
+                      </Block>
                     </CardHeader>
                   </Card>
                 </Block>
