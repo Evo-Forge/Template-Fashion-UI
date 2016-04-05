@@ -4,7 +4,7 @@
 .brick {
   // .add-border(pink);
 }
-.patagoniaMedia {
+.patagoniaMedia, .patagoniaBlog {
   img {
     display: block;
   }
@@ -84,6 +84,9 @@
     }
     &.play-video-btn-black {
       .add-border(black);
+    }
+    &.blog-btn {
+      .add-border(#BDBDBD);
     }
   }
   .img-container {
@@ -412,6 +415,7 @@
   height: 500px;
 }
 .layer {
+  box-sizing: border-box;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -522,3 +526,24 @@
     border-radius: 50%;
   }
 }
+.flex-container {
+  display: flex;
+  &.e-strech-items {
+    align-items: stretch;
+  }
+  &.e-flex-col {
+    flex-direction: column;
+    .self-align-right {
+      align-self: flex-end;
+    }
+  }
+  &.e-flex-nowrap {
+    flex-wrap: nowrap;
+  }
+  &.e-justify-between {
+    justify-content: space-between;
+  }
+  .e-flex-grow {
+    flex-grow: 1;
+  }
+}  // end flex-container

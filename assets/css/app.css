@@ -550,17 +550,41 @@ body {
   padding: 9px!important;
 }
 .patagoniaMedia img {
+=======
+.patagoniaBlog .gradient-text {
+  background: -webkit-linear-gradient(left, #66ffff, #3f51b5);
+  background: -o-linear-gradient(right, #66ffff, #3f51b5);
+  background: -moz-linear-gradient(right, #66ffff, #3f51b5);
+  background: linear-gradient(to right, #66ffff, #3f51b5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.patagoniaBlog .badge.blog-badge {
+  border: 1px solid #3f51b5;
+}
+.patagoniaBlog .rm-margin-bottom {
+  margin-bottom: 0;
+}
+.patagoniaBlog .add-padding-50 {
+  padding: 50px;
+}
+.patagoniaMedia img,
+.patagoniaBlog img {
+>>>>>>> b0361bf872008fd7152c2cb861f371e943bc8d02
   display: block;
 }
-.patagoniaMedia .e-container {
+.patagoniaMedia .e-container,
+.patagoniaBlog .e-container {
   border-radius: 10px;
   padding: 5% 0;
 }
-.patagoniaMedia .container {
+.patagoniaMedia .container,
+.patagoniaBlog .container {
   width: 90%;
   margin: 0 auto;
 }
-.patagoniaMedia .badge {
+.patagoniaMedia .badge,
+.patagoniaBlog .badge {
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -569,14 +593,17 @@ body {
   margin-right: 15px!important;
   cursor: pointer;
 }
-.patagoniaMedia .card-container {
+.patagoniaMedia .card-container,
+.patagoniaBlog .card-container {
   border-radius: 8px;
   width: 100%;
 }
-.patagoniaMedia .card-container.sharp {
+.patagoniaMedia .card-container.sharp,
+.patagoniaBlog .card-container.sharp {
   border-radius: 0 0 8px 8px;
 }
-.patagoniaMedia .card-container.sharp .track-bar {
+.patagoniaMedia .card-container.sharp .track-bar,
+.patagoniaBlog .card-container.sharp .track-bar {
   height: 4px;
   position: absolute;
   top: 0;
@@ -584,37 +611,48 @@ body {
   width: 100%;
   bottom: auto;
 }
-.patagoniaMedia .card-container ul {
+.patagoniaMedia .card-container ul,
+.patagoniaBlog .card-container ul {
   margin-top: 4px;
   margin-left: 10px;
 }
-.patagoniaMedia .card-container li.play-control:hover {
+.patagoniaMedia .card-container li.play-control:hover,
+.patagoniaBlog .card-container li.play-control:hover {
   background: #2196F3;
 }
-.patagoniaMedia .current-album {
+.patagoniaMedia .current-album,
+.patagoniaBlog .current-album {
   height: 350px;
 }
-.patagoniaMedia .text-container {
+.patagoniaMedia .text-container,
+.patagoniaBlog .text-container {
   padding: 10px;
   width: 25%;
   flex-wrap: wrap;
 }
 .patagoniaMedia .text-container h1,
-.patagoniaMedia .text-container p {
+.patagoniaBlog .text-container h1,
+.patagoniaMedia .text-container p,
+.patagoniaBlog .text-container p {
   width: 100%;
 }
-.patagoniaMedia .text-container li {
+.patagoniaMedia .text-container li,
+.patagoniaBlog .text-container li {
   cursor: pointer;
 }
-.patagoniaMedia .btn-icon {
+.patagoniaMedia .btn-icon,
+.patagoniaBlog .btn-icon {
   background-color: transparent;
   border: 0;
 }
 .patagoniaMedia .btn-icon:focus,
-.patagoniaMedia .btn-icon:active {
+.patagoniaBlog .btn-icon:focus,
+.patagoniaMedia .btn-icon:active,
+.patagoniaBlog .btn-icon:active {
   outline: none;
 }
-.patagoniaMedia .btn-icon.preview-btn {
+.patagoniaMedia .btn-icon.preview-btn,
+.patagoniaBlog .btn-icon.preview-btn {
   position: absolute;
   border: 1px solid #ffffff;
   top: 50%;
@@ -622,40 +660,54 @@ body {
   transform: translate(-50%, -50%);
   opacity: 0;
 }
-.patagoniaMedia .btn-icon.play-video-btn {
+.patagoniaMedia .btn-icon.play-video-btn,
+.patagoniaBlog .btn-icon.play-video-btn {
   border: 1px solid #ffffff;
 }
-.patagoniaMedia .btn-icon.play-video-btn-black {
+.patagoniaMedia .btn-icon.play-video-btn-black,
+.patagoniaBlog .btn-icon.play-video-btn-black {
   border: 1px solid #000000;
 }
-.patagoniaMedia .img-container {
+.patagoniaMedia .btn-icon.blog-btn,
+.patagoniaBlog .btn-icon.blog-btn {
+  border: 1px solid #bdbdbd;
+}
+.patagoniaMedia .img-container,
+.patagoniaBlog .img-container {
   display: flex;
   width: 37.5%;
   flex-flow: 1;
 }
-.patagoniaMedia .playlist {
+.patagoniaMedia .playlist,
+.patagoniaBlog .playlist {
   width: 37.5%;
   padding: 10px;
 }
-.patagoniaMedia .playlist .list-container {
+.patagoniaMedia .playlist .list-container,
+.patagoniaBlog .playlist .list-container {
   overflow-y: scroll;
   flex-grow: 1;
   padding: 0 15px;
 }
-.patagoniaMedia .playlist .list-container li {
+.patagoniaMedia .playlist .list-container li,
+.patagoniaBlog .playlist .list-container li {
   padding: 5px 0;
   cursor: pointer;
 }
-.patagoniaMedia .playlist .list-container li .song-icon {
+.patagoniaMedia .playlist .list-container li .song-icon,
+.patagoniaBlog .playlist .list-container li .song-icon {
   display: none;
 }
-.patagoniaMedia .playlist .list-container li .song-number {
+.patagoniaMedia .playlist .list-container li .song-number,
+.patagoniaBlog .playlist .list-container li .song-number {
   display: block;
   width: 24px;
   margin: 0;
 }
 .patagoniaMedia .playlist .list-container li:hover,
-.patagoniaMedia .playlist .list-container li.selected {
+.patagoniaBlog .playlist .list-container li:hover,
+.patagoniaMedia .playlist .list-container li.selected,
+.patagoniaBlog .playlist .list-container li.selected {
   /* add .selected to a li element
             to display a play icon. Also add the corect
             text color class. Eg: e-text-cyan-A100
@@ -663,96 +715,122 @@ body {
   color: #84FFFF;
 }
 .patagoniaMedia .playlist .list-container li:hover .song-number,
-.patagoniaMedia .playlist .list-container li.selected .song-number {
+.patagoniaBlog .playlist .list-container li:hover .song-number,
+.patagoniaMedia .playlist .list-container li.selected .song-number,
+.patagoniaBlog .playlist .list-container li.selected .song-number {
   display: none;
 }
 .patagoniaMedia .playlist .list-container li:hover .song-icon,
-.patagoniaMedia .playlist .list-container li.selected .song-icon {
+.patagoniaBlog .playlist .list-container li:hover .song-icon,
+.patagoniaMedia .playlist .list-container li.selected .song-icon,
+.patagoniaBlog .playlist .list-container li.selected .song-icon {
   display: block;
 }
-.patagoniaMedia .playlist .player {
+.patagoniaMedia .playlist .player,
+.patagoniaBlog .playlist .player {
   box-sizing: border-box;
   padding: 15px;
 }
-.patagoniaMedia .playlist .player .controls {
+.patagoniaMedia .playlist .player .controls,
+.patagoniaBlog .playlist .player .controls {
   min-width: 100px;
 }
-.patagoniaMedia .playlist .player .song-defilation {
+.patagoniaMedia .playlist .player .song-defilation,
+.patagoniaBlog .playlist .player .song-defilation {
   overflow: hidden;
   flex-grow: 1;
   height: 30px;
 }
-.patagoniaMedia .playlist .player .song-defilation .name-container {
+.patagoniaMedia .playlist .player .song-defilation .name-container,
+.patagoniaBlog .playlist .player .song-defilation .name-container {
   width: 500px;
 }
-.patagoniaMedia .pos-relative {
+.patagoniaMedia .pos-relative,
+.patagoniaBlog .pos-relative {
   position: relative;
 }
-.patagoniaMedia .btn-absolute {
+.patagoniaMedia .btn-absolute,
+.patagoniaBlog .btn-absolute {
   position: absolute;
   top: 35%;
   left: 21.4%;
 }
-.patagoniaMedia .album {
+.patagoniaMedia .album,
+.patagoniaBlog .album {
   width: 18%;
   box-sizing: border-box;
 }
-.patagoniaMedia .album img {
+.patagoniaMedia .album img,
+.patagoniaBlog .album img {
   border-radius: 8px;
 }
-.patagoniaMedia .album .layer {
+.patagoniaMedia .album .layer,
+.patagoniaBlog .album .layer {
   opacity: 0;
   border-radius: 8px;
 }
-.patagoniaMedia .album:hover .preview-btn {
+.patagoniaMedia .album:hover .preview-btn,
+.patagoniaBlog .album:hover .preview-btn {
   opacity: 1;
   -moz-transition: opacity 0.4s ease-in-out;
   -webkit-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
 }
-.patagoniaMedia .album:hover .layer {
+.patagoniaMedia .album:hover .layer,
+.patagoniaBlog .album:hover .layer {
   opacity: 0.4;
   -moz-transition: opacity 0.6s ease-in-out;
   -webkit-transition: opacity 0.6s ease-in-out;
   transition: opacity 0.6s ease-in-out;
 }
-.patagoniaMedia .small-player {
+.patagoniaMedia .small-player,
+.patagoniaBlog .small-player {
   background: url('../img/sketch1.jpg') center center no-repeat;
   background-size: cover;
   flex-grow: 1;
   height: 350px;
 }
-.patagoniaMedia .small-player .card-heading {
+.patagoniaMedia .small-player .card-heading,
+.patagoniaBlog .small-player .card-heading {
   align-items: baseline;
 }
-.patagoniaMedia .small-player .card-heading h1 {
+.patagoniaMedia .small-player .card-heading h1,
+.patagoniaBlog .small-player .card-heading h1 {
   max-width: 70%;
 }
-.patagoniaMedia .small-player .play-slider {
+.patagoniaMedia .small-player .play-slider,
+.patagoniaBlog .small-player .play-slider {
   margin: 0 -16px;
 }
-.patagoniaMedia .small-player .card-content {
+.patagoniaMedia .small-player .card-content,
+.patagoniaBlog .small-player .card-content {
   flex-wrap: wrap;
 }
-.patagoniaMedia .small-player .list-container {
+.patagoniaMedia .small-player .list-container,
+.patagoniaBlog .small-player .list-container {
   height: 200px;
   overflow-y: scroll;
   padding: 0 10px;
 }
-.patagoniaMedia .small-player .list-container li {
+.patagoniaMedia .small-player .list-container li,
+.patagoniaBlog .small-player .list-container li {
   padding: 5px 0;
   cursor: pointer;
 }
-.patagoniaMedia .small-player .list-container li .song-icon {
+.patagoniaMedia .small-player .list-container li .song-icon,
+.patagoniaBlog .small-player .list-container li .song-icon {
   display: none;
 }
-.patagoniaMedia .small-player .list-container li .song-number {
+.patagoniaMedia .small-player .list-container li .song-number,
+.patagoniaBlog .small-player .list-container li .song-number {
   display: block;
   width: 24px;
   margin: 0;
 }
 .patagoniaMedia .small-player .list-container li:hover,
-.patagoniaMedia .small-player .list-container li.selected {
+.patagoniaBlog .small-player .list-container li:hover,
+.patagoniaMedia .small-player .list-container li.selected,
+.patagoniaBlog .small-player .list-container li.selected {
   /* add .selected to a li element
             to display a play icon. Also add the corect
             text color class. Eg: e-text-cyan-A100
@@ -760,45 +838,58 @@ body {
   color: #84FFFF;
 }
 .patagoniaMedia .small-player .list-container li:hover .song-number,
-.patagoniaMedia .small-player .list-container li.selected .song-number {
+.patagoniaBlog .small-player .list-container li:hover .song-number,
+.patagoniaMedia .small-player .list-container li.selected .song-number,
+.patagoniaBlog .small-player .list-container li.selected .song-number {
   display: none;
 }
 .patagoniaMedia .small-player .list-container li:hover .song-icon,
-.patagoniaMedia .small-player .list-container li.selected .song-icon {
+.patagoniaBlog .small-player .list-container li:hover .song-icon,
+.patagoniaMedia .small-player .list-container li.selected .song-icon,
+.patagoniaBlog .small-player .list-container li.selected .song-icon {
   display: block;
 }
-.patagoniaMedia .track-slider {
+.patagoniaMedia .track-slider,
+.patagoniaBlog .track-slider {
   height: 350px;
 }
-.patagoniaMedia .best-tracks {
+.patagoniaMedia .best-tracks,
+.patagoniaBlog .best-tracks {
   overflow-x: scroll;
 }
-.patagoniaMedia .best-tracks .track {
+.patagoniaMedia .best-tracks .track,
+.patagoniaBlog .best-tracks .track {
   box-sizing: border-box;
   width: 180px;
   min-width: 180px;
   padding: 0 5px;
   cursor: pointer;
 }
-.patagoniaMedia .best-tracks .track .image-container {
+.patagoniaMedia .best-tracks .track .image-container,
+.patagoniaBlog .best-tracks .track .image-container {
   position: relative;
 }
-.patagoniaMedia .best-tracks .track .image-container img {
+.patagoniaMedia .best-tracks .track .image-container img,
+.patagoniaBlog .best-tracks .track .image-container img {
   border-radius: 8px;
 }
-.patagoniaMedia .best-tracks .track:hover .btn-icon.preview-btn {
+.patagoniaMedia .best-tracks .track:hover .btn-icon.preview-btn,
+.patagoniaBlog .best-tracks .track:hover .btn-icon.preview-btn {
   opacity: 1;
   -moz-transition: opacity 0.4s ease-in-out;
   -webkit-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
 }
-.patagoniaMedia .playlist-view .image-container {
+.patagoniaMedia .playlist-view .image-container,
+.patagoniaBlog .playlist-view .image-container {
   width: 50%;
 }
-.patagoniaMedia .playlist-view .image-container img {
+.patagoniaMedia .playlist-view .image-container img,
+.patagoniaBlog .playlist-view .image-container img {
   flex-grow: 1;
 }
-.patagoniaMedia .playlist-view .list-container {
+.patagoniaMedia .playlist-view .list-container,
+.patagoniaBlog .playlist-view .list-container {
   box-sizing: border-box;
   width: 50%;
   overflow-y: scroll;
@@ -806,20 +897,25 @@ body {
   padding: 15px;
   margin: 15px;
 }
-.patagoniaMedia .playlist-view .list-container li {
+.patagoniaMedia .playlist-view .list-container li,
+.patagoniaBlog .playlist-view .list-container li {
   padding: 5px 0;
   cursor: pointer;
 }
-.patagoniaMedia .playlist-view .list-container li .song-icon {
+.patagoniaMedia .playlist-view .list-container li .song-icon,
+.patagoniaBlog .playlist-view .list-container li .song-icon {
   display: none;
 }
-.patagoniaMedia .playlist-view .list-container li .song-number {
+.patagoniaMedia .playlist-view .list-container li .song-number,
+.patagoniaBlog .playlist-view .list-container li .song-number {
   display: block;
   width: 24px;
   margin: 0;
 }
 .patagoniaMedia .playlist-view .list-container li:hover,
-.patagoniaMedia .playlist-view .list-container li.selected {
+.patagoniaBlog .playlist-view .list-container li:hover,
+.patagoniaMedia .playlist-view .list-container li.selected,
+.patagoniaBlog .playlist-view .list-container li.selected {
   /* add .selected to a li element
             to display a play icon. Also add the corect
             text color class. Eg: e-text-cyan-A100
@@ -827,82 +923,106 @@ body {
   color: #84FFFF;
 }
 .patagoniaMedia .playlist-view .list-container li:hover .song-number,
-.patagoniaMedia .playlist-view .list-container li.selected .song-number {
+.patagoniaBlog .playlist-view .list-container li:hover .song-number,
+.patagoniaMedia .playlist-view .list-container li.selected .song-number,
+.patagoniaBlog .playlist-view .list-container li.selected .song-number {
   display: none;
 }
 .patagoniaMedia .playlist-view .list-container li:hover .song-icon,
-.patagoniaMedia .playlist-view .list-container li.selected .song-icon {
+.patagoniaBlog .playlist-view .list-container li:hover .song-icon,
+.patagoniaMedia .playlist-view .list-container li.selected .song-icon,
+.patagoniaBlog .playlist-view .list-container li.selected .song-icon {
   display: block;
 }
-.patagoniaMedia .header-menu {
+.patagoniaMedia .header-menu,
+.patagoniaBlog .header-menu {
   padding: 0 10px!important;
 }
-.patagoniaMedia .tabs-container .slider-container {
+.patagoniaMedia .tabs-container .slider-container,
+.patagoniaBlog .tabs-container .slider-container {
   display: none;
 }
-.patagoniaMedia .tabs-container .item-container {
+.patagoniaMedia .tabs-container .item-container,
+.patagoniaBlog .tabs-container .item-container {
   padding: 4px 10px;
 }
-.patagoniaMedia .tabs-container .title-container {
+.patagoniaMedia .tabs-container .title-container,
+.patagoniaBlog .tabs-container .title-container {
   flex-grow: 1;
   padding: 0 10px;
 }
-.patagoniaMedia .tabs-container .album-thumb {
+.patagoniaMedia .tabs-container .album-thumb,
+.patagoniaBlog .tabs-container .album-thumb {
   width: 40px;
   height: 40px;
   border-radius: 6px;
 }
-.patagoniaMedia .tabs-container .list-btn-container .pause-btn {
+.patagoniaMedia .tabs-container .list-btn-container .pause-btn,
+.patagoniaBlog .tabs-container .list-btn-container .pause-btn {
   display: none;
   border-radius: 50%;
   border: 0;
   width: 35px;
   height: 35px;
 }
-.patagoniaMedia .tabs-container .list-btn-container .pause-btn:focus {
+.patagoniaMedia .tabs-container .list-btn-container .pause-btn:focus,
+.patagoniaBlog .tabs-container .list-btn-container .pause-btn:focus {
   outline: none;
 }
-.patagoniaMedia .tabs-container li.playing-song .slider-container {
+.patagoniaMedia .tabs-container li.playing-song .slider-container,
+.patagoniaBlog .tabs-container li.playing-song .slider-container {
   display: block;
 }
-.patagoniaMedia .tabs-container li.playing-song .item-container {
+.patagoniaMedia .tabs-container li.playing-song .item-container,
+.patagoniaBlog .tabs-container li.playing-song .item-container {
   padding: 0 10px;
 }
-.patagoniaMedia .tabs-container li.playing-song .item-container .list-btn-container .play-btn {
+.patagoniaMedia .tabs-container li.playing-song .item-container .list-btn-container .play-btn,
+.patagoniaBlog .tabs-container li.playing-song .item-container .list-btn-container .play-btn {
   display: none;
 }
-.patagoniaMedia .tabs-container li.playing-song .item-container .list-btn-container .pause-btn {
+.patagoniaMedia .tabs-container li.playing-song .item-container .list-btn-container .pause-btn,
+.patagoniaBlog .tabs-container li.playing-song .item-container .list-btn-container .pause-btn {
   display: block;
 }
-.patagoniaMedia .recent-tracks {
+.patagoniaMedia .recent-tracks,
+.patagoniaBlog .recent-tracks {
   box-sizing: border-box;
 }
-.patagoniaMedia .recent-tracks .title-container {
+.patagoniaMedia .recent-tracks .title-container,
+.patagoniaBlog .recent-tracks .title-container {
   padding: 0 10px;
 }
-.patagoniaMedia .recent-tracks .controls {
+.patagoniaMedia .recent-tracks .controls,
+.patagoniaBlog .recent-tracks .controls {
   padding: 0 10px;
 }
-.patagoniaMedia .recent-tracks .list-container {
+.patagoniaMedia .recent-tracks .list-container,
+.patagoniaBlog .recent-tracks .list-container {
   box-sizing: border-box;
   overflow-y: scroll;
   padding: 0 10px;
   height: 500px;
 }
-.patagoniaMedia .recent-tracks .list-container li {
+.patagoniaMedia .recent-tracks .list-container li,
+.patagoniaBlog .recent-tracks .list-container li {
   padding: 5px 0;
   cursor: pointer;
 }
-.patagoniaMedia .recent-tracks .list-container li .song-icon {
+.patagoniaMedia .recent-tracks .list-container li .song-icon,
+.patagoniaBlog .recent-tracks .list-container li .song-icon {
   display: none;
 }
-.patagoniaMedia .recent-tracks .list-container li .song-number {
+.patagoniaMedia .recent-tracks .list-container li .song-number,
+.patagoniaBlog .recent-tracks .list-container li .song-number {
   display: block;
   width: 24px;
   margin: 0;
 }
 .patagoniaMedia .recent-tracks .list-container li:hover,
-.patagoniaMedia .recent-tracks .list-container li.selected {
+.patagoniaBlog .recent-tracks .list-container li:hover,
+.patagoniaMedia .recent-tracks .list-container li.selected,
+.patagoniaBlog .recent-tracks .list-container li.selected {
   /* add .selected to a li element
           to display a play icon. Also add the corect
           text color class. Eg: e-text-cyan-A100
@@ -910,79 +1030,102 @@ body {
   color: #84FFFF;
 }
 .patagoniaMedia .recent-tracks .list-container li:hover .song-number,
-.patagoniaMedia .recent-tracks .list-container li.selected .song-number {
+.patagoniaBlog .recent-tracks .list-container li:hover .song-number,
+.patagoniaMedia .recent-tracks .list-container li.selected .song-number,
+.patagoniaBlog .recent-tracks .list-container li.selected .song-number {
   display: none;
 }
 .patagoniaMedia .recent-tracks .list-container li:hover .song-icon,
-.patagoniaMedia .recent-tracks .list-container li.selected .song-icon {
+.patagoniaBlog .recent-tracks .list-container li:hover .song-icon,
+.patagoniaMedia .recent-tracks .list-container li.selected .song-icon,
+.patagoniaBlog .recent-tracks .list-container li.selected .song-icon {
   display: block;
 }
-.patagoniaMedia .large-thumb .title-container {
+.patagoniaMedia .large-thumb .title-container,
+.patagoniaBlog .large-thumb .title-container {
   box-sizing: border-box;
   padding: 10px;
 }
-.patagoniaMedia .large-thumb .play-slider {
+.patagoniaMedia .large-thumb .play-slider,
+.patagoniaBlog .large-thumb .play-slider {
   padding: 10px;
 }
-.patagoniaMedia .large-thumb .controls {
+.patagoniaMedia .large-thumb .controls,
+.patagoniaBlog .large-thumb .controls {
   padding: 10px;
 }
-.patagoniaMedia .large-thumb.with-bg {
+.patagoniaMedia .large-thumb.with-bg,
+.patagoniaBlog .large-thumb.with-bg {
   background: url('../img/blue.jpg') center center no-repeat;
   background-size: cover;
 }
-.patagoniaMedia .play-thumb {
+.patagoniaMedia .play-thumb,
+.patagoniaBlog .play-thumb {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.patagoniaMedia .video-player {
+.patagoniaMedia .video-player,
+.patagoniaBlog .video-player {
   height: 500px;
 }
-.patagoniaMedia .layer {
+.patagoniaMedia .layer,
+.patagoniaBlog .layer {
+  box-sizing: border-box;
   position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 100%;
 }
-.patagoniaMedia .green-layer {
+.patagoniaMedia .green-layer,
+.patagoniaBlog .green-layer {
   opacity: 0.8;
   background: radial-gradient(#009688, #00796b, #37474f);
 }
-.patagoniaMedia .transparent-layer {
+.patagoniaMedia .transparent-layer,
+.patagoniaBlog .transparent-layer {
   opacity: 0.7;
 }
-.patagoniaMedia .time-layer {
+.patagoniaMedia .time-layer,
+.patagoniaBlog .time-layer {
   opacity: 0.5;
   position: absolute;
   top: 4%;
   left: 4%;
   padding: 0 6px;
 }
-.patagoniaMedia .time-layer.text-layer {
+.patagoniaMedia .time-layer.text-layer,
+.patagoniaBlog .time-layer.text-layer {
   opacity: 1;
 }
-.patagoniaMedia .add-padding {
+.patagoniaMedia .add-padding,
+.patagoniaBlog .add-padding {
   padding: 10px;
 }
-.patagoniaMedia .add-padding-left {
+.patagoniaMedia .add-padding-left,
+.patagoniaBlog .add-padding-left {
   padding-left: 10px;
 }
-.patagoniaMedia .add-padding-right {
+.patagoniaMedia .add-padding-right,
+.patagoniaBlog .add-padding-right {
   padding-right: 10px;
 }
-.patagoniaMedia .add-padding-bottom {
+.patagoniaMedia .add-padding-bottom,
+.patagoniaBlog .add-padding-bottom {
   padding-bottom: 10px;
 }
-.patagoniaMedia .add-pointer {
+.patagoniaMedia .add-pointer,
+.patagoniaBlog .add-pointer {
   cursor: pointer;
 }
-.patagoniaMedia .rounded-corners {
+.patagoniaMedia .rounded-corners,
+.patagoniaBlog .rounded-corners {
   border-radius: 6px;
 }
-.patagoniaMedia .elipsis-text {
+.patagoniaMedia .elipsis-text,
+.patagoniaBlog .elipsis-text {
   display: block;
   /* Fallback for non-webkit */
   display: -webkit-box;
@@ -991,7 +1134,8 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.patagoniaMedia .elipsis-description {
+.patagoniaMedia .elipsis-description,
+.patagoniaBlog .elipsis-description {
   display: block;
   /* Fallback for non-webkit */
   display: -webkit-box;
@@ -1000,49 +1144,63 @@ body {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.patagoniaMedia .box-sizing {
+.patagoniaMedia .box-sizing,
+.patagoniaBlog .box-sizing {
   box-sizing: border-box;
 }
-.patagoniaMedia .flex-container {
+.patagoniaMedia .flex-container,
+.patagoniaBlog .flex-container {
   display: flex;
 }
-.patagoniaMedia .flex-container.e-strech-items {
+.patagoniaMedia .flex-container.e-strech-items,
+.patagoniaBlog .flex-container.e-strech-items {
   align-items: stretch;
 }
-.patagoniaMedia .flex-container.e-flex-col {
+.patagoniaMedia .flex-container.e-flex-col,
+.patagoniaBlog .flex-container.e-flex-col {
   flex-direction: column;
 }
-.patagoniaMedia .flex-container.e-flex-col .self-align-right {
+.patagoniaMedia .flex-container.e-flex-col .self-align-right,
+.patagoniaBlog .flex-container.e-flex-col .self-align-right {
   align-self: flex-end;
 }
-.patagoniaMedia .flex-container.e-flex-nowrap {
+.patagoniaMedia .flex-container.e-flex-nowrap,
+.patagoniaBlog .flex-container.e-flex-nowrap {
   flex-wrap: nowrap;
 }
-.patagoniaMedia .flex-container.e-justify-between {
+.patagoniaMedia .flex-container.e-justify-between,
+.patagoniaBlog .flex-container.e-justify-between {
   justify-content: space-between;
 }
-.patagoniaMedia .flex-container .e-flex-grow {
+.patagoniaMedia .flex-container .e-flex-grow,
+.patagoniaBlog .flex-container .e-flex-grow {
   flex-grow: 1;
 }
-.patagoniaMedia .custom-scrollbar::-webkit-scrollbar {
+.patagoniaMedia .custom-scrollbar::-webkit-scrollbar,
+.patagoniaBlog .custom-scrollbar::-webkit-scrollbar {
   width: 7px;
   height: 7px;
   background-color: transparent;
 }
-.patagoniaMedia .custom-scrollbar::-webkit-scrollbar-thumb {
+.patagoniaMedia .custom-scrollbar::-webkit-scrollbar-thumb,
+.patagoniaBlog .custom-scrollbar::-webkit-scrollbar-thumb {
   background: #EEEEEE;
   border-radius: 6px;
 }
-.patagoniaMedia .custom-scrollbar:hover::-webkit-scrollbar-thumb {
+.patagoniaMedia .custom-scrollbar:hover::-webkit-scrollbar-thumb,
+.patagoniaBlog .custom-scrollbar:hover::-webkit-scrollbar-thumb {
   background: #b5b5b5;
 }
-.patagoniaMedia .set-height {
+.patagoniaMedia .set-height,
+.patagoniaBlog .set-height {
   height: 380px;
 }
-.patagoniaMedia .full-width {
+.patagoniaMedia .full-width,
+.patagoniaBlog .full-width {
   width: 100%;
 }
-.patagoniaMedia .round-img {
+.patagoniaMedia .round-img,
+.patagoniaBlog .round-img {
   border-radius: 50%;
 =======
 .patagoniaForms a:hover {
@@ -1452,6 +1610,27 @@ body {
 }
 .patagoniaForms .e-steppers-container .e-stepper-content.active {
   overflow: visible;
+}
+.flex-container {
+  display: flex;
+}
+.flex-container.e-strech-items {
+  align-items: stretch;
+}
+.flex-container.e-flex-col {
+  flex-direction: column;
+}
+.flex-container.e-flex-col .self-align-right {
+  align-self: flex-end;
+}
+.flex-container.e-flex-nowrap {
+  flex-wrap: nowrap;
+}
+.flex-container.e-justify-between {
+  justify-content: space-between;
+}
+.flex-container .e-flex-grow {
+  flex-grow: 1;
 }
 footer {
   width: 100%;
