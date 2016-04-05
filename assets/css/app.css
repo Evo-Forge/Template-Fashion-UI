@@ -135,11 +135,15 @@
 }
 .patagoniaForms .input-look.input-focus,
 .patagoniaHeadersFooters .input-look.input-focus {
-  border: 2px solid #18ffff;
+  border: 2px solid #40c4ff;
 }
 .patagoniaForms .input-look.input-focus .floating-label,
 .patagoniaHeadersFooters .input-look.input-focus .floating-label {
   color: black;
+}
+.patagoniaForms .text-focus-white .e-input:focus,
+.patagoniaHeadersFooters .text-focus-white .e-input:focus {
+  border-bottom: 1px solid white;
 }
 .patagoniaForms .text-focus-white .e-input:not(textarea):not(select),
 .patagoniaHeadersFooters .text-focus-white .e-input:not(textarea):not(select),
@@ -151,7 +155,7 @@
 }
 .patagoniaForms .border-input-icon,
 .patagoniaHeadersFooters .border-input-icon {
-  border: 2px solid #18ffff;
+  border: 2px solid #40c4ff;
   border-radius: 4px;
   display: flex;
   height: 36px;
@@ -435,7 +439,7 @@
   width: 75px;
   height: 75px;
   margin: 0 auto;
-  border: 1px solid #18ffff;
+  border: 1px solid #40c4ff;
   border-radius: 50%;
 }
 .patagoniaForms .bl-done .done-icon,
@@ -539,11 +543,15 @@
 .patagoniaHeadersFooters .border-logo {
   border-right: 1px solid lightgrey;
 }
-.patagoniaHeadersFooters .search-btn {
-  background-color: #40c4ff;
+.patagoniaHeadersFooters .no-border {
+  border: 0;
+}
+.patagoniaHeadersFooters .btn-onright {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  border: 0;
+}
+.patagoniaHeadersFooters .btn-onright:focus {
+  outline: none;
 }
 .patagoniaHeadersFooters .logo-shadow {
   box-shadow: 4px 0 7px lightgrey;
@@ -566,6 +574,117 @@
   width: 42px;
   height: 42px;
   border-radius: 50%;
+}
+.patagoniaHeadersFooters .btn-onleft {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.patagoniaHeadersFooters .btn-onleft:focus {
+  outline: none;
+}
+.patagoniaHeadersFooters .bg-mountain {
+  background: linear-gradient(rgba(7, 7, 220, 0.6), rgba(7, 7, 220, 0.6)), url('../img/mountain.jpg') no-repeat;
+  background-size: cover;
+  opacity: .7;
+}
+.patagoniaHeadersFooters .centered {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.patagoniaHeadersFooters .signup-btn {
+  background: inherit;
+  border: 1px solid lightgrey;
+  width: 200px;
+  height: 50px;
+}
+.patagoniaHeadersFooters .signup-btn:hover,
+.patagoniaHeadersFooters .signup-btn:focus {
+  background: inherit;
+  border: 2px solid lightgrey;
+}
+.patagoniaHeadersFooters .signup-btn:active {
+  background: inherit;
+}
+.patagoniaHeadersFooters .header-padding {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.patagoniaHeadersFooters .explore-btn {
+  padding-left: 15px;
+  padding-right: 15px;
+  background: inherit;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+}
+.patagoniaHeadersFooters .head-title {
+  width: 35%;
+}
+.patagoniaHeadersFooters .head-title span {
+  margin-right: 25px;
+}
+.patagoniaHeadersFooters .bg-lake {
+  background: linear-gradient(rgba(23, 28, 47, 0.8), rgba(23, 28, 47, 0.8)), url('../img/lake.jpg') no-repeat;
+  background-size: cover;
+}
+.patagoniaHeadersFooters .bg-lake .signup-btn {
+  border: 0;
+}
+.patagoniaHeadersFooters .btn-big {
+  width: 300px;
+  height: 50px;
+}
+.patagoniaHeadersFooters .btn-big btn {
+  border: 0;
+}
+.patagoniaHeadersFooters .btn-big .e-input:not(textarea):not(select),
+.patagoniaHeadersFooters .btn-big .e-input:focus:not(textarea):not(select),
+.patagoniaHeadersFooters .btn-big .e-input.focus:not(textarea):not(select) {
+  height: 50px;
+}
+.patagoniaHeadersFooters .btn-big .floating-label {
+  top: 12px;
+}
+.patagoniaHeadersFooters .bg-blue a {
+  display: inline-block;
+  height: inherit;
+  line-height: 28px;
+}
+.patagoniaHeadersFooters .bg-blue li a:hover {
+  text-decoration: none;
+  background-color: #80d8ff;
+}
+.patagoniaHeadersFooters .padding-list {
+  padding: 15px 25px;
+}
+.patagoniaHeadersFooters .align-menu {
+  line-height: 48px;
+  padding-bottom: 4px;
+  margin-bottom: 0;
+}
+.patagoniaHeadersFooters .e-body2 {
+  font-size: 18px;
+}
+.patagoniaHeadersFooters .border-nav {
+  border-bottom: 1px solid #eee;
+}
+.patagoniaHeadersFooters .border-active {
+  border-bottom: 5px solid #40c4ff;
+  margin-bottom: -3px;
+}
+.patagoniaHeadersFooters .nav-h {
+  height: 80px;
+}
+.patagoniaHeadersFooters .nav-h ul.bg-blue {
+  line-height: 80px;
+}
+.patagoniaHeadersFooters .nav-h .bg-blue a {
+  line-height: 40px;
+}
+.patagoniaHeadersFooters .nav-h .bg-blue a:hover {
+  background-color: white;
+  border-bottom: 5px solid #40c4ff;
+  margin-bottom: -3px;
 }
 footer {
   width: 100%;

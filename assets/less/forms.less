@@ -106,7 +106,7 @@
         margin-right: 15px;
     }
     &.input-focus {
-      border: 2px solid #18ffff;
+      border: 2px solid #40c4ff;
       .floating-label {
         color: black;
       }
@@ -114,6 +114,9 @@
   }
   .text-focus-white {
     .e-input {
+      &:focus {
+        border-bottom: 1px solid white;
+      }
       &, &:focus, &.focus {
         &:not(textarea):not(select) {
           color: white;
@@ -122,7 +125,7 @@
     }
   }
   .border-input-icon {
-    border: 2px solid #18ffff;
+    border: 2px solid #40c4ff;
     border-radius: 4px;
     display: flex;
     height: 36px;
@@ -356,7 +359,7 @@
     width: 75px;
     height: 75px;
     margin: 0 auto;
-    border: 1px solid #18ffff;
+    border: 1px solid #40c4ff;
     border-radius: 50%;
     .done-icon {
       width: 64px;
