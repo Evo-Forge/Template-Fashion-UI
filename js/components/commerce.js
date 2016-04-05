@@ -538,7 +538,7 @@ class PatagoniaCommerce extends React.Component {
               <Block classes={'card-align-row'}>
                 <Block classes={'card-align-column border-right'}>
                   <Block classes={'img-container-400'}>
-                    <Btn label={'hot'} ripple={true} type={'succes'} className={'flat new-btn e-background-red-500 e-right'} />
+                    <Btn label={'new'} ripple={true} type={'succes'} className={'flat new-btn e-background-blue-200 e-right'} />
                     <Image classes={'e-img-rsp'} src={'assets/img/glasses.jpg'} />
                   </Block>
                   <Block classes={'e-text-center'}>
@@ -551,7 +551,6 @@ class PatagoniaCommerce extends React.Component {
                 </Block>
                 <Block classes={'card-align-column border-right'}>
                   <Block classes={'img-container-400'}>
-                    <Btn label={'hot'} ripple={true} type={'succes'} className={'flat new-btn e-background-red-500 e-right'} />
                     <Image classes={'e-img-rsp'} src={'assets/img/glasses.jpg'} />
                   </Block>
                   <Block classes={'e-text-center'}>
@@ -562,9 +561,8 @@ class PatagoniaCommerce extends React.Component {
                     </Block>
                   </Block>
                 </Block>
-                <Block classes={'card-align-column border-right'}>
+                <Block classes={'card-align-column border-right2'}>
                   <Block classes={'img-container-400'}>
-                    <Btn label={'hot'} ripple={true} type={'succes'} className={'flat new-btn e-background-red-500 e-right'} />
                     <Image classes={'e-img-rsp'} src={'assets/img/glasses.jpg'} />
                   </Block>
                   <Block classes={'e-text-center'}>
@@ -573,6 +571,7 @@ class PatagoniaCommerce extends React.Component {
                       <Text type={'span'} classes={'e-text-center e-subhead e-text-grey-500 e-line-through'}>$960</Text>
                       <Text type={'span'} classes={'e-text-center e-headline e-text-black'}>$810</Text>
                     </Block>
+                    <Btn label={'Visit Store >'} ripple={true} type={'succes'} className={'flat e-background-blue-700'} />
                   </Block>
                 </Block>
                 <Block classes={'card-align-column'}>
@@ -581,11 +580,8 @@ class PatagoniaCommerce extends React.Component {
                     <Image classes={'e-img-rsp'} src={'assets/img/glasses.jpg'} />
                   </Block>
                   <Block classes={'e-text-center'}>
-                    <Text type={'p'} classes={'e-text-center e-title e-text-black'}>Patagonia</Text>
-                    <Block>
-                      <Text type={'span'} classes={'e-text-center e-subhead e-text-grey-500 e-line-through'}>$960</Text>
-                      <Text type={'span'} classes={'e-text-center e-headline e-text-black'}>$810</Text>
-                    </Block>
+                    <Text type={'p'} classes={'e-text-center e-subhead e-text-black'}>Patagonia</Text>
+                    <Text type={'span'} classes={'e-text-center e-display-1 e-text-black'}>$810</Text>
                   </Block>
                 </Block>
               </Block>
