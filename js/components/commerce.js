@@ -34,8 +34,8 @@ class PatagoniaCommerce extends React.Component {
         <Block classes={'e-background-blue-700 e-container e-margin-top-50'}>
           <Block classes={'container'}>
             <Block classes={'e-text-center e-v-center e-h-center'}>
-              <Text type={'span'} classes={'e-text-center e-title e-text-white title-number'}>1</Text>
-              <Text type={'span'} classes={'e-text-center e-display-2 e-text-uppercase background-rainbow'}>ecommerce</Text>
+              <Text type={'span'} classes={'e-text-center e-title e-text-white badge'}>1</Text>
+              <Text type={'span'} classes={'e-text-center e-display-3 e-text-uppercase background-rainbow'}>ecommerce</Text>
             </Block>
             <Block classes={'e-row'}>
               <Block classes={'brick brick-6'}>

@@ -21,9 +21,9 @@ class Patagonia extends React.Component {
         return(
         	<Block>
         		<PatagoniaCommerce />
-        		<PatagoniaForms />
-            <PatagoniaMedia />
 						<PatagoniaBlog />
+						<PatagoniaMedia />
+        		<PatagoniaForms />
 						<PatagoniaHeadersFooters />
         	</Block>
         );

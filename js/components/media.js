@@ -327,7 +327,6 @@ class PatagoniaMedia extends React.Component {
 
   render() {
     return (
-
       <Block className={'patagoniaMedia'}>
         <Block className={'e-container e-background-blue-700 e-margin-top-25'}>
           <Block className={'container'}>
@@ -2086,7 +2085,7 @@ class PatagoniaMedia extends React.Component {
           </Block>
         </Block>
       <Block>
-
+      </Block>
       </Block>
     );
   }
