@@ -1,3 +1,1050 @@
+body {
+  background-color: #3F51B5;
+}
+.patagoniaCommerce .background-rainbow {
+  background: -webkit-linear-gradient(left, #ffffff, #7183e8);
+  background: -o-linear-gradient(right, #ffffff, #7183e8);
+  background: -moz-linear-gradient(right, #ffffff, #7183e8);
+  background: linear-gradient(to right, #ffffff, #7183e8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 30px 0;
+  margin: 0;
+}
+.patagoniaCommerce .title-number {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #FFF;
+  border-radius: 50%;
+  padding: 5px 5px;
+  margin: 15px;
+}
+.patagoniaCommerce .close-btn {
+  box-shadow: none;
+  margin: 0;
+}
+.patagoniaCommerce .e-shadow-2 {
+  -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.16), 0 6px 10px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.16), 0 6px 10px rgba(0, 0, 0, 0.32);
+  box-shadow: 0 1px 9px rgba(0, 0, 0, 0.16), 0 6px 10px rgba(0, 0, 0, 0.32);
+  -webkit-transition: box-shadow 0.2s ease;
+  /* Safari & Chrome*/
+  -moz-transition: box-shadow 0.2s ease;
+  /* Mozilla */
+  -ms-transition: box-shadow 0.2s ease;
+  /* IE */
+  -o-transition: box-shadow 0.2s ease;
+  /* Opera */
+  transition: box-shadow 0.2s ease;
+}
+.patagoniaCommerce .e-shadow-5 {
+  -webkit-box-shadow: 0 6px 22px rgba(0, 0, 0, 0.25), 0 19px 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 6px 22px rgba(0, 0, 0, 0.25), 0 19px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.25), 0 19px 20px rgba(0, 0, 0, 0.5);
+  -webkit-transition: box-shadow 0.2s ease;
+  /* Safari & Chrome*/
+  -moz-transition: box-shadow 0.2s ease;
+  /* Mozilla */
+  -ms-transition: box-shadow 0.2s ease;
+  /* IE */
+  -o-transition: box-shadow 0.2s ease;
+  /* Opera */
+  transition: box-shadow 0.2s ease;
+}
+.patagoniaCommerce .card-h-150 {
+  height: 150px;
+}
+.patagoniaCommerce .card-h-200 {
+  height: 200px;
+}
+.patagoniaCommerce .card-h-400 {
+  height: 400px;
+}
+.patagoniaCommerce .card-h-700 {
+  height: 700px;
+}
+.patagoniaCommerce .e-line-through {
+  text-decoration: line-through;
+}
+.patagoniaCommerce .e-img-rsp {
+  max-height: 100%!important;
+}
+.patagoniaCommerce a:hover {
+  cursor: pointer;
+}
+.patagoniaCommerce ul {
+  list-style-type: none;
+  padding: 8px 0;
+}
+.patagoniaCommerce ul .show {
+  display: inline-block !important;
+}
+.patagoniaCommerce ul .hidden {
+  padding: 0 0 0 1px!important;
+  display: none;
+  -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.16), 0 6px 10px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.16), 0 6px 10px rgba(0, 0, 0, 0.32);
+  box-shadow: 0 1px 9px rgba(0, 0, 0, 0.16), 0 6px 10px rgba(0, 0, 0, 0.32);
+  -webkit-transition: box-shadow 0.2s ease;
+  /* Safari & Chrome*/
+  -moz-transition: box-shadow 0.2s ease;
+  /* Mozilla */
+  -ms-transition: box-shadow 0.2s ease;
+  /* IE */
+  -o-transition: box-shadow 0.2s ease;
+  /* Opera */
+  transition: box-shadow 0.2s ease;
+  border: 1px solid #f0f0f0;
+  border-radius: 50%;
+  width: 21px!important;
+  height: 21px!important;
+  font-size: 20px!important;
+  margin: 0 18px;
+}
+.patagoniaCommerce ul li a:hover .hidden {
+  display: inline-block;
+}
+.patagoniaCommerce ul li a:hover .show {
+  display: none!important;
+}
+.patagoniaCommerce ul li i {
+  font-size: 30px!important;
+  padding: 10px 15px!important;
+}
+.patagoniaCommerce .colors ul li {
+  display: inline;
+}
+.patagoniaCommerce .e-icon-hardware-keyboard-control {
+  padding: 15px;
+  margin-top: -15px;
+}
+.patagoniaCommerce .ovflw {
+  overflow: hidden!important;
+}
+.patagoniaCommerce .delivery-options {
+  margin-bottom: 0;
+}
+.patagoniaCommerce .card {
+  overflow: visible;
+  border-radius: 6px;
+}
+.patagoniaCommerce .card:hover {
+  -webkit-box-shadow: 0 6px 22px rgba(0, 0, 0, 0.25), 0 19px 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 6px 22px rgba(0, 0, 0, 0.25), 0 19px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.25), 0 19px 20px rgba(0, 0, 0, 0.5);
+  -webkit-transition: box-shadow 0.2s ease;
+  /* Safari & Chrome*/
+  -moz-transition: box-shadow 0.2s ease;
+  /* Mozilla */
+  -ms-transition: box-shadow 0.2s ease;
+  /* IE */
+  -o-transition: box-shadow 0.2s ease;
+  /* Opera */
+  transition: box-shadow 0.2s ease;
+}
+.patagoniaCommerce .card .card-align-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.patagoniaCommerce .card .card-align-row span {
+  padding: 2px 4px!important;
+}
+.patagoniaCommerce .card .card-align-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.patagoniaCommerce .card .rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+}
+.patagoniaCommerce .card .rating .rating-stars {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.patagoniaCommerce .card .rating .rating-stars span {
+  padding: 0 2px!important;
+}
+.patagoniaCommerce .card .card-header {
+  padding: 0;
+  height: 100%;
+}
+.patagoniaCommerce .card .card-header span {
+  padding: 15px;
+}
+.patagoniaCommerce .card .card-header .e-radio span {
+  padding: 0!important;
+}
+.patagoniaCommerce .card .card-header .img-container-200 {
+  width: 50%!important;
+  position: relative;
+  box-sizing: border-box;
+}
+.patagoniaCommerce .card .card-header .text-container-200 {
+  width: 50%!important;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  position: relative;
+}
+.patagoniaCommerce .card .card-header .img-container-400 {
+  position: relative;
+  box-sizing: border-box;
+  height: 50%!important;
+}
+.patagoniaCommerce .card .card-header .text-container-400 {
+  height: 50%!important;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  position: relative;
+}
+.patagoniaCommerce .card .card-header .like-btn {
+  position: absolute;
+  right: -35px;
+  top: 33%;
+}
+.patagoniaCommerce .card .card-header .bookmark-btn {
+  position: absolute;
+  right: 10px;
+  bottom: -35px;
+}
+.patagoniaCommerce .card .card-header .slider-icons {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.patagoniaCommerce .card .card-header .slider-arrows {
+  margin: 10px;
+}
+.patagoniaCommerce .card .card-header .new-btn {
+  border-radius: 15px;
+  text-transform: lowercase;
+  min-width: 56px;
+  min-height: 26px;
+  line-height: normal;
+  position: absolute;
+  right: 10px;
+}
+.patagoniaCommerce .card .card-header .card-padding {
+  padding: 20px 0 20px 30px;
+}
+.patagoniaCommerce .card .card-header .price-btn {
+  max-width: 162px!important;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.patagoniaCommerce .card .card-header .price-btn .left-border:before {
+  display: inline-block;
+  content: '';
+  background: white;
+  height: 41px;
+  width: 2px;
+  margin-top: -10px;
+  margin-bottom: -16px;
+  margin-right: 15px;
+}
+.patagoniaCommerce .card .card-header .price-btn span {
+  padding: 0 15px!important;
+}
+.patagoniaCommerce .card .card-header .price-btn a {
+  padding: 0 15px 0 0;
+  transition: all .3s;
+}
+.patagoniaCommerce .card .card-header .price-btn a:hover {
+  background-color: white;
+  color: black!important;
+}
+.patagoniaCommerce .card .card-header .size-btn {
+  min-width: 35px;
+  min-height: 35px;
+  transition: all 0.3s ease-in-out;
+}
+.patagoniaCommerce .card .card-header .size-btn:hover {
+  -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.16), 0 6px 10px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.16), 0 6px 10px rgba(0, 0, 0, 0.32);
+  box-shadow: 0 1px 9px rgba(0, 0, 0, 0.16), 0 6px 10px rgba(0, 0, 0, 0.32);
+  -webkit-transition: box-shadow 0.2s ease;
+  /* Safari & Chrome*/
+  -moz-transition: box-shadow 0.2s ease;
+  /* Mozilla */
+  -ms-transition: box-shadow 0.2s ease;
+  /* IE */
+  -o-transition: box-shadow 0.2s ease;
+  /* Opera */
+  transition: box-shadow 0.2s ease;
+  background-color: #90CAF9!important;
+  color: #FFF!important;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.patagoniaCommerce .card .card-header .size-btn.active {
+  -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.16), 0 6px 10px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.16), 0 6px 10px rgba(0, 0, 0, 0.32);
+  box-shadow: 0 1px 9px rgba(0, 0, 0, 0.16), 0 6px 10px rgba(0, 0, 0, 0.32);
+  -webkit-transition: box-shadow 0.2s ease;
+  /* Safari & Chrome*/
+  -moz-transition: box-shadow 0.2s ease;
+  /* Mozilla */
+  -ms-transition: box-shadow 0.2s ease;
+  /* IE */
+  -o-transition: box-shadow 0.2s ease;
+  /* Opera */
+  transition: box-shadow 0.2s ease;
+  background-color: #90CAF9!important;
+  color: #FFF!important;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.patagoniaCommerce .card .card-header .border-right {
+  height: 100%;
+}
+.patagoniaCommerce .card .card-header .border-right:after {
+  display: inline-block;
+  content: '';
+  background: #eee;
+  height: 355px;
+  width: 1px;
+  margin-top: -280px;
+  margin-bottom: 0;
+  margin-left: 290px;
+  position: absolute;
+}
+.patagoniaCommerce .card .card-header .border-right2 {
+  height: 100%;
+}
+.patagoniaCommerce .card .card-header .border-right2:after {
+  display: inline-block;
+  content: '';
+  background: #eee;
+  height: 355px;
+  width: 1px;
+  margin-top: -306px;
+  margin-bottom: 0;
+  margin-left: 290px;
+  position: absolute;
+}
+.patagoniaCommerce .card .card-header .img-overlay {
+  position: relative;
+}
+.patagoniaCommerce .card .card-header .img-overlay:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: linear-gradient(to bottom, rgba(2, 42, 255, 0.8) 0%, rgba(2, 42, 255, 0.8) 100%);
+}
+.patagoniaCommerce .card .card-header .text-overlay {
+  height: 400px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.patagoniaCommerce .card .card-header .thumb-col {
+  max-width: 20%;
+}
+.patagoniaCommerce .card .card-header .thumb-col .thumb {
+  max-width: 100%;
+  margin: 10px;
+}
+.patagoniaCommerce .card .card-header .thumb-col .thumb:hover {
+  -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.16), 0 6px 10px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, 0.16), 0 6px 10px rgba(0, 0, 0, 0.32);
+  box-shadow: 0 1px 9px rgba(0, 0, 0, 0.16), 0 6px 10px rgba(0, 0, 0, 0.32);
+  -webkit-transition: box-shadow 0.2s ease;
+  /* Safari & Chrome*/
+  -moz-transition: box-shadow 0.2s ease;
+  /* Mozilla */
+  -ms-transition: box-shadow 0.2s ease;
+  /* IE */
+  -o-transition: box-shadow 0.2s ease;
+  /* Opera */
+  transition: box-shadow 0.2s ease;
+  margin: 10px;
+  max-width: 100%;
+}
+.patagoniaCommerce .card .card-header .large-img-col {
+  max-width: 80%;
+}
+.patagoniaCommerce .card .card-header .large-img-col .large-img {
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 20px;
+}
+.patagoniaCommerce .card .card-header .quantity {
+  position: relative;
+  max-width: 160px;
+  max-height: 30px;
+  border-radius: 15px;
+  border: 1px solid #f8bbd0;
+}
+.patagoniaCommerce .card .card-header .quantity .quantity-btn {
+  border: 0;
+  margin: 0!important;
+  padding: 0!important;
+  min-height: 30px!important;
+  min-width: 60px!important;
+  line-height: 20px;
+  font-size: 20px;
+  border-radius: 15px;
+}
+.patagoniaCommerce .card .card-header .quantity .item-number {
+  position: absolute;
+  top: -5%;
+  right: 45%;
+}
+.patagoniaCommerce .card .card-header .e-input {
+  border: 1px solid #f8bbd0;
+  border-radius: 4px;
+  height: 40px;
+  padding: 8px;
+  width: 100px;
+}
+.patagoniaCommerce .card .card-header .e-input-efects::after {
+  margin-top: 10px;
+}
+.patagoniaCommerce .card .card-header .e-input-efects::before {
+  display: none;
+}
+.patagoniaCommerce .card .card-header .cart-item {
+  height: 178px;
+  display: flex;
+  justify-content: space-around;
+}
+.patagoniaCommerce .card .card-header .cart-item img {
+  max-height: 100px!important;
+}
+.patagoniaCommerce .card .card-header .cart-dropdown {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.patagoniaCommerce .card .card-header .cart-dropdown img {
+  max-height: 40px!important;
+}
+.patagoniaCommerce .card .card-header .e-padding-20 {
+  padding: 20px;
+}
+.patagoniaCommerce .card .filters span {
+  padding: 5px;
+}
+.patagoniaCommerce .card .filters span a:hover {
+  color: #1A94F7!important;
+}
+.patagoniaCommerce .card .sort-by {
+  min-width: 50px;
+  border: 1px solid #f8bbd0;
+  display: block;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.patagoniaCommerce .card .sort-by span {
+  display: block;
+  min-width: 110px;
+  padding: 5px 5px;
+}
+.patagoniaCommerce .card .sort-by span span {
+  display: inline-block;
+  width: 75%;
+  padding: 0;
+}
+.patagoniaCommerce .card .display-btn {
+  min-width: 35px;
+  min-height: 35px;
+}
+.patagoniaCommerce .card .filter-card .e-nav-menu span {
+  width: 240px;
+  display: block;
+  padding: 5px;
+}
+.patagoniaCommerce .card .filter-card .e-nav-menu span span {
+  width: 70%;
+  display: inline-block;
+}
+.patagoniaCommerce .cart-items {
+  position: relative;
+}
+.patagoniaCommerce .cart-items:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: 85%;
+  width: 0;
+  height: 0;
+  border-color: transparent transparent #fff transparent;
+  border-style: solid;
+  border-width: 10px;
+}
+.patagoniaCommerce .align-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.patagoniaCommerce .sale-btn {
+  border-radius: 15px;
+  text-transform: lowercase;
+  min-width: 56px!important;
+  min-height: 26px!important;
+  line-height: normal;
+}
+.patagoniaCommerce .cart-btn {
+  min-width: 70px;
+  min-height: 52px;
+  margin: 0;
+}
+.patagoniaCommerce .success {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 0 9px;
+  margin: 15px;
+}
+.patagoniaCommerce .search {
+  border: 1px solid #f8bbd0;
+  border-radius: 5px;
+  height: 40px;
+  max-width: 99%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 20px;
+}
+.patagoniaCommerce .search .e-input-group {
+  margin: 0;
+  min-width: 83%;
+}
+.patagoniaCommerce .search .e-input-group .e-input {
+  width: 100%;
+  border: none!important;
+}
+.patagoniaCommerce .search .search-btn {
+  border-left: 1px solid #f8bbd0;
+  min-width: 40px;
+  min-height: 40px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin: 0;
+}
+.patagoniaCommerce .search span {
+  padding: 9px!important;
+}
+.patagoniaMedia img {
+  display: block;
+}
+.patagoniaMedia .e-container {
+  border-radius: 10px;
+  padding: 5% 0;
+}
+.patagoniaMedia .container {
+  width: 90%;
+  margin: 0 auto;
+}
+.patagoniaMedia .badge {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  display: flex;
+  margin-right: 15px!important;
+  cursor: pointer;
+}
+.patagoniaMedia .card-container {
+  border-radius: 8px;
+  width: 100%;
+}
+.patagoniaMedia .card-container.sharp {
+  border-radius: 0 0 8px 8px;
+}
+.patagoniaMedia .card-container.sharp .track-bar {
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: auto;
+}
+.patagoniaMedia .card-container ul {
+  margin-top: 4px;
+  margin-left: 10px;
+}
+.patagoniaMedia .card-container li.play-control:hover {
+  background: #2196F3;
+}
+.patagoniaMedia .current-album {
+  height: 350px;
+}
+.patagoniaMedia .text-container {
+  padding: 10px;
+  width: 25%;
+  flex-wrap: wrap;
+}
+.patagoniaMedia .text-container h1,
+.patagoniaMedia .text-container p {
+  width: 100%;
+}
+.patagoniaMedia .text-container li {
+  cursor: pointer;
+}
+.patagoniaMedia .btn-icon {
+  background-color: transparent;
+  border: 0;
+}
+.patagoniaMedia .btn-icon:focus,
+.patagoniaMedia .btn-icon:active {
+  outline: none;
+}
+.patagoniaMedia .btn-icon.preview-btn {
+  position: absolute;
+  border: 1px solid #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.patagoniaMedia .btn-icon.play-video-btn {
+  border: 1px solid #ffffff;
+}
+.patagoniaMedia .btn-icon.play-video-btn-black {
+  border: 1px solid #000000;
+}
+.patagoniaMedia .img-container {
+  display: flex;
+  width: 37.5%;
+  flex-flow: 1;
+}
+.patagoniaMedia .playlist {
+  width: 37.5%;
+  padding: 10px;
+}
+.patagoniaMedia .playlist .list-container {
+  overflow-y: scroll;
+  flex-grow: 1;
+  padding: 0 15px;
+}
+.patagoniaMedia .playlist .list-container li {
+  padding: 5px 0;
+  cursor: pointer;
+}
+.patagoniaMedia .playlist .list-container li .song-icon {
+  display: none;
+}
+.patagoniaMedia .playlist .list-container li .song-number {
+  display: block;
+  width: 24px;
+  margin: 0;
+}
+.patagoniaMedia .playlist .list-container li:hover,
+.patagoniaMedia .playlist .list-container li.selected {
+  /* add .selected to a li element
+            to display a play icon. Also add the corect
+            text color class. Eg: e-text-cyan-A100
+          */
+  color: #84FFFF;
+}
+.patagoniaMedia .playlist .list-container li:hover .song-number,
+.patagoniaMedia .playlist .list-container li.selected .song-number {
+  display: none;
+}
+.patagoniaMedia .playlist .list-container li:hover .song-icon,
+.patagoniaMedia .playlist .list-container li.selected .song-icon {
+  display: block;
+}
+.patagoniaMedia .playlist .player {
+  box-sizing: border-box;
+  padding: 15px;
+}
+.patagoniaMedia .playlist .player .controls {
+  min-width: 100px;
+}
+.patagoniaMedia .playlist .player .song-defilation {
+  overflow: hidden;
+  flex-grow: 1;
+  height: 30px;
+}
+.patagoniaMedia .playlist .player .song-defilation .name-container {
+  width: 500px;
+}
+.patagoniaMedia .pos-relative {
+  position: relative;
+}
+.patagoniaMedia .btn-absolute {
+  position: absolute;
+  top: 35%;
+  left: 21.4%;
+}
+.patagoniaMedia .album {
+  width: 18%;
+  box-sizing: border-box;
+}
+.patagoniaMedia .album img {
+  border-radius: 8px;
+}
+.patagoniaMedia .album .layer {
+  opacity: 0;
+  border-radius: 8px;
+}
+.patagoniaMedia .album:hover .preview-btn {
+  opacity: 1;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+.patagoniaMedia .album:hover .layer {
+  opacity: 0.4;
+  -moz-transition: opacity 0.6s ease-in-out;
+  -webkit-transition: opacity 0.6s ease-in-out;
+  transition: opacity 0.6s ease-in-out;
+}
+.patagoniaMedia .small-player {
+  background: url('../img/sketch1.jpg') center center no-repeat;
+  background-size: cover;
+  flex-grow: 1;
+  height: 350px;
+}
+.patagoniaMedia .small-player .card-heading {
+  align-items: baseline;
+}
+.patagoniaMedia .small-player .card-heading h1 {
+  max-width: 70%;
+}
+.patagoniaMedia .small-player .play-slider {
+  margin: 0 -16px;
+}
+.patagoniaMedia .small-player .card-content {
+  flex-wrap: wrap;
+}
+.patagoniaMedia .small-player .list-container {
+  height: 200px;
+  overflow-y: scroll;
+  padding: 0 10px;
+}
+.patagoniaMedia .small-player .list-container li {
+  padding: 5px 0;
+  cursor: pointer;
+}
+.patagoniaMedia .small-player .list-container li .song-icon {
+  display: none;
+}
+.patagoniaMedia .small-player .list-container li .song-number {
+  display: block;
+  width: 24px;
+  margin: 0;
+}
+.patagoniaMedia .small-player .list-container li:hover,
+.patagoniaMedia .small-player .list-container li.selected {
+  /* add .selected to a li element
+            to display a play icon. Also add the corect
+            text color class. Eg: e-text-cyan-A100
+          */
+  color: #84FFFF;
+}
+.patagoniaMedia .small-player .list-container li:hover .song-number,
+.patagoniaMedia .small-player .list-container li.selected .song-number {
+  display: none;
+}
+.patagoniaMedia .small-player .list-container li:hover .song-icon,
+.patagoniaMedia .small-player .list-container li.selected .song-icon {
+  display: block;
+}
+.patagoniaMedia .track-slider {
+  height: 350px;
+}
+.patagoniaMedia .best-tracks {
+  overflow-x: scroll;
+}
+.patagoniaMedia .best-tracks .track {
+  box-sizing: border-box;
+  width: 180px;
+  min-width: 180px;
+  padding: 0 5px;
+  cursor: pointer;
+}
+.patagoniaMedia .best-tracks .track .image-container {
+  position: relative;
+}
+.patagoniaMedia .best-tracks .track .image-container img {
+  border-radius: 8px;
+}
+.patagoniaMedia .best-tracks .track:hover .btn-icon.preview-btn {
+  opacity: 1;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+.patagoniaMedia .playlist-view .image-container {
+  width: 50%;
+}
+.patagoniaMedia .playlist-view .image-container img {
+  flex-grow: 1;
+}
+.patagoniaMedia .playlist-view .list-container {
+  box-sizing: border-box;
+  width: 50%;
+  overflow-y: scroll;
+  flex-grow: 1;
+  padding: 15px;
+  margin: 15px;
+}
+.patagoniaMedia .playlist-view .list-container li {
+  padding: 5px 0;
+  cursor: pointer;
+}
+.patagoniaMedia .playlist-view .list-container li .song-icon {
+  display: none;
+}
+.patagoniaMedia .playlist-view .list-container li .song-number {
+  display: block;
+  width: 24px;
+  margin: 0;
+}
+.patagoniaMedia .playlist-view .list-container li:hover,
+.patagoniaMedia .playlist-view .list-container li.selected {
+  /* add .selected to a li element
+            to display a play icon. Also add the corect
+            text color class. Eg: e-text-cyan-A100
+          */
+  color: #84FFFF;
+}
+.patagoniaMedia .playlist-view .list-container li:hover .song-number,
+.patagoniaMedia .playlist-view .list-container li.selected .song-number {
+  display: none;
+}
+.patagoniaMedia .playlist-view .list-container li:hover .song-icon,
+.patagoniaMedia .playlist-view .list-container li.selected .song-icon {
+  display: block;
+}
+.patagoniaMedia .header-menu {
+  padding: 0 10px!important;
+}
+.patagoniaMedia .tabs-container .slider-container {
+  display: none;
+}
+.patagoniaMedia .tabs-container .item-container {
+  padding: 4px 10px;
+}
+.patagoniaMedia .tabs-container .title-container {
+  flex-grow: 1;
+  padding: 0 10px;
+}
+.patagoniaMedia .tabs-container .album-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+}
+.patagoniaMedia .tabs-container .list-btn-container .pause-btn {
+  display: none;
+  border-radius: 50%;
+  border: 0;
+  width: 35px;
+  height: 35px;
+}
+.patagoniaMedia .tabs-container .list-btn-container .pause-btn:focus {
+  outline: none;
+}
+.patagoniaMedia .tabs-container li.playing-song .slider-container {
+  display: block;
+}
+.patagoniaMedia .tabs-container li.playing-song .item-container {
+  padding: 0 10px;
+}
+.patagoniaMedia .tabs-container li.playing-song .item-container .list-btn-container .play-btn {
+  display: none;
+}
+.patagoniaMedia .tabs-container li.playing-song .item-container .list-btn-container .pause-btn {
+  display: block;
+}
+.patagoniaMedia .recent-tracks {
+  box-sizing: border-box;
+}
+.patagoniaMedia .recent-tracks .title-container {
+  padding: 0 10px;
+}
+.patagoniaMedia .recent-tracks .controls {
+  padding: 0 10px;
+}
+.patagoniaMedia .recent-tracks .list-container {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  padding: 0 10px;
+  height: 500px;
+}
+.patagoniaMedia .recent-tracks .list-container li {
+  padding: 5px 0;
+  cursor: pointer;
+}
+.patagoniaMedia .recent-tracks .list-container li .song-icon {
+  display: none;
+}
+.patagoniaMedia .recent-tracks .list-container li .song-number {
+  display: block;
+  width: 24px;
+  margin: 0;
+}
+.patagoniaMedia .recent-tracks .list-container li:hover,
+.patagoniaMedia .recent-tracks .list-container li.selected {
+  /* add .selected to a li element
+          to display a play icon. Also add the corect
+          text color class. Eg: e-text-cyan-A100
+        */
+  color: #84FFFF;
+}
+.patagoniaMedia .recent-tracks .list-container li:hover .song-number,
+.patagoniaMedia .recent-tracks .list-container li.selected .song-number {
+  display: none;
+}
+.patagoniaMedia .recent-tracks .list-container li:hover .song-icon,
+.patagoniaMedia .recent-tracks .list-container li.selected .song-icon {
+  display: block;
+}
+.patagoniaMedia .large-thumb .title-container {
+  box-sizing: border-box;
+  padding: 10px;
+}
+.patagoniaMedia .large-thumb .play-slider {
+  padding: 10px;
+}
+.patagoniaMedia .large-thumb .controls {
+  padding: 10px;
+}
+.patagoniaMedia .large-thumb.with-bg {
+  background: url('../img/blue.jpg') center center no-repeat;
+  background-size: cover;
+}
+.patagoniaMedia .play-thumb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.patagoniaMedia .video-player {
+  height: 500px;
+}
+.patagoniaMedia .layer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+.patagoniaMedia .green-layer {
+  opacity: 0.8;
+  background: radial-gradient(#009688, #00796b, #37474f);
+}
+.patagoniaMedia .transparent-layer {
+  opacity: 0.7;
+}
+.patagoniaMedia .time-layer {
+  opacity: 0.5;
+  position: absolute;
+  top: 4%;
+  left: 4%;
+  padding: 0 6px;
+}
+.patagoniaMedia .time-layer.text-layer {
+  opacity: 1;
+}
+.patagoniaMedia .add-padding {
+  padding: 10px;
+}
+.patagoniaMedia .add-padding-left {
+  padding-left: 10px;
+}
+.patagoniaMedia .add-padding-right {
+  padding-right: 10px;
+}
+.patagoniaMedia .add-padding-bottom {
+  padding-bottom: 10px;
+}
+.patagoniaMedia .add-pointer {
+  cursor: pointer;
+}
+.patagoniaMedia .rounded-corners {
+  border-radius: 6px;
+}
+.patagoniaMedia .elipsis-text {
+  display: block;
+  /* Fallback for non-webkit */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.patagoniaMedia .elipsis-description {
+  display: block;
+  /* Fallback for non-webkit */
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.patagoniaMedia .box-sizing {
+  box-sizing: border-box;
+}
+.patagoniaMedia .flex-container {
+  display: flex;
+}
+.patagoniaMedia .flex-container.e-strech-items {
+  align-items: stretch;
+}
+.patagoniaMedia .flex-container.e-flex-col {
+  flex-direction: column;
+}
+.patagoniaMedia .flex-container.e-flex-col .self-align-right {
+  align-self: flex-end;
+}
+.patagoniaMedia .flex-container.e-flex-nowrap {
+  flex-wrap: nowrap;
+}
+.patagoniaMedia .flex-container.e-justify-between {
+  justify-content: space-between;
+}
+.patagoniaMedia .flex-container .e-flex-grow {
+  flex-grow: 1;
+}
+.patagoniaMedia .custom-scrollbar::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  background-color: transparent;
+}
+.patagoniaMedia .custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #EEEEEE;
+  border-radius: 6px;
+}
+.patagoniaMedia .custom-scrollbar:hover::-webkit-scrollbar-thumb {
+  background: #b5b5b5;
+}
+.patagoniaMedia .set-height {
+  height: 380px;
+}
+.patagoniaMedia .full-width {
+  width: 100%;
+}
+.patagoniaMedia .round-img {
+  border-radius: 50%;
+}
 footer {
   width: 100%;
   height: 50px;
