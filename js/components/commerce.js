@@ -115,7 +115,7 @@ class PatagoniaCommerce extends React.Component {
             </Card>
             <Block classes={'e-row'}>
               <Block classes={'brick brick-3'}>
-                <Card classes={'e-background-white card-h-400'}>
+                <Card classes={'e-background-white card-h-400 ovflw'}>
                   <CardHeader classes={'card-align-column'}>
                     <Block classes={'img-container-400'}>
                       <Image classes={'e-img-rsp'} src={'assets/img/beats.jpg'} />
@@ -254,7 +254,7 @@ class PatagoniaCommerce extends React.Component {
                       <Image classes={'e-img-rsp'} src={'assets/img/shirt.jpg'} />
                     </Block>
                     <Block classes={'text-container-400'}>
-                      <Block classes={'rating e-text-center'}>
+                      <Block classes={'rating e-text-center flex-center'}>
                         <Block classes={'rating-stars e-headline e-text-center'}>
                           <Text type={'span'} classes={'e-text-center e-headline e-text-orange-400'}>&#9733;</Text>
                           <Text type={'span'} classes={'e-text-center e-headline e-text-orange-400'}>&#9733;</Text>
@@ -286,7 +286,7 @@ class PatagoniaCommerce extends React.Component {
                       <Divider classes={'thinnest e-background-grey-200'} />
                       <Block classes={'card-align-row'}>
                         <Text type={'span'} classes={'e-text-left e-headline e-text-black'}>$115</Text>
-                        <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-500'}>Available colors</Text>
+                        <Text type={'span'} classes={'e-text-left e-caption e-text-grey-500'}>Available colors</Text>
                         <Icon name={"image-brightness-1"} className={"e-text-yellow-800 e-headline"} />
                         <Icon name={"image-brightness-1"} className={"e-text-blue-400 e-headline"} />
                         <Icon name={"image-brightness-1"} className={"e-text-red-800 e-headline"} />
