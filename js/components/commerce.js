@@ -151,7 +151,7 @@ class PatagoniaCommerce extends React.Component {
                 </Card>
               </Block>
               <Block classes={'brick brick-3'}>
-                <Card classes={'e-background-white card-h-400'}>
+                <Card classes={'e-background-white card-h-400 ovflw'}>
                   <CardHeader classes={'card-align-column'}>
                     <Block>
                       <Text type={'span'} classes={' e-text-left e-subhead e-text-black'}>Ragently viewed</Text>
