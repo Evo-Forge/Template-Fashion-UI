@@ -617,11 +617,14 @@
   border: 1px solid lightgrey;
   border-radius: 25px;
 }
+.patagoniaHeadersFooters .explore-btn:hover,
+.patagoniaHeadersFooters .explore-btn:focus {
+  background: inherit;
+  border: 1px solid lightgrey;
+  outline: none;
+}
 .patagoniaHeadersFooters .head-title {
   width: 35%;
-}
-.patagoniaHeadersFooters .head-title span {
-  margin-right: 25px;
 }
 .patagoniaHeadersFooters .bg-lake {
   background: linear-gradient(rgba(23, 28, 47, 0.8), rgba(23, 28, 47, 0.8)), url('../img/lake.jpg') no-repeat;
@@ -629,6 +632,10 @@
 }
 .patagoniaHeadersFooters .bg-lake .signup-btn {
   border: 0;
+}
+.patagoniaHeadersFooters .bg-lake li a:hover {
+  text-decoration: none;
+  color: #40c4ff!important;
 }
 .patagoniaHeadersFooters .btn-big {
   width: 300px;
@@ -685,6 +692,66 @@
   background-color: white;
   border-bottom: 5px solid #40c4ff;
   margin-bottom: -3px;
+}
+.patagoniaHeadersFooters .head-title-grad {
+  width: 70%;
+}
+.patagoniaHeadersFooters .article-area {
+  width: 85%;
+  margin: auto;
+}
+.patagoniaHeadersFooters .fab-mini {
+  border-radius: 50%;
+}
+.patagoniaHeadersFooters .card .card-suplimentary-actions {
+  border-top: 1px solid #eee;
+}
+.patagoniaHeadersFooters .text-remove {
+  text-decoration: line-through;
+}
+.patagoniaHeadersFooters .article-h {
+  height: 180px;
+}
+.patagoniaHeadersFooters .footer-w {
+  width: 80%;
+  margin: 0 auto;
+}
+.patagoniaHeadersFooters .footer-w ul:first-child.e-list-inline {
+  display: flex;
+  justify-content: space-between;
+}
+.patagoniaHeadersFooters .footer-w .footer-list-menu {
+  list-style-type: none;
+}
+.patagoniaHeadersFooters .footer-w i {
+  padding-right: 15px;
+}
+.patagoniaHeadersFooters .logo-footer {
+  margin-top: 20px;
+  padding-left: 15px;
+}
+.patagoniaHeadersFooters .line-h {
+  height: 53px;
+}
+.patagoniaHeadersFooters .vertical-logo {
+  margin-top: -15px;
+}
+.patagoniaHeadersFooters .padding-icons {
+  padding-right: 15px;
+}
+.patagoniaHeadersFooters .bg-forest {
+  background: linear-gradient(rgba(7, 7, 220, 0.7), rgba(7, 7, 220, 0.7)), url('../img/river.jpg') no-repeat;
+  background-size: cover;
+  opacity: .7;
+}
+.patagoniaHeadersFooters .bg-forest .border-input-icon {
+  border: 1px solid lightgrey;
+}
+.patagoniaHeadersFooters .bg-forest .btn-onright {
+  padding-right: 0;
+}
+.patagoniaHeadersFooters .align-follow i {
+  padding-right: 15px;
 }
 footer {
   width: 100%;

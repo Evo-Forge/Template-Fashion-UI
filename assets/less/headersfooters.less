@@ -93,19 +93,25 @@
     padding-right: 15px;
     background: inherit;
     border: 1px solid lightgrey;
-    border-radius: 25px;;
+    border-radius: 25px;
+    &:hover, &:focus {
+      background: inherit;
+      border: 1px solid lightgrey;
+      outline: none;
+    }
   }
   .head-title {
     width: 35%;
-    span {
-      margin-right: 25px;
-    }
   }
   .bg-lake {
     background: linear-gradient( rgba(23, 28, 47, 0.8), rgba(23, 28, 47, 0.8) ), url('../img/lake.jpg') no-repeat;
     background-size: cover;
     .signup-btn {
       border: 0;
+    }
+    li a:hover {
+      text-decoration: none;
+      color: #40c4ff!important;
     }
   }
   .btn-big {
@@ -168,6 +174,70 @@
           margin-bottom: -3px;
         }
       }
+    }
+  }
+  .head-title-grad {
+    width: 70%;
+  }
+  .article-area {
+    width: 85%;
+    margin: auto;
+  }
+  .fab-mini {
+    border-radius: 50%;
+  }
+  .card .card-suplimentary-actions {
+    border-top: 1px solid #eee;
+  }
+  .text-remove {
+    text-decoration: line-through;;
+  }
+  .article-h {
+    height: 180px;
+  }
+  .footer-w {
+    width: 80%;
+    margin: 0 auto;
+    ul:first-child {
+      &.e-list-inline {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .footer-list-menu {
+      list-style-type: none;
+    }
+    i {
+      padding-right: 15px;
+    }
+  }
+  .logo-footer {
+    margin-top: 20px;
+    padding-left: 15px;
+  }
+  .line-h {
+    height: 53px;
+  }
+  .vertical-logo {
+    margin-top: -15px;
+  }
+  .padding-icons {
+    padding-right: 15px;
+  }
+  .bg-forest {
+    background: linear-gradient( rgba(7, 7, 220, 0.7), rgba(7, 7, 220, 0.7) ), url('../img/river.jpg') no-repeat;
+    background-size: cover;
+    opacity: .7;
+    .border-input-icon {
+      border: 1px solid lightgrey;
+    }
+    .btn-onright {
+      padding-right: 0;
+    }
+  }
+  .align-follow {
+    i {
+      padding-right: 15px;
     }
   }
 }
