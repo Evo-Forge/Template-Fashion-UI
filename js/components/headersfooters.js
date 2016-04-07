@@ -17,7 +17,7 @@ class PatagoniaHeadersFooters extends React.Component {
   render() {
     return (
       <Block className={'e-background-grey-100'}>
-        <Block className={'patagoniaHeadersFooters e-container'}>
+        <Block className={'patagoniaHeadersFooters e-container e-padding-bottom-50'}>
           <Block classes={'e-row '}>
             <Block classes={'brick brick-12 e-h-center e-v-center'}>
               <Text type={'p'} classes={'e-text-center e-headline e-text-indigo-400 badge-header'}>5</Text>
@@ -57,7 +57,7 @@ class PatagoniaHeadersFooters extends React.Component {
             </Block>
           </Block>
 
-          <Block classes={'e-row e-background-indigo-400 e-margin-top-25'}>
+          <Block classes={'e-row e-background-indigo-400 e-margin-top-50'}>
             <Block classes={'brick brick-2 e-h-start e-v-end border-logo no-mg-bottom e-padding-top-15 e-padding-bottom-15'}>
               <Icon name={"image-filter-hdr"} classes={"e-text-grey-200 e-headline margin-logo"} />
               <Text type={'p'} classes={'e-text-center e-button e-text-grey-200'}>Patagonia
@@ -90,7 +90,7 @@ class PatagoniaHeadersFooters extends React.Component {
             </Block>
           </Block>
 
-          <Block classes={'e-row e-background-white e-margin-top-25'}>
+          <Block classes={'e-row e-background-white e-margin-top-50'}>
             <Block classes={'brick brick-2 e-h-start e-v-end logo-shadow no-mg-bottom'}>
               <Icon name={"image-filter-hdr"} classes={"e-text-grey-900 background-rainbow e-headline margin-logo"} />
               <Text type={'p'} classes={'e-text-center e-button e-text-grey-900'}>Patagonia</Text>
@@ -110,7 +110,7 @@ class PatagoniaHeadersFooters extends React.Component {
                   <Text type={'a'} classes={'e-text-grey-900 e-text-center e-body1'}>Sport</Text>
                 </ListItem>
                 <ListItem className={'margin-list-item align-list-item'}>
-                  <Menu type={'cover'} placeholder={'Brands'} classes={'e-body1'}>
+                  <Menu type={'cover'} placeholder={'Brands'} classes={'e-body1 show-menu'}>
                      <Text className={'e-text-black'}>KKS</Text>
                      <Text className={'e-text-black'}>Wy's</Text>
                      <Text className={'e-text-black'}>Fashon Lux</Text>
@@ -141,7 +141,7 @@ class PatagoniaHeadersFooters extends React.Component {
             </Block>
           </Block>
 
-          <Block classes={'e-row e-margin-top-25 e-background-grey-900'}>
+          <Block classes={'e-row e-margin-top-50 e-background-grey-900'}>
             <Block classes={'brick brick-2 e-h-start e-v-end e-no-margin'}>
               <Icon name={"image-filter-hdr"} classes={"e-text-grey-200 e-headline e-margin-bottom-15 margin-logo"} />
               <Text type={'p'} classes={'e-text-center e-text-grey-200 e-button e-margin-bottom-25'}>Patagonia</Text>
@@ -158,14 +158,14 @@ class PatagoniaHeadersFooters extends React.Component {
                   <Text type={'a'} classes={'e-text-grey-200 e-text-center e-body1'}>Accessories</Text>
                 </ListItem >
                 <ListItem className={'margin-list-item align-list-item'}>
-                  <Menu type={'cover'} placeholder={'Sport'} classes={'e-body1 e-text-grey-200'}>
+                  <Menu type={'cover'} placeholder={'Sport'} classes={'e-body1 e-text-grey-200 show-menu'}>
                      <Text className={'e-text-black'}>Polo</Text>
                      <Text className={'e-text-black'}>Sky</Text>
                      <Text className={'e-text-black'}>Tennis</Text>
                   </Menu>
                 </ListItem>
                 <ListItem className={'margin-list-item align-list-item'}>
-                  <Menu type={'cover'} placeholder={'Brands'} classes={'e-body1 e-text-grey-200'}>
+                  <Menu type={'cover'} placeholder={'Brands'} classes={'e-body1 e-text-grey-200 show-menu'}>
                      <Text className={'e-text-black'}>KFV</Text>
                      <Text className={'e-text-black'}>LoGO's</Text>
                      <Text className={'e-text-black'}>Infant</Text>
@@ -196,7 +196,7 @@ class PatagoniaHeadersFooters extends React.Component {
             </Block>
           </Block>
 
-          <Block classes={'e-row e-background-grey-900 e-margin-top-25'}>
+          <Block classes={'e-row e-background-grey-900 e-margin-top-50'}>
             <Block classes={'brick brick-2 e-h-start e-v-end no-mg-bottom'}>
               <Icon name={"image-filter-hdr"} classes={"e-text-grey-200 e-headline margin-logo"} />
               <Text type={'p'} classes={'e-text-center e-button e-text-grey-200'}>Patagonia
@@ -217,7 +217,7 @@ class PatagoniaHeadersFooters extends React.Component {
                   <Text type={'a'} classes={'e-text-grey-200 e-text-center e-body1'}>Sport</Text>
                 </ListItem>
                 <ListItem className={'margin-list-item align-list-item'}>
-                  <Menu type={'cover'} placeholder={'Brands'} classes={'e-body1 e-text-grey-200'}>
+                  <Menu type={'cover'} placeholder={'Brands'} classes={'e-body1 e-text-grey-200 show-menu'}>
                     <Text className={'e-text-black'}>KFV</Text>
                     <Text className={'e-text-black'}>LoGO's</Text>
                     <Text className={'e-text-black'}>Infant</Text>
@@ -233,8 +233,8 @@ class PatagoniaHeadersFooters extends React.Component {
             </Block>
           </Block>
 
-          <Block classes={'bg-mountain e-margin-top-25'}>
-            <Block classes={'e-row e-padding-top-50 header-padding'}>
+          <Block classes={'bg-mountain e-margin-top-50'}>
+            <Block classes={'e-row e-padding-top-25 header-padding'}>
               <Block classes={'brick brick-2 e-h-start e-v-end no-mg-bottom'}>
                 <Icon name={"image-filter-hdr"} classes={"e-text-grey-200 e-headline margin-logo"} />
                 <Text type={'p'} classes={'e-text-center e-button e-text-grey-200'}>Patagonia
@@ -286,8 +286,8 @@ class PatagoniaHeadersFooters extends React.Component {
             </Block>
           </Block>
 
-          <Block classes={'bg-lake e-margin-top-25'}>
-            <Block classes={'e-row e-padding-top-50 header-padding'}>
+          <Block classes={'bg-lake e-margin-top-50'}>
+            <Block classes={'e-row e-padding-top-25 header-padding'}>
               <Block classes={'brick brick-2 e-h-start e-v-end no-mg-bottom'}>
                 <Icon name={"image-filter-hdr"} classes={"e-text-grey-400 e-headline margin-logo"} />
                 <Text type={'p'} classes={'e-text-center e-button e-text-grey-400'}>Patagonia
@@ -339,7 +339,7 @@ class PatagoniaHeadersFooters extends React.Component {
                 <Text type={'a'} classes={'e-text-center e-body2'}>
                   <Icon name={"action-favorite-outline"} className={"e-text-grey-400"} />
                 </Text>
-                <Text type={'span'} classes={'e-text-center e-text-grey-400 e-body2'}> 345</Text>
+                <Text type={'span'} classes={'e-text-center e-text-grey-400 e-body2 padding-icons'}> 345</Text>
                 <Text type={'a'} classes={'e-text-center e-body2'}>
                   <Icon name={"action-room"} className={"e-text-grey-400"} />
                 </Text>
@@ -351,7 +351,7 @@ class PatagoniaHeadersFooters extends React.Component {
             </Block>
           </Block>
 
-          <Block className={'e-background-light-blue-A100 e-margin-top-25'}>
+          <Block className={'e-background-light-blue-A100 e-margin-top-50'}>
             <Block classes={'e-row e-background-light-blue-A200 e-no-margin e-no-padding'}>
               <Block classes={'brick brick-2 e-h-start e-v-end no-mg-bottom e-no-margin e-no-padding'}>
                 <Icon name={"image-filter-hdr"} classes={"e-text-grey-200 e-headline margin-logo align-menu"} />
@@ -372,7 +372,7 @@ class PatagoniaHeadersFooters extends React.Component {
                     <Text type={'a'} classes={'padding-list e-text-grey-200 e-text-center e-body1'}>Sport</Text>
                   </ListItem>
                   <ListItem className={'margin-list-item'}>
-                    <Menu type={'cover'} placeholder={'Brands'} classes={'e-padding-top-15 e-padding-bottom-15 e-body1 e-text-grey-200'}>
+                    <Menu type={'cover'} placeholder={'Brands'} classes={'e-padding-top-15 e-padding-bottom-15 e-body1 e-text-grey-200 show-menu'}>
                        <Text className={'e-text-black'}>KKS</Text>
                        <Text className={'e-text-black'}>Wy's</Text>
                        <Text className={'e-text-black'}>Fashon Lux</Text>
@@ -413,7 +413,7 @@ class PatagoniaHeadersFooters extends React.Component {
             </Block>
           </Block>
 
-          <Block className={'e-background-white e-margin-top-25'}>
+          <Block className={'e-background-white e-margin-top-50'}>
             <Block classes={'e-row e-background-white e-no-margin e-no-padding border-nav nav-h'}>
               <Block classes={'brick brick-2 e-h-start e-v-end e-no-margin e-no-padding'}>
                 <Icon name={"image-filter-hdr"} classes={"e-text-grey-900 e-headline margin-logo e-margin-bottom-15"} />
@@ -431,14 +431,14 @@ class PatagoniaHeadersFooters extends React.Component {
                     <Text type={'a'} classes={'padding-list e-text-grey-900 e-text-center e-body1'}>Accessories</Text>
                   </ListItem >
                   <ListItem className={'margin-list-item'}>
-                    <Menu type={'cover'} placeholder={'Sport'} classes={'e-padding-top-15 e-padding-bottom-15 e-body1 e-text-grey-900'}>
+                    <Menu type={'cover'} placeholder={'Sport'} classes={'e-padding-top-15 e-padding-bottom-15 e-body1 e-text-grey-900 show-menu'}>
                        <Text className={'e-text-black'}>Polo</Text>
                        <Text className={'e-text-black'}>Sky</Text>
                        <Text className={'e-text-black'}>Tennis</Text>
                     </Menu>
                   </ListItem>
                   <ListItem className={'margin-list-item'}>
-                    <Menu type={'cover'} placeholder={'Brands'} classes={'e-padding-top-15 e-padding-bottom-15 e-body1 e-text-grey-900'}>
+                    <Menu type={'cover'} placeholder={'Brands'} classes={'e-padding-top-15 e-padding-bottom-15 e-body1 e-text-grey-900 show-menu'}>
                        <Text className={'e-text-black'}>KKS</Text>
                        <Text className={'e-text-black'}>Wy's</Text>
                        <Text className={'e-text-black'}>Fashon Lux</Text>
@@ -475,7 +475,7 @@ class PatagoniaHeadersFooters extends React.Component {
               </Block>
             </Block>
 
-            <Block classes={'e-row e-margin-top-25 article-area'}>
+            <Block classes={'e-row e-margin-top-50 article-area'}>
               <Block classes={'brick brick-4 e-h-start e-v-center'}>
                 <Card>
                   <CardContent>
@@ -551,7 +551,7 @@ class PatagoniaHeadersFooters extends React.Component {
             </Block>
           </Block>
 
-          <Block className={'e-background-grey-800 e-margin-top-25'}>
+          <Block className={'e-background-grey-800 e-margin-top-50'}>
             <Block classes={'footer-w e-text-center e-padding-top-25'}>
               <List type={'inline'}>
                 <ListItem className={''}>
@@ -594,7 +594,7 @@ class PatagoniaHeadersFooters extends React.Component {
 
               <Divider classes={'thinnest e-background-grey-400'} />
 
-              <Block classes={'e-row e-margin-top-25'}>
+              <Block classes={'e-row e-margin-top-50'}>
                 <Block classes={'brick brick-3 e-text-left'}>
                   <Text type={'p'} classes={'e-text-left e-button e-text-grey-400'}>Customer Service</Text>
                   <List classes={'footer-list-menu e-no-padding '}>
@@ -676,7 +676,7 @@ class PatagoniaHeadersFooters extends React.Component {
             </Block>
           </Block>
 
-          <Block className={'e-background-indigo-400 e-margin-top-25'}>
+          <Block className={'e-background-indigo-400 e-margin-top-50'}>
             <Block classes={'footer-w e-text-center e-padding-top-25 e-padding-bottom-15'}>
               <List type={'inline'}>
                 <ListItem className={''}>
@@ -724,7 +724,7 @@ class PatagoniaHeadersFooters extends React.Component {
             </Block>
           </Block>
 
-          <Block classes={'e-row e-background-white e-margin-top-25'}>
+          <Block classes={'e-row e-background-white e-margin-top-50'}>
             <Block classes={'brick brick-2 e-h-start e-v-end no-mg-bottom'}>
               <Icon name={"image-filter-hdr"} classes={"e-text-grey-900 e-text-grey-900 e-headline margin-logo"} />
               <Text type={'p'} classes={'e-text-center e-button e-text-grey-800'}>Patagonia</Text>
@@ -770,7 +770,7 @@ class PatagoniaHeadersFooters extends React.Component {
             </Block>
           </Block>
 
-          <Block classes={'e-row e-background-white e-margin-top-25 header-padding'}>
+          <Block classes={'e-row e-background-white e-margin-top-50 header-padding'}>
             <Block classes={'brick brick-4 e-h-start e-v-center'}>
               <List type={'inline'}>
                 <ListItem className={'align-list-item'}>
@@ -815,7 +815,7 @@ class PatagoniaHeadersFooters extends React.Component {
             </Block>
           </Block>
 
-          <Block classes={'bg-forest e-margin-top-25'}>
+          <Block classes={'bg-forest e-margin-top-50'}>
             <Block classes={'footer-w e-text-center e-padding-top-25'}>
               <List type={'inline'}>
                 <ListItem className={''}>
@@ -858,7 +858,7 @@ class PatagoniaHeadersFooters extends React.Component {
 
               <Divider classes={'thinnest e-background-grey-400'} />
 
-              <Block classes={'e-row e-margin-top-25'}>
+              <Block classes={'e-row e-margin-top-50'}>
                 <Block classes={'brick brick-3 e-text-left'}>
                   <Text type={'p'} classes={'e-text-left e-button e-text-grey-300'}>Customer Service</Text>
                   <List classes={'footer-list-menu e-no-padding '}>
@@ -944,7 +944,7 @@ class PatagoniaHeadersFooters extends React.Component {
             </Block>
           </Block>
 
-          <Block classes={'e-background-white e-margin-top-25'}>
+          <Block classes={'e-background-white e-margin-top-50 e-padding-bottom-15'}>
             <Block classes={'footer-w e-text-center e-padding-top-50'}>
               <Block classes={'e-row'}>
                 <Block classes={'brick brick-3'}>
@@ -1041,7 +1041,7 @@ class PatagoniaHeadersFooters extends React.Component {
             </Block>
           </Block>
 
-          <Block className={'e-background-grey-900 e-margin-top-25'}>
+          <Block className={'e-background-grey-900 e-margin-top-50'}>
             <Block classes={'e-text-center e-padding-top-25 e-padding-bottom-15'}>
               <List type={'inline'}>
                 <ListItem className={''}>

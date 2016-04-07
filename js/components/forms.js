@@ -602,7 +602,7 @@ class PatagoniaForms extends React.Component {
             <Block classes={'brick brick-6 e-h-end e-v-end'}>
               <Block classes={'e-row'}>
                 <Block classes={'brick brick-12 e-h-center e-v-center'}>
-                  <Card classes={'e-background-white no-padding-card full-width'}>
+                  <Card classes={'e-background-white no-padding-card full-width show-overflow'}>
                     <CardHeader classes={'e-text-left border-header-card e-no-padding'}>
                       <Text type={'span'} classes={'e-text-left e-body1 align-title'}>Credit Card Detail</Text>
                       <Btn icon={'navigation-close'} ripple={true} type={'fab-mini'} classes={'fab-mini e-background-white e-right icon-close'} />
@@ -663,7 +663,7 @@ class PatagoniaForms extends React.Component {
                     <CardHeader classes={'e-background-indigo-500 e-text-center'}>
                       <Text type={'span'} classes={'e-text-white e-body1'}>Subscribe to our newsletter </Text>
                     </CardHeader>
-                    <CardContent className={''}>
+                    <CardContent>
                       <Block classes={'e-row'}>
                         <Block classes={'brick brick-6 e-h-end e-v-end'}>
                           <Input type={'text'} name={'label'} label={'home@gmail.com'} classes={'input-look full-width text-focus-white'}/>

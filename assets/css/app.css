@@ -27,7 +27,6 @@
 .patagoniaForms .card,
 .patagoniaHeadersFooters .card {
   border-radius: 7px;
-  overflow: visible;
 }
 .patagoniaForms .card .border-header-card,
 .patagoniaHeadersFooters .card .border-header-card {
@@ -341,6 +340,10 @@
 .patagoniaHeadersFooters .mg-b-btn {
   margin-bottom: 8px;
 }
+.patagoniaForms .show-overflow,
+.patagoniaHeadersFooters .show-overflow {
+  overflow: visible;
+}
 .patagoniaForms .card-h-account,
 .patagoniaHeadersFooters .card-h-account {
   height: 553px;
@@ -555,6 +558,9 @@
 }
 .patagoniaHeadersFooters .logo-shadow {
   box-shadow: 4px 0 7px lightgrey;
+}
+.patagoniaHeadersFooters .show-menu.active {
+  z-index: 10;
 }
 .patagoniaHeadersFooters .badge-nr {
   margin: 0;
