@@ -202,7 +202,7 @@ class PatagoniaCommerce extends React.Component {
                       <Text type={'a'} classes={'align-row'}>
                         <Icon name={"image-brightness-1"} className={"e-text-indigo-400 e-title show"} />
                         <Icon name={"action-done"} className={"e-text-black hidden"} />
-                        <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-500'}>White</Text>
+                        <Text type={'span'} classes={'e-text-left e-subhead e-text-grey-500'}>Indigo</Text>
                       </Text>
                      </ListItem>
                      <ListItem classes={'align-row'}>
