@@ -306,8 +306,10 @@
       .size-btn {
         min-width: 35px;
         min-height: 35px;
+        box-sizing: border-box;
         transition: all .3s ease-in-out;
         &:hover {
+          box-sizing: border-box;
           .e-shadow-2();
           background-color: #90CAF9!important;
           color: #FFF!important;
@@ -315,6 +317,7 @@
           border: 1px solid white;
         }
         &.active {
+          box-sizing: border-box;
           .e-shadow-2();
           background-color: #90CAF9!important;
           color: #FFF!important;
