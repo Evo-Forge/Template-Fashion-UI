@@ -18,7 +18,7 @@ class PatagoniaHeadersFooters extends React.Component {
     return (
       <Block className={'e-background-grey-100'}>
         <Block className={'patagoniaHeadersFooters e-container e-padding-bottom-50'}>
-          <Block classes={'e-row '}>
+          <Block classes={'e-row'}>
             <Block classes={'brick brick-12 e-h-center e-v-center'}>
               <Text type={'p'} classes={'e-text-center e-headline e-text-indigo-400 badge-header'}>5</Text>
               <Text type={'h1'} classes={'e-text-center e-display-3 e-padding-top-50 e-padding-bottom-50 background-rainbow e-no-margin'}><b>HEADERS & FOOTERS</b> </Text>
@@ -359,20 +359,20 @@ class PatagoniaHeadersFooters extends React.Component {
               </Block>
               <Block classes={'brick brick-8 e-h-center e-v-center e-no-margin e-no-padding'}>
                 <List type={'inline'} className={'bg-blue'}>
-                  <ListItem className={'e-no-padding e-background-light-blue-A100'}>
+                  <ListItem classes={'e-no-padding e-background-light-blue-A100'}>
                     <Text type={'a'} classes={'padding-list e-text-grey-200 e-text-center e-body1'}>Clothing</Text>
                   </ListItem>
-                  <ListItem className={'e-no-padding'}>
+                  <ListItem classes={'e-no-padding bg-blue-onhover'}>
                     <Text type={'a'} classes={'padding-list e-text-grey-200 e-text-center e-body1'}>Shoes</Text>
                   </ListItem>
-                  <ListItem className={'e-no-padding'}>
+                  <ListItem classes={'e-no-padding bg-blue-onhover'}>
                     <Text type={'a'} classes={'padding-list e-text-grey-200 e-text-center e-body1'}>Accessories</Text>
                   </ListItem >
-                  <ListItem className={'e-no-padding'}>
+                  <ListItem classes={'e-no-padding bg-blue-onhover'}>
                     <Text type={'a'} classes={'padding-list e-text-grey-200 e-text-center e-body1'}>Sport</Text>
                   </ListItem>
-                  <ListItem className={'margin-list-item'}>
-                    <Menu type={'cover'} placeholder={'Brands'} classes={'e-padding-top-15 e-padding-bottom-15 e-body1 e-text-grey-200 show-menu'}>
+                  <ListItem classes={'e-no-padding bg-blue-onhover'}>
+                    <Menu type={'cover'} placeholder={'Brands'} classes={'e-body1 e-text-grey-200 padding-list show-menu'}>
                        <Text className={'e-text-black'}>KKS</Text>
                        <Text className={'e-text-black'}>Wy's</Text>
                        <Text className={'e-text-black'}>Fashon Lux</Text>
@@ -382,7 +382,7 @@ class PatagoniaHeadersFooters extends React.Component {
               </Block>
               <Block classes={'brick brick-2 e-h-end e-v-end e-no-margin e-no-padding'}>
                 <List type={'inline'} className={'align-menu'}>
-                  <ListItem className={'margin-badges align-list-item'}>
+                  <ListItem classes={'margin-badges align-list-item'}>
                     <Text type={'span'} classes={'e-text-center e-caption e-text-grey-900 e-background-grey-200 badge-header badge-nr'}>3</Text>
                     <Text type={'a'} classes={'e-text-center e-body1'}>
                       <Icon name={"action-shopping-basket"} className={"e-text-grey-200"} />
@@ -396,7 +396,7 @@ class PatagoniaHeadersFooters extends React.Component {
                   </ListItem>
                   <ListItem className={'margin-badges align-list-item'}>
                     <Text type={'a'} classes={'e-text-center e-body1'}>
-                      <Icon name={"action-trending-neutral"} classes={"e-text-grey-200"} />
+                      <Icon name={"action-trending-neutral"} className={"e-text-grey-200"} />
                     </Text>
                   </ListItem >
                 </List>
@@ -408,7 +408,7 @@ class PatagoniaHeadersFooters extends React.Component {
                 <Input type={'email'} name={'label'} label={'Your Email'} classes={'input-look text-focus-white btn-big'}/>
               </Block>
               <Block classes={'brick brick-6 e-h-start e-v-end'}>
-                <Btn label={'Sign up'} ripple={true} type={'submit'} className={'raised e-button e-text-white e-background-indigo-400 mg-b-btn btn-big'} />
+                <Btn label={'Sign up'} ripple={true} type={'submit'} classes={'raised e-button e-text-white e-background-indigo-400 mg-b-btn btn-big'} />
               </Block>
             </Block>
           </Block>
@@ -420,25 +420,25 @@ class PatagoniaHeadersFooters extends React.Component {
                 <Text type={'p'} classes={'e-text-center e-button e-text-grey-900 e-margin-bottom-25'}>Patagonia</Text>
               </Block>
               <Block classes={'brick brick-8 e-h-center e-v-center e-no-margin e-no-padding'}>
-                <List type={'inline'} className={'bg-blue'}>
-                  <ListItem className={'e-no-padding'}>
-                    <Text type={'a'} classes={'padding-list e-text-grey-900 e-text-center e-body1 border-active'}>Clothing</Text>
+                <List type={'inline'} className={'with-article'}>
+                  <ListItem classes={'margin-list-item border-active'}>
+                    <Text type={'a'} classes={'e-text-grey-900 e-text-center e-body1'}>Clothing</Text>
                   </ListItem>
-                  <ListItem className={'e-no-padding'}>
-                    <Text type={'a'} classes={'padding-list e-text-grey-900 e-text-center e-body1'}>Shoes</Text>
+                  <ListItem className={'margin-list-item border-onhover'}>
+                    <Text type={'a'} classes={'e-text-grey-900 e-text-center e-body1'}>Shoes</Text>
                   </ListItem>
-                  <ListItem className={'e-no-padding'}>
-                    <Text type={'a'} classes={'padding-list e-text-grey-900 e-text-center e-body1'}>Accessories</Text>
+                  <ListItem className={'margin-list-item border-onhover'}>
+                    <Text type={'a'} classes={'e-text-grey-900 e-text-center e-body1'}>Accessories</Text>
                   </ListItem >
-                  <ListItem className={'margin-list-item'}>
-                    <Menu type={'cover'} placeholder={'Sport'} classes={'e-padding-top-15 e-padding-bottom-15 e-body1 e-text-grey-900 show-menu'}>
+                  <ListItem className={'margin-list-item border-onhover'}>
+                    <Menu type={'cover'} placeholder={'Sport'} classes={' e-body1 e-text-grey-900 show-menu'}>
                        <Text className={'e-text-black'}>Polo</Text>
                        <Text className={'e-text-black'}>Sky</Text>
                        <Text className={'e-text-black'}>Tennis</Text>
                     </Menu>
                   </ListItem>
-                  <ListItem className={'margin-list-item'}>
-                    <Menu type={'cover'} placeholder={'Brands'} classes={'e-padding-top-15 e-padding-bottom-15 e-body1 e-text-grey-900 show-menu'}>
+                  <ListItem className={'margin-list-item border-onhover'}>
+                    <Menu type={'cover'} placeholder={'Brands'} classes={' e-body1 e-text-grey-900 show-menu'}>
                        <Text className={'e-text-black'}>KKS</Text>
                        <Text className={'e-text-black'}>Wy's</Text>
                        <Text className={'e-text-black'}>Fashon Lux</Text>
@@ -447,8 +447,8 @@ class PatagoniaHeadersFooters extends React.Component {
                 </List>
               </Block>
               <Block classes={'brick brick-2 e-h-end e-v-end e-no-margin e-no-padding'}>
-                <List type={'inline'} className={''}>
-                  <ListItem className={'margin-badges align-list-item'}>
+                <List type={'inline'}>
+                  <ListItem classes={'margin-badges align-list-item'}>
                     <Text type={'span'} classes={'e-text-center e-caption e-text-grey-200 e-background-light-blue-A200 badge-header badge-nr'}>3</Text>
                     <Text type={'a'} classes={'e-text-center e-body1'}>
                       <Icon name={"action-shopping-basket"} className={"e-text-grey-900"} />
@@ -460,7 +460,7 @@ class PatagoniaHeadersFooters extends React.Component {
                       <Icon name={"action-star-rate"} className={"e-text-grey-900"} />
                     </Text>
                   </ListItem>
-                  <ListItem className={'margin-badges align-list-item'}>
+                  <ListItem classes={'margin-badges align-list-item'}>
                     <Text type={'a'} classes={'e-text-center e-body1'}>
                       <Image src={'assets/img/poza-profil.jpg'} alt={'John Smith'} classes={'avatar-profil'}/>
                     </Text>
@@ -554,40 +554,40 @@ class PatagoniaHeadersFooters extends React.Component {
           <Block className={'e-background-grey-800 e-margin-top-50'}>
             <Block classes={'footer-w e-text-center e-padding-top-25'}>
               <List type={'inline'}>
-                <ListItem className={''}>
+                <ListItem>
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>About</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem>
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>Careers</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem>
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>ShoeSmart Library</Text>
                 </ListItem >
-                <ListItem className={''}>
+                <ListItem>
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>Rewards</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem>
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>Customer</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem>
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>Service</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem>
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>Returns</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem>
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>Terms</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem>
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>Privacy</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem>
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>International</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem>
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>Site</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem>
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>Guide</Text>
                 </ListItem>
               </List>
@@ -679,40 +679,40 @@ class PatagoniaHeadersFooters extends React.Component {
           <Block className={'e-background-indigo-400 e-margin-top-50'}>
             <Block classes={'footer-w e-text-center e-padding-top-25 e-padding-bottom-15'}>
               <List type={'inline'}>
-                <ListItem className={''}>
+                <ListItem>
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>About</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem >
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>Careers</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem>
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>ShoeSmart Library</Text>
                 </ListItem >
-                <ListItem className={''}>
+                <ListItem >
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>Rewards</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem >
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>Customer</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem >
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>Service</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem>
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>Returns</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem>
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>Terms</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem >
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>Privacy</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem >
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>International</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem >
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>Site</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem >
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>Guide</Text>
                 </ListItem>
               </List>
@@ -818,40 +818,40 @@ class PatagoniaHeadersFooters extends React.Component {
           <Block classes={'bg-forest e-margin-top-50'}>
             <Block classes={'footer-w e-text-center e-padding-top-25'}>
               <List type={'inline'}>
-                <ListItem className={''}>
+                <ListItem >
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>About</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem >
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>Careers</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem >
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>ShoeSmart Library</Text>
                 </ListItem >
-                <ListItem className={''}>
+                <ListItem >
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>Rewards</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem >
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>Customer</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem >
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>Service</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem >
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>Returns</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem >
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>Terms</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem >
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>Privacy</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem >
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>International</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem >
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>Site</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem >
                   <Text type={'a'} classes={'e-text-grey-300 e-text-center e-body1'}>Guide</Text>
                 </ListItem>
               </List>
@@ -1044,28 +1044,28 @@ class PatagoniaHeadersFooters extends React.Component {
           <Block className={'e-background-grey-900 e-margin-top-50'}>
             <Block classes={'e-text-center e-padding-top-25 e-padding-bottom-15'}>
               <List type={'inline'}>
-                <ListItem className={''}>
+                <ListItem>
                   <Text type={'a'} classes={'e-text-grey-400 e-text-center e-body1'}>Women</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem>
                   <Text type={'a'} classes={'e-text-grey-400 e-text-center e-body1'}>Men</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem>
                   <Text type={'a'} classes={'e-text-grey-400 e-text-center e-body1'}>Kids</Text>
                 </ListItem >
-                <ListItem className={''}>
+                <ListItem>
                   <Text type={'a'} classes={'e-text-grey-400 e-text-center e-body1'}>Brands</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem>
                   <Text type={'a'} classes={'e-text-grey-400 e-text-center e-body1'}>Accessories</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem>
                   <Text type={'a'} classes={'e-text-grey-400 e-text-center e-body1'}>Bags</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem>
                   <Text type={'a'} classes={'e-text-grey-400 e-text-center e-body1'}>News</Text>
                 </ListItem>
-                <ListItem className={''}>
+                <ListItem>
                   <Text type={'a'} classes={'e-text-grey-400 e-text-center e-body1'}>Sale</Text>
                 </ListItem>
               </List>

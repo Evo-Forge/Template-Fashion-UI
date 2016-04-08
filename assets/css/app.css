@@ -523,6 +523,9 @@
 .patagoniaHeadersFooters .e-steppers-container .e-stepper-content.active {
   overflow: visible;
 }
+.patagoniaHeadersFooters .e-row {
+  margin: 0;
+}
 .patagoniaHeadersFooters .margin-logo {
   margin-left: 16px;
   margin-right: 16px;
@@ -663,12 +666,18 @@
   height: inherit;
   line-height: 28px;
 }
-.patagoniaHeadersFooters .bg-blue li a:hover {
+.patagoniaHeadersFooters .bg-blue .bg-blue-onhover:hover {
   text-decoration: none;
   background-color: #80d8ff;
 }
+.patagoniaHeadersFooters .bg-blue li a:hover {
+  text-decoration: none;
+}
 .patagoniaHeadersFooters .padding-list {
   padding: 15px 25px;
+}
+.patagoniaHeadersFooters .padding-list.show-menu {
+  padding: 16px 25px;
 }
 .patagoniaHeadersFooters .align-menu {
   line-height: 48px;
@@ -683,21 +692,23 @@
 }
 .patagoniaHeadersFooters .border-active {
   border-bottom: 5px solid #40c4ff;
-  margin-bottom: -3px;
 }
 .patagoniaHeadersFooters .nav-h {
-  height: 80px;
+  height: 79px;
 }
-.patagoniaHeadersFooters .nav-h ul.bg-blue {
+.patagoniaHeadersFooters .nav-h ul.with-article {
   line-height: 80px;
 }
-.patagoniaHeadersFooters .nav-h .bg-blue a {
+.patagoniaHeadersFooters .nav-h .with-article a {
   line-height: 40px;
+  padding-bottom: 29px;
 }
-.patagoniaHeadersFooters .nav-h .bg-blue a:hover {
-  background-color: white;
+.patagoniaHeadersFooters .nav-h .with-article a:hover {
+  text-decoration: none;
+}
+.patagoniaHeadersFooters .nav-h .with-article .border-onhover:hover {
   border-bottom: 5px solid #40c4ff;
-  margin-bottom: -3px;
+  box-sizing: border-box;
 }
 .patagoniaHeadersFooters .head-title-grad {
   width: 70%;

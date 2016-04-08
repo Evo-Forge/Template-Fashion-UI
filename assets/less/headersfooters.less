@@ -1,4 +1,7 @@
 .patagoniaHeadersFooters {
+  .e-row {
+    margin: 0;
+  }
   .margin-logo {
     margin-left: 16px;
     margin-right: 16px;
@@ -142,13 +145,19 @@
       height: inherit;
       line-height: 28px;
     }
-    li a:hover {
+    .bg-blue-onhover:hover {
       text-decoration: none;
       background-color: #80d8ff;
+    }
+    li a:hover {
+      text-decoration: none;
     }
   }
   .padding-list {
     padding: 15px 25px;
+    &.show-menu {
+      padding: 16px 25px;
+    }
   }
   .align-menu {
     line-height: 48px;
@@ -163,21 +172,23 @@
   }
   .border-active {
     border-bottom: 5px solid #40c4ff;
-    margin-bottom: -3px;
   }
   .nav-h {
-    height: 80px;
-    ul.bg-blue {
+    height: 79px;
+    ul.with-article {
       line-height: 80px;
     }
-    .bg-blue {
+    .with-article {
       a {
         line-height: 40px;
+        padding-bottom: 29px;
         &:hover {
-          background-color: white;
-          border-bottom: 5px solid #40c4ff;
-          margin-bottom: -3px;
+          text-decoration: none;
         }
+      }
+      .border-onhover:hover {
+        border-bottom: 5px solid #40c4ff;
+        box-sizing: border-box;
       }
     }
   }
