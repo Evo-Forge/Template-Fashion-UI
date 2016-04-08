@@ -68,7 +68,7 @@ class PatagoniaForms extends React.Component {
                     <Text type={'span'} classes={'e-text-uppercase'}>$25</Text>
                   </Block>
                   <Block>
-                    <Btn icon={'navigation-close'} ripple={true} type={'fab-mini'} classes={'fab-mini e-right e-text-cyan-A200 e-background-white icon-close close-btn-align'} />
+                    <Btn icon={'navigation-close'} ripple={true} type={'fab-mini'} classes={'fab-mini e-right e-text-light-blue-A200 e-background-white icon-close close-btn-align'} />
                   </Block>
                 </Text>
               </ListItem>
@@ -91,7 +91,7 @@ class PatagoniaForms extends React.Component {
                     <Text type={'span'} classes={'e-text-uppercase'}>$35</Text>
                   </Block>
                   <Block>
-                    <Btn icon={'navigation-close'} ripple={true} type={'fab-mini'} classes={'fab-mini e-right e-text-cyan-A200 e-background-grey-100 icon-close close-btn-align'} />
+                    <Btn icon={'navigation-close'} ripple={true} type={'fab-mini'} classes={'fab-mini e-right e-text-light-blue-A200 e-background-grey-100 icon-close close-btn-align'} />
                   </Block>
                 </Text>
               </ListItem>
@@ -114,7 +114,7 @@ class PatagoniaForms extends React.Component {
                     <Text type={'span'} classes={'e-text-uppercase'}>$117</Text>
                   </Block>
                   <Block>
-                    <Btn icon={'navigation-close'} ripple={true} type={'fab-mini'} classes={'fab-mini e-right e-text-cyan-A200 e-background-white icon-close close-btn-align'} />
+                    <Btn icon={'navigation-close'} ripple={true} type={'fab-mini'} classes={'fab-mini e-right e-text-light-blue-A200 e-background-white icon-close close-btn-align'} />
                   </Block>
                 </Text>
               </ListItem>
@@ -185,7 +185,7 @@ class PatagoniaForms extends React.Component {
             </Block>
           </Block>
           <Block>
-            <Text type={'a'} classes={'e-text-center e-body1 e-text-cyan-A200 e-margin-top-15 a-inter'}>Or pay with PayPal</Text>
+            <Text type={'a'} classes={'e-text-center e-body1 e-text-light-blue-A200 e-margin-top-15 a-inter'}>Or pay with PayPal</Text>
           </Block>
             <Block className={'checkout-w'}>
             <Block className={'padding-card'}>
@@ -268,7 +268,7 @@ class PatagoniaForms extends React.Component {
         <Block className={'e-background-white'}>
           <Block className={'checkout-w e-padding-top-50 e-padding-bottom-25'}>
             <Block className={'bl-done'}>
-              <Icon name={"action-done"} className={"e-background-cyan-A200 e-text-white e-display-2 done-icon"} />
+              <Icon name={"action-done"} className={"e-background-light-blue-A200 e-text-white e-display-2 done-icon"} />
             </Block>
             <Text type={'p'} classes={'e-text-center e-text-grey-800 e-display-2 e-padding-top-25'}>Congratulations! Your Order is Complete!</Text>
             <Text type={'p'} classes={'e-text-center e-text-grey-800 padding-list-stepper'}>
@@ -286,7 +286,7 @@ class PatagoniaForms extends React.Component {
 
     return (
       <Block className={'e-background-grey-100'}>
-        <Block className={'patagoniaForms e-container e-padding-bottom-150'}>
+        <Block className={'patagoniaForms e-container e-padding-bottom-100'}>
           <Block classes={'e-row'}>
             <Block classes={'brick brick-12 e-h-center e-v-center'}>
               <Text type={'p'} classes={'e-text-center e-headline e-text-indigo-400 badge-header'}>4</Text>
@@ -303,7 +303,7 @@ class PatagoniaForms extends React.Component {
                 </CardHeader>
                 <CardContent>
                   <Text type={'p'} classes={'e-text-left e-text-grey-300 e-body1'}>Or create
-                    <Text type={'a'} classes={'e-body1 e-text-cyan-A200'}> account</Text>
+                    <Text type={'a'} classes={'e-body1 e-text-light-blue-A200'}> account</Text>
                   </Text>
                   <Input type={'email'} name={'label'} label={'Email'} classes={'e-text-grey-300 input-look'}/>
                   <Input type={'text'} name={'label'} label={'Password'} classes={'e-text-grey-300 input-look'}/>
@@ -313,11 +313,11 @@ class PatagoniaForms extends React.Component {
                   </Block>
 
                   <Block className={'e-right e-margin-top-15'}>
-                    <Text type={'a'} classes={'e-text-right e-body1 e-text-cyan-A200 '}>Forgot password?</Text>
+                    <Text type={'a'} classes={'e-text-right e-body1 e-text-light-blue-A200 '}>Forgot password?</Text>
                   </Block>
 
                   <Block>
-                    <Btn label={'SIGN IN'} ripple={true} type={'submit'} classes={'flat e-margin-top-15 e-background-cyan-A200 e-text-white full-width'} />
+                    <Btn label={'SIGN IN'} ripple={true} type={'submit'} classes={'flat e-margin-top-15 e-background-light-blue-A200 e-text-white full-width'} />
                   </Block>
                   <Text type={'p'} classes={'e-text-center e-body1 e-text-grey-300 e-margin-top-15'}>Sign in to your account</Text>
                 </CardContent>
@@ -333,23 +333,23 @@ class PatagoniaForms extends React.Component {
                 <CardContent>
                   <Block classes={'border-input-icon'}>
                     <Input type={'email'} name={'label'} placeholder={'weerd@gmail.com'} classes={'with-icon'}/>
-                    <Icon name={"action-done"} className={"e-text-cyan-A200 e-right icon-in-input"} />
+                    <Icon name={"action-done"} className={"e-text-light-blue-A200 e-right icon-in-input"} />
                   </Block>
                   <Input type={'text'} name={'label'} label={'Password'} classes={'e-text-grey-300 input-look'}/>
                   <Input type={'text'} name={'label'} label={'Confirm password'} classes={'e-text-grey-300 input-look'}/>
 
                   <Block className={'e-left e-margin-top-15'}>
                       <Text type={'a'}>
-                        <Icon name={"navigation-apps"} className={"e-text-cyan-A200 e-left"} />
+                        <Icon name={"navigation-apps"} className={"e-text-light-blue-A200 e-left"} />
                         <Block classes={'content e-left e-no-padding'}>
-                          <Text type={'span'} classes={'e-text-left e-text-cyan-A200'}>Date of birth</Text>
+                          <Text type={'span'} classes={'e-text-left e-text-light-blue-A200'}>Date of birth</Text>
                         </Block>
                       </Text>
                   </Block>
 
                   <Block className={'e-right e-margin-top-15'}>
-                    <Switch type={'radio'} classes={'e-left e-text-cyan-A200'} name='switch-radio' text={'Male'}/>
-                    <Switch type={'radio'} classes={'e-right e-text-cyan-A200'} name='switch-radio' text={'Female'}/>
+                    <Switch type={'radio'} classes={'e-left e-text-light-blue-A200'} name='switch-radio' text={'Male'}/>
+                    <Switch type={'radio'} classes={'e-right e-text-light-blue-A200'} name='switch-radio' text={'Female'}/>
                   </Block>
 
                   <Block>
@@ -395,7 +395,7 @@ class PatagoniaForms extends React.Component {
                        <Input type={'email'} name={'label'} label={'Password'} classes={'input-look input-w text-focus-white'}/>
                     </ListItem>
                     <ListItem>
-                      <Btn label={'Sign up'} ripple={true} type={'submit'} className={'flat e-margin-top-15 e-button e-text-indigo-400 e-background-cyan-A200 btn-look'} />
+                      <Btn label={'Sign up'} ripple={true} type={'submit'} className={'flat e-margin-top-15 e-button e-text-indigo-400 e-background-light-blue-A200 btn-look'} />
                     </ListItem>
                   </List>
                 </CardContent>
@@ -413,9 +413,9 @@ class PatagoniaForms extends React.Component {
                 <CardContent className={'e-text-center'}>
                   <Input type={'email'} name={'label'} label={'Email'} classes={'e-text-grey-300 input-look'}/>
                   <Input type={'text'} name={'label'} label={'Password'} classes={'e-text-grey-300 input-look'}/>
-                  <Text type={'a'} classes={'e-text-center e-body1 e-text-cyan-A200 '}>Forgot password?</Text>
+                  <Text type={'a'} classes={'e-text-center e-body1 e-text-light-blue-A200 '}>Forgot password?</Text>
                   <Block>
-                    <Btn label={'SIGN IN'} ripple={true} type={'submit'} classes={'flat e-margin-top-15 e-background-cyan-A200 e-text-white full-width'} />
+                    <Btn label={'SIGN IN'} ripple={true} type={'submit'} classes={'flat e-margin-top-15 e-background-light-blue-A200 e-text-white full-width'} />
                   </Block>
                 </CardContent>
                 <CardFooter className={'e-text-center e-background-grey-200 e-margin-top-25'}>
@@ -441,7 +441,7 @@ class PatagoniaForms extends React.Component {
                   <Text type={'h1'} classes={'e-text-center e-text-white e-display-1'}>Get designers products every day</Text>
                   <Image src={'http://getessence.io/assets/img/essence_icon.png'} width={'100px'} height={'100px'} alt={'Essence Image'} />
                   <Input type={'email'} name={'label'} label={'Your email'} classes={'input-look text-focus-white'}/>
-                  <Btn label={'Subscribe'} ripple={true} type={'submit'} className={'flat e-margin-top-15 e-button e-text-indigo-400 e-background-cyan-A200 full-width'} />
+                  <Btn label={'Subscribe'} ripple={true} type={'submit'} className={'flat e-margin-top-15 e-button e-text-indigo-400 e-background-light-blue-A200 full-width'} />
                 </CardContent>
               </Card>
             </Block>
@@ -457,7 +457,7 @@ class PatagoniaForms extends React.Component {
                     <CardContent className={'e-text-center'}>
                       <Input type={'email'} name={'label'} label={'Email'} classes={'e-text-grey-300 input-look'}/>
                       <Block>
-                        <Btn label={'Restore password'} ripple={true} type={'submit'} classes={'flat e-button e-margin-top-15 e-background-cyan-A200 e-text-white full-width'} />
+                        <Btn label={'Restore password'} ripple={true} type={'submit'} classes={'flat e-button e-margin-top-15 e-background-light-blue-A200 e-text-white full-width'} />
                       </Block>
                     </CardContent>
                   </Card>
@@ -494,15 +494,15 @@ class PatagoniaForms extends React.Component {
                   <Input type={'textarea'} name={'label'} rows={5} label={'Your Message'} classes={'input-look'}/>
                   <Block classes={'e-left mg-top-attach'}>
                       <Text type={'a'}>
-                        <Icon name={"editor-attach-file"} className={"e-text-cyan-A200 e-left"} />
+                        <Icon name={"editor-attach-file"} className={"e-text-light-blue-A200 e-left"} />
                         <Block classes={'content e-left e-no-padding'}>
-                          <Text type={'span'} classes={'e-text-left e-text-cyan-A200'}>Attach file</Text>
+                          <Text type={'span'} classes={'e-text-left e-text-light-blue-A200'}>Attach file</Text>
                         </Block>
                       </Text>
                   </Block>
 
                   <Block className={'e-right'}>
-                    <Btn label={'Sign in'} ripple={true} type={'submit'} className={'flat e-margin-bottom-15 e-margin-top-15 e-button e-text-white e-background-cyan-A200 btn-look'} />
+                    <Btn label={'Sign in'} ripple={true} type={'submit'} className={'flat e-margin-bottom-15 e-margin-top-15 e-button e-text-white e-background-light-blue-A200 btn-look'} />
                   </Block>
                 </CardContent>
               </Card>
@@ -529,14 +529,14 @@ class PatagoniaForms extends React.Component {
                       <Input type={'textarea'} name={'label'} rows={5} label={'Your Message'} classes={'input-look'}/>
                       <Block classes={'e-left mg-top-attach '}>
                         <Text type={'a'}>
-                          <Icon name={"editor-attach-file"} className={"e-text-cyan-A200 e-left"} />
+                          <Icon name={"editor-attach-file"} className={"e-text-light-blue-A200 e-left"} />
                           <Block classes={'content e-left e-no-padding'}>
-                            <Text type={'span'} classes={'e-text-left e-text-cyan-A200'}>Attach file</Text>
+                            <Text type={'span'} classes={'e-text-left e-text-light-blue-A200'}>Attach file</Text>
                           </Block>
                         </Text>
                       </Block>
                       <Block className={'e-right'}>
-                        <Btn label={'Sign in'} ripple={true} type={'submit'} className={'flat e-margin-top-15 e-margin-bottom-15 e-button e-text-white e-background-cyan-A200 btn-look'} />
+                        <Btn label={'Sign in'} ripple={true} type={'submit'} className={'flat e-margin-top-15 e-margin-bottom-15 e-button e-text-white e-background-light-blue-A200 btn-look'} />
                       </Block>
                     </Block>
                   </Block>
@@ -555,7 +555,7 @@ class PatagoniaForms extends React.Component {
                 <CardContent>
                   <Block className={'card-content-header'}>
                     <Image src={'assets/img/poza-profil.jpg'} alt={'John Smith'} classes={'e-left avatar-card'}/>
-                    <Icon name={"navigation-expand-more"} className={'e-left e-text-white e-background-cyan-A200 round-icon'} />
+                    <Icon name={"navigation-expand-more"} className={'e-left e-text-white e-background-light-blue-A200 round-icon'} />
                     <Block classes={'e-left padding-left-para'}>
                       <Text type={'h2'} classes={'e-text-left e-headline'}>John Smith</Text>
                       <Text type={'p'} classes={'e-text-center e-body1 e-text-grey-600'}>Senior Product Designer (UI/UX)</Text>
@@ -593,7 +593,7 @@ class PatagoniaForms extends React.Component {
                     </Block>
                   </Block>
                   <Block className={'e-text-center btn-inter'}>
-                    <Btn label={'Save'} ripple={true} type={'submit'} className={'flat e-margin-top-15 e-margin-bottom-25 e-button e-text-white e-background-cyan-A200 btn-save-w'} />
+                    <Btn label={'Save'} ripple={true} type={'submit'} className={'flat e-margin-top-15 e-margin-bottom-25 e-button e-text-white e-background-light-blue-A200 btn-save-w'} />
                   </Block>
                 </CardContent>
               </Card>
@@ -602,7 +602,7 @@ class PatagoniaForms extends React.Component {
             <Block classes={'brick brick-6 e-h-end e-v-end'}>
               <Block classes={'e-row'}>
                 <Block classes={'brick brick-12 e-h-center e-v-center'}>
-                  <Card classes={'e-background-white no-padding-card full-width'}>
+                  <Card classes={'e-background-white no-padding-card full-width show-overflow'}>
                     <CardHeader classes={'e-text-left border-header-card e-no-padding'}>
                       <Text type={'span'} classes={'e-text-left e-body1 align-title'}>Credit Card Detail</Text>
                       <Btn icon={'navigation-close'} ripple={true} type={'fab-mini'} classes={'fab-mini e-background-white e-right icon-close'} />
@@ -663,13 +663,13 @@ class PatagoniaForms extends React.Component {
                     <CardHeader classes={'e-background-indigo-500 e-text-center'}>
                       <Text type={'span'} classes={'e-text-white e-body1'}>Subscribe to our newsletter </Text>
                     </CardHeader>
-                    <CardContent className={''}>
+                    <CardContent>
                       <Block classes={'e-row'}>
                         <Block classes={'brick brick-6 e-h-end e-v-end'}>
                           <Input type={'text'} name={'label'} label={'home@gmail.com'} classes={'input-look full-width text-focus-white'}/>
                         </Block>
                         <Block classes={'brick brick-6 e-h-start e-v-end'}>
-                          <Btn label={'Submit'} ripple={true} type={'submit'} className={'flat e-button e-text-white e-background-cyan-A200 full-width mg-b-btn'} />
+                          <Btn label={'Submit'} ripple={true} type={'submit'} className={'flat e-button e-text-white e-background-light-blue-A200 full-width mg-b-btn'} />
                         </Block>
                       </Block>
                     </CardContent>
