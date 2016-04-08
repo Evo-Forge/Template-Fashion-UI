@@ -1,0 +1,432 @@
+.patagoniaForms {
+  a:hover {
+    cursor: pointer;
+  }
+  .background-rainbow {
+    background: -webkit-linear-gradient(left, #66ffff, #3F51B5);
+    background: -o-linear-gradient(right, #66ffff, #3F51B5);
+    background: -moz-linear-gradient(right, #66ffff, #3F51B5);
+    background: linear-gradient(to right, #66ffff, #3F51B5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .full-width {
+    width: 100%;
+  }
+  .badge-header {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 0;
+    margin-right: 25px;
+    border: 1px solid #5c6bc0;
+    border-radius: 50%;
+  }
+  .card {
+    border-radius: 7px;
+    overflow: visible;
+    .border-header-card {
+      border-bottom: 1px solid lightgrey;
+    }
+    .card-suplimentary-actions {
+      border-top: 0;
+    }
+    &.card-sign {
+      height: 352px;
+      .remember-display {
+        .e-check-valid {
+          left: 0;
+        }
+        .e-checkbox label {
+          padding-left: 35px;
+          .e-wave {
+            left: -15px;
+          }
+        }
+      }
+    }
+    &.card-login {
+      height: 415px;
+      .card-suplimentary-actions {
+        padding-bottom: 15px;
+      }
+    }
+  }
+  // card-header
+  .align-title {
+    line-height: 40px;
+    padding-left: 16px;
+  }
+  .icon-close {
+    border-radius: 50%;
+    &.fab-mini {
+      box-shadow: none;
+      &:hover:not(.flat) {
+        box-shadow: none;
+      }
+      i {
+        font-size: inherit;
+      }
+    }
+    &.e-btn-fab-mini {
+      margin: 0;
+      &.close-btn-align {
+        margin-top: 20px;
+      }
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .input-look {
+    .e-input {
+      border-bottom: 0;
+      &, &:focus, &.focus {
+        &:not(textarea):not(select) {
+          height: 35px;
+          color: black;
+        }
+      }
+    }
+    .floating-label {
+      color: #e0e0e0;
+      left: 5px;
+      top: 6px;
+    }
+    border-radius: 4px;
+    border: 1px solid lightgray;
+    &.e-input-group .e-input-efects:before {
+      display: none;
+    }
+    .e-input:focus ~ .e-input-efects:after, .e-input.focus ~ .e-input-efects:after {
+      display: none;
+    }
+    &.input-w {
+        width: 250px;
+        margin-right: 15px;
+    }
+    &.input-focus {
+      border: 2px solid #18ffff;
+      .floating-label {
+        color: black;
+      }
+    }
+  }
+  .text-focus-white {
+    .e-input {
+      &, &:focus, &.focus {
+        &:not(textarea):not(select) {
+          color: white;
+        }
+      }
+    }
+  }
+  .border-input-icon {
+    border: 2px solid #18ffff;
+    border-radius: 4px;
+    display: flex;
+    height: 36px;
+  }
+  .with-icon {
+    width: 90%;
+    display: inline-block;
+    font-size: 14px;
+    .e-input {
+      border: 0;
+    }
+    .e-input:not(textarea):not(select){
+      padding-bottom: 16px;
+      padding-left: 6px;
+    }
+    &.e-input-group .e-input:focus {
+      border-bottom: 0;
+      margin-top: -4px;
+    }
+    &.e-input-group .e-input-efects:before {
+      display: none;
+    }
+    .e-input:focus ~ .e-input-efects:after, .e-input.focus ~ .e-input-efects:after {
+      display: none;
+    }
+  }
+  .icon-in-input {
+    width: 10%;
+    display: inline-block;
+    text-align: right;
+    padding-top: 8px;
+    padding-right: 16px;
+  }
+
+  button {
+    border-radius: 4px;
+  }
+
+  .flat,
+  .raised {
+    margin:0;
+  }
+
+  .bg-city {
+    background: linear-gradient( rgba(7, 7, 220, 0.6), rgba(7, 7, 220, 0.6) ), url('../img/city.jpg') no-repeat;
+    background-size: cover;
+    opacity: .7;
+  }
+  .margin-r-icon {
+    margin-right: 16px;
+  }
+  .btn-look {
+    width: 200px;
+  }
+
+  .fa-look {
+    padding: 8px;
+    border-radius: 50%;
+    margin-right: 16px;
+    &.facebook {
+      padding: 8px 11px;
+    }
+    &.google {
+      padding: 8px 9px;
+    }
+  }
+  .e-nav-menu.cover ul.e-nav{
+    top: 16px;
+  }
+  .para-inter {
+    margin-bottom: 0;
+  }
+  .para-inter::before,
+  .para-inter::after {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    content: "";
+    height: 1px;
+    width: 47%;
+    right: 15px;
+    background-color: lightgrey;
+  }
+  .para-inter::after {
+    left: 15px;
+  }
+
+  .half-width {
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  .card-h-contact {
+    height: 365px;
+  }
+  .mg-top-attach {
+    margin-top: 20px;
+  }
+  .no-padding-card {
+    .card-supporting-text{
+      padding: 0;
+      p.align-title {
+        line-height: 40px;
+      }
+    }
+  }
+  .padding-card {
+    padding: 16px;
+  }
+  .avatar-card {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+  }
+  .round-icon {
+    position: relative;
+    margin-top: 50px;
+    margin-left: -20px;
+    font-size: 22px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-sizing: border-box;
+  }
+  .padding-left-para {
+    padding-left: 15px;
+  }
+  .card-content-header {
+    height: 80px;
+    padding: 16px;
+    border-bottom: 1px solid lightgray;
+  }
+  .btn-save-w {
+    width: 150px;
+  }
+  .btn-inter::before,
+  .btn-inter::after {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    content: "";
+    height: 1px;
+    width: 30%;
+    right: 42px;
+    background-color: lightgrey;
+  }
+  .btn-inter::after {
+    left: 42px;
+  }
+  .mg-b-para {
+    margin-bottom: 5px;
+  }
+  .mg-b-btn {
+    margin-bottom: 8px;
+  }
+
+  .card-h-account {
+    height: 553px;
+  }
+  .border-btn-nr {
+    width: 150px;
+    display: inline-block;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    button {
+      border:0;
+    }
+  }
+  .btn-margin-nr {
+    margin-left: 10px;
+    margin-right: 10px;
+    &.content {
+      width: 20%;
+    }
+  }
+  .margin-nr {
+    margin: 30px;
+  }
+
+  .e-steppers-container .e-stepper-content.active {
+    padding: 0;
+  }
+  .padding-list-stepper {
+    padding: 25px 100px;
+    &.border-t-discount {
+      border-top: 1px solid lightgray;
+    }
+    i {
+      float: right;
+    }
+    .align-btn-continue {
+      float: right;
+      margin-right: 16px;
+    }
+    .align-discount {
+      line-height: 37px;
+    }
+  }
+  .article-image {
+    width: 75px;
+    height: 75px;
+  }
+  .padding-r-para {
+    padding-right: 16px;
+  }
+  .checkout-w {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .a-inter::before,
+  .a-inter::after {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    content: "";
+    height: 1px;
+    width: 45%;
+    right: 15px;
+    background-color: lightgrey;
+  }
+  .a-inter::after {
+    left: 15px;
+  }
+  .mg-b-caption {
+    margin-bottom: 10px;
+  }
+  .footer-checkout-w {
+    width: 83%;
+    margin:0 auto;
+  }
+  .bl-done {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto;
+    border: 1px solid #18ffff;
+    border-radius: 50%;
+    .done-icon {
+      width: 64px;
+      height: 64px;
+      margin: 5px;
+      border-radius: 50%;
+    }
+  }
+  .with-bg{
+    width: 85%;
+  }
+  .bg-in-input {
+    width: 15%;
+    display: inline-block;
+    text-align: right;
+    margin-right: 16px;
+  }
+  .visa-bg {
+    background-image: url('../img/visa.gif');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 35px;
+    .e-input:focus {
+      border-bottom: 0;
+    }
+  }
+  .span-number {
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .size {
+    width: 80px;
+  }
+  .span-size {
+    padding: 5px 8px;
+    border-radius: 4px;
+  }
+  .month {
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    height: 36px;
+    padding-left: 6px;
+    span {
+      display: inline-block;
+      width: 89%;
+      line-height: 36px;
+      color: lightgray;
+    }
+  }
+  .year {
+    .e-input {
+      padding-bottom: 0;
+      padding-top: 0;
+      padding-left: 6px;
+    }
+    .e-input:focus {
+      padding-left: 6px;
+      padding-bottom: 0;
+    }
+  }
+
+  .e-steppers-container {
+    min-height: 568px;
+    .e-stepper-content {
+      &.active {
+        overflow: visible;
+      }
+    }
+  }
+
+}
