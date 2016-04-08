@@ -24,4 +24,90 @@
   .add-padding-50 {
     padding: 50px;
   }
+
+  .imgs-container {
+    max-height: 400px;
+    height: 400px;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+    .control-buttons {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      border-radius: 4px;
+      width: 80px;
+    }
+  }
+  .quote-container {
+    padding: 30px 60px;
+    i {
+      position: absolute;
+      top: 0;
+      left: 15px;
+    }
+  }
+  .share-menu {
+    .add-border(#BDBDBD);
+    border-radius: 6px;
+    padding-left: 10px;
+  }
+  .share-icon {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    &.facebook {
+      background: #3A68A4;
+    }
+    &.twitter {
+      background: #26ABE6;
+    }
+    &.gplus {
+      background: #DF4A36;
+    }
+  }
+  .comment-container{
+    width: 70%;
+    .comment-box {
+      padding-top: 10px;
+      border-bottom: 1px solid #BDBDBD;
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+    .comment {
+      padding-left: 10px;
+      &.reply {
+        margin-left: 50px;
+      }
+      .e-input-group {
+        margin: 0 0 0 16px;
+        width: 100%;
+        border: 0;
+        box-sizing: border-box;
+      }
+      textarea {
+        box-sizing: border-box;
+        border: 0;
+        background: white;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+  .new-chip {
+    position: absolute;
+    top: 4%;
+    right: 4%;
+  }
+  .pos-abs-top-left {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+  }
 }

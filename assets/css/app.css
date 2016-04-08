@@ -18,6 +18,91 @@ body {
 .patagoniaBlog .add-padding-50 {
   padding: 50px;
 }
+.patagoniaBlog .imgs-container {
+  max-height: 400px;
+  height: 400px;
+  width: 100%;
+}
+.patagoniaBlog .imgs-container img {
+  width: 100%;
+}
+.patagoniaBlog .imgs-container .control-buttons {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 4px;
+  width: 80px;
+}
+.patagoniaBlog .quote-container {
+  padding: 30px 60px;
+}
+.patagoniaBlog .quote-container i {
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+.patagoniaBlog .share-menu {
+  border: 1px solid #bdbdbd;
+  border-radius: 6px;
+  padding-left: 10px;
+}
+.patagoniaBlog .share-icon {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.patagoniaBlog .share-icon.facebook {
+  background: #3A68A4;
+}
+.patagoniaBlog .share-icon.twitter {
+  background: #26ABE6;
+}
+.patagoniaBlog .share-icon.gplus {
+  background: #DF4A36;
+}
+.patagoniaBlog .comment-container {
+  width: 70%;
+}
+.patagoniaBlog .comment-container .comment-box {
+  padding-top: 10px;
+  border-bottom: 1px solid #BDBDBD;
+}
+.patagoniaBlog .comment-container .comment-box:last-child {
+  border-bottom: 0;
+}
+.patagoniaBlog .comment-container .comment {
+  padding-left: 10px;
+}
+.patagoniaBlog .comment-container .comment.reply {
+  margin-left: 50px;
+}
+.patagoniaBlog .comment-container .comment .e-input-group {
+  margin: 0 0 0 16px;
+  width: 100%;
+  border: 0;
+  box-sizing: border-box;
+}
+.patagoniaBlog .comment-container .comment textarea {
+  box-sizing: border-box;
+  border: 0;
+  background: white;
+}
+.patagoniaBlog .comment-container .comment textarea:focus {
+  outline: none;
+}
+.patagoniaBlog .new-chip {
+  position: absolute;
+  top: 4%;
+  right: 4%;
+}
+.patagoniaBlog .pos-abs-top-left {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
 .patagoniaMedia img,
 .patagoniaBlog img {
   display: block;
@@ -565,6 +650,10 @@ body {
 .patagoniaBlog .add-padding-bottom {
   padding-bottom: 10px;
 }
+.patagoniaMedia .add-margin-left,
+.patagoniaBlog .add-margin-left {
+  margin-left: 10px;
+}
 .patagoniaMedia .add-pointer,
 .patagoniaBlog .add-pointer {
   cursor: pointer;
@@ -647,6 +736,7 @@ body {
 .patagoniaMedia .full-width,
 .patagoniaBlog .full-width {
   width: 100%;
+  box-sizing: border-box;
 }
 .patagoniaMedia .round-img,
 .patagoniaBlog .round-img {
